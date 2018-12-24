@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ScalemodelWorld.Web.Models;
 
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    partial class ScalemodelWorldContextModelSnapshot : ModelSnapshot
+    [Migration("20181224104841_AddEntities")]
+    partial class AddEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
