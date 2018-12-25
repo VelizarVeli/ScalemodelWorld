@@ -1,0 +1,62 @@
+﻿@*@if (User.Role == "Admin")
+{
+    <h1 class="text-center text-panda">Hello, Administrator @User.Username!</h1>
+}
+@else
+{
+<h1 class="text-center text-panda">Hello, @User.Username!</h1>
+}*@
+
+@model ScalemodelWorld.Web.ViewModels.Home.LoggedInIndexViewModel
+
+<hr class="bg-panda hr-2" />
+<div class="mx-auto row">
+    <div class="col-md-4">
+        <h2 class="text-center">Started</h2>
+        <div class="border-panda col-lg-9">
+            @for(var i = 0; i < Model.Started.Count(); i++)
+            {
+                { var startedModel = Model.Started.ToList()[i]; }
+                <p>
+                    <span class="text-center">startedModel.Name</span> <span><a class="btn bg-panda text-white float-right" href="/Packages/Details?id=availableModel.Id">Details</a></span>
+                </p>
+            }
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2 class="text-center">Available</h2>
+        <div class="border-panda col-lg-9">
+            @for(var i = 0; i < Model.Available.Count(); i++)
+            {
+                { var availableModel = Model.Available.ToList()[i]; }
+                <p>
+                    <span class="text-center">availableModel.Name</span> <span><a class="btn bg-panda text-white float-right" href="/Packages/Details?id=availableModel.Id">Details</a></span>
+                </p>
+            }
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2 class="text-center">Completed</h2>
+        <div class="border-panda col-lg-9">
+            @for(var i = 0; i < Model.Completed.Count(); i++)
+            {
+                { var completedModel = Model.Completed.ToList()[i]; }
+                <p>
+                    <span class="text-center">completedModel.Name</span> <span><a class="btn bg-panda text-white float-right" href="/Packages/Acquire?id=completedModel.Id">Details</a></span>
+                </p>
+            }
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h2 class="text-center">WishList</h2>
+        <div class="border-panda col-lg-9">
+            @for(var i = 0; i < Model.WishList.Count(); i++)
+            {
+                { var wishList = Model.WishList.ToList()[i]; }
+                <p>
+                    <span class="text-center">wishList.Name</span> <span><a class="btn bg-panda text-white float-right" href="/Packages/Acquire?id=wishList.Id">Details</a></span>
+                </p>
+            }
+        </div>
+    </div>
+</div>
