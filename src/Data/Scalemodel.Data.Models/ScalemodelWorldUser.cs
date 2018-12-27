@@ -12,6 +12,10 @@ namespace Scalemodel.Data.Models
             this.ModelshowParticipations = new List<UserModelshow>();
         }
 
+        public string Nickname { get; set; }
+
+        public override string UserName { get; set; }
+
         public int? ClubId { get; set; }
         public Club ClubMembership { get; set; }
 
