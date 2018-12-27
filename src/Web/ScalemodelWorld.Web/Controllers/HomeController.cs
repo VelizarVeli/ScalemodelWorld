@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ScalemodelWorld.Web.Models;
 
@@ -21,10 +23,19 @@ namespace ScalemodelWorld.Web.Controllers
 
             return View();
         }
-
+        [Authorize]
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+
+        [Authorize]
+        public IActionResult Video()
+        {
+            ViewData["Message"] = "Anelia - Milo moe.";
 
             return View();
         }
