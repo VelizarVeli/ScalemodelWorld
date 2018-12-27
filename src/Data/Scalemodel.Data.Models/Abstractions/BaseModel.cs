@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Scalemodels.Models.Abstractions
+namespace Scalemodel.Data.Models.Abstractions
 {
     public abstract class BaseModel : BaseId
     {

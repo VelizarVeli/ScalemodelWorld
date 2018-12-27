@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models.Abstractions;
-using Scalemodels.Models.JunctionClasses;
+using Scalemodel.Data.Models.Abstractions;
+using Scalemodel.Data.Models.JunctionClasses;
 
-namespace Scalemodels.Models
+namespace Scalemodel.Data.Models
 {
     public class Aftermarket : Base
     {

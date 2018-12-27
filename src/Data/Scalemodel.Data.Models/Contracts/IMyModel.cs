@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Scalemodels.Models.Contracts
+namespace Scalemodel.Data.Models.Contracts
 {
     public interface IMyModel
     {

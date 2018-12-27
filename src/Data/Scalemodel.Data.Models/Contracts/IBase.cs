@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Scalemodels.Models.Contracts
+namespace Scalemodel.Data.Models.Contracts
 {
     public interface IBase
     {

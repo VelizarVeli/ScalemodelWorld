@@ -1,19 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Scalemodels.Models;
-using Scalemodels.Models.JunctionClasses;
-using Scalemodels.Models.Modelshows;
-using Scalemodels.Models.Scalemodels;
+using Scalemodel.Data.Models;
+using Scalemodel.Data.Models.JunctionClasses;
+using Scalemodel.Data.Models.Modelshows;
+using Scalemodel.Data.Models.Scalemodels;
 
 namespace ScalemodelWorld.Data
 {
-    public class ScalemodelWorldContext : IdentityDbContext<IdentityUser>
+    public class ScalemodelWorldContext : IdentityDbContext<ScalemodelWorldUser>
     {
-        public ScalemodelWorldContext()
-        {
-        }
-
         public ScalemodelWorldContext(DbContextOptions<ScalemodelWorldContext> options)
             : base(options)
         {
@@ -32,6 +27,9 @@ namespace ScalemodelWorld.Data
         public DbSet<Tool> Tools { get; set; }
         public DbSet<Consumable> Consumables { get; set; }
         public DbSet<ConsumableCategory> ConsumableCategories { get; set; }
+        public DbSet<UserModelshow> UserModelshows { get; set; }
+        public DbSet<ClubModelshow> ClubModelshows { get; set; }
+        public DbSet<Club> Clubs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -42,10 +40,10 @@ namespace ScalemodelWorld.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
 
-            builder.Entity<IdentityUser>().ToTable("User");
-            builder.Entity<IdentityUser>().Property(u => u.PasswordHash).HasMaxLength(500);
+            builder.Entity<ScalemodelWorldUser>().ToTable("User");
+            builder.Entity<ScalemodelWorldUser>().Property(u => u.PasswordHash).HasMaxLength(500);
             // builder.Entity<User>().Property(u => u.Stamp).HasMaxLength(500);
-            builder.Entity<IdentityUser>().Property(u => u.PhoneNumber).HasMaxLength(50);
+            builder.Entity<ScalemodelWorldUser>().Property(u => u.PhoneNumber).HasMaxLength(50);
 
             //builder.Entity<Role>().ToTable("Role");
             //builder.Entity<UserRole>().ToTable("UserRole");
@@ -114,8 +112,38 @@ namespace ScalemodelWorld.Data
 
             builder.Entity<CompletedScalemodelShowParticipation>()
                 .HasOne(a => a.Modelshow)
-                .WithMany(b => b.Participants)
+                .WithMany(b => b.ScalemodelsParticipated)
                 .HasForeignKey(fk => fk.ModelshowId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<ClubModelshow>()
+                .HasKey(sa => new { sa.ClubId, sa.ModelshowId });
+
+            builder.Entity<ClubModelshow>()
+                .HasOne(a => a.Club)
+                .WithMany(s => s.ModelShowParticipations)
+                .HasForeignKey(fk => fk.ClubId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<ClubModelshow>()
+                .HasOne(a => a.ModelShow)
+                .WithMany(b => b.ClubsParticipated)
+                .HasForeignKey(fk => fk.ModelshowId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<UserModelshow>()
+                .HasKey(sa => new { sa.ParticipantId, sa.ModelshowId });
+
+            builder.Entity<UserModelshow>()
+                .HasOne(a => a.Modelshow)
+                .WithMany(s => s.Participants)
+                .HasForeignKey(fk => fk.ModelshowId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<UserModelshow>()
+                .HasOne(a => a.Participant)
+                .WithMany(b => b.ModelshowParticipations)
+                .HasForeignKey(fk => fk.ParticipantId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

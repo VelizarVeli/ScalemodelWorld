@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models.Abstractions;
-using Scalemodels.Models.JunctionClasses;
+using Scalemodel.Data.Models.Abstractions;
+using Scalemodel.Data.Models.JunctionClasses;
 
-namespace Scalemodels.Models.Scalemodels
+namespace Scalemodel.Data.Models.Scalemodels
 {
     public class CompletedScalemodel : MyModel
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models.Abstractions;
-using Scalemodels.Models.Scalemodels;
+using Scalemodel.Data.Models.Abstractions;
+using Scalemodel.Data.Models.Scalemodels;
 
-namespace Scalemodels.Models
+namespace Scalemodel.Data.Models
 {
     public class Manifacturer : BaseId
     {

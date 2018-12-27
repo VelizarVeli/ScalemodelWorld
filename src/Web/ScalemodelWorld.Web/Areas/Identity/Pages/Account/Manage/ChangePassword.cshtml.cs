@@ -7,17 +7,19 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Scalemodel.Data.Models;
+
 namespace ScalemodelWorld.Web.Areas.Identity.Pages.Account.Manage
 {
     public class ChangePasswordModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ScalemodelWorldUser> _userManager;
+        private readonly SignInManager<ScalemodelWorldUser> _signInManager;
         private readonly ILogger<ChangePasswordModel> _logger;
 
         public ChangePasswordModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<ScalemodelWorldUser> userManager,
+            SignInManager<ScalemodelWorldUser> signInManager,
             ILogger<ChangePasswordModel> logger)
         {
             _userManager = userManager;

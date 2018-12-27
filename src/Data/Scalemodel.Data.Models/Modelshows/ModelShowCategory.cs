@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Scalemodels.Models.Modelshows
+namespace Scalemodel.Data.Models.Modelshows
 {
     public class ModelShowCategory
     {

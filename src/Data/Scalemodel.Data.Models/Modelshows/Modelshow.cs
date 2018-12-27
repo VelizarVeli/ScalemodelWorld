@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using Scalemodels.Models.Abstractions;
-using Scalemodels.Models.JunctionClasses;
+using Scalemodel.Data.Models.Abstractions;
+using Scalemodel.Data.Models.JunctionClasses;
 
-namespace Scalemodels.Models.Modelshows
+namespace Scalemodel.Data.Models.Modelshows
 {
     public class ModelShow : BaseModel
     {
         public ModelShow()
         {
-            this.Participants = new HashSet<CompletedScalemodelShowParticipation>();
+            this.ScalemodelsParticipated = new HashSet<CompletedScalemodelShowParticipation>();
             this.Categories = new HashSet<ModelShowCategory>();
+            this.ClubsParticipated = new List<ClubModelshow>();
+            this.Participants = new List<UserModelshow>();
         }
 
         public string ModelShowName { get; set; }
@@ -19,8 +21,12 @@ namespace Scalemodels.Models.Modelshows
 
         public string Place { get; set; }
 
-        public ICollection<CompletedScalemodelShowParticipation> Participants { get; set; }
+        public ICollection<CompletedScalemodelShowParticipation> ScalemodelsParticipated { get; set; }
 
         public ICollection<ModelShowCategory> Categories { get; set; }
+
+        public ICollection<ClubModelshow> ClubsParticipated { get; set; }
+
+        public ICollection<UserModelshow> Participants { get; set; }
     }
 }

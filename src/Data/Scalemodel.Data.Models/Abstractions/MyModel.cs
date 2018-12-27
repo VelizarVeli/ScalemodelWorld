@@ -1,8 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Scalemodels.Models.Contracts;
+using Scalemodel.Data.Models.Contracts;
 
-namespace Scalemodels.Models.Abstractions
+namespace Scalemodel.Data.Models.Abstractions
 {
     public abstract class MyModel : BaseModel, IMyModel
     {

@@ -1,6 +1,6 @@
-﻿using Scalemodels.Models.Contracts;
+﻿using Scalemodel.Data.Models.Contracts;
 
-namespace Scalemodels.Models.Abstractions
+namespace Scalemodel.Data.Models.Abstractions
 {
     public abstract class Base : IBase
     {

@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Scalemodel.Data.Models;
 
 namespace ScalemodelWorld.Web.Areas.Identity.Pages.Account.Manage
 {
     public class SetPasswordModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ScalemodelWorldUser> _userManager;
+        private readonly SignInManager<ScalemodelWorldUser> _signInManager;
 
         public SetPasswordModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            UserManager<ScalemodelWorldUser> userManager,
+            SignInManager<ScalemodelWorldUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;

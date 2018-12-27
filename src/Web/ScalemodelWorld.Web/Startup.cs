@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Web.Models;
 
@@ -35,15 +35,7 @@ namespace ScalemodelWorld.Web
                 options.UseSqlServer(
                     this.Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
-                {
-                    options.Password.RequiredLength = 6;
-                    options.Password.RequireDigit = false;
-                    options.Password.RequireLowercase = false;
-                    options.Password.RequireNonAlphanumeric = false;
-                    options.Password.RequireUppercase = false;
-                })
-                .AddRoleManager<RoleManager<IdentityRole>>()
+            services.AddDefaultIdentity<ScalemodelWorldUser>()
                 .AddEntityFrameworkStores<ScalemodelWorldContext>();
 
 
@@ -67,6 +59,7 @@ namespace ScalemodelWorld.Web
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
             app.UseAuthentication();
 
             app.UseMvc(routes =>

@@ -1,7 +1,7 @@
-﻿using Scalemodels.Models.Modelshows;
-using Scalemodels.Models.Scalemodels;
+﻿using Scalemodel.Data.Models.Modelshows;
+using Scalemodel.Data.Models.Scalemodels;
 
-namespace Scalemodels.Models.JunctionClasses
+namespace Scalemodel.Data.Models.JunctionClasses
 {
     public class CompletedScalemodelShowParticipation
     {

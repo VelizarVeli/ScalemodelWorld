@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Scalemodels.Models.Abstractions;
+using Scalemodel.Data.Models.Abstractions;
 
-namespace Scalemodels.Models
+namespace Scalemodel.Data.Models
 {
     public class ConsumableCategory : BaseId
     {

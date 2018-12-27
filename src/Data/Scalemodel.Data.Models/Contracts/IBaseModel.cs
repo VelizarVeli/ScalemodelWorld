@@ -1,4 +1,4 @@
-﻿namespace Scalemodels.Models.Contracts
+﻿namespace Scalemodel.Data.Models.Contracts
 {
     public interface IBaseModel : IBase
     {

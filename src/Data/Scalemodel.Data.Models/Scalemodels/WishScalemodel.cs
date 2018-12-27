@@ -1,6 +1,6 @@
-﻿using Scalemodels.Models.Abstractions;
+﻿using Scalemodel.Data.Models.Abstractions;
 
-namespace Scalemodels.Models.Scalemodels
+namespace Scalemodel.Data.Models.Scalemodels
 {
     public class WishScalemodel : BaseModel
     {
