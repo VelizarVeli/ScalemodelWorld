@@ -23,6 +23,7 @@ namespace ScalemodelWorld.Web.Controllers
 
             return View();
         }
+
         [Authorize]
         public IActionResult Contact()
         {
