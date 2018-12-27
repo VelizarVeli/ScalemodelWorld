@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Scalemodels.Models;
 using Scalemodels.Models.JunctionClasses;
 using Scalemodels.Models.Modelshows;
 using Scalemodels.Models.Scalemodels;
-using ScalemodelWorld.Web.Areas.Identity.Data;
 
-namespace ScalemodelWorld.Web.Models
+namespace ScalemodelWorld.Data
 {
-    public class ScalemodelWorldContext : IdentityDbContext<ScalemodelWorldUser>
+    public class ScalemodelWorldContext : IdentityDbContext<IdentityUser>
     {
+        public ScalemodelWorldContext()
+        {
+        }
+
         public ScalemodelWorldContext(DbContextOptions<ScalemodelWorldContext> options)
             : base(options)
         {
@@ -43,10 +42,10 @@ namespace ScalemodelWorld.Web.Models
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
 
-            builder.Entity<ScalemodelWorldUser>().ToTable("User");
-            builder.Entity<ScalemodelWorldUser>().Property(u => u.PasswordHash).HasMaxLength(500);
+            builder.Entity<IdentityUser>().ToTable("User");
+            builder.Entity<IdentityUser>().Property(u => u.PasswordHash).HasMaxLength(500);
             // builder.Entity<User>().Property(u => u.Stamp).HasMaxLength(500);
-            builder.Entity<ScalemodelWorldUser>().Property(u => u.PhoneNumber).HasMaxLength(50);
+            builder.Entity<IdentityUser>().Property(u => u.PhoneNumber).HasMaxLength(50);
 
             //builder.Entity<Role>().ToTable("Role");
             //builder.Entity<UserRole>().ToTable("UserRole");

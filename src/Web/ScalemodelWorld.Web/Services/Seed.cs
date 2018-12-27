@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ScalemodelWorld.Web.Areas.Identity.Data;
 
 namespace ScalemodelWorld.Web.Services
 {
@@ -14,7 +13,7 @@ namespace ScalemodelWorld.Web.Services
 
             //adding customs roles
             var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            var UserManager = serviceProvider.GetRequiredService<UserManager<ScalemodelWorldUser>>();
+            var UserManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
             string[] roleNames = { "Admin", "Manager", "Member" };
             IdentityResult roleResult;
 
@@ -29,7 +28,7 @@ namespace ScalemodelWorld.Web.Services
             }
 
             // creating a super user who could maintain the web app
-            var poweruser = new ScalemodelWorldUser
+            var poweruser = new IdentityUser
             {
                 UserName = Configuration.GetSection("AppSettings")["UserEmail"],
                 Email = Configuration.GetSection("AppSettings")["UserEmail"]
