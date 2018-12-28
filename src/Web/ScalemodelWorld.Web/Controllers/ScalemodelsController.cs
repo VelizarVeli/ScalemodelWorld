@@ -49,5 +49,11 @@ namespace ScalemodelWorld.Web.Controllers
         {
             return View();
         }
+
+        [Authorize]
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }

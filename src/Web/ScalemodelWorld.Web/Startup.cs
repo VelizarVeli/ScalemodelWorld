@@ -51,7 +51,10 @@ namespace ScalemodelWorld.Web
                 .AddEntityFrameworkStores<ScalemodelWorldContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<UserManager<ScalemodelWorldUser>>();
             //services.AddScoped<UserStore<ScalemodelWorldUser>>();
             services.AddScoped<Logger<RegisterModel>>();
