@@ -14,8 +14,6 @@ namespace Scalemodel.Data.Models
 
         public string Nickname { get; set; }
 
-        public override string UserName { get; set; }
-
         public int? ClubId { get; set; }
         public Club ClubMembership { get; set; }
 

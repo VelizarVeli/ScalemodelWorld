@@ -1,0 +1,38 @@
+@using Microsoft.AspNetCore.Identity
+@using Scalemodel.Data.Models
+@inject SignInManager<ScalemodelWorldUser> SignInManager
+@inject UserManager<ScalemodelWorldUser> UserManager
+@if (SignInManager.IsSignedIn(User))
+{
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Modelshows
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" asp-area="" asp-controller="Modelshows" asp-action="Club">Club</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Modelshows" asp-action="Yours">Yours</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" asp-area="" asp-controller="Modelshows" asp-action="Future">Future</a>
+    </div>
+</li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Scalemodels
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Started">Started</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Available">Purchased</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Completed">Completed</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Wishlist">Wish List</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="ListOfStarted">List of Started</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Create">Create test</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Delete">Delete test</a>
+        <a class="dropdown-item" asp-area="" asp-controller="Scalemodels" asp-action="Details">Details test</a>
+    </div>
+</li>
+<li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Video">Video</a></li>
+}
+else
+{
+<li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Modelshows" asp-action="Future">Future Exhibitions</a></li>
+}
