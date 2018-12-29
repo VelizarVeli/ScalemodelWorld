@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Web.Models;
+using ScalemodelWorld.Web.Utilities;
 
 namespace ScalemodelWorld.Web
 {
@@ -68,7 +70,7 @@ namespace ScalemodelWorld.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider )
         {
             if (env.IsDevelopment())
             {
@@ -80,7 +82,7 @@ namespace ScalemodelWorld.Web
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            Seeder.Seed(serviceProvider);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

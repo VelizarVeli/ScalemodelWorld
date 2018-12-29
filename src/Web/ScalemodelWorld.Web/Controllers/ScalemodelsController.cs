@@ -1,6 +1,9 @@
 ﻿using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Web.ViewModels.Scalemodels;
 
@@ -14,7 +17,7 @@ namespace ScalemodelWorld.Web.Controllers
         {
             this.db = db;
         }
-
+        
         [Authorize]
         public IActionResult StartModelBuild(int id)
         {
@@ -24,6 +27,9 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public IActionResult Started()
         {
+            //var started = db.StartedScalemodels.Where(o => o.Owner.UserName == this.User.Identity.Name)
+            //    .Select(a => new );
+
             return View();
         }
 
