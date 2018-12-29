@@ -11,5 +11,8 @@ namespace Scalemodel.Data.Models
         public string Author { get; set; }
 
         public string Place { get; set; }
+
+        public int OwnerId { get; set; }
+        public ScalemodelWorldUser Owner { get; set; }
     }
 }

@@ -15,5 +15,8 @@ namespace Scalemodel.Data.Models
         public DateTime DateOfPurchase { get; set; }
 
         public string Description { get; set; }
+
+        public int OwnerId { get; set; }
+        public ScalemodelWorldUser Owner { get; set; }
     }
 }

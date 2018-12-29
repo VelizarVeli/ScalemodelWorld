@@ -30,5 +30,8 @@ namespace Scalemodel.Data.Models
         public ICollection<CompletedAftermarket> CompletedScalemodels { get; set; }
 
         public ICollection<StartedAftermarket> StartedScalemodels { get; set; }
+
+        public int OwnerId { get; set; }
+        public ScalemodelWorldUser Owner { get; set; }
     }
 }

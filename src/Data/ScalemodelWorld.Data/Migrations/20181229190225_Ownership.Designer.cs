@@ -5,12 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using ScalemodelWorld.Data;
 
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20181224104841_AddEntities")]
-    partial class AddEntities
+    [Migration("20181229190225_Ownership")]
+    partial class Ownership
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -130,60 +131,7 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("ScalemodelWorld.Web.Areas.Identity.Data.ScalemodelWorldUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("AccessFailedCount");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken();
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256);
-
-                    b.Property<bool>("EmailConfirmed");
-
-                    b.Property<bool>("LockoutEnabled");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256);
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256);
-
-                    b.Property<string>("PasswordHash")
-                        .HasMaxLength(500);
-
-                    b.Property<string>("PhoneNumber")
-                        .HasMaxLength(50);
-
-                    b.Property<bool>("PhoneNumberConfirmed");
-
-                    b.Property<string>("SecurityStamp");
-
-                    b.Property<bool>("TwoFactorEnabled");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("User");
-                });
-
-            modelBuilder.Entity("Scalemodels.Models.Aftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Aftermarket", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -197,6 +145,11 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<int?>("Number");
 
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1")
+                        .IsRequired();
+
                     b.Property<decimal?>("Price");
 
                     b.Property<bool>("Purchased");
@@ -205,10 +158,54 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.HasIndex("ManifacturerId");
 
+                    b.HasIndex("OwnerId1");
+
                     b.ToTable("Aftermarkets");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Consumable", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Book", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Author");
+
+                    b.Property<string>("Category");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1");
+
+                    b.Property<string>("Place");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId1");
+
+                    b.ToTable("Book");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Club", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("FoundationDate");
+
+                    b.Property<string>("FoundationPlace");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clubs");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Consumable", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -226,6 +223,10 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1");
+
                     b.Property<decimal?>("Price");
 
                     b.Property<string>("Type");
@@ -236,10 +237,12 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.HasIndex("ManifacturerId");
 
+                    b.HasIndex("OwnerId1");
+
                     b.ToTable("Consumables");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.ConsumableCategory", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.ConsumableCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -252,7 +255,7 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("ConsumableCategories");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.AvailableAftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.AvailableAftermarket", b =>
                 {
                     b.Property<int>("AvailableAftermarketId");
 
@@ -267,7 +270,24 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("AvailableAftermarket");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.CompletedAftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.ClubModelshow", b =>
+                {
+                    b.Property<int>("ClubId");
+
+                    b.Property<int>("ModelshowId");
+
+                    b.Property<int>("Id");
+
+                    b.HasKey("ClubId", "ModelshowId");
+
+                    b.HasAlternateKey("Id");
+
+                    b.HasIndex("ModelshowId");
+
+                    b.ToTable("ClubModelshows");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.CompletedAftermarket", b =>
                 {
                     b.Property<int>("CompletedAftermarketId");
 
@@ -282,7 +302,7 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("CompletedAftermarkets");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.CompletedScalemodelShowParticipation", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.CompletedScalemodelShowParticipation", b =>
                 {
                     b.Property<int>("CompletedScalemodelId");
 
@@ -297,7 +317,7 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("CompletedScalemodelShowParticipations");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.StartedAftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.StartedAftermarket", b =>
                 {
                     b.Property<int>("StartedAftermarketId");
 
@@ -312,7 +332,24 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("StartedAftermarkets");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Manifacturer", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.UserModelshow", b =>
+                {
+                    b.Property<string>("ParticipantId");
+
+                    b.Property<int>("ModelshowId");
+
+                    b.Property<int>("Id");
+
+                    b.HasKey("ParticipantId", "ModelshowId");
+
+                    b.HasAlternateKey("Id");
+
+                    b.HasIndex("ModelshowId");
+
+                    b.ToTable("UserModelshows");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Manifacturer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -326,7 +363,7 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("Manifacturers");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Modelshows.ModelShow", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShow", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -367,7 +404,7 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("ModelShows");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Modelshows.ModelShowCategory", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShowCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -386,7 +423,66 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("ModelShowCategory");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.AvailableScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.ScalemodelWorldUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AccessFailedCount");
+
+                    b.Property<int?>("ClubId");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed");
+
+                    b.Property<bool>("LockoutEnabled");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("Nickname");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash")
+                        .HasMaxLength(500);
+
+                    b.Property<string>("PhoneNumber")
+                        .HasMaxLength(50);
+
+                    b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("SecurityStamp");
+
+                    b.Property<bool>("TwoFactorEnabled");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClubId");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.AvailableScalemodel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -412,6 +508,10 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<int>("Number");
 
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1");
+
                     b.Property<string>("Place");
 
                     b.Property<decimal>("Price");
@@ -422,10 +522,12 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.HasIndex("ManifacturerId");
 
+                    b.HasIndex("OwnerId1");
+
                     b.ToTable("AvailableScalemodels");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.CompletedScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.CompletedScalemodel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -458,6 +560,10 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<int>("Number");
 
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1");
+
                     b.Property<string>("PicturesLink");
 
                     b.Property<string>("Place");
@@ -473,10 +579,12 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.HasIndex("ManifacturerId");
 
+                    b.HasIndex("OwnerId1");
+
                     b.ToTable("CompletedScalemodels");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.StartedScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.StartedScalemodel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -501,6 +609,10 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.Property<int>("Number");
+
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1");
 
                     b.Property<string>("Place");
 
@@ -514,10 +626,12 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.HasIndex("ManifacturerId");
 
+                    b.HasIndex("OwnerId1");
+
                     b.ToTable("StartedScalemodels");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.WishScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.WishScalemodel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -545,14 +659,20 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<int>("Scale");
 
+                    b.Property<string>("UserId");
+
+                    b.Property<int>("Userd");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ManifacturerId");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("WishScalemodels");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Tool", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Tool", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -566,11 +686,17 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<int>("OwnerId");
+
+                    b.Property<string>("OwnerId1");
+
                     b.Property<decimal>("Price");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ManifacturerId");
+
+                    b.HasIndex("OwnerId1");
 
                     b.ToTable("Tools");
                 });
@@ -585,7 +711,7 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("ScalemodelWorld.Web.Areas.Identity.Data.ScalemodelWorldUser")
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -593,7 +719,7 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("ScalemodelWorld.Web.Areas.Identity.Data.ScalemodelWorldUser")
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -606,7 +732,7 @@ namespace ScalemodelWorld.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("ScalemodelWorld.Web.Areas.Identity.Data.ScalemodelWorldUser")
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -614,139 +740,208 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("ScalemodelWorld.Web.Areas.Identity.Data.ScalemodelWorldUser")
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Aftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Aftermarket", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany("Aftermarkets")
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("Aftermarket")
+                        .HasForeignKey("OwnerId1")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Consumable", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Book", b =>
                 {
-                    b.HasOne("Scalemodels.Models.ConsumableCategory", "Category")
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("OwnedBooks")
+                        .HasForeignKey("OwnerId1");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Consumable", b =>
+                {
+                    b.HasOne("Scalemodel.Data.Models.ConsumableCategory", "Category")
                         .WithMany("Consumables")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany()
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("Consumables")
+                        .HasForeignKey("OwnerId1");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.AvailableAftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.AvailableAftermarket", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Aftermarket", "Aftermarket")
+                    b.HasOne("Scalemodel.Data.Models.Aftermarket", "Aftermarket")
                         .WithMany("AvailableScalemodels")
                         .HasForeignKey("AvailableAftermarketId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("Scalemodels.Models.Scalemodels.AvailableScalemodel", "AvailableScalemodel")
+                    b.HasOne("Scalemodel.Data.Models.Scalemodels.AvailableScalemodel", "AvailableScalemodel")
                         .WithMany("AvailableAndPurchasedAftermarkets")
                         .HasForeignKey("AvailableScalemodelId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.CompletedAftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.ClubModelshow", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Aftermarket", "Aftermarket")
+                    b.HasOne("Scalemodel.Data.Models.Club", "Club")
+                        .WithMany("ModelShowParticipations")
+                        .HasForeignKey("ClubId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Scalemodel.Data.Models.Modelshows.ModelShow", "ModelShow")
+                        .WithMany("ClubsParticipated")
+                        .HasForeignKey("ModelshowId")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.CompletedAftermarket", b =>
+                {
+                    b.HasOne("Scalemodel.Data.Models.Aftermarket", "Aftermarket")
                         .WithMany("CompletedScalemodels")
                         .HasForeignKey("CompletedAftermarketId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("Scalemodels.Models.Scalemodels.CompletedScalemodel", "CompletedScalemodel")
+                    b.HasOne("Scalemodel.Data.Models.Scalemodels.CompletedScalemodel", "CompletedScalemodel")
                         .WithMany("Aftermarkets")
                         .HasForeignKey("CompletedScalemodelId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.CompletedScalemodelShowParticipation", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.CompletedScalemodelShowParticipation", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Scalemodels.CompletedScalemodel", "CompletedScalemodel")
+                    b.HasOne("Scalemodel.Data.Models.Scalemodels.CompletedScalemodel", "CompletedScalemodel")
                         .WithMany("ModelShowsParticipatedIn")
                         .HasForeignKey("CompletedScalemodelId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("Scalemodels.Models.Modelshows.ModelShow", "Modelshow")
-                        .WithMany("Participants")
+                    b.HasOne("Scalemodel.Data.Models.Modelshows.ModelShow", "Modelshow")
+                        .WithMany("ScalemodelsParticipated")
                         .HasForeignKey("ModelshowId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.JunctionClasses.StartedAftermarket", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.StartedAftermarket", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Aftermarket", "Aftermarket")
+                    b.HasOne("Scalemodel.Data.Models.Aftermarket", "Aftermarket")
                         .WithMany("StartedScalemodels")
                         .HasForeignKey("StartedAftermarketId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("Scalemodels.Models.Scalemodels.StartedScalemodel", "StartedScalemodel")
+                    b.HasOne("Scalemodel.Data.Models.Scalemodels.StartedScalemodel", "StartedScalemodel")
                         .WithMany("StartAftermarkets")
                         .HasForeignKey("StartedScalemodelId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Modelshows.ModelShow", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.UserModelshow", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Modelshows.ModelShow", "Modelshow")
+                        .WithMany("Participants")
+                        .HasForeignKey("ModelshowId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Participant")
+                        .WithMany("ModelshowParticipations")
+                        .HasForeignKey("ParticipantId")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShow", b =>
+                {
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany()
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Modelshows.ModelShowCategory", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShowCategory", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Modelshows.ModelShow", "ModelShow")
+                    b.HasOne("Scalemodel.Data.Models.Modelshows.ModelShow", "ModelShow")
                         .WithMany("Categories")
                         .HasForeignKey("ModelShowId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.AvailableScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.ScalemodelWorldUser", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Club", "ClubMembership")
+                        .WithMany("Members")
+                        .HasForeignKey("ClubId");
+                });
+
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.AvailableScalemodel", b =>
+                {
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany("AvailableScalemodels")
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("PurchasedModels")
+                        .HasForeignKey("OwnerId1");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.CompletedScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.CompletedScalemodel", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany("CompletedScalemodels")
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("CompletedModels")
+                        .HasForeignKey("OwnerId1");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.StartedScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.StartedScalemodel", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany("StartedScalemodels")
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("StartedModels")
+                        .HasForeignKey("OwnerId1");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Scalemodels.WishScalemodel", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.WishScalemodel", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany("WishScalemodels")
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "User")
+                        .WithMany("WishList")
+                        .HasForeignKey("UserId");
                 });
 
-            modelBuilder.Entity("Scalemodels.Models.Tool", b =>
+            modelBuilder.Entity("Scalemodel.Data.Models.Tool", b =>
                 {
-                    b.HasOne("Scalemodels.Models.Manifacturer", "Manifacturer")
+                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
                         .WithMany("Tools")
                         .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
+                        .WithMany("OwnedTools")
+                        .HasForeignKey("OwnerId1");
                 });
 #pragma warning restore 612, 618
         }

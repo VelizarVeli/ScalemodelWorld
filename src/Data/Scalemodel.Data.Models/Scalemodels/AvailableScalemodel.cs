@@ -12,5 +12,8 @@ namespace Scalemodel.Data.Models.Scalemodels
         }
 
         public ICollection<AvailableAftermarket> AvailableAndPurchasedAftermarkets { get; set; }
+
+        public int OwnerId { get; set; }
+        public ScalemodelWorldUser Owner { get; set; }
     }
 }

@@ -22,5 +22,8 @@ namespace Scalemodel.Data.Models
 
         public int CategoryId { get; set; }
         public ConsumableCategory Category { get; set; }
+
+        public int OwnerId { get; set; }
+        public ScalemodelWorldUser Owner { get; set; }
     }
 }
