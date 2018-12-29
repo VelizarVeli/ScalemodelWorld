@@ -1,4 +1,4 @@
-﻿@model ScalemodelWorld.Web.ViewModels.Scalemodels.ListAvailableViewModel
+﻿@model List<ScalemodelWorld.Web.ViewModels.Scalemodels.AvailableViewModel>
 @{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,32 +6,70 @@
 <h1 class="text-center">Purchased scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
-    <table class="table table-hover table-bordered">
+    <table class="table table-hover">
         <thead>
             <tr class="row">
-                <th scope="col" class="col-lg-5 d-flex justify-content-center"><h3>Name</h3></th>
-                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Scale</h3></th>
-                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>FactoryNumber</h3></th>
-                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Price</h3></th>
-                <th scope="col" class="col-lg-1 d-flex justify-content-center"><h3>Actions</h3></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>#</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Name</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Scale</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Manifacturer</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Factory Number</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Combines With</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Info How To</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Price</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Date Of Purchase</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Place</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Best Company Offer</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Comments</h6></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var available in @Model.AllAvailable)
+            @for (int i = 0; i < @Model.Count; i++)
             {
-                <tr class="row">
-                    <th scope="row" class="col-lg-5 d-flex justify-content-center"><h5>@available.Name</h5></th>
-                    <td class="col-lg-2 d-flex justify-content-center"><h5>$@available.Price</h5></td>
-                    <td class="col-lg-2 d-flex justify-content-center"><h5>@available.FactoryNumber</h5></td>
-                    <td class="col-lg-2 d-flex justify-content-center"><h5>@available.DateOfPurchase</h5></td>
-                    <td class="col-lg-1 d-flex justify-content-center">
-                        <a href="/ship" class="btn bg-panda text-white">Details</a>
-                    </td>
-                </tr>
+                var item = this.Model[i];
+
+                if (i % 2 == 0)
+                {
+                    <tr class="row table-primary">
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Name</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Scale</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.FactoryNumber</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.CombinesWith</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.InfoHowTo</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Price</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.DateOfPurchase</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Place</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.BestCompanyOffer</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Comments</small></h6></td>
+                    </tr>
+                }
+                else
+                {
+                    <tr class="row table-success">
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Name</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Scale</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.FactoryNumber</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.CombinesWith</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.InfoHowTo</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Price</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.DateOfPurchase</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Place</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.BestCompanyOffer</small></h6></td>
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Comments</small></h6></td>
+                    </tr>
+                }
             }
+
         </tbody>
     </table>
 </div>
+<td class="col-sm-1 d-flex justify-content-center">
+    <a class="btn text-white" asp-controller="Scalemodels" asp-action="StartModelBuild">Start</a>
+</td>
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

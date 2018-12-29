@@ -16,6 +16,12 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
+        public IActionResult StartModelBuild(int id)
+        {
+            return View("Available");
+        }
+
+        [Authorize]
         public IActionResult Started()
         {
             return View();
@@ -36,9 +42,7 @@ namespace ScalemodelWorld.Web.Controllers
                 Price = a.Price
             }).ToList();
 
-            var model = new ListAvailableViewModel(){AllAvailable = available};
-
-            return View(model);
+            return View(available);
         }
         [Authorize]
         public IActionResult Completed()

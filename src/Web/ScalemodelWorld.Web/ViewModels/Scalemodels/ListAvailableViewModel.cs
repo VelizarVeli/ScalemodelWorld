@@ -4,6 +4,6 @@ namespace ScalemodelWorld.Web.ViewModels.Scalemodels
 {
     public class ListAvailableViewModel
     {
-        public IEnumerable<AvailableViewModel> AllAvailable { get; set; }
+        public ICollection<AvailableViewModel> AllAvailable { get; set; }
     }
 }
