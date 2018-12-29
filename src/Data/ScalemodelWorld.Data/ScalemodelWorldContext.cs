@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.JunctionClasses;
@@ -12,6 +13,8 @@ namespace ScalemodelWorld.Data
         public ScalemodelWorldContext(DbContextOptions<ScalemodelWorldContext> options)
             : base(options)
         {
+            //Jicata showed how to access and initialize Roles in gosudarstvenii Ideintity
+            //var logincho = this.Roles.Add(new IdentityRole("Admin"));
         }
 
         public DbSet<Aftermarket> Aftermarkets { get; set; }

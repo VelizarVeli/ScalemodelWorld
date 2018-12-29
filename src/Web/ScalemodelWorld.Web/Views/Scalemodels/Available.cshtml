@@ -1,90 +1,40 @@
-﻿@model Scalemodel.Data.Models.Scalemodels.AvailableScalemodel
-
+﻿@model ScalemodelWorld.Web.ViewModels.Scalemodels.ListAvailableViewModel
 @{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>View</h1>
-
-<h4>AvailableScalemodel</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Available">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DateOfPurchase" class="control-label"></label>
-                <input asp-for="DateOfPurchase" class="form-control" />
-                <span asp-validation-for="DateOfPurchase" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Place" class="control-label"></label>
-                <input asp-for="Place" class="form-control" />
-                <span asp-validation-for="Place" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Scale" class="control-label"></label>
-                <input asp-for="Scale" class="form-control" />
-                <span asp-validation-for="Scale" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Number" class="control-label"></label>
-                <input asp-for="Number" class="form-control" />
-                <span asp-validation-for="Number" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ManifacturerId" class="control-label"></label>
-                <select asp-for="ManifacturerId" class="form-control" asp-items="ViewBag.ManifacturerId"></select>
-                <span asp-validation-for="ManifacturerId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FactoryNumber" class="control-label"></label>
-                <input asp-for="FactoryNumber" class="form-control" />
-                <span asp-validation-for="FactoryNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CombinesWith" class="control-label"></label>
-                <input asp-for="CombinesWith" class="form-control" />
-                <span asp-validation-for="CombinesWith" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BestCompanyOffer" class="control-label"></label>
-                <input asp-for="BestCompanyOffer" class="form-control" />
-                <span asp-validation-for="BestCompanyOffer" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="InfoHowTo" class="control-label"></label>
-                <input asp-for="InfoHowTo" class="form-control" />
-                <span asp-validation-for="InfoHowTo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Comments" class="control-label"></label>
-                <input asp-for="Comments" class="form-control" />
-                <span asp-validation-for="Comments" class="text-danger"></span>
-            </div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<h1 class="text-center">Purchased scalemodels</h1>
+<hr class="bg-dark" style="height: 2px" />
+<div class="d-flex justify-content-between">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr class="row">
+                <th scope="col" class="col-lg-5 d-flex justify-content-center"><h3>Name</h3></th>
+                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Scale</h3></th>
+                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>FactoryNumber</h3></th>
+                <th scope="col" class="col-lg-2 d-flex justify-content-center"><h3>Price</h3></th>
+                <th scope="col" class="col-lg-1 d-flex justify-content-center"><h3>Actions</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var available in @Model.AllAvailable)
+            {
+                <tr class="row">
+                    <th scope="row" class="col-lg-5 d-flex justify-content-center"><h5>@available.Name</h5></th>
+                    <td class="col-lg-2 d-flex justify-content-center"><h5>$@available.Price</h5></td>
+                    <td class="col-lg-2 d-flex justify-content-center"><h5>@available.FactoryNumber</h5></td>
+                    <td class="col-lg-2 d-flex justify-content-center"><h5>@available.DateOfPurchase</h5></td>
+                    <td class="col-lg-1 d-flex justify-content-center">
+                        <a href="/ship" class="btn bg-panda text-white">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
-
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

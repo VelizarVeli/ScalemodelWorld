@@ -1,7 +1,14 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
+@model ScalemodelWorld.Web.ViewModels.TestViewModel
+
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
 <p>Use this area to provide additional information.</p>
+
+<div class="form-group">
+    <label asp-for="Name">Full Name</label>
+    <input asp-for="Name" class="form-control" placeholder="Full Name..."/>
+</div>

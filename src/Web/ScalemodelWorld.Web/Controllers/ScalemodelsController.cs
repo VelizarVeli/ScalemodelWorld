@@ -1,19 +1,44 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using ScalemodelWorld.Data;
+using ScalemodelWorld.Web.ViewModels.Scalemodels;
 
 namespace ScalemodelWorld.Web.Controllers
 {
     public class ScalemodelsController : Controller
     {
+        private readonly ScalemodelWorldContext db;
+
+        public ScalemodelsController(ScalemodelWorldContext db)
+        {
+            this.db = db;
+        }
+
         [Authorize]
         public IActionResult Started()
         {
             return View();
         }
+
         [Authorize]
         public IActionResult Available()
         {
-            return View();
+            var available = db.AvailableScalemodels.Select(a => new AvailableViewModel
+            {
+                Number = a.Number,
+                Name = a.Name,
+                Scale = a.Scale,
+                Manifacturer = a.Manifacturer.Name,
+                FactoryNumber = a.FactoryNumber,
+                CombinesWith = a.CombinesWith,
+                InfoHowTo = a.InfoHowTo,
+                Price = a.Price
+            }).ToList();
+
+            var model = new ListAvailableViewModel(){AllAvailable = available};
+
+            return View(model);
         }
         [Authorize]
         public IActionResult Completed()
