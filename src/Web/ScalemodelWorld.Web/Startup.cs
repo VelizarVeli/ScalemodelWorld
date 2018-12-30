@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.UI.V3.Pages.Account.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
-using ScalemodelWorld.Web.Models;
+using ScalemodelWorld.Services;
 using ScalemodelWorld.Web.Utilities;
 
 namespace ScalemodelWorld.Web
@@ -41,17 +40,20 @@ namespace ScalemodelWorld.Web
                 options.UseSqlServer(
                     this.Configuration.GetConnectionString("DefaultConnection")));
 
-         services.AddIdentity<ScalemodelWorldUser, IdentityRole>(options =>
-                {
-                    options.Password.RequiredLength = 6;
-                    options.Password.RequireDigit = false;
-                    options.Password.RequireLowercase = false;
-                    options.Password.RequireNonAlphanumeric = false;
-                    options.Password.RequireUppercase = false;
-                })
-             .AddDefaultUI()
-                .AddEntityFrameworkStores<ScalemodelWorldContext>()
-                .AddDefaultTokenProviders();
+            services.AddTransient<SeedDbContext>();
+            services.AddSingleton<SeedDatabase>();
+
+            services.AddIdentity<ScalemodelWorldUser, IdentityRole>(options =>
+                   {
+                       options.Password.RequiredLength = 6;
+                       options.Password.RequireDigit = false;
+                       options.Password.RequireLowercase = false;
+                       options.Password.RequireNonAlphanumeric = false;
+                       options.Password.RequireUppercase = false;
+                   })
+                .AddDefaultUI()
+                   .AddEntityFrameworkStores<ScalemodelWorldContext>()
+                   .AddDefaultTokenProviders();
 
             services.AddMvc(options =>
             {
@@ -60,7 +62,7 @@ namespace ScalemodelWorld.Web
             services.AddScoped<UserManager<ScalemodelWorldUser>>();
             //services.AddScoped<UserStore<ScalemodelWorldUser>>();
             services.AddScoped<Logger<RegisterModel>>();
-
+            services.AddTransient<UserResolverService>();
             services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = $"/Identity/Account/Login";
@@ -70,7 +72,7 @@ namespace ScalemodelWorld.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider )
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {

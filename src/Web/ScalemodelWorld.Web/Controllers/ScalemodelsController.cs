@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
+using ScalemodelWorld.Services;
 using ScalemodelWorld.Web.ViewModels.Scalemodels;
 
 namespace ScalemodelWorld.Web.Controllers
@@ -13,9 +14,12 @@ namespace ScalemodelWorld.Web.Controllers
     {
         private readonly ScalemodelWorldContext db;
 
-        public ScalemodelsController(ScalemodelWorldContext db)
+        private readonly SeedDatabase seedDatabase;
+
+        public ScalemodelsController(ScalemodelWorldContext db, SeedDatabase seedDatabase)
         {
             this.db = db;
+            this.seedDatabase = seedDatabase;
         }
         
         [Authorize]
@@ -50,6 +54,15 @@ namespace ScalemodelWorld.Web.Controllers
 
             return View(available);
         }
+
+        [Authorize]
+        public IActionResult AddWishList()
+        {
+            //seedDatabase.
+
+            return View("Wishlist");
+        }
+
         [Authorize]
         public IActionResult Completed()
         {

@@ -1,18 +1,27 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using ScalemodelWorld.Web.Models;
 
 namespace ScalemodelWorld.Web.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
         {
+            _logger = logger;
+        }
+
+        public IActionResult Index(int id)
+        {
+            this._logger.LogError($"Invalid id: {id}");
+
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -28,7 +37,7 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IActionResult Video()
         {
             ViewData["Message"] = "Anelia - Milo moe.";
