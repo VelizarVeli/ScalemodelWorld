@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ScalemodelWorld.Services.Dto
+namespace ScalemodelWorld.Services.SeedData.Dto
 {
     public class WishListDto : BaseDto
     {

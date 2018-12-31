@@ -15,7 +15,7 @@
             </li>
         </ul>
     </form>
-    if (true)
+    @*if (User.IsInRole("Admin"))
     {
         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
             <ul class="navbar-nav mr-auto navbar-right">
@@ -24,7 +24,7 @@
                 </li>
             </ul>
         </form>
-    }
+    }*@
 }
 else
 {

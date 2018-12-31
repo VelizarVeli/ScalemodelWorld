@@ -18,4 +18,11 @@
     <ProjectReference Include="..\..\Services\ScalemodelWorld.Services\ScalemodelWorld.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Clubs\Controllers\" />
+    <Folder Include="Areas\Clubs\Data\" />
+    <Folder Include="Areas\Clubs\ViewModels\" />
+    <Folder Include="Areas\Clubs\Views\" />
+  </ItemGroup>
+
 </Project>

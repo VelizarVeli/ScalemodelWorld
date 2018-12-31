@@ -12,6 +12,9 @@ using Microsoft.Extensions.Logging;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services;
+using ScalemodelWorld.Services.SeedData;
+using ScalemodelWorld.Services.SeedData.Contracts;
+using ScalemodelWorld.Web.Middlewares.MiddlewareExtensions;
 using ScalemodelWorld.Web.Utilities;
 
 namespace ScalemodelWorld.Web
@@ -41,7 +44,6 @@ namespace ScalemodelWorld.Web
                     this.Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<SeedDbContext>();
-            services.AddSingleton<SeedDatabase>();
 
             services.AddIdentity<ScalemodelWorldUser, IdentityRole>(options =>
                    {
@@ -69,6 +71,7 @@ namespace ScalemodelWorld.Web
                 options.LogoutPath = $"/Identity/Account/Logout";
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
+            services.AddScoped<ISeedDatabaseService, SeedDatabaseService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -85,10 +88,20 @@ namespace ScalemodelWorld.Web
                 app.UseHsts();
             }
             Seeder.Seed(serviceProvider);
+            //Use this as example for Middleware
+            //app.UseSeedDataMiddleware();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseAuthentication();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+            });
 
             app.UseMvc(routes =>
             {

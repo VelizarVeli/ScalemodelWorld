@@ -1,21 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using Newtonsoft.Json;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Data;
-using ScalemodelWorld.Services.Dto;
+using ScalemodelWorld.Services.SeedData.Contracts;
+using ScalemodelWorld.Services.SeedData.Dto;
 
-namespace ScalemodelWorld.Services
+namespace ScalemodelWorld.Services.SeedData
 {
-    public class SeedDatabase
+    public class SeedDatabaseService:ISeedDatabaseService
     {
         private readonly ScalemodelWorldContext db;
         //private readonly UserManager<ScalemodelWorldUser> _userManager;
 
-        public SeedDatabase(ScalemodelWorldContext db/*, UserManager<ScalemodelWorldUser> userManager*/)
+        public SeedDatabaseService(ScalemodelWorldContext db/*, UserManager<ScalemodelWorldUser> userManager*/)
         {
             this.db = db;
             //this._userManager = userManager;

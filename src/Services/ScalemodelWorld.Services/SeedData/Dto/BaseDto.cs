@@ -1,4 +1,4 @@
-﻿namespace ScalemodelWorld.Services.Dto
+﻿namespace ScalemodelWorld.Services.SeedData.Dto
 {
     public abstract class BaseDto
     {

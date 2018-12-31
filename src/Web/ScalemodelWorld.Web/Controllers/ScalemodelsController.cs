@@ -14,12 +14,12 @@ namespace ScalemodelWorld.Web.Controllers
     {
         private readonly ScalemodelWorldContext db;
 
-        private readonly SeedDatabase seedDatabase;
+        //private readonly SeedDatabase seedDatabase;
 
-        public ScalemodelsController(ScalemodelWorldContext db, SeedDatabase seedDatabase)
+        public ScalemodelsController(ScalemodelWorldContext db/*, SeedDatabase seedDatabase*/)
         {
             this.db = db;
-            this.seedDatabase = seedDatabase;
+            //this.seedDatabase = seedDatabase;
         }
         
         [Authorize]
