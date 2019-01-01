@@ -6,11 +6,6 @@
 <h1 class="text-center">Purchased scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
-    
-    
-    
-    
-    
     <!-- Sidebar Holder -->
     <nav id="sidebar">
         <div class="sidebar-header">
@@ -48,28 +43,16 @@
             <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to the article</a></li>
         </ul>
     </nav>
-    
-    
-    
-    
-    
-
     <table class="table table-hover">
         <thead>
-        <tr class="row">
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>#</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Name</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Scale</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Manifacturer</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Factory Number</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Combines With</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Info How To</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Price</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Date Of Purchase</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Place</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Best Company Offer</h6></th>
-            <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Comments</h6></th>
-        </tr>
+            <tr class="row">
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>#</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Box cover</h6></th>
+                <th scope="col" class="col-sm-3 d-flex justify-content-center"><h6>Name</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Price</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Date Of Purchase</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center">Details</th>
+            </tr>
         </thead>
         <tbody>
         @for (int i = 0; i < @Model.Count; i++)
@@ -78,36 +61,25 @@
 
             if (i % 2 == 0)
             {
-                <tr class="row table-primary">
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Name</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Scale</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.FactoryNumber</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.CombinesWith</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.InfoHowTo</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Price</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.DateOfPurchase</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Place</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.BestCompanyOffer</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Comments</small></h6></td>
-                </tr>
+            <tr class="row table-primary">
+                <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
+                <td class="col-sm-2 d-flex justify-content-center"><h6><small><img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" /></small></h6></td>
+                <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
+                <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
+                <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
+                <td class="col-sm-2 d-flex justify-content-center"><h6><a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Details">Details</a></h6></td>
+            </tr>
             }
             else
             {
                 <tr class="row table-success">
                     <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Name</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Scale</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.FactoryNumber</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.CombinesWith</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.InfoHowTo</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Price</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.DateOfPurchase</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Place</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.BestCompanyOffer</small></h6></td>
-                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Comments</small></h6></td>
+                    <td class="col-sm-2 d-flex justify-content-center"><h6><small><img src="@item.BoxPicture" class="img-fluid" alt="Responsive image"/></small></h6></td>
+                    <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
+                    <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
+                    <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
+                    <td class="col-sm-2 d-flex justify-content-center"><h6><a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Details">Details</a></h6></td>
+
                 </tr>
             }
         }

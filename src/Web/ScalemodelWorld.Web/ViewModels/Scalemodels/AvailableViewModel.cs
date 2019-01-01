@@ -6,6 +6,8 @@ namespace ScalemodelWorld.Web.ViewModels.Scalemodels
 {
     public class AvailableViewModel
     {
+        public string BoxPicture { get; set; }
+
         public int Number { get; set; }
 
         public string Name { get; set; }
@@ -20,9 +22,9 @@ namespace ScalemodelWorld.Web.ViewModels.Scalemodels
 
         public string InfoHowTo { get; set; }
 
-        public decimal Price { get; set; }
+        public string Price { get; set; }
 
-        public DateTime DateOfPurchase { get; set; }
+        public string DateOfPurchase { get; set; }
 
         public string Place { get; set; }
 

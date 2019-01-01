@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -42,6 +43,7 @@ namespace ScalemodelWorld.Web.Controllers
         {
             var available = db.AvailableScalemodels.Select(a => new AvailableViewModel
             {
+                BoxPicture = a.BoxPicture,
                 Number = a.Number,
                 Name = a.Name,
                 Scale = a.Scale,
@@ -49,8 +51,9 @@ namespace ScalemodelWorld.Web.Controllers
                 FactoryNumber = a.FactoryNumber,
                 CombinesWith = a.CombinesWith,
                 InfoHowTo = a.InfoHowTo,
-                Price = a.Price
-            }).ToList();
+                Price = a.Price.ToString("##.00"),
+                DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+            }).OrderBy(n => n.Number).ToList();
 
             return View(available);
         }
