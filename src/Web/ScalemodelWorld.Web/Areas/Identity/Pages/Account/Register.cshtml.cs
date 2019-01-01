@@ -69,7 +69,7 @@ namespace ScalemodelWorld.Web.Areas.Identity.Pages.Account
                 var user = new ScalemodelWorldUser { UserName = Input.Nickname, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
-                if (this._signInManager.UserManager.Users.Count() == 2)
+                if (this._signInManager.UserManager.Users.Count() == 1)
                 {
                     var roleResult = this._signInManager.UserManager.AddToRoleAsync(user, "Admin").Result;
                 }

@@ -64,7 +64,7 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult Completed()
+        public IActionResult CompletedAll()
         {
             return View();
         }

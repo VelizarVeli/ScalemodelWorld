@@ -6,5 +6,7 @@ namespace Scalemodel.Data.Models.Scalemodels
     {
         public int Userd { get; set; }
         public ScalemodelWorldUser User { get; set; }
+
+        public string BoxPicture { get; set; }
     }
 }
