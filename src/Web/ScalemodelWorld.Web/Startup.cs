@@ -57,6 +57,9 @@ namespace ScalemodelWorld.Web
                    .AddEntityFrameworkStores<ScalemodelWorldContext>()
                    .AddDefaultTokenProviders();
 
+            services.AddScoped<IUserClaimsPrincipalFactory<ScalemodelWorldUser>,
+                UserClaimsPrincipalFactory<ScalemodelWorldUser, IdentityRole>>();
+
             services.AddMvc(options =>
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
