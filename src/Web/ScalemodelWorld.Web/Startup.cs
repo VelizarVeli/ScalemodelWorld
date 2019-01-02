@@ -1,4 +1,5 @@
 ﻿using System;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
+using ScalemodelWorld.Scalemodels.Services;
 using ScalemodelWorld.Services;
+using ScalemodelWorld.Services.Scalemodels.Contracts;
 using ScalemodelWorld.Services.SeedData;
 using ScalemodelWorld.Services.SeedData.Contracts;
 using ScalemodelWorld.Web.Middlewares.MiddlewareExtensions;
@@ -59,6 +62,10 @@ namespace ScalemodelWorld.Web
 
             services.AddScoped<IUserClaimsPrincipalFactory<ScalemodelWorldUser>,
                 UserClaimsPrincipalFactory<ScalemodelWorldUser, IdentityRole>>();
+
+            services.AddAutoMapper();
+
+            this.RegisterGlobalServices(services);
 
             services.AddMvc(options =>
             {
@@ -112,6 +119,10 @@ namespace ScalemodelWorld.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+        private void RegisterGlobalServices(IServiceCollection services)
+        {
+            services.AddScoped<IScalemodelsService, ScalemodelsService>();
         }
     }
 }

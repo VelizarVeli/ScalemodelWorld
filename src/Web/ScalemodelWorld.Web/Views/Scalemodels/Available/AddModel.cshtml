@@ -1,0 +1,91 @@
+﻿@model ScalemodelWorld.Web.ViewModels.Scalemodels.ScalemodelBindingModel
+
+@{
+    ViewData["Title"] = "AddModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>AddModel</h1>
+
+<h4>AvailableScalemodel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddScalemodel">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           <div class="form-group">
+                <label asp-for="BoxPicture" class="control-label"></label>
+                <input asp-for="BoxPicture" class="form-control" />
+                <span asp-validation-for="BoxPicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfPurchase" class="control-label"></label>
+                <input asp-for="DateOfPurchase" class="form-control" />
+                <span asp-validation-for="DateOfPurchase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place" class="control-label"></label>
+                <input asp-for="Place" class="form-control" />
+                <span asp-validation-for="Place" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scale" class="control-label"></label>
+                <input asp-for="Scale" class="form-control" />
+                <span asp-validation-for="Scale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number" class="control-label"></label>
+                <input asp-for="Number" class="form-control" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Manifacturer" class="control-label"></label>
+                <input asp-for="Manifacturer" class="form-control" />
+                <span asp-validation-for="Manifacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FactoryNumber" class="control-label"></label>
+                <input asp-for="FactoryNumber" class="form-control" />
+                <span asp-validation-for="FactoryNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CombinesWith" class="control-label"></label>
+                <input asp-for="CombinesWith" class="form-control" />
+                <span asp-validation-for="CombinesWith" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BestCompanyOffer" class="control-label"></label>
+                <input asp-for="BestCompanyOffer" class="form-control" />
+                <span asp-validation-for="BestCompanyOffer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InfoHowTo" class="control-label"></label>
+                <input asp-for="InfoHowTo" class="form-control" />
+                <span asp-validation-for="InfoHowTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

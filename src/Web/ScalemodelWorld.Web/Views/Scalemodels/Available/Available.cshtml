@@ -39,7 +39,7 @@
         </ul>
         <ul class="list-unstyled CTAs">
             <li>
-                <button asp-area="Scalemodels" asp-controller="Scalemodels" asp-action="AddModel" type="button" class="btn btn-primary btn-lg">                ADD MODEL                </button>
+                <a asp-area="" asp-controller="Scalemodels" asp-action="AddModel" class="btn btn-primary btn-lg">              ADD NEW MODEL              </a>
             </li>
         </ul>
     </nav>
@@ -61,14 +61,21 @@
 
                 if (i % 2 == 0)
                 {
-                    <tr class="row table-primary">
-                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center"><h6><small><img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" /></small></h6></td>
-                        <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
-                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
-                        <td class="col-sm-2 d-flex text-left"><h5><a class="col-sm-2 d-flex justify-content-center" asp-area="" asp-controller="Scalemodels" asp-action="/Scalemodels/AvailableDetails?id=@item.Id" asp-route-id="@item.Id" title="AvailableDetails">Details</a></h5></td>
-                    </tr>
+            <tr class="row table-primary">
+                <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
+                <td class="col-sm-2 d-flex justify-content-center"><h6><small><img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" /></small></h6></td>
+                <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
+                @if (item.Price == ".00")
+                {
+                    <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
+                }
+                else
+                {
+                    <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
+                }
+                <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
+                <td class="col-sm-2 d-flex justify-content-center"><h6><button type="button" class="btn btn-info nav-link" asp-area="" asp-controller="Scalemodels" asp-route-id="@item.Id" title="Details">Details</button></h6></td>
+            </tr>
                 }
                 else
                 {
@@ -76,7 +83,14 @@
                         <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"><h6><small><img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" /></small></h6></td>
                         <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
+                        @if (item.Price == ".00")
+                        {
+                            <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
+                        }
+                        else
+                        {
+                            <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
+                        }
                         <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"><h6><button type="button" class="btn btn-info nav-link" asp-area="" asp-controller="Scalemodels" asp-route-id="@item.Id" title="Details">Details</button></h6></td>
                     </tr>

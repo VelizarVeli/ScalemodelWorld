@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{57
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9AD52566-4E09-4D2C-9D7F-7FE6A212F6E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScalemodelWorld.Services", "Services\ScalemodelWorld.Services\ScalemodelWorld.Services.csproj", "{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScalemodelWorld.Services", "Services\ScalemodelWorld.Services\ScalemodelWorld.Services.csproj", "{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScalemodelWorld.Common", "Data\ScalemodelWorld.Common\ScalemodelWorld.Common.csproj", "{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{48CABCB9-6263-4FDE-B3E8-C764670B9CC0} = {D41AA721-764A-4EED-B248-63FF648F5984}
 		{DCF777A1-B457-4A12-B643-F5202E608F53} = {D41AA721-764A-4EED-B248-63FF648F5984}
 		{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9} = {57AE2605-088F-482F-B974-18E0E03E523D}
+		{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4} = {D41AA721-764A-4EED-B248-63FF648F5984}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27B0C3E-DC7F-4C1C-BF99-39BB45347A3D}

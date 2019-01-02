@@ -42,7 +42,7 @@ body {
     DEMO STYLE
 */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -213,7 +213,7 @@ a.article:hover {
 }
 
     #content p a {
-        color:
+        color: red
     }
 
 
@@ -235,27 +235,7 @@ a.article:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Lato:900);
+/*@import url(https://fonts.googleapis.com/css?family=Lato:900);*/
 *, *:before, *:after{
     box-sizing:border-box;
 }
@@ -276,7 +256,7 @@ div.foo{
     position: relative;
     color: #00B4F1;
     transform-style: preserve-3d;
-    perspective: 400;
+    perspective: 400px;
     z-index: 1;
 }
 .letter:before, .letter:after{
