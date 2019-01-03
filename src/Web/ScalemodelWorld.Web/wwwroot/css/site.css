@@ -35,22 +35,6 @@ body {
         display: none;
     }
 }
-.button {
-    display: block;
-    width: 115px;
-    height: 25px;
-    background: #4E9CAF;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-}
-
-
-/*
-    DEMO STYLE
-*/
 
 /*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
 

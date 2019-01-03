@@ -4,106 +4,120 @@
     ViewData["Title"] = "AvailableDetails";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>AvailableDetails</h1>
-
-<div>
-    <h4>AvailableScalemodel</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OwnerId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OwnerId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BoxPicture)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BoxPicture)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LinkToScalemates)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LinkToScalemates)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateOfPurchase)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateOfPurchase)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Place)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Place)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Scale)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Scale)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Number)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Number)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Manifacturer)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Manifacturer.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FactoryNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FactoryNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CombinesWith)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CombinesWith)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BestCompanyOffer)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BestCompanyOffer)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.InfoHowTo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.InfoHowTo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Comments)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Comments)
-        </dd>
-    </dl>
+<div class="d-flex justify-content-around row">
+    <div class="col-sm-6">
+        <div class="card-body">
+            <h2 class="card-title">@Model.Name</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <dl class="list-group list-group-flush">
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Scale)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Scale)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Manifacturer)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Manifacturer.Name)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BestCompanyOffer)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BestCompanyOffer)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateOfPurchase)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DateOfPurchase)
+            </dt>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Place)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Place)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Comments)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Comments)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.InfoHowTo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.InfoHowTo)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CombinesWith)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CombinesWith)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FactoryNumber)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FactoryNumber)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Number)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Number)
+            </dd>
+            </li>
+            <li class="list-group-item">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LinkToScalemates)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.LinkToScalemates)
+            </dd>
+            </li>
+        </dl>
+    </div>
+    <div class="col-sm-6">
+        <img src="@Model.BoxPicture" style="width: 100% \9; " class="img-fluid" alt="Responsive image">
+    </div>
+</div>
+<div class="d-flex pt-3 justify-content-around">
+    <div><a asp-action="StartModelBuild" asp-route-id="@Model.Id" class="btn btn-info" role="button">Start building</a></div>
+    <div><a asp-action="AvailableDetails" asp-route-id="@Model.Id" class="btn btn-info" role="button">Edit</a></div>
+    <div><a asp-action="AvailableDetails" asp-route-id="@Model.Id" class="btn btn-info" role="button">Delete</a></div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Available">Back to Purchased</a>
 </div>

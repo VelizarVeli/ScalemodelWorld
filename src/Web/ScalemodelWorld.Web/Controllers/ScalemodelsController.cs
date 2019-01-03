@@ -108,14 +108,15 @@ namespace ScalemodelWorld.Web.Controllers
                 return NotFound();
             }
 
-            var availableDetails = await db.AvailableScalemodels.FindAsync(id);/*Select(a => new ScalemodelBindingModel()*/
-                                                                               //{
-                                                                               //    Id = a.Id,
-                                                                               //    BoxPicture = a.BoxPicture,
-                                                                               //    Number = a.Number,
-                                                                               //    Name = a.Name,
-                                                                               //    Scale = a.Scale,
-                                                                               //    Manifacturer = a.Manifacturer.Name,
+            var availableDetails = await db.AvailableScalemodels.FindAsync(id);
+            /*Select(a => new ScalemodelBindingModel()*/
+            //{
+            //    Id = a.Id,
+            //    BoxPicture = a.BoxPicture,
+            //    Number = a.Number,
+            //    Name = a.Name,
+            //    Scale = a.Scale,
+            //    Manifacturer = a.Manifacturer.Name,
             //    FactoryNumber = a.FactoryNumber,
             //    CombinesWith = a.CombinesWith,
             //    InfoHowTo = a.InfoHowTo,
