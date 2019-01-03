@@ -111,7 +111,7 @@ namespace ScalemodelWorld.Web.Controllers
                 FactoryNumber = a.FactoryNumber,
                 CombinesWith = a.CombinesWith,
                 InfoHowTo = a.InfoHowTo,
-                Price = a.Price.ToString("##.00"),
+                Price = a.Price,
                 DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
                 Place = a.Place,
                 BestCompanyOffer = a.BestCompanyOffer,
