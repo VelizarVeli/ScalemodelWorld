@@ -10,8 +10,8 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20181231190303_added-logs")]
-    partial class addedlogs
+    [Migration("20190103124653_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -255,25 +255,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("ConsumableCategories");
                 });
 
-            modelBuilder.Entity("Scalemodel.Data.Models.CustomLog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreatedTime");
-
-                    b.Property<int>("EventId");
-
-                    b.Property<string>("LogLevel");
-
-                    b.Property<string>("Message");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Logs");
-                });
-
             modelBuilder.Entity("Scalemodel.Data.Models.JunctionClasses.AvailableAftermarket", b =>
                 {
                     b.Property<int>("AvailableAftermarketId");
@@ -509,6 +490,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BestCompanyOffer");
 
+                    b.Property<string>("BoxPicture");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -519,6 +502,8 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 
@@ -611,6 +596,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BestCompanyOffer");
 
+                    b.Property<string>("BoxPicture");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -657,6 +644,8 @@ namespace ScalemodelWorld.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BestCompanyOffer");
+
+                    b.Property<string>("BoxPicture");
 
                     b.Property<string>("CombinesWith");
 

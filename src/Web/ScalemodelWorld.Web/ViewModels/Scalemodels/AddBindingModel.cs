@@ -1,10 +1,14 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ScalemodelWorld.Web.ViewModels.Scalemodels
 {
     public class AddBindingModel
     {
         public string BoxPicture { get; set; }
+
+        [Display(Name = "Link to the model in Scalemates")]
+        public string LinkToScalemates { get; set; }
 
         public int Number { get; set; }
 

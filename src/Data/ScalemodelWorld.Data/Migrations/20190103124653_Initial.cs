@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ScalemodelWorld.Data.Migrations
 {
-    public partial class DecimalToPrice : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -131,7 +131,7 @@ namespace ScalemodelWorld.Data.Migrations
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
                     InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
                     ModelShowName = table.Column<string>(nullable: true),
                     Year = table.Column<DateTime>(nullable: false),
@@ -279,13 +279,14 @@ namespace ScalemodelWorld.Data.Migrations
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
                     InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
                     OwnerId = table.Column<int>(nullable: false),
                     OwnerId1 = table.Column<string>(nullable: true),
-                    BoxPicture = table.Column<string>(nullable: true)
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -342,7 +343,7 @@ namespace ScalemodelWorld.Data.Migrations
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
                     InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
@@ -425,7 +426,7 @@ namespace ScalemodelWorld.Data.Migrations
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
                     InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
@@ -496,7 +497,7 @@ namespace ScalemodelWorld.Data.Migrations
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
                     InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
                     Userd = table.Column<int>(nullable: false),
                     UserId = table.Column<string>(nullable: true),

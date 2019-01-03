@@ -17,5 +17,7 @@ namespace Scalemodel.Data.Models.Scalemodels
         public ScalemodelWorldUser Owner { get; set; }
 
         public string BoxPicture { get; set; }
+
+        public string LinkToScalemates { get; set; }
     }
 }

@@ -501,6 +501,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("InfoHowTo");
 
+                    b.Property<string>("LinkToScalemates");
+
                     b.Property<int>("ManifacturerId");
 
                     b.Property<string>("Name")

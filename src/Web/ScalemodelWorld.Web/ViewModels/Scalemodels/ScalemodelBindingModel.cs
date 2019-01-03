@@ -36,5 +36,8 @@ namespace ScalemodelWorld.Web.ViewModels.Scalemodels
         public string BestCompanyOffer { get; set; }
 
         public string Comments { get; set; }
+
+        [Display(Name = "Link to the model in Scalemates")]
+        public string LinkToScalemates { get; set; }
     }
 }

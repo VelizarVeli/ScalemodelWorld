@@ -73,7 +73,8 @@ namespace ScalemodelWorld.Web.Controllers
                 DateOfPurchase = model.DateOfPurchase,
                 Place = model.Place,
                 BestCompanyOffer = model.BestCompanyOffer,
-                Comments = model.Comments
+                Comments = model.Comments,
+                LinkToScalemates = model.LinkToScalemates
             };
 
             this.db.AvailableScalemodels.Add(newModel);
