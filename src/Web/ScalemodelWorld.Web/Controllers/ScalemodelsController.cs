@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
@@ -31,7 +32,8 @@ namespace ScalemodelWorld.Web.Controllers
                 Number = a.Number,
                 Name = a.Name,
                 Price = a.Price.ToString("##.00"),
-                DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+                DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
+                LinkToScalemates = a.LinkToScalemates
             }).OrderBy(n => n.Number).ToList();
 
             return View("Available/Available", available);
@@ -99,30 +101,35 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult AvailableDetails(int id)
+        public async Task<IActionResult> AvailableDetails(int? id)
         {
-            ScalemodelBindingModel availableDetails = db.AvailableScalemodels.Select(a => new ScalemodelBindingModel()
+            if (id == null)
             {
-                Id = a.Id,
-                BoxPicture = a.BoxPicture,
-                Number = a.Number,
-                Name = a.Name,
-                Scale = a.Scale,
-                Manifacturer = a.Manifacturer.Name,
-                FactoryNumber = a.FactoryNumber,
-                CombinesWith = a.CombinesWith,
-                InfoHowTo = a.InfoHowTo,
-                Price = a.Price,
-                DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-                Place = a.Place,
-                BestCompanyOffer = a.BestCompanyOffer,
-                Comments = a.Comments
-            }).FirstOrDefault(n => n.Id == id);
+                return NotFound();
+            }
 
-            //if (availableDetails == null)
-            //{
-            //    return this.("Invalid product id.");
-            //}
+            var availableDetails = await db.AvailableScalemodels.FindAsync(id);/*Select(a => new ScalemodelBindingModel()*/
+                                                                               //{
+                                                                               //    Id = a.Id,
+                                                                               //    BoxPicture = a.BoxPicture,
+                                                                               //    Number = a.Number,
+                                                                               //    Name = a.Name,
+                                                                               //    Scale = a.Scale,
+                                                                               //    Manifacturer = a.Manifacturer.Name,
+            //    FactoryNumber = a.FactoryNumber,
+            //    CombinesWith = a.CombinesWith,
+            //    InfoHowTo = a.InfoHowTo,
+            //    Price = a.Price,
+            //    DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
+            //    Place = a.Place,
+            //    BestCompanyOffer = a.BestCompanyOffer,
+            //    Comments = a.Comments
+            //}).FirstOrDefault(n => n.Id == id);
+
+            if (availableDetails == null)
+            {
+                return NotFound();
+            }
 
             return View("Available/AvailableDetails", availableDetails);
         }

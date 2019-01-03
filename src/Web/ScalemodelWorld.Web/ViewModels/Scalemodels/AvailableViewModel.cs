@@ -13,5 +13,7 @@
         public string Price { get; set; }
 
         public string DateOfPurchase { get; set; }
+
+        public string LinkToScalemates { get; set; }
     }
 }
