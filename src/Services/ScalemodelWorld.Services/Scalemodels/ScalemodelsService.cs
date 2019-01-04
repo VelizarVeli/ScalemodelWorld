@@ -16,9 +16,9 @@ namespace ScalemodelWorld.Scalemodels.Services
 {
     public class ScalemodelsService : BaseService, IScalemodelsService
     {
-        public ScalemodelsService(ScalemodelWorldContext dbContext, 
-            IMapper mapper, 
-            UserManager<ScalemodelWorldUser> userManager) 
+        public ScalemodelsService(ScalemodelWorldContext dbContext,
+            IMapper mapper,
+            UserManager<ScalemodelWorldUser> userManager)
             : base(dbContext, mapper, userManager)
         {
         }
@@ -43,8 +43,18 @@ namespace ScalemodelWorld.Scalemodels.Services
 
             scalemodel.OwnerId = user.Id;
 
-            var model = this.Mapper.Map<AvailableScalemodel>(scalemodel);
+            //var config = new MapperConfiguration(cfg =>
+            //{
+            //    cfg.CreateMap<AddPurchasedScalemodelBindingModel, AvailableScalemodel>();
+            //    cfg.CreateMap<Manifacturer, Manifacturer>();
+            //});
+            //config.AssertConfigurationIsValid();
 
+            //var mapper = config.CreateMapper();
+            //var dest = mapper.Map<AddPurchasedScalemodelBindingModel, AvailableScalemodel>(manifacturer);
+            
+            var model = this.Mapper.Map<AvailableScalemodel>(scalemodel);
+            model.Manifacturer = manifacturer;
             user.PurchasedModels.Add(model);
             await this.DbContext.SaveChangesAsync();
         }

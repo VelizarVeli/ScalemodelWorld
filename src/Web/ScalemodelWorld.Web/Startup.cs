@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Scalemodel.Data.Models;
+using Scalemodel.Data.Models.Scalemodels;
+using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Scalemodels.Services;
 using ScalemodelWorld.Services;

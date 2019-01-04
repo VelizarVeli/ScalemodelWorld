@@ -22,7 +22,7 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         [Required]
         public int Scale { get; set; }
 
-        //[Required]
+        [Required]
         [StringLength(ModelsLengthConstants.ManifacturerNameMaxLength, MinimumLength = ModelsLengthConstants.ManifacturerNameMinLength)]
         public string Manifacturer { get; set; }
 
