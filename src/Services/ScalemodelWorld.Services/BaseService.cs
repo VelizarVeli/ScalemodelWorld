@@ -26,9 +26,9 @@ namespace ScalemodelWorld.Services
 
         protected UserManager<ScalemodelWorldUser> UserManager { get; private set; }
 
-        protected async Task<ScalemodelWorldUser> GetUserByNamedAsync(string name)
+        protected async Task<ScalemodelWorldUser> GetUserByIdAsync(string id)
         {
-            var user = await this.UserManager.FindByNameAsync(name);
+            var user = await this.UserManager.FindByIdAsync(id);
 
             CoreValidator.ThrowIfNull(user, new InvalidUserException());
 

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Scalemodels;
@@ -15,15 +16,18 @@ namespace ScalemodelWorld.Web.Controllers
     public class ScalemodelsController : Controller
     {
         private readonly ScalemodelWorldContext db;
-
         //private readonly SeedDatabase seedDatabase;
         private readonly IScalemodelsService scalemodelsService;
+        private readonly UserManager<ScalemodelWorldUser> currentUser;
 
-        public ScalemodelsController(ScalemodelWorldContext db/*, SeedDatabase seedDatabase*/, IScalemodelsService scalemodelsService)
+        public ScalemodelsController(ScalemodelWorldContext db/*, SeedDatabase seedDatabase*/,
+            IScalemodelsService scalemodelsService,
+            UserManager<ScalemodelWorldUser> current)
         {
             this.db = db;
             //this.seedDatabase = seedDatabase;
             this.scalemodelsService = scalemodelsService;
+            this.currentUser = current;
         }
 
         [Authorize]
@@ -49,74 +53,54 @@ namespace ScalemodelWorld.Web.Controllers
             return View("Available/AddModel");
         }
 
-        //[Authorize]
-        //[HttpPost]
-        //public IActionResult AddScalemodel(AddBindingModel model)
-        //{
-        //    var manifacturer = db.Manifacturers.FirstOrDefault(m => m.Name == model.Manifacturer);
-        //    if (manifacturer == null)
-        //    {
-        //        manifacturer = new Manifacturer
-        //        {
-        //            Name = model.Manifacturer
-        //        };
-
-        //        this.db.Manifacturers.Add(manifacturer);
-        //        this.db.SaveChanges();
-        //    }
-
-        //    var newModel = new AvailableScalemodel
-        //    {
-        //        BoxPicture = model.BoxPicture,
-        //        Number = model.Number,
-        //        Name = model.Name,
-        //        Scale = model.Scale,
-        //        Manifacturer = manifacturer,
-        //        FactoryNumber = model.FactoryNumber,
-        //        CombinesWith = model.CombinesWith,
-        //        InfoHowTo = model.InfoHowTo,
-        //        Price = model.Price,
-        //        DateOfPurchase = model.DateOfPurchase,
-        //        Place = model.Place,
-        //        BestCompanyOffer = model.BestCompanyOffer,
-        //        Comments = model.Comments,
-        //        LinkToScalemates = model.LinkToScalemates
-        //    };
-
-        //    this.db.AvailableScalemodels.Add(newModel);
-        //    this.db.SaveChanges();
-
-        //    return RedirectToAction("Available");
-        //}
-
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddScalemodel(AddPurchasedScalemodelBindingModel model)
+        public IActionResult AddScalemodel(AddBindingModel model)
         {
-            //if (!this.ModelState.IsValid)
-            //{
-            //    return this.View();
-            //}
+            var manifacturer = db.Manifacturers.FirstOrDefault(m => m.Name == model.Manifacturer);
+            if (manifacturer == null)
+            {
+                manifacturer = new Manifacturer
+                {
+                    Name = model.Manifacturer
+                };
 
-            await this.scalemodelsService.AddScalemodelAsync(model, this.User.Identity.Name);
-           
+                this.db.Manifacturers.Add(manifacturer);
+                this.db.SaveChanges();
+            }
+
+            var newModel = new AvailableScalemodel
+            {
+                BoxPicture = model.BoxPicture,
+                Number = model.Number,
+                Name = model.Name,
+                Scale = model.Scale,
+                Manifacturer = manifacturer,
+                FactoryNumber = model.FactoryNumber,
+                CombinesWith = model.CombinesWith,
+                InfoHowTo = model.InfoHowTo,
+                Price = model.Price,
+                DateOfPurchase = model.DateOfPurchase,
+                Place = model.Place,
+                BestCompanyOffer = model.BestCompanyOffer,
+                Comments = model.Comments,
+                LinkToScalemates = model.LinkToScalemates
+            };
+
+            this.db.AvailableScalemodels.Add(newModel);
+            this.db.SaveChanges();
+
             return RedirectToAction("Available");
         }
 
+        //[Authorize]
+        //[HttpPost]
+        //public async Task<IActionResult> AddScalemodel(AddPurchasedScalemodelBindingModel model)
+        //{
+        //    await this.scalemodelsService.AddScalemodelAsync(model, this.currentUser.GetUserId(User));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //    return RedirectToAction("Available");
+        //}
 
         [Authorize]
         public IActionResult StartModelBuild(int id)

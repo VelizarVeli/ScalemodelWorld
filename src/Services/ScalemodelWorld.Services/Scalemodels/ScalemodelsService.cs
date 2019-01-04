@@ -1,6 +1,8 @@
 ﻿using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Scalemodels;
@@ -21,11 +23,11 @@ namespace ScalemodelWorld.Scalemodels.Services
         {
         }
 
-        public async Task AddScalemodelAsync(AddPurchasedScalemodelBindingModel scalemodel, string username)
+        public async Task AddScalemodelAsync(AddPurchasedScalemodelBindingModel scalemodel, string id)
         {
-            CoreValidator.ThrowIfNull(scalemodel);
+            var user = await this.UserManager.FindByIdAsync(id);
 
-            var user = await this.GetUserByNamedAsync(username);
+            CoreValidator.ThrowIfNull(scalemodel);
 
             var manifacturer = DbContext.Manifacturers.FirstOrDefault(m => m.Name == scalemodel.Manifacturer);
             if (manifacturer == null)
@@ -38,6 +40,8 @@ namespace ScalemodelWorld.Scalemodels.Services
                 this.DbContext.Manifacturers.Add(manifacturer);
                 await this.DbContext.SaveChangesAsync();
             }
+
+            scalemodel.OwnerId = user.Id;
 
             var model = this.Mapper.Map<AvailableScalemodel>(scalemodel);
 

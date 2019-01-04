@@ -72,7 +72,6 @@ namespace ScalemodelWorld.Web
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<UserManager<ScalemodelWorldUser>>();
-            //services.AddScoped<UserStore<ScalemodelWorldUser>>();
             services.AddScoped<Logger<RegisterModel>>();
             services.AddTransient<UserResolverService>();
             services.ConfigureApplicationCookie(options =>
@@ -82,6 +81,12 @@ namespace ScalemodelWorld.Web
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
             services.AddScoped<ISeedDatabaseService, SeedDatabaseService>();
+            services.AddAuthentication()
+                .AddFacebook(facebbokOptions =>
+                {
+                    facebbokOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                    facebbokOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

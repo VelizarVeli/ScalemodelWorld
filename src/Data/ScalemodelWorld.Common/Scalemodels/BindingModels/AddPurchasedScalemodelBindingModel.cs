@@ -51,6 +51,6 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
 
         public string Comments { get; set; }
 
-        public int OwnerId { get; set; }
+        public string OwnerId { get; set; }
     }
 }
