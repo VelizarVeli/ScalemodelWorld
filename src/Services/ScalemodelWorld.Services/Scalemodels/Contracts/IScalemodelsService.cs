@@ -1,9 +1,10 @@
 ﻿using System.Threading.Tasks;
+using ScalemodelWorld.Common.Scalemodels.BindingModels;
 
 namespace ScalemodelWorld.Services.Scalemodels.Contracts
 {
     public interface IScalemodelsService
     {
-        Task<int> AddScalemodelAsync(string username);
+        Task AddScalemodelAsync(AddPurchasedScalemodelBindingModel scalemodel, string username);
     }
 }

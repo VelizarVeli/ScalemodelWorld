@@ -3,8 +3,7 @@
     ViewData["Title"] = "AddModel";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>AddModel</h1>
-<h4>AvailableScalemodel</h4>
+<h1 class="text-center">Add Scalemodel</h1>
 <hr />
 <form asp-action="AddScalemodel">
     <div class="row">
@@ -97,8 +96,8 @@
                 <input asp-for="Comments" class="form-control" placeholder="Any comments" />
                 <span asp-validation-for="Comments" class="text-danger"></span>
             </div>
-            <div class="col-7">
-                <input type="submit" value="ADD MODEL" class="btn btn-primary" />
+            <div class="col-7 mt-5">
+                <input type="submit" value="ADD MODEL" class="btn btn-primary btn-block" />
             </div>
         </div>
     </div>
