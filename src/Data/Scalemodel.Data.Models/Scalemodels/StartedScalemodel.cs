@@ -12,7 +12,7 @@ namespace Scalemodel.Data.Models.Scalemodels
             this.StartAftermarkets = new HashSet<StartedAftermarket>();
         }
 
-        public DateTime StartingDate { get; set; }
+        public DateTime StartingDate { get; set; } = DateTime.UtcNow;
 
         public ICollection<StartedAftermarket> StartAftermarkets { get; set; }
     }

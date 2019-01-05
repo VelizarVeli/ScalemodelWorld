@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ScalemodelWorld.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class AddedDateTimeUtCNow : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

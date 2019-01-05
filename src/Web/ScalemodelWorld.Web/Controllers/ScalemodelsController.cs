@@ -1,8 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using System.Globalization;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
+using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
@@ -61,16 +63,19 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult StartModelBuild(int id)
+        public async Task<IActionResult> Started()
         {
-            return View("Available/Available");
+            var startededModels = await this.scalemodelsService.StartedAll(this.currentUser.GetUserId(User));
+
+            return View("Started/Started", startededModels);
         }
 
         [Authorize]
-        public async Task<IActionResult> Started()
+        public async Task<IActionResult> StartNewBuild(int id, string modelId)
         {
-            var startededModels = await this.scalemodelsService.AvailableAll(this.currentUser.GetUserId(User));
-            return View("Available/Available", startededModels);
+            await this.scalemodelsService.StartNewBuildAsync(id, this.currentUser.GetUserId(User));
+
+            return RedirectToAction("Started");
         }
 
         [Authorize]

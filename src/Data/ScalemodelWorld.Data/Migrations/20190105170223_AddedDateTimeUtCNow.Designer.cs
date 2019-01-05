@@ -10,8 +10,8 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20190105135949_Initial")]
-    partial class Initial
+    [Migration("20190105170223_AddedDateTimeUtCNow")]
+    partial class AddedDateTimeUtCNow
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

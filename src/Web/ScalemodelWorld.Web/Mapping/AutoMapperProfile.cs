@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Common.Scalemodels.ViewModels;
@@ -19,10 +18,13 @@ namespace ScalemodelWorld.Web.Mapping
                 .ForMember(m => m.Manifacturer, opt => opt.Ignore())
                 .ForMember(n => n.Number, opt => opt.Ignore());
 
-            this.CreateMap<AvailableScalemodel, AvailableAllViewModel>();
+            this.CreateMap<AvailableScalemodel, AllModelsViewModel>();
 
             this.CreateMap<AvailableScalemodel, AvailableScalemodelBindingModel>()
                 /*.ForMember(m => m.Manifacturer, opt => opt.Ignore())*/;
+
+            this.CreateMap<AvailableScalemodel, StartedScalemodel>()
+                .ForMember(i => i.Id, opt => opt.Ignore());
         }
     }
 }

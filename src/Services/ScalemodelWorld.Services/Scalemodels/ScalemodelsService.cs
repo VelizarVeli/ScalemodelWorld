@@ -53,11 +53,11 @@ namespace ScalemodelWorld.Services.Scalemodels
             await this.DbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<AvailableAllViewModel>> AvailableAll(string id)
+        public async Task<IEnumerable<AllModelsViewModel>> AvailableAll(string id)
         {
             var user = await this.UserManager.FindByIdAsync(id);
 
-            var allAvailable = this.Mapper.Map<IEnumerable<AvailableAllViewModel>>(
+            var allAvailable = this.Mapper.Map<IEnumerable<AllModelsViewModel>>(
                 this.DbContext.AvailableScalemodels.Where(i => i.OwnerId == user.Id));
 
             return allAvailable;
@@ -81,6 +81,21 @@ namespace ScalemodelWorld.Services.Scalemodels
                 this.DbContext.StartedScalemodels.Where(i => i.OwnerId == user.Id));
 
             return allstarted;
+        }
+
+        public async Task StartNewBuildAsync(int id, string userId)
+        {
+            var user = await this.UserManager.FindByIdAsync(userId);
+
+            var availableModel = await this.DbContext.AvailableScalemodels.FirstOrDefaultAsync(e => e.Id == id && e.OwnerId == user.Id);
+            var started = this.Mapper.Map<StartedScalemodel>(availableModel);
+            var biggestNumber = DbContext.StartedScalemodels.Where(a => a.OwnerId == userId).OrderByDescending(u => u.Number)
+                .FirstOrDefault();
+            started.Number = biggestNumber == null ? NumberConstants.StartNumberInScalemodels : biggestNumber.Number + 1;
+
+            user.StartedModels.Add(started);
+            user.PurchasedModels.Remove(availableModel);
+           await this.DbContext.SaveChangesAsync();
         }
     }
 }

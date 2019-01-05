@@ -10,9 +10,9 @@
         <div class="col-md-4">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FactoryNumber"></label>
-                <input asp-for="FactoryNumber" class="form-control" placeholder="AZ7489" />
-                <span asp-validation-for="FactoryNumber" class="text-danger"></span>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Bf 109E" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DateOfPurchase"></label>
@@ -38,9 +38,9 @@
         <div class="col-md-4">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control" placeholder="Bf 109E" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="FactoryNumber"></label>
+                <input asp-for="FactoryNumber" class="form-control" placeholder="AZ7489" />
+                <span asp-validation-for="FactoryNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Scale" for="sel4">Scale</label>
@@ -88,7 +88,7 @@
                 <input asp-for="Price" class="form-control" type="number" step="0.01" placeholder="14.50" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-            <div class="form-group" >
+            <div class="form-group">
                 <label asp-for="Comments"></label>
                 <input asp-for="Comments" class="form-control " type="text" placeholder="Any comments" />
                 <span asp-validation-for="Comments" class="text-danger"></span>

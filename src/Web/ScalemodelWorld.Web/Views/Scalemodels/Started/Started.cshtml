@@ -1,10 +1,10 @@
 ﻿@using ScalemodelWorld.Common.Constants
-@model IList<ScalemodelWorld.Common.Scalemodels.ViewModels.AvailableAllViewModel>
+@model IList<ScalemodelWorld.Common.Scalemodels.ViewModels.AllModelsViewModel>
 @{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1 class="text-center">Purchased scalemodels</h1>
+<h1 class="text-center">Started scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
     <!-- Sidebar Holder -->
@@ -36,11 +36,6 @@
             </li>
             <li>
                 <a href="#">Contact</a>
-            </li>
-        </ul>
-        <ul class="list-unstyled CTAs">
-            <li>
-                <a asp-area="" asp-controller="Scalemodels" asp-action="AddModel" class="btn btn-primary btn-lg">              ADD NEW MODEL              </a>
             </li>
         </ul>
     </nav>
@@ -100,7 +95,7 @@
                         {
                             <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
                         }
-                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
+                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"> <a asp-action="AvailableDetails" asp-route-id="@item.Id">Details</a></td>
                     </tr>
                 }
