@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
-using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
@@ -16,7 +15,6 @@ namespace ScalemodelWorld.Web.Controllers
     public class ScalemodelsController : Controller
     {
         private readonly ScalemodelWorldContext db;
-        //private readonly SeedDatabase seedDatabase;
         private readonly IScalemodelsService scalemodelsService;
         private readonly UserManager<ScalemodelWorldUser> currentUser;
 
@@ -25,73 +23,39 @@ namespace ScalemodelWorld.Web.Controllers
             UserManager<ScalemodelWorldUser> current)
         {
             this.db = db;
-            //this.seedDatabase = seedDatabase;
             this.scalemodelsService = scalemodelsService;
             this.currentUser = current;
         }
 
         [Authorize]
-        public IActionResult Available()
+        public async Task<IActionResult> Available()
         {
-            var available = db.AvailableScalemodels.Select(a => new AvailableViewModel
-            {
-                Id = a.Id,
-                BoxPicture = a.BoxPicture,
-                Number = a.Number,
-                Name = a.Name,
-                Price = a.Price.ToString("##.00"),
-                DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-                LinkToScalemates = a.LinkToScalemates
-            }).OrderBy(n => n.Number).ToList();
-
-            return View("Available/Available", available);
+            var purchasedModels = await this.scalemodelsService.AvailableAll(this.currentUser.GetUserId(User));
+            return View("Available/Available", purchasedModels);
         }
+
+        //[Authorize]
+        //public IActionResult Available()
+        //{
+        //    var available = db.AvailableScalemodels.Select(a => new AvailableViewModel
+        //    {
+        //        Id = a.Id,
+        //        BoxPicture = a.BoxPicture,
+        //        Number = a.Number,
+        //        Name = a.Name,
+        //        Price = a.Price.ToString("##.00"),
+        //        DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
+        //        LinkToScalemates = a.LinkToScalemates
+        //    }).OrderBy(n => n.Number).ToList();
+
+        //    return View("Available/Available", available);
+        //}
 
         [Authorize]
         public IActionResult AddModel()
         {
             return View("Available/AddModel");
         }
-
-       //[Authorize]
-       //[HttpPost]
-       //public IActionResult AddScalemodel(AddBindingModel model)
-       //{
-       //    var manifacturer = db.Manifacturers.FirstOrDefault(m => m.Name == model.Manifacturer);
-       //    if (manifacturer == null)
-       //    {
-       //        manifacturer = new Manifacturer
-       //        {
-       //            Name = model.Manifacturer
-       //        };
-
-       //        this.db.Manifacturers.Add(manifacturer);
-       //        this.db.SaveChanges();
-       //    }
-
-       //    var newModel = new AvailableScalemodel
-       //    {
-       //        BoxPicture = model.BoxPicture,
-       //        Number = model.Number,
-       //        Name = model.Name,
-       //        Scale = model.Scale,
-       //        Manifacturer = manifacturer,
-       //        FactoryNumber = model.FactoryNumber,
-       //        CombinesWith = model.CombinesWith,
-       //        InfoHowTo = model.InfoHowTo,
-       //        Price = model.Price,
-       //        DateOfPurchase = model.DateOfPurchase,
-       //        Place = model.Place,
-       //        BestCompanyOffer = model.BestCompanyOffer,
-       //        Comments = model.Comments,
-       //        LinkToScalemates = model.LinkToScalemates
-       //    };
-
-       //    this.db.AvailableScalemodels.Add(newModel);
-       //    this.db.SaveChanges();
-
-       //    return RedirectToAction("Available");
-       //}
 
         [Authorize]
         [HttpPost]

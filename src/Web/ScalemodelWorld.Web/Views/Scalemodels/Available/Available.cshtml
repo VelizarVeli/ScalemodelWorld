@@ -1,4 +1,5 @@
-﻿@model List<ScalemodelWorld.Web.ViewModels.Scalemodels.AvailableViewModel>
+﻿@using ScalemodelWorld.Common.Constants
+@model IList<ScalemodelWorld.Common.Scalemodels.ViewModels.AvailableAllViewModel>
 @{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -68,7 +69,7 @@
                                 <img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" />
                             </a>
                         </td><td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
-                        @if (item.Price == ".00")
+                        @if (item.Price == 0)
                         {
                             <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
                         }
@@ -76,7 +77,7 @@
                         {
                             <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
                         }
-                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
+                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"> <a asp-action="AvailableDetails" asp-route-id="@item.Id">Details</a></td>
                     </tr>
                 }
@@ -90,7 +91,7 @@
                             </a>
                         </td>
                         <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
-                        @if (item.Price == ".00")
+                        @if (item.Price == 0)
                         {
                             <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
                         }
@@ -98,7 +99,7 @@
                         {
                             <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
                         }
-                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase</small></h6></td>
+                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"> <a asp-action="AvailableDetails" asp-route-id="@item.Id">Details</a></td>
                     </tr>
                 }

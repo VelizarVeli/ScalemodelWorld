@@ -8,5 +8,7 @@
         public const string InfoHowTo = "Info how to";
         public const string CombinesWith = "Combines with";
         public const string FactoryNumber = "Factory number";
+        public const string BoxPicture = "Box cover";
+        public const string DayFormat = "dd/MMM/yyyy";
     }
 }

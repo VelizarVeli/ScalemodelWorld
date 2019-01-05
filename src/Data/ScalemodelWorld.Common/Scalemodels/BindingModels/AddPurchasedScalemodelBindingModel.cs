@@ -7,6 +7,7 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
     public class AddPurchasedScalemodelBindingModel
     {
         [Required]
+        [Display(Name = AttributeDisplayNameConstants.BoxPicture)]
         public string BoxPicture { get; set; }
 
         [Display(Name = AttributeDisplayNameConstants.LinkToScalemates)]

@@ -10,11 +10,6 @@
         <div class="col-md-4">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Number"></label>
-                <input asp-for="Number" class="form-control" type="number" placeholder="Your number" />
-                <span asp-validation-for="Number" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="FactoryNumber"></label>
                 <input asp-for="FactoryNumber" class="form-control" placeholder="AZ7489" />
                 <span asp-validation-for="FactoryNumber" class="text-danger"></span>
@@ -33,6 +28,11 @@
                 <label asp-for="BoxPicture"></label>
                 <input asp-for="BoxPicture" class="form-control" type="url" placeholder="Copy image address" />
                 <span asp-validation-for="BoxPicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BestCompanyOffer"></label>
+                <input asp-for="BestCompanyOffer" class="form-control" placeholder="Dragon" />
+                <span asp-validation-for="BestCompanyOffer" class="text-danger"></span>
             </div>
         </div>
         <div class="col-md-4">
@@ -57,21 +57,18 @@
                     <option>1200</option>
                 </select>
             </div>
-
             <div class="form-group">
                 <label asp-for="CombinesWith"></label>
                 <input asp-for="CombinesWith" class="form-control" placeholder="Preiser 72503" />
                 <span asp-validation-for="CombinesWith" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BestCompanyOffer"></label>
-                <input asp-for="BestCompanyOffer" class="form-control" placeholder="Dragon" />
-                <span asp-validation-for="BestCompanyOffer" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="LinkToScalemates"></label>
                 <input asp-for="LinkToScalemates" class="form-control" type="url" placeholder="Link to the model in Scalemates" />
                 <span asp-validation-for="LinkToScalemates" class="text-danger"></span>
+            </div>
+            <div class="col-7 mt-5">
+                <input type="submit" value="ADD MODEL" class="btn btn-primary btn-block" />
             </div>
         </div>
         <div class="col-md-4">
@@ -91,13 +88,10 @@
                 <input asp-for="Price" class="form-control" type="number" step="0.01" placeholder="14.50" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" >
                 <label asp-for="Comments"></label>
-                <input asp-for="Comments" class="form-control" placeholder="Any comments" />
+                <input asp-for="Comments" class="form-control " type="text" placeholder="Any comments" />
                 <span asp-validation-for="Comments" class="text-danger"></span>
-            </div>
-            <div class="col-7 mt-5">
-                <input type="submit" value="ADD MODEL" class="btn btn-primary btn-block" />
             </div>
         </div>
     </div>
