@@ -31,5 +31,9 @@ namespace Scalemodel.Data.Models.Abstractions
         public decimal Price { get; set; }
 
         public string Comments { get; set; }
+
+        public string BoxPicture { get; set; }
+
+        public string LinkToScalemates { get; set; }
     }
 }

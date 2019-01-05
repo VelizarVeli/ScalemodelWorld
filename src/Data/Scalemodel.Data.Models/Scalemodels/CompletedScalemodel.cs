@@ -32,8 +32,5 @@ namespace Scalemodel.Data.Models.Scalemodels
 
         //TODO: UsedAftermarket
         //public ICollection<CompletedAftermarket> UsedAftermarket { get; set; }
-
-        public string OwnerId { get; set; }
-        public ScalemodelWorldUser Owner { get; set; }
     }
 }

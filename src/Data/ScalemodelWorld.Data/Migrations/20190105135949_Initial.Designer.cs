@@ -10,8 +10,8 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20190104094325_GUID")]
-    partial class GUID
+    [Migration("20190105135949_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -371,6 +371,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BestCompanyOffer");
 
+                    b.Property<string>("BoxPicture");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -379,6 +381,8 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 
@@ -537,6 +541,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BestCompanyOffer");
 
+                    b.Property<string>("BoxPicture");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -554,6 +560,8 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<string>("GivenSold");
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 
@@ -605,6 +613,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("InfoHowTo");
 
+                    b.Property<string>("LinkToScalemates");
+
                     b.Property<int>("ManifacturerId");
 
                     b.Property<string>("Name")
@@ -649,6 +659,8 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 

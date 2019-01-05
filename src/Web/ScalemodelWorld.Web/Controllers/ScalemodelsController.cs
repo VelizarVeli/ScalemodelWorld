@@ -1,14 +1,12 @@
-﻿using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
+using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
-using ScalemodelWorld.Web.ViewModels.Scalemodels;
 
 namespace ScalemodelWorld.Web.Controllers
 {
@@ -34,23 +32,6 @@ namespace ScalemodelWorld.Web.Controllers
             return View("Available/Available", purchasedModels);
         }
 
-        //[Authorize]
-        //public IActionResult Available()
-        //{
-        //    var available = db.AvailableScalemodels.Select(a => new AvailableViewModel
-        //    {
-        //        Id = a.Id,
-        //        BoxPicture = a.BoxPicture,
-        //        Number = a.Number,
-        //        Name = a.Name,
-        //        Price = a.Price.ToString("##.00"),
-        //        DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-        //        LinkToScalemates = a.LinkToScalemates
-        //    }).OrderBy(n => n.Number).ToList();
-
-        //    return View("Available/Available", available);
-        //}
-
         [Authorize]
         public IActionResult AddModel()
         {
@@ -59,11 +40,24 @@ namespace ScalemodelWorld.Web.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddScalemodel(AddPurchasedScalemodelBindingModel model)
+        public async Task<IActionResult> AddScalemodel(AvailableScalemodelBindingModel model)
         {
             await this.scalemodelsService.AddScalemodelAsync(model, this.currentUser.GetUserId(User));
 
             return RedirectToAction("Available");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> AvailableDetails(int id)
+        {
+            var availableDetails =
+                await this.scalemodelsService.GetAvailableScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            if (availableDetails == null)
+            {
+                return this.RedirectToAction(ActionConstants.Available);
+            }
+
+            return View("Available/AvailableDetails", availableDetails);
         }
 
         [Authorize]
@@ -73,47 +67,10 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult Started()
+        public async Task<IActionResult> Started()
         {
-            //var started = db.StartedScalemodels.Where(o => o.Owner.UserName == this.User.Identity.Name)
-            //    .Select(a => new );
-
-            return View();
-        }
-
-        [Authorize]
-        public async Task<IActionResult> AvailableDetails(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var availableDetails = await db.AvailableScalemodels.FindAsync(id);
-            /*Select(a => new ScalemodelBindingModel()*/
-            //{
-            //    Id = a.Id,
-            //    BoxPicture = a.BoxPicture,
-            //    Number = a.Number,
-            //    Name = a.Name,
-            //    Scale = a.Scale,
-            //    Manifacturer = a.Manifacturer.Name,
-            //    FactoryNumber = a.FactoryNumber,
-            //    CombinesWith = a.CombinesWith,
-            //    InfoHowTo = a.InfoHowTo,
-            //    Price = a.Price,
-            //    DateOfPurchase = a.DateOfPurchase.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-            //    Place = a.Place,
-            //    BestCompanyOffer = a.BestCompanyOffer,
-            //    Comments = a.Comments
-            //}).FirstOrDefault(n => n.Id == id);
-
-            if (availableDetails == null)
-            {
-                return NotFound();
-            }
-
-            return View("Available/AvailableDetails", availableDetails);
+            var startededModels = await this.scalemodelsService.AvailableAll(this.currentUser.GetUserId(User));
+            return View("Available/Available", startededModels);
         }
 
         [Authorize]
@@ -137,12 +94,6 @@ namespace ScalemodelWorld.Web.Controllers
 
         [Authorize]
         public IActionResult ListOfStarted()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public IActionResult Create()
         {
             return View();
         }

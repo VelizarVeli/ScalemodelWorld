@@ -10,5 +10,8 @@ namespace Scalemodel.Data.Models.Abstractions
         public DateTime DateOfPurchase { get; set; }
 
         public string Place { get; set; }
+
+        public string OwnerId { get; set; }
+        public ScalemodelWorldUser Owner { get; set; }
     }
 }

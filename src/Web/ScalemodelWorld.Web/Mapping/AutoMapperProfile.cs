@@ -15,11 +15,14 @@ namespace ScalemodelWorld.Web.Mapping
 
         private void ConfigureScalemodels()
         {
-            this.CreateMap<AddPurchasedScalemodelBindingModel, AvailableScalemodel>()
+            this.CreateMap<AvailableScalemodelBindingModel, AvailableScalemodel>()
                 .ForMember(m => m.Manifacturer, opt => opt.Ignore())
                 .ForMember(n => n.Number, opt => opt.Ignore());
 
             this.CreateMap<AvailableScalemodel, AvailableAllViewModel>();
+
+            this.CreateMap<AvailableScalemodel, AvailableScalemodelBindingModel>()
+                /*.ForMember(m => m.Manifacturer, opt => opt.Ignore())*/;
         }
     }
 }

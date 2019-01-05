@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common;
@@ -10,10 +11,9 @@ using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Common.Scalemodels.ViewModels;
 using ScalemodelWorld.Data;
-using ScalemodelWorld.Services;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
 
-namespace ScalemodelWorld.Scalemodels.Services
+namespace ScalemodelWorld.Services.Scalemodels
 {
     public class ScalemodelsService : BaseService, IScalemodelsService
     {
@@ -24,7 +24,7 @@ namespace ScalemodelWorld.Scalemodels.Services
         {
         }
 
-        public async Task AddScalemodelAsync(AddPurchasedScalemodelBindingModel scalemodel, string id)
+        public async Task AddScalemodelAsync(AvailableScalemodelBindingModel scalemodel, string id)
         {
             var user = await this.UserManager.FindByIdAsync(id);
 
@@ -61,6 +61,26 @@ namespace ScalemodelWorld.Scalemodels.Services
                 this.DbContext.AvailableScalemodels.Where(i => i.OwnerId == user.Id));
 
             return allAvailable;
+        }
+
+        public async Task<AvailableScalemodelBindingModel> GetAvailableScalemodelDetailsAsync(int id, string userId)
+        {
+            var user = await this.GetUserByIdAsync(userId);
+            var availableModel = await this.DbContext.AvailableScalemodels.FirstOrDefaultAsync(e => e.Id == id && e.OwnerId == user.Id);
+            var scalemodel = this.Mapper.Map<AvailableScalemodelBindingModel>(availableModel);
+            scalemodel.Manifacturer = this.DbContext.Manifacturers.FirstOrDefault(mi => mi.Id == availableModel.ManifacturerId).Name;
+
+            return scalemodel;
+        }
+
+        public async Task<IEnumerable<AllModelsViewModel>> StartedAll(string id)
+        {
+            var user = await this.UserManager.FindByIdAsync(id);
+
+            var allstarted = this.Mapper.Map<IEnumerable<AllModelsViewModel>>(
+                this.DbContext.StartedScalemodels.Where(i => i.OwnerId == user.Id));
+
+            return allstarted;
         }
     }
 }

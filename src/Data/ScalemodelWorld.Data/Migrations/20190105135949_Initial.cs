@@ -133,6 +133,8 @@ namespace ScalemodelWorld.Data.Migrations
                     InfoHowTo = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
                     ModelShowName = table.Column<string>(nullable: true),
                     Year = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true)
@@ -281,12 +283,11 @@ namespace ScalemodelWorld.Data.Migrations
                     InfoHowTo = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
-                    OwnerId = table.Column<int>(nullable: false),
-                    OwnerId1 = table.Column<string>(nullable: true),
-                    BoxPicture = table.Column<string>(nullable: true),
-                    LinkToScalemates = table.Column<string>(nullable: true)
+                    OwnerId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -298,8 +299,8 @@ namespace ScalemodelWorld.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_AvailableScalemodels_User_OwnerId1",
-                        column: x => x.OwnerId1,
+                        name: "FK_AvailableScalemodels_User_OwnerId",
+                        column: x => x.OwnerId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -345,15 +346,16 @@ namespace ScalemodelWorld.Data.Migrations
                     InfoHowTo = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
+                    OwnerId = table.Column<string>(nullable: true),
                     GivenSold = table.Column<string>(nullable: true),
                     PicturesLink = table.Column<string>(nullable: true),
                     ForumsLink = table.Column<string>(nullable: true),
                     StartingDate = table.Column<DateTime>(nullable: false),
-                    FinishingDate = table.Column<DateTime>(nullable: false),
-                    OwnerId = table.Column<int>(nullable: false),
-                    OwnerId1 = table.Column<string>(nullable: true)
+                    FinishingDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -365,8 +367,8 @@ namespace ScalemodelWorld.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CompletedScalemodels_User_OwnerId1",
-                        column: x => x.OwnerId1,
+                        name: "FK_CompletedScalemodels_User_OwnerId",
+                        column: x => x.OwnerId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -428,12 +430,12 @@ namespace ScalemodelWorld.Data.Migrations
                     InfoHowTo = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
-                    StartingDate = table.Column<DateTime>(nullable: false),
-                    OwnerId = table.Column<int>(nullable: false),
-                    OwnerId1 = table.Column<string>(nullable: true),
-                    BoxPicture = table.Column<string>(nullable: true)
+                    OwnerId = table.Column<string>(nullable: true),
+                    StartingDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -445,8 +447,8 @@ namespace ScalemodelWorld.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_StartedScalemodels_User_OwnerId1",
-                        column: x => x.OwnerId1,
+                        name: "FK_StartedScalemodels_User_OwnerId",
+                        column: x => x.OwnerId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -499,9 +501,10 @@ namespace ScalemodelWorld.Data.Migrations
                     InfoHowTo = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
-                    Userd = table.Column<int>(nullable: false),
-                    UserId = table.Column<string>(nullable: true),
-                    BoxPicture = table.Column<string>(nullable: true)
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
+                    Userd = table.Column<string>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -741,9 +744,9 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "ManifacturerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AvailableScalemodels_OwnerId1",
+                name: "IX_AvailableScalemodels_OwnerId",
                 table: "AvailableScalemodels",
-                column: "OwnerId1");
+                column: "OwnerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Book_OwnerId1",
@@ -766,9 +769,9 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "ManifacturerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CompletedScalemodels_OwnerId1",
+                name: "IX_CompletedScalemodels_OwnerId",
                 table: "CompletedScalemodels",
-                column: "OwnerId1");
+                column: "OwnerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CompletedScalemodelShowParticipations_ModelshowId",
@@ -811,9 +814,9 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "ManifacturerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_StartedScalemodels_OwnerId1",
+                name: "IX_StartedScalemodels_OwnerId",
                 table: "StartedScalemodels",
-                column: "OwnerId1");
+                column: "OwnerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tools_ManifacturerId",

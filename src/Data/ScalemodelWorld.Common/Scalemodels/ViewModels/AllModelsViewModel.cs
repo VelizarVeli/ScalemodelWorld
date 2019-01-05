@@ -4,7 +4,7 @@ using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.ViewModels
 {
-    public class AvailableAllViewModel
+    public class AllModelsViewModel
     {
         public string Id { get; set; }
 

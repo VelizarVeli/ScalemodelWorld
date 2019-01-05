@@ -369,6 +369,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BestCompanyOffer");
 
+                    b.Property<string>("BoxPicture");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -377,6 +379,8 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 
@@ -535,6 +539,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BestCompanyOffer");
 
+                    b.Property<string>("BoxPicture");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -552,6 +558,8 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<string>("GivenSold");
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 
@@ -603,6 +611,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("InfoHowTo");
 
+                    b.Property<string>("LinkToScalemates");
+
                     b.Property<int>("ManifacturerId");
 
                     b.Property<string>("Name")
@@ -647,6 +657,8 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.Property<string>("InfoHowTo");
+
+                    b.Property<string>("LinkToScalemates");
 
                     b.Property<int>("ManifacturerId");
 

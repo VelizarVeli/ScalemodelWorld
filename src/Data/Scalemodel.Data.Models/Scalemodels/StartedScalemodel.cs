@@ -15,10 +15,5 @@ namespace Scalemodel.Data.Models.Scalemodels
         public DateTime StartingDate { get; set; }
 
         public ICollection<StartedAftermarket> StartAftermarkets { get; set; }
-
-        public string OwnerId { get; set; }
-        public ScalemodelWorldUser Owner { get; set; }
-
-        public string BoxPicture { get; set; }
     }
 }

@@ -4,8 +4,10 @@ using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.BindingModels
 {
-    public class AddPurchasedScalemodelBindingModel
+    public class AvailableScalemodelBindingModel
     {
+        public string Id { get; set; }
+
         [Required]
         [Display(Name = AttributeDisplayNameConstants.BoxPicture)]
         public string BoxPicture { get; set; }
