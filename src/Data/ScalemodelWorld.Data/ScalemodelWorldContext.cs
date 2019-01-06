@@ -20,7 +20,6 @@ namespace ScalemodelWorld.Data
         public DbSet<Aftermarket> Aftermarkets { get; set; }
         public DbSet<AvailableScalemodel> AvailableScalemodels { get; set; }
         public DbSet<CompletedScalemodel> CompletedScalemodels { get; set; }
-        public DbSet<Manifacturer> Manifacturers { get; set; }
         public DbSet<StartedScalemodel> StartedScalemodels { get; set; }
         public DbSet<WishScalemodel> WishScalemodels { get; set; }
         public DbSet<CompletedAftermarket> CompletedAftermarkets { get; set; }

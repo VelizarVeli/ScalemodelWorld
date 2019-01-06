@@ -29,23 +29,10 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(id);
 
             CoreValidator.ThrowIfNull(scalemodel);
-
-            var manifacturer = DbContext.Manifacturers.FirstOrDefault(m => m.Name == scalemodel.Manifacturer);
-            if (manifacturer == null)
-            {
-                manifacturer = new Manifacturer
-                {
-                    Name = scalemodel.Manifacturer
-                };
-
-                this.DbContext.Manifacturers.Add(manifacturer);
-                await this.DbContext.SaveChangesAsync();
-            }
-
+            
             scalemodel.OwnerId = user.Id;
 
             var model = this.Mapper.Map<AvailableScalemodel>(scalemodel);
-            model.Manifacturer = manifacturer;
             var biggestNumber = DbContext.AvailableScalemodels.Where(a => a.OwnerId == scalemodel.OwnerId).OrderByDescending(u => u.Number)
                 .FirstOrDefault();
             model.Number = biggestNumber == null ? NumberConstants.StartNumberInScalemodels : biggestNumber.Number + 1;
@@ -68,7 +55,6 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.GetUserByIdAsync(userId);
             var availableModel = await this.DbContext.AvailableScalemodels.FirstOrDefaultAsync(e => e.Id == id && e.OwnerId == user.Id);
             var scalemodel = this.Mapper.Map<AvailableScalemodelBindingModel>(availableModel);
-            scalemodel.Manifacturer = this.DbContext.Manifacturers.FirstOrDefault(mi => mi.Id == availableModel.ManifacturerId).Name;
 
             return scalemodel;
         }

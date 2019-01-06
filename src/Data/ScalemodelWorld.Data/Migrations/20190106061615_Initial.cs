@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ScalemodelWorld.Data.Migrations
 {
-    public partial class AddedDateTimeUtCNow : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -51,16 +51,30 @@ namespace ScalemodelWorld.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Manifacturers",
+                name: "ModelShows",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: false)
+                    Scale = table.Column<int>(nullable: false),
+                    Name = table.Column<string>(nullable: false),
+                    Number = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: false),
+                    FactoryNumber = table.Column<string>(nullable: false),
+                    CombinesWith = table.Column<string>(nullable: true),
+                    BestCompanyOffer = table.Column<string>(nullable: true),
+                    InfoHowTo = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(nullable: false),
+                    Comments = table.Column<string>(nullable: true),
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
+                    ModelShowName = table.Column<string>(nullable: true),
+                    Year = table.Column<DateTime>(nullable: false),
+                    Place = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Manifacturers", x => x.Id);
+                    table.PrimaryKey("PK_ModelShows", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -118,34 +132,48 @@ namespace ScalemodelWorld.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ModelShows",
+                name: "ClubModelshows",
+                columns: table => new
+                {
+                    ClubId = table.Column<int>(nullable: false),
+                    ModelshowId = table.Column<int>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ClubModelshows", x => new { x.ClubId, x.ModelshowId });
+                    table.UniqueConstraint("AK_ClubModelshows_Id", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ClubModelshows_Clubs_ClubId",
+                        column: x => x.ClubId,
+                        principalTable: "Clubs",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_ClubModelshows_ModelShows_ModelshowId",
+                        column: x => x.ModelshowId,
+                        principalTable: "ModelShows",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ModelShowCategory",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Scale = table.Column<int>(nullable: false),
-                    Name = table.Column<string>(nullable: false),
-                    Number = table.Column<int>(nullable: false),
-                    ManifacturerId = table.Column<int>(nullable: false),
-                    FactoryNumber = table.Column<string>(nullable: false),
-                    CombinesWith = table.Column<string>(nullable: true),
-                    BestCompanyOffer = table.Column<string>(nullable: true),
-                    InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false),
-                    Comments = table.Column<string>(nullable: true),
-                    BoxPicture = table.Column<string>(nullable: true),
-                    LinkToScalemates = table.Column<string>(nullable: true),
-                    ModelShowName = table.Column<string>(nullable: true),
-                    Year = table.Column<DateTime>(nullable: false),
-                    Place = table.Column<string>(nullable: true)
+                    ModelShowId = table.Column<int>(nullable: false),
+                    CategoryId = table.Column<string>(nullable: true),
+                    CategoryName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ModelShows", x => x.Id);
+                    table.PrimaryKey("PK_ModelShowCategory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ModelShows_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
+                        name: "FK_ModelShowCategory_ModelShows_ModelShowId",
+                        column: x => x.ModelShowId,
+                        principalTable: "ModelShows",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -157,7 +185,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     FactoryNumber = table.Column<string>(nullable: true),
-                    ManifacturerId = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: true),
                     Number = table.Column<int>(nullable: true),
                     Name = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: true),
@@ -168,12 +196,6 @@ namespace ScalemodelWorld.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Aftermarkets", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Aftermarkets_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Aftermarkets_User_OwnerId1",
                         column: x => x.OwnerId1,
@@ -276,7 +298,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Scale = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Number = table.Column<int>(nullable: false),
-                    ManifacturerId = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: false),
                     FactoryNumber = table.Column<string>(nullable: false),
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
@@ -292,12 +314,6 @@ namespace ScalemodelWorld.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AvailableScalemodels", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_AvailableScalemodels_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_AvailableScalemodels_User_OwnerId",
                         column: x => x.OwnerId,
@@ -339,7 +355,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Scale = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Number = table.Column<int>(nullable: false),
-                    ManifacturerId = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: false),
                     FactoryNumber = table.Column<string>(nullable: false),
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
@@ -361,12 +377,6 @@ namespace ScalemodelWorld.Data.Migrations
                 {
                     table.PrimaryKey("PK_CompletedScalemodels", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CompletedScalemodels_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_CompletedScalemodels_User_OwnerId",
                         column: x => x.OwnerId,
                         principalTable: "User",
@@ -381,7 +391,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    ManifacturerId = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: true),
                     ManifacturerNumber = table.Column<string>(nullable: true),
                     Coverage = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: true),
@@ -401,12 +411,6 @@ namespace ScalemodelWorld.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Consumables_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Consumables_User_OwnerId1",
                         column: x => x.OwnerId1,
                         principalTable: "User",
@@ -423,7 +427,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Scale = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Number = table.Column<int>(nullable: false),
-                    ManifacturerId = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: false),
                     FactoryNumber = table.Column<string>(nullable: false),
                     CombinesWith = table.Column<string>(nullable: true),
                     BestCompanyOffer = table.Column<string>(nullable: true),
@@ -441,12 +445,6 @@ namespace ScalemodelWorld.Data.Migrations
                 {
                     table.PrimaryKey("PK_StartedScalemodels", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_StartedScalemodels_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_StartedScalemodels_User_OwnerId",
                         column: x => x.OwnerId,
                         principalTable: "User",
@@ -461,7 +459,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    ManifacturerId = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Description = table.Column<string>(nullable: true),
@@ -472,102 +470,11 @@ namespace ScalemodelWorld.Data.Migrations
                 {
                     table.PrimaryKey("PK_Tools", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Tools_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Tools_User_OwnerId1",
                         column: x => x.OwnerId1,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "WishScalemodels",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Scale = table.Column<int>(nullable: false),
-                    Name = table.Column<string>(nullable: false),
-                    Number = table.Column<int>(nullable: false),
-                    ManifacturerId = table.Column<int>(nullable: false),
-                    FactoryNumber = table.Column<string>(nullable: false),
-                    CombinesWith = table.Column<string>(nullable: true),
-                    BestCompanyOffer = table.Column<string>(nullable: true),
-                    InfoHowTo = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false),
-                    Comments = table.Column<string>(nullable: true),
-                    BoxPicture = table.Column<string>(nullable: true),
-                    LinkToScalemates = table.Column<string>(nullable: true),
-                    Userd = table.Column<string>(nullable: true),
-                    UserId = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_WishScalemodels", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_WishScalemodels_Manifacturers_ManifacturerId",
-                        column: x => x.ManifacturerId,
-                        principalTable: "Manifacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_WishScalemodels_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "ClubModelshows",
-                columns: table => new
-                {
-                    ClubId = table.Column<int>(nullable: false),
-                    ModelshowId = table.Column<int>(nullable: false),
-                    Id = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ClubModelshows", x => new { x.ClubId, x.ModelshowId });
-                    table.UniqueConstraint("AK_ClubModelshows_Id", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_ClubModelshows_Clubs_ClubId",
-                        column: x => x.ClubId,
-                        principalTable: "Clubs",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_ClubModelshows_ModelShows_ModelshowId",
-                        column: x => x.ModelshowId,
-                        principalTable: "ModelShows",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "ModelShowCategory",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    ModelShowId = table.Column<int>(nullable: false),
-                    CategoryId = table.Column<string>(nullable: true),
-                    CategoryName = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ModelShowCategory", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_ModelShowCategory_ModelShows_ModelShowId",
-                        column: x => x.ModelShowId,
-                        principalTable: "ModelShows",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -591,6 +498,38 @@ namespace ScalemodelWorld.Data.Migrations
                     table.ForeignKey(
                         name: "FK_UserModelshows_User_ParticipantId",
                         column: x => x.ParticipantId,
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "WishScalemodels",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Scale = table.Column<int>(nullable: false),
+                    Name = table.Column<string>(nullable: false),
+                    Number = table.Column<int>(nullable: false),
+                    Manifacturer = table.Column<string>(nullable: false),
+                    FactoryNumber = table.Column<string>(nullable: false),
+                    CombinesWith = table.Column<string>(nullable: true),
+                    BestCompanyOffer = table.Column<string>(nullable: true),
+                    InfoHowTo = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(nullable: false),
+                    Comments = table.Column<string>(nullable: true),
+                    BoxPicture = table.Column<string>(nullable: true),
+                    LinkToScalemates = table.Column<string>(nullable: true),
+                    Userd = table.Column<string>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_WishScalemodels", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_WishScalemodels_User_UserId",
+                        column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -697,11 +636,6 @@ namespace ScalemodelWorld.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Aftermarkets_ManifacturerId",
-                table: "Aftermarkets",
-                column: "ManifacturerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Aftermarkets_OwnerId1",
                 table: "Aftermarkets",
                 column: "OwnerId1");
@@ -739,11 +673,6 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "AvailableScalemodelId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AvailableScalemodels_ManifacturerId",
-                table: "AvailableScalemodels",
-                column: "ManifacturerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_AvailableScalemodels_OwnerId",
                 table: "AvailableScalemodels",
                 column: "OwnerId");
@@ -764,11 +693,6 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "CompletedScalemodelId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CompletedScalemodels_ManifacturerId",
-                table: "CompletedScalemodels",
-                column: "ManifacturerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_CompletedScalemodels_OwnerId",
                 table: "CompletedScalemodels",
                 column: "OwnerId");
@@ -784,11 +708,6 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Consumables_ManifacturerId",
-                table: "Consumables",
-                column: "ManifacturerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Consumables_OwnerId1",
                 table: "Consumables",
                 column: "OwnerId1");
@@ -799,29 +718,14 @@ namespace ScalemodelWorld.Data.Migrations
                 column: "ModelShowId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ModelShows_ManifacturerId",
-                table: "ModelShows",
-                column: "ManifacturerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_StartedAftermarkets_StartedScalemodelId",
                 table: "StartedAftermarkets",
                 column: "StartedScalemodelId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_StartedScalemodels_ManifacturerId",
-                table: "StartedScalemodels",
-                column: "ManifacturerId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_StartedScalemodels_OwnerId",
                 table: "StartedScalemodels",
                 column: "OwnerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tools_ManifacturerId",
-                table: "Tools",
-                column: "ManifacturerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tools_OwnerId1",
@@ -849,11 +753,6 @@ namespace ScalemodelWorld.Data.Migrations
                 name: "IX_UserModelshows_ModelshowId",
                 table: "UserModelshows",
                 column: "ModelshowId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_WishScalemodels_ManifacturerId",
-                table: "WishScalemodels",
-                column: "ManifacturerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_WishScalemodels_UserId",
@@ -934,9 +833,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
-
-            migrationBuilder.DropTable(
-                name: "Manifacturers");
 
             migrationBuilder.DropTable(
                 name: "Clubs");

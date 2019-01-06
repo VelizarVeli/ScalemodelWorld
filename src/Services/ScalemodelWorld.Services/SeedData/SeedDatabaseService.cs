@@ -34,22 +34,11 @@ namespace ScalemodelWorld.Services.SeedData
 
             foreach (var wishListDto in deserializedWishList)
             {
-                var manifacturer = context.Manifacturers.FirstOrDefault(m => m.Name == wishListDto.Manifacturer);
-
-                if (manifacturer == null)
-                {
-                    manifacturer = new Manifacturer
-                    {
-                        Name = wishListDto.Manifacturer
-                    };
-                    context.Manifacturers.Add(manifacturer);
-                    context.SaveChanges();
-                }
-
+               
                 var wishList = new WishScalemodel
                 {
                     Name = wishListDto.Name,
-                    Manifacturer = manifacturer,
+                    Manifacturer = wishListDto.Manifacturer,
                     FactoryNumber = wishListDto.FactoryNumber,
                 };
 

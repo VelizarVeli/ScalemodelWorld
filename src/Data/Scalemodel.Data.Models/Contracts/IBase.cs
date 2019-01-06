@@ -7,8 +7,7 @@ namespace Scalemodel.Data.Models.Contracts
         [Required]
         string FactoryNumber { get; set; }
 
-        int ManifacturerId { get; set; }
         [Required]
-        Manifacturer Manifacturer { get; set; }
+        string Manifacturer { get; set; }
     }
 }

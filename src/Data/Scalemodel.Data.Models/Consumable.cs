@@ -7,8 +7,7 @@ namespace Scalemodel.Data.Models
     {
         public string Name { get; set; }
 
-        public int ManifacturerId { get; set; }
-        public Manifacturer Manifacturer { get; set; }
+        public string Manifacturer { get; set; }
 
         public string ManifacturerNumber { get; set; }
 

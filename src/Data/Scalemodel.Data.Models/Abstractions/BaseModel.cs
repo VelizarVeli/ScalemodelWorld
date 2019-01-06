@@ -13,9 +13,8 @@ namespace Scalemodel.Data.Models.Abstractions
         [Required]
         public int Number { get; set; }
 
-        public int ManifacturerId { get; set; }
         [Required]
-        public Manifacturer Manifacturer { get; set; }
+        public string Manifacturer { get; set; }
 
         [Required]
         public string FactoryNumber { get; set; }

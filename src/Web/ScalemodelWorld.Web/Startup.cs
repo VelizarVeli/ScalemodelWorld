@@ -11,15 +11,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Scalemodel.Data.Models;
-using Scalemodel.Data.Models.Scalemodels;
-using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services;
 using ScalemodelWorld.Services.Scalemodels;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
 using ScalemodelWorld.Services.SeedData;
 using ScalemodelWorld.Services.SeedData.Contracts;
-using ScalemodelWorld.Web.Middlewares.MiddlewareExtensions;
 using ScalemodelWorld.Web.Utilities;
 
 namespace ScalemodelWorld.Web

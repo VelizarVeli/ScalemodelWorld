@@ -10,8 +10,8 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20190105170223_AddedDateTimeUtCNow")]
-    partial class AddedDateTimeUtCNow
+    [Migration("20190106061615_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -139,7 +139,7 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("FactoryNumber");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer");
 
                     b.Property<string>("Name");
 
@@ -155,8 +155,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<bool>("Purchased");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.HasIndex("OwnerId1");
 
@@ -217,7 +215,7 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<DateTime?>("DateOfPurchase");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer");
 
                     b.Property<string>("ManifacturerNumber");
 
@@ -234,8 +232,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.HasIndex("OwnerId1");
 
@@ -349,20 +345,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.ToTable("UserModelshows");
                 });
 
-            modelBuilder.Entity("Scalemodel.Data.Models.Manifacturer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Manifacturers");
-                });
-
             modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShow", b =>
                 {
                     b.Property<int>("Id")
@@ -384,7 +366,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("LinkToScalemates");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer")
+                        .IsRequired();
 
                     b.Property<string>("ModelShowName");
 
@@ -402,8 +385,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<DateTime>("Year");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.ToTable("ModelShows");
                 });
@@ -509,7 +490,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("LinkToScalemates");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer")
+                        .IsRequired();
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -525,8 +507,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<int>("Scale");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.HasIndex("OwnerId");
 
@@ -563,7 +543,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("LinkToScalemates");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer")
+                        .IsRequired();
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -584,8 +565,6 @@ namespace ScalemodelWorld.Data.Migrations
                         .IsRequired();
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.HasIndex("OwnerId");
 
@@ -615,7 +594,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("LinkToScalemates");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer")
+                        .IsRequired();
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -633,8 +613,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<DateTime>("StartingDate");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.HasIndex("OwnerId");
 
@@ -662,7 +640,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("LinkToScalemates");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer")
+                        .IsRequired();
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -679,8 +658,6 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ManifacturerId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("WishScalemodels");
@@ -696,7 +673,7 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<int>("ManifacturerId");
+                    b.Property<string>("Manifacturer");
 
                     b.Property<string>("Name");
 
@@ -707,8 +684,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<decimal>("Price");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ManifacturerId");
 
                     b.HasIndex("OwnerId1");
 
@@ -762,11 +737,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Scalemodel.Data.Models.Aftermarket", b =>
                 {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany("Aftermarkets")
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
                         .WithMany("Aftermarket")
                         .HasForeignKey("OwnerId1")
@@ -785,11 +755,6 @@ namespace ScalemodelWorld.Data.Migrations
                     b.HasOne("Scalemodel.Data.Models.ConsumableCategory", "Category")
                         .WithMany("Consumables")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany()
-                        .HasForeignKey("ManifacturerId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
@@ -875,14 +840,6 @@ namespace ScalemodelWorld.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShow", b =>
-                {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany()
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("Scalemodel.Data.Models.Modelshows.ModelShowCategory", b =>
                 {
                     b.HasOne("Scalemodel.Data.Models.Modelshows.ModelShow", "ModelShow")
@@ -900,11 +857,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.AvailableScalemodel", b =>
                 {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany("AvailableScalemodels")
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
                         .WithMany("PurchasedModels")
                         .HasForeignKey("OwnerId");
@@ -912,11 +864,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.CompletedScalemodel", b =>
                 {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany("CompletedScalemodels")
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
                         .WithMany("CompletedModels")
                         .HasForeignKey("OwnerId");
@@ -924,11 +871,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.StartedScalemodel", b =>
                 {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany("StartedScalemodels")
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
                         .WithMany("StartedModels")
                         .HasForeignKey("OwnerId");
@@ -936,11 +878,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Scalemodel.Data.Models.Scalemodels.WishScalemodel", b =>
                 {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany("WishScalemodels")
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "User")
                         .WithMany("WishList")
                         .HasForeignKey("UserId");
@@ -948,11 +885,6 @@ namespace ScalemodelWorld.Data.Migrations
 
             modelBuilder.Entity("Scalemodel.Data.Models.Tool", b =>
                 {
-                    b.HasOne("Scalemodel.Data.Models.Manifacturer", "Manifacturer")
-                        .WithMany("Tools")
-                        .HasForeignKey("ManifacturerId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Scalemodel.Data.Models.ScalemodelWorldUser", "Owner")
                         .WithMany("OwnedTools")
                         .HasForeignKey("OwnerId1");
