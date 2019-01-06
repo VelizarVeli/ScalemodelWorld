@@ -19,8 +19,7 @@ namespace ScalemodelWorld.Web.Mapping
 
             this.CreateMap<AvailableScalemodel, AllModelsViewModel>();
 
-            this.CreateMap<AvailableScalemodel, AvailableScalemodelBindingModel>()
-                /*.ForMember(m => m.Manifacturer, opt => opt.Ignore())*/;
+            this.CreateMap<AvailableScalemodel, AvailableScalemodelBindingModel>();
 
             this.CreateMap<AvailableScalemodel, StartedScalemodel>()
                 .ForMember(i => i.Id, opt => opt.Ignore());

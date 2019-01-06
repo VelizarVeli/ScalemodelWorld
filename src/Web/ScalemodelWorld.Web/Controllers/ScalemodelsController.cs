@@ -1,10 +1,8 @@
-﻿using System.Globalization;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
-using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
@@ -71,11 +69,42 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> StartNewBuild(int id, string modelId)
+        public async Task<IActionResult> StartNewBuild(int id)
         {
             await this.scalemodelsService.StartNewBuildAsync(id, this.currentUser.GetUserId(User));
 
             return RedirectToAction("Started");
+        }
+
+       [Authorize]
+        public async Task<IActionResult> DeleteDetails(int id)
+       {
+           var deleteDetails = await this.scalemodelsService.GetAvailableScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            return View("Available/DeleteDetails", deleteDetails);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> AvailableDelete(int id)
+        {
+            await this.scalemodelsService.AvailableDeleteAsync(id, this.currentUser.GetUserId(User));
+            return RedirectToAction("Available");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> EditDetails(int id)
+        {
+            var editDetails = await this.scalemodelsService.GetAvailableScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            return View("Available/EditDetails", editDetails);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> AvailableEdit(int id, AvailableScalemodelBindingModel model)
+        {
+            await this.scalemodelsService.AvailableEditAsync(model, id, this.currentUser.GetUserId(User));
+            return RedirectToAction("Available");
         }
 
         [Authorize]
@@ -93,18 +122,6 @@ namespace ScalemodelWorld.Web.Controllers
         }
         [Authorize]
         public IActionResult Wishlist()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public IActionResult ListOfStarted()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public IActionResult Delete()
         {
             return View();
         }

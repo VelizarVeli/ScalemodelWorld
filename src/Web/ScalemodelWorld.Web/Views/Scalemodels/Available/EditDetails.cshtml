@@ -1,0 +1,132 @@
+﻿@model ScalemodelWorld.Common.Scalemodels.BindingModels.AvailableScalemodelBindingModel
+
+@{
+    ViewData["Title"] = "EditDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-action="AvailableEdit">
+    <h1>EditDetails</h1>
+
+    <h4>AvailableScalemodel</h4>
+    <hr />
+
+    <div class="d-flex justify-content-around row">
+        <div class="col-sm-6">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="card-body">
+                <h2 class="card-title"><input asp-for="Name" class="form-control" /></h2>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <p class="card-text"><input asp-for="Comments" class="form-control" placeholder="Comments" /></p>
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"> <label asp-for="Number"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="Number" class="form-control" /></p>
+                    <span asp-validation-for="Number" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"> <label asp-for="Scale"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"> <input asp-for="Scale" class="form-control" /></p>
+                    <span asp-validation-for="Scale" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="Manifacturer"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="Manifacturer" class="form-control" /></p>
+                    <span asp-validation-for="Manifacturer" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"> <label asp-for="FactoryNumber"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="FactoryNumber" class="form-control" /></p>
+                    <span asp-validation-for="FactoryNumber" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="BestCompanyOffer"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="BestCompanyOffer" class="form-control" /></p>
+                    <span asp-validation-for="BestCompanyOffer" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="DateOfPurchase"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="DateOfPurchase" class="form-control" /></p>
+                    <span asp-validation-for="DateOfPurchase" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="Price"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="Price" class="form-control" /></p>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="Place"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="Place" class="form-control" /></p>
+                    <span asp-validation-for="Place" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="InfoHowTo"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"> <input asp-for="InfoHowTo" class="form-control" /></p>
+                    <span asp-validation-for="InfoHowTo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="card-title"><label asp-for="CombinesWith"></label></h4>
+                </div>
+                <div class="col">
+                    <p class="card-text"><input asp-for="CombinesWith" class="form-control" /></p>
+                    <span asp-validation-for="CombinesWith" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+            <a href="@Model.LinkToScalemates" target="_blank">
+                <img src="@Model.BoxPicture" style="width: 100% \9;" class="img-fluid" alt="Responsive image">
+            </a>
+            <div class="form-group">
+                <label asp-for="BoxPicture"></label>
+                <input asp-for="BoxPicture" class="form-control" />
+                <span asp-validation-for="BoxPicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LinkToScalemates"></label>
+                <input asp-for="LinkToScalemates" class="form-control" />
+                <span asp-validation-for="LinkToScalemates" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Save" class="btn btn-primary" /> |
+    <a asp-action="Available">Back to Purchased</a>
+</form>

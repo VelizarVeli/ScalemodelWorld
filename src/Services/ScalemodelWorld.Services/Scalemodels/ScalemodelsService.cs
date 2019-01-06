@@ -29,7 +29,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(id);
 
             CoreValidator.ThrowIfNull(scalemodel);
-            
+
             scalemodel.OwnerId = user.Id;
 
             var model = this.Mapper.Map<AvailableScalemodel>(scalemodel);
@@ -81,7 +81,39 @@ namespace ScalemodelWorld.Services.Scalemodels
 
             user.StartedModels.Add(started);
             user.PurchasedModels.Remove(availableModel);
-           await this.DbContext.SaveChangesAsync();
+            await this.DbContext.SaveChangesAsync();
         }
+
+        public async Task AvailableDeleteAsync(int modelId, string userId)
+        {
+            var user = await this.GetUserByIdAsync(userId);
+            var availableModel = await this.DbContext.AvailableScalemodels.FirstOrDefaultAsync(e => e.Id == modelId && e.OwnerId == user.Id);
+            this.DbContext.AvailableScalemodels.Remove(availableModel);
+            await this.DbContext.SaveChangesAsync();
+        }
+
+        public async Task AvailableEditAsync(AvailableScalemodelBindingModel scalemodel, int modelId, string userId)
+        {
+            var model = DbContext.AvailableScalemodels.Find(modelId);
+            Mapper.Map(scalemodel, model);
+            model.OwnerId = userId;
+            DbContext.AvailableScalemodels.Update(model);
+            await this.DbContext.SaveChangesAsync();
+        }
+
+        //private async Task updateNumbers(int oldNumberValue, int editedNumber)
+        //{
+        //    var availableModels = DbContext.AvailableScalemodels.AddRangeAsync()
+
+        //    if (oldNumberValue > editedNumber)
+        //    {
+        //        for (int i = editedNumber; i < oldNumberValue; i++)
+        //        {
+        //            DbContext
+        //        }
+        //    }
+
+        //    DbContext.SaveChangesAsync();
+        //}
     }
 }
