@@ -142,6 +142,43 @@ namespace ScalemodelWorld.Services.Scalemodels
             await this.DbContext.SaveChangesAsync();
         }
 
+        public async Task<IEnumerable<AllCompletedModelsViewModel>> CompletedAll(string userId)
+        {
+            var user = await this.UserManager.FindByIdAsync(userId);
+
+            var allCompleted = this.Mapper.Map<IEnumerable<AllCompletedModelsViewModel>>(
+                this.DbContext.CompletedScalemodels.Where(i => i.OwnerId == user.Id));
+
+            return allCompleted;
+        }
+
+        public async Task<IEnumerable<WishlistScalemodelBindingModel>> WishlistAll(string userId)
+        {
+            var user = await this.UserManager.FindByIdAsync(userId);
+
+            var allWishlist = this.Mapper.Map<IEnumerable<WishlistScalemodelBindingModel>>(
+                this.DbContext.WishScalemodels.Where(i => i.Userd == user.Id));
+
+            return allWishlist;
+        }
+
+        public async Task AddWishAsync(WishlistScalemodelBindingModel scalemodel, string id)
+        {
+            var user = await this.UserManager.FindByIdAsync(id);
+
+            CoreValidator.ThrowIfNull(scalemodel);
+
+            scalemodel.UserId = user.Id;
+
+            var model = this.Mapper.Map<WishScalemodel>(scalemodel);
+            var biggestNumber = DbContext.WishScalemodels.Where(a => a.Userd == scalemodel.UserId).OrderByDescending(u => u.Number)
+                .FirstOrDefault();
+            model.Number = biggestNumber == null ? NumberConstants.StartNumberInScalemodels : biggestNumber.Number + 1;
+            user.WishList.Add(model);
+            await this.DbContext.SaveChangesAsync();
+        }
+
+
         //private async Task updateNumbers(int oldNumberValue, int editedNumber)
         //{
         //    var availableModels = DbContext.AvailableScalemodels.AddRangeAsync()

@@ -121,11 +121,19 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Finished(int id)
+        public async Task<IActionResult> Completed()
+        {
+            var completedModels = await this.scalemodelsService.CompletedAll(this.currentUser.GetUserId(User));
+
+            return View("Completed/Completed", completedModels);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> FinishBuild(int id)
         {
             await this.scalemodelsService.FinishBuildAsync(id, this.currentUser.GetUserId(User));
 
-            return RedirectToAction("CompletedAll/Completed");
+            return RedirectToAction("Completed");
         }
 
         [Authorize]
@@ -160,11 +168,11 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult AddWishList()
+        [HttpPost]
+        public async Task<IActionResult> AddWishModel(WishlistScalemodelBindingModel model)
         {
-            //seedDatabase.
-
-            return View("Wishlist");
+            await this.scalemodelsService.AddWishAsync(model, this.currentUser.GetUserId(User));
+            return RedirectToAction("Wishlist");
         }
 
         [Authorize]
@@ -172,10 +180,18 @@ namespace ScalemodelWorld.Web.Controllers
         {
             return View("Available/CompletedAll");
         }
+
         [Authorize]
-        public IActionResult Wishlist()
+        public async Task<IActionResult> Wishlist()
         {
-            return View();
+            var wishlistModels = await this.scalemodelsService.WishlistAll(this.currentUser.GetUserId(User));
+            return View("Wishlist/Wishlist", wishlistModels);
+        }
+
+        [Authorize]
+        public IActionResult AddWishModel()
+        {
+            return View("Wishlist/AddWishModel");
         }
 
         [Authorize]

@@ -110,10 +110,10 @@
     </div>
 </div>
 <div class="d-flex pt-3 justify-content-around mt-5">
-    <div><a asp-action="Finished" asp-route-id="@Model.Id" class="btn btn-info" role="button">Finished</a></div>
+    <div><a asp-action="FinishBuild" asp-route-id="@Model.Id" class="btn btn-info" role="button">Finished</a></div>
     <div><a asp-action="EditStartedDetails" asp-route-id="@Model.Id" class="btn btn-info" role="button">Edit</a></div>
     <div><a asp-action="DeleteStartedDetails" asp-route-id="@Model.Id" class="btn btn-info" role="button">Delete</a></div>
 </div>
 <div>
-    <a asp-action="Available">Back to Purchased</a>
+    <a asp-action="Started">Back to Started</a>
 </div>
