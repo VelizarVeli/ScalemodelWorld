@@ -8,11 +8,15 @@ namespace ScalemodelWorld.Services.Scalemodels.Contracts
     public interface IScalemodelsService
     {
         Task AddScalemodelAsync(AvailableScalemodelBindingModel scalemodel, string id);
-        Task<IEnumerable<AllModelsViewModel>> AvailableAll(string id);
+        Task<IEnumerable<AllAvailableModelsViewModel>> AvailableAll(string id);
         Task<AvailableScalemodelBindingModel> GetAvailableScalemodelDetailsAsync(int id, string username);
-        Task<IEnumerable<AllModelsViewModel>> StartedAll(string id);
+        Task<IEnumerable<AllStartedModelsViewModel>> StartedAll(string userId);
         Task StartNewBuildAsync(int id, string userId);
         Task AvailableDeleteAsync(int modelId, string userId);
         Task AvailableEditAsync(AvailableScalemodelBindingModel scalemodel, int modelId, string userId);
+        Task<StartedScalemodelBindingModel> GetStartedScalemodelDetailsAsync(int id, string username);
+        Task FinishBuildAsync(int id, string userId);
+        Task StartedDeleteAsync(int modelId, string userId);
+        Task StartedEditAsync(StartedScalemodelBindingModel scalemodel, int modelId, string userId);
     }
 }

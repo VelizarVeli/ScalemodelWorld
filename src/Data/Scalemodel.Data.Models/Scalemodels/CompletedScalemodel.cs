@@ -24,7 +24,7 @@ namespace Scalemodel.Data.Models.Scalemodels
         public DateTime? StartingDate { get; set; }
 
         [Required]
-        public DateTime? FinishingDate { get; set; }
+        public DateTime? FinishingDate { get; set; } = DateTime.UtcNow;
 
         public ICollection<CompletedAftermarket> Aftermarkets { get; set; }
 

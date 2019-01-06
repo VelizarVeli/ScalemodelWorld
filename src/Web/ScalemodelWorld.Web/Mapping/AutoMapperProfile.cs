@@ -17,12 +17,23 @@ namespace ScalemodelWorld.Web.Mapping
             this.CreateMap<AvailableScalemodelBindingModel, AvailableScalemodel>()
                 .ForMember(n => n.Number, opt => opt.Ignore());
 
-            this.CreateMap<AvailableScalemodel, AllModelsViewModel>();
+            this.CreateMap<AvailableScalemodel, AllAvailableModelsViewModel>();
 
             this.CreateMap<AvailableScalemodel, AvailableScalemodelBindingModel>();
 
             this.CreateMap<AvailableScalemodel, StartedScalemodel>()
                 .ForMember(i => i.Id, opt => opt.Ignore());
+
+            this.CreateMap<AvailableScalemodel, AllStartedModelsViewModel>();
+
+            this.CreateMap<StartedScalemodelBindingModel, StartedScalemodel>()
+                .ForMember(n => n.Number, opt => opt.Ignore());
+
+            this.CreateMap<StartedScalemodel, CompletedScalemodel>()
+                .ForMember(n => n.Number, opt => opt.Ignore())
+                .ForMember(i => i.Id, opt => opt.Ignore());
+
+            this.CreateMap<StartedScalemodel, StartedScalemodelBindingModel>();
         }
     }
 }

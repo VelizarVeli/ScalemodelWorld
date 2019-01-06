@@ -10,5 +10,7 @@
         public const string FactoryNumber = "Factory number";
         public const string BoxPicture = "Box cover";
         public const string DayFormat = "dd/MMM/yyyy";
+        public const string StartingDate = "Starting date";
+
     }
 }

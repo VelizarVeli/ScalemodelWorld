@@ -4,7 +4,7 @@ using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.ViewModels
 {
-    public class AllModelsViewModel
+    public class AllStartedModelsViewModel
     {
         public string Id { get; set; }
 
@@ -17,8 +17,8 @@ namespace ScalemodelWorld.Common.Scalemodels.ViewModels
 
         public decimal Price { get; set; }
 
-        [DisplayFormat(DataFormatString = AttributeDisplayNameConstants.DateOfPurchase)]
-        public DateTime DateOfPurchase { get; set; }
+        [DisplayFormat(DataFormatString = AttributeDisplayNameConstants.StartingDate)]
+        public DateTime StartingDate { get; set; }
 
         [Display(Name = AttributeDisplayNameConstants.DayFormat)]
         public string LinkToScalemates { get; set; }

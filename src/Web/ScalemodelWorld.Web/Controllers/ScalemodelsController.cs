@@ -108,6 +108,58 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
+        public async Task<IActionResult> StartedDetails(int id)
+        {
+            var startedDetails =
+                await this.scalemodelsService.GetStartedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            if (startedDetails == null)
+            {
+                return this.RedirectToAction(ActionConstants.Started);
+            }
+
+            return View("Started/StartedDetails", startedDetails);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Finished(int id)
+        {
+            await this.scalemodelsService.FinishBuildAsync(id, this.currentUser.GetUserId(User));
+
+            return RedirectToAction("CompletedAll/Completed");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> DeleteStartedDetails(int id)
+        {
+            var deleteStartedDetails = await this.scalemodelsService.GetStartedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            return View("Started/DeleteDetails", deleteStartedDetails);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> StartedDelete(int id)
+        {
+            await this.scalemodelsService.StartedDeleteAsync(id, this.currentUser.GetUserId(User));
+            return RedirectToAction("Started");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> EditStartedDetails(int id)
+        {
+            var editDetails = await this.scalemodelsService.GetStartedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            return View("Started/EditDetails", editDetails);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> StartedEdit(int id, StartedScalemodelBindingModel model)
+        {
+            await this.scalemodelsService.StartedEditAsync(model, id, this.currentUser.GetUserId(User));
+            return RedirectToAction("Started");
+        }
+
+        [Authorize]
         public IActionResult AddWishList()
         {
             //seedDatabase.
