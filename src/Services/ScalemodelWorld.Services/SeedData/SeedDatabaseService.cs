@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
+using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Newtonsoft.Json;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Scalemodels;
@@ -9,16 +10,19 @@ using ScalemodelWorld.Services.SeedData.Dto;
 
 namespace ScalemodelWorld.Services.SeedData
 {
-    public class SeedDatabaseService:ISeedDatabaseService
+    public class SeedDatabaseService : BaseService, ISeedDatabaseService
     {
         private readonly ScalemodelWorldContext db;
         //private readonly UserManager<ScalemodelWorldUser> _userManager;
 
-        public SeedDatabaseService(ScalemodelWorldContext db/*, UserManager<ScalemodelWorldUser> userManager*/)
+      
+        public SeedDatabaseService(ScalemodelWorldContext dbContext,
+            IMapper mapper,
+            UserManager<ScalemodelWorldUser> userManager)
+            : base(dbContext, mapper, userManager)
         {
-            this.db = db;
-            //this._userManager = userManager;
         }
+
 
         //private async Task<ScalemodelWorldUser> GetUserByNameAsync(string name)
         //{
@@ -34,7 +38,7 @@ namespace ScalemodelWorld.Services.SeedData
 
             foreach (var wishListDto in deserializedWishList)
             {
-               
+
                 var wishList = new WishScalemodel
                 {
                     Name = wishListDto.Name,

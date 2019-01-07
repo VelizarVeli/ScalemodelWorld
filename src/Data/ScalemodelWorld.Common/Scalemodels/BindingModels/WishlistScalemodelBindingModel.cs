@@ -8,14 +8,6 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         public string Id { get; set; }
 
         [Required]
-        [Display(Name = AttributeDisplayNameConstants.BoxPicture)]
-        public string BoxPicture { get; set; }
-
-        [Required]
-        [Display(Name = AttributeDisplayNameConstants.LinkToScalemates)]
-        public string LinkToScalemates { get; set; }
-
-        [Required]
         public string Name { get; set; }
 
         [Required]
@@ -26,11 +18,19 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         [Display(Name = AttributeDisplayNameConstants.FactoryNumber)]
         public string FactoryNumber { get; set; }
 
+        [Required]
+        public int Scale { get; set; }
+
+        [Required]
+        [Display(Name = AttributeDisplayNameConstants.BoxPicture)]
+        public string BoxPicture { get; set; }
+
+        [Required]
+        [Display(Name = AttributeDisplayNameConstants.LinkToScalemates)]
+        public string LinkToScalemates { get; set; }
+
         public int Number { get; set; }
 
         public string UserId { get; set; }
-
-        [Required]
-        public int Scale { get; set; }
     }
 }
