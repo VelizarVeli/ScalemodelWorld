@@ -176,9 +176,16 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult CompletedAll()
+        public async Task<IActionResult> CompletedDetails(int id)
         {
-            return View("Available/CompletedAll");
+            var completedDetails =
+                await this.scalemodelsService.GetCompletedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            if (completedDetails == null)
+            {
+                return this.RedirectToAction(ActionConstants.Completed);
+            }
+
+            return View("Completed/CompletedDetails", completedDetails);
         }
 
         [Authorize]
@@ -186,6 +193,37 @@ namespace ScalemodelWorld.Web.Controllers
         {
             var wishlistModels = await this.scalemodelsService.WishlistAll(this.currentUser.GetUserId(User));
             return View("Wishlist/Wishlist", wishlistModels);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> DeleteCompletedDetails(int id)
+        {
+            var deleteCompletedDetails = await this.scalemodelsService.GetCompletedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            return View("Completed/DeleteDetails", deleteCompletedDetails);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> CompletedDelete(int id)
+        {
+            await this.scalemodelsService.CompletedDeleteAsync(id, this.currentUser.GetUserId(User));
+            return RedirectToAction("Completed");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> EditCompletedDetails(int id)
+        {
+            var editDetails = await this.scalemodelsService.GetCompletedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            return View("Completed/EditDetails", editDetails);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> CompletedEdit(int id, CompletedScalemodelBindingModel model)
+        {
+            await this.scalemodelsService.CompletedEditAsync(model, id, this.currentUser.GetUserId(User));
+            return RedirectToAction("Completed");
         }
 
         [Authorize]

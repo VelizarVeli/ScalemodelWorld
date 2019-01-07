@@ -21,5 +21,8 @@ namespace ScalemodelWorld.Services.Scalemodels.Contracts
         Task<IEnumerable<AllCompletedModelsViewModel>> CompletedAll(string userId);
         Task<IEnumerable<WishlistScalemodelBindingModel>> WishlistAll(string id);
         Task AddWishAsync(WishlistScalemodelBindingModel scalemodel, string id);
+        Task<CompletedScalemodelBindingModel> GetCompletedScalemodelDetailsAsync(int id, string username);
+        Task CompletedDeleteAsync(int modelId, string userId);
+        Task CompletedEditAsync(CompletedScalemodelBindingModel scalemodel, int modelId, string userId);
     }
 }

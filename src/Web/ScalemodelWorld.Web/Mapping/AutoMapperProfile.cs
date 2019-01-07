@@ -38,11 +38,14 @@ namespace ScalemodelWorld.Web.Mapping
             this.CreateMap<CompletedScalemodel, AllCompletedModelsViewModel>();
 
             this.CreateMap<WishlistScalemodelBindingModel, WishScalemodel>()
-                //.ForMember(n => n.Number, opt => opt.Ignore())
                 .ForMember(n => n.Number, opt => opt.Ignore());
 
-            this.CreateMap<WishScalemodel, WishlistScalemodelBindingModel>()
+            this.CreateMap<WishScalemodel, WishlistScalemodelBindingModel>();
+
+            this.CreateMap<CompletedScalemodelBindingModel, CompletedScalemodel>()
                 .ForMember(n => n.Number, opt => opt.Ignore());
+
+            this.CreateMap<CompletedScalemodel, CompletedScalemodelBindingModel>();
         }
     }
 }

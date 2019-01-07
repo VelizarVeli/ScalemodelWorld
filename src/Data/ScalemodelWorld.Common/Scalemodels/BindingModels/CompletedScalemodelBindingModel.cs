@@ -4,7 +4,7 @@ using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.BindingModels
 {
-    public class StartedScalemodelBindingModel
+    public class CompletedScalemodelBindingModel
     {
         public string Id { get; set; }
 
@@ -59,5 +59,17 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         [Required]
         [Display(Name = AttributeDisplayNameConstants.StartingDate)]
         public DateTime StartingDate { get; set; }
+
+        public string GivenSold { get; set; }
+
+        [Display(Name = AttributeDisplayNameConstants.PicturesLink)]
+        public string PicturesLink { get; set; }
+
+        [Display(Name = AttributeDisplayNameConstants.ForumsLink)]
+        public string ForumsLink { get; set; }
+
+        [Required]
+        [Display(Name = AttributeDisplayNameConstants.FinishingDate)]
+        public DateTime FinishingDate { get; set; }
     }
 }

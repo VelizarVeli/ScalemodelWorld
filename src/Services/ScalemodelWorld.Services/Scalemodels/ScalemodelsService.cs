@@ -157,7 +157,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(userId);
 
             var allWishlist = this.Mapper.Map<IEnumerable<WishlistScalemodelBindingModel>>(
-                this.DbContext.WishScalemodels.Where(i => i.Userd == user.Id));
+                this.DbContext.WishScalemodels.Where(i => i.UserId == user.Id));
 
             return allWishlist;
         }
@@ -171,10 +171,36 @@ namespace ScalemodelWorld.Services.Scalemodels
             scalemodel.UserId = user.Id;
 
             var model = this.Mapper.Map<WishScalemodel>(scalemodel);
-            var biggestNumber = DbContext.WishScalemodels.Where(a => a.Userd == scalemodel.UserId).OrderByDescending(u => u.Number)
+            var biggestNumber = DbContext.WishScalemodels.Where(a => a.UserId == scalemodel.UserId).OrderByDescending(u => u.Number)
                 .FirstOrDefault();
             model.Number = biggestNumber == null ? NumberConstants.StartNumberInScalemodels : biggestNumber.Number + 1;
             user.WishList.Add(model);
+            await this.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<CompletedScalemodelBindingModel> GetCompletedScalemodelDetailsAsync(int modelId, string ownerId)
+        {
+            var user = await this.GetUserByIdAsync(ownerId);
+            var completedModel = await this.DbContext.CompletedScalemodels.FirstOrDefaultAsync(e => e.Id == modelId && e.OwnerId == user.Id);
+            var scalemodel = this.Mapper.Map<CompletedScalemodelBindingModel>(completedModel);
+
+            return scalemodel;
+        }
+
+        public async Task CompletedDeleteAsync(int modelId, string userId)
+        {
+            var user = await this.GetUserByIdAsync(userId);
+            var completedModel = await this.DbContext.CompletedScalemodels.FirstOrDefaultAsync(e => e.Id == modelId && e.OwnerId == user.Id);
+            this.DbContext.CompletedScalemodels.Remove(completedModel);
+            await this.DbContext.SaveChangesAsync();
+        }
+
+        public async Task CompletedEditAsync(CompletedScalemodelBindingModel scalemodel, int modelId, string userId)
+        {
+            var model = DbContext.CompletedScalemodels.Find(modelId);
+            Mapper.Map(scalemodel, model);
+            model.OwnerId = userId;
+            DbContext.CompletedScalemodels.Update(model);
             await this.DbContext.SaveChangesAsync();
         }
 

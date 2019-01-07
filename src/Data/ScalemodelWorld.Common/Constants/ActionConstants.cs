@@ -5,6 +5,6 @@
         public const string Index = "Index";
         public const string Available = "Available";
         public const string Started = "Started";
-
+        public const string Completed = "Completed";
     }
 }

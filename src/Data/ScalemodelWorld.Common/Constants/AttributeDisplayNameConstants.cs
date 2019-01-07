@@ -10,6 +10,9 @@
         public const string FactoryNumber = "Factory number";
         public const string BoxPicture = "Box cover";
         public const string DayFormat = "dd/MMM/yyyy";
-        public const string StartingDate = "Starting date";
+        public const string StartingDate = "Starting date"; 
+        public const string FinishingDate = "Finishing date"; 
+        public const string PicturesLink = "Link to galery"; 
+        public const string ForumsLink = "Link to forum discussion";
     }
 }

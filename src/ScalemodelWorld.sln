@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9AD52566
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScalemodelWorld.Services", "Services\ScalemodelWorld.Services\ScalemodelWorld.Services.csproj", "{6AA0E95C-3A40-42F7-AC1D-3F60277E3CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScalemodelWorld.Common", "Data\ScalemodelWorld.Common\ScalemodelWorld.Common.csproj", "{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScalemodelWorld.Common", "Data\ScalemodelWorld.Common\ScalemodelWorld.Common.csproj", "{2B5AB90D-2DB9-4D8D-9E53-F76A967100C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
