@@ -1,0 +1,111 @@
+﻿@using ScalemodelWorld.Common.Constants
+@model ScalemodelWorld.Common.Scalemodels.BindingModels.PurchasedScalemodelBindingModel
+
+@{
+    ViewData["Title"] = "AvailableDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-around row">
+    <div class="col-sm-6">
+        <div class="card-body">
+            <h2 class="card-title">@Model.Name</h2>
+            <p class="card-text">@Model.Comments</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.Number)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.Number)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title"> @Html.DisplayNameFor(model => model.Scale)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.Scale)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.Manifacturer)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Model.Manifacturer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.FactoryNumber)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.FactoryNumber)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.BestCompanyOffer)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.BestCompanyOffer)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.DateOfPurchase)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Model.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.Price)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.Price) лв.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.Place)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.Place)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title"> @Html.DisplayNameFor(model => model.InfoHowTo)</h4>
+            </div>
+            <div class="col">
+               @if (Model.InfoHowTo != null)
+               {
+                   <p class="card-text"><a href="@Model.InfoHowTo">LINK</a></p>
+               }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.CombinesWith)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.CombinesWith)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 mt-5">
+        <a href="@Model.LinkToScalemates" target="_blank">
+            <img src="@Model.BoxPicture" style="width: 100% \9;" class="img-fluid" alt="Responsive image">
+        </a>
+    </div>
+</div>
+<div class="d-flex pt-3 justify-content-around mt-5">
+    <div><a asp-action="StartNewBuild" asp-route-id="@Model.Id" class="btn btn-info" role="button">Start building</a></div>
+    <div><a asp-action="EditDetails" asp-route-id="@Model.Id" class="btn btn-info" role="button">Edit</a></div>
+    <div><a asp-action="DeleteDetails" asp-route-id="@Model.Id" class="btn btn-info" role="button">Delete</a></div>
+</div>
+<div>
+    <a asp-action="AllPurchased">Back to Purchased</a>
+</div>

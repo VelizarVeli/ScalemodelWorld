@@ -1,0 +1,66 @@
+﻿@model ScalemodelWorld.Common.Scalemodels.BindingModels.WishlistScalemodelBindingModel
+@{
+    ViewData["Title"] = "Add Model";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="text-center">Add a model you wish to have in the future</h1>
+<hr />
+<form asp-action="AddWishModel">
+    <div class="row">
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Bf 109E" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+           <div class="form-group">
+                <label asp-for="BoxPicture"></label>
+                <input asp-for="BoxPicture" class="form-control" type="url" placeholder="Copy image address" />
+                <span asp-validation-for="BoxPicture" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FactoryNumber"></label>
+                <input asp-for="FactoryNumber" class="form-control" placeholder="AZ7489" />
+                <span asp-validation-for="FactoryNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scale" for="sel4">Scale</label>
+                <select asp-for="Scale" class="form-control" id="sel4">
+                    <option>24</option>
+                    <option>35</option>
+                    <option>48</option>
+                    <option selected="selected">72</option>
+                    <option>76</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>144</option>
+                    <option>300</option>
+                    <option>1200</option>
+                </select>
+            </div>
+            <div class="col-7 mt-5">
+                <input type="submit" value="ADD MODEL" class="btn btn-primary btn-block" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Manifacturer"></label>
+                <input asp-for="Manifacturer" class="form-control" placeholder="Revell" />
+                <span asp-validation-for="Manifacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LinkToScalemates"></label>
+                <input asp-for="LinkToScalemates" class="form-control" type="url" placeholder="Link to the model in Scalemates" />
+                <span asp-validation-for="LinkToScalemates" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+</form>
+<div>
+    <a asp-action="AllWishlist">Back to Wishlist</a>
+</div>

@@ -1,0 +1,64 @@
+﻿@model IList<ScalemodelWorld.Common.Scalemodels.BindingModels.WishlistScalemodelBindingModel>
+@{
+    ViewData["Title"] = "Wishlist";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="text-center">Wishlist</h1>
+<hr class="bg-dark" style="height: 2px" />
+<div class="d-flex justify-content-between">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+    <partial name="_SideBarPartial" />
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a asp-area="" asp-controller="Wishlist" asp-action="AddWishModel" class="btn btn-primary btn-lg">              ADD NEW WISH              </a>
+            </li>
+        </ul>
+    </nav>
+    <table class="table table-hover">
+        <thead>
+            <tr class="row">
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>№</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Box cover</h6></th>
+                <th scope="col" class="col-sm-3 d-flex justify-content-center"><h6>Name</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Manifacturer</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Factory number</h6></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < @Model.Count; i++)
+            {
+                var item = this.Model[i];
+
+                if (i % 2 == 0)
+                {
+                    <tr class="row table-primary">
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
+                        <td class="col-sm-2 d-flex justify-content-center">
+                            <a href="@item.LinkToScalemates" target="_blank">
+                                <img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" />
+                            </a>
+                        </td>
+                        <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
+                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
+                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.FactoryNumber</small></h6></td>
+                    </tr>
+                }
+                else
+                {
+                    <tr class="row table-success">
+                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
+                        <td class="col-sm-2 d-flex justify-content-center">
+                            <a href="@item.LinkToScalemates" target="_blank">
+                                <img class="img-fluid" alt="Responsive image" src="@item.BoxPicture" />
+                            </a>
+                        </td>
+                        <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
+                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
+                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.FactoryNumber</small></h6></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

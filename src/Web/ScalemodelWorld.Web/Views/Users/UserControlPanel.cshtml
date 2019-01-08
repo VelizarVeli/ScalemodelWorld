@@ -1,0 +1,24 @@
+﻿@model ScalemodelWorld.Web.ViewModels.Users.SeedDataViewModel
+
+@{
+    ViewData["Title"] = "Seed Data";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Seed Data</h1>
+<form asp-action="Seeding">
+    <hr />
+    <div class="d-flex justify-content-around row">
+        <div class="col-sm-6 mt-5">
+            <div class="form-group">
+                <label asp-for="PathToJSONFile"></label>
+                <input asp-for="PathToJSONFile" class="form-control" />
+                <span asp-validation-for="PathToJSONFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*<select asp-for="Category" asp-items="Html.GetEnumSelectList<Model.Category>()"></select>*@
+            </div>
+        </div>
+    </div>
+    <input type="submit" value="Save" class="btn btn-primary" /> |
+    <a asp-action="Seeding">Back to Purchased</a>
+</form>

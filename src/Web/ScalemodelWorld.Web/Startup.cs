@@ -124,9 +124,14 @@ namespace ScalemodelWorld.Web
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
         private void RegisterGlobalServices(IServiceCollection services)
         {
-            services.AddScoped<IScalemodelsService, ScalemodelsService>();
+            services.AddScoped<IPurchasedScalemodelsService, PurchasedScalemodelsService>();
+            services.AddScoped<IStartedScalemodelsService, StartedScalemodelsService>();
+            services.AddScoped<ICompletedScalemodelsService, CompletedScalemodelsService>();
+            services.AddScoped<IWishlistService, WishlistService>();
+            services.AddScoped<ISeedDatabaseService, SeedDatabaseService>();
         }
     }
 }

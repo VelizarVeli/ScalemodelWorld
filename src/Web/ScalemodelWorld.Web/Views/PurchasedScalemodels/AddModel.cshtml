@@ -1,0 +1,101 @@
+﻿@model ScalemodelWorld.Common.Scalemodels.BindingModels.PurchasedScalemodelBindingModel
+@{
+    ViewData["Title"] = "AddModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="text-center">Add Scalemodel</h1>
+<hr />
+<form asp-action="AddScalemodel">
+    <div class="row">
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Bf 109E" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfPurchase"></label>
+                <input asp-for="DateOfPurchase" type="date" class="form-control" />
+                <span asp-validation-for="DateOfPurchase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place"></label>
+                <input asp-for="Place" class="form-control" placeholder="Ruse" />
+                <span asp-validation-for="Place" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BoxPicture"></label>
+                <input asp-for="BoxPicture" class="form-control" type="url" placeholder="Copy image address" />
+                <span asp-validation-for="BoxPicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BestCompanyOffer"></label>
+                <input asp-for="BestCompanyOffer" class="form-control" placeholder="Dragon" />
+                <span asp-validation-for="BestCompanyOffer" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FactoryNumber"></label>
+                <input asp-for="FactoryNumber" class="form-control" placeholder="AZ7489" />
+                <span asp-validation-for="FactoryNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scale" for="sel4">Scale</label>
+                <select asp-for="Scale" class="form-control" id="sel4">
+                    <option>24</option>
+                    <option>35</option>
+                    <option>48</option>
+                    <option selected="selected">72</option>
+                    <option>76</option>
+                    <option>100</option>
+                    <option>110</option>
+                    <option>144</option>
+                    <option>300</option>
+                    <option>1200</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CombinesWith"></label>
+                <input asp-for="CombinesWith" class="form-control" placeholder="Preiser 72503" />
+                <span asp-validation-for="CombinesWith" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LinkToScalemates"></label>
+                <input asp-for="LinkToScalemates" class="form-control" type="url" placeholder="Link to the model in Scalemates" />
+                <span asp-validation-for="LinkToScalemates" class="text-danger"></span>
+            </div>
+            <div class="col-7 mt-5">
+                <input type="submit" value="ADD MODEL" class="btn btn-primary btn-block" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Manifacturer"></label>
+                <input asp-for="Manifacturer" class="form-control" placeholder="Revell" />
+                <span asp-validation-for="Manifacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InfoHowTo"></label>
+                <input asp-for="InfoHowTo" class="form-control" placeholder="Link to video, book, or article" />
+                <span asp-validation-for="InfoHowTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price"></label>
+                <input asp-for="Price" class="form-control" type="number" step="0.01" placeholder="14.50" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments"></label>
+                <input asp-for="Comments" class="form-control " type="text" placeholder="Any comments" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+</form>
+<div>
+    <a asp-action="AllPurchased">Back to Purchased</a>
+</div>
