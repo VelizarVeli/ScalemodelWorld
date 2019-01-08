@@ -14,5 +14,6 @@
         public const string FinishingDate = "Finishing date"; 
         public const string PicturesLink = "Link to galery"; 
         public const string ForumsLink = "Link to forum discussion";
+        public const string PathToJSONFile = "Path to JSON file";
     }
 }

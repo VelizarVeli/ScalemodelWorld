@@ -4,7 +4,7 @@ using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.BindingModels
 {
-    public class AvailableScalemodelBindingModel
+    public class PurchasedScalemodelBindingModel
     {
         public string Id { get; set; }
 

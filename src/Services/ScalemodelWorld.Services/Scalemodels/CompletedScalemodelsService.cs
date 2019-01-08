@@ -12,16 +12,16 @@ using ScalemodelWorld.Services.Scalemodels.Contracts;
 
 namespace ScalemodelWorld.Services.Scalemodels
 {
-    public class ScalemodelsService : BaseService, IScalemodelsService
+    public class CompletedScalemodelsService : BaseService, ICompletedScalemodelsService
     {
-        public ScalemodelsService(ScalemodelWorldContext dbContext,
+        public CompletedScalemodelsService(ScalemodelWorldContext dbContext,
             IMapper mapper,
             UserManager<ScalemodelWorldUser> userManager)
             : base(dbContext, mapper, userManager)
         {
         }
 
-        public async Task<IEnumerable<AllCompletedModelsViewModel>> CompletedAll(string userId)
+        public async Task<IEnumerable<AllCompletedModelsViewModel>> AllCompleted(string userId)
         {
             var user = await this.UserManager.FindByIdAsync(userId);
 

@@ -3,8 +3,8 @@
     public class ActionConstants
     {
         public const string Index = "Index";
-        public const string Available = "Available";
-        public const string Started = "Started";
-        public const string Completed = "Completed";
+        public const string Purchased = "AllPurchased";
+        public const string Started = "AllStarted";
+        public const string Completed = "AllCompleted";
     }
 }

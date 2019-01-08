@@ -2,7 +2,7 @@
 
 namespace ScalemodelWorld.Services.SeedData.Dto
 {
-    public class WishListDto
+    public class WishlistBindingModel
     {
         [Required]
         public string Name { get; set; }
@@ -12,5 +12,15 @@ namespace ScalemodelWorld.Services.SeedData.Dto
 
         [Required]
         public string Manifacturer { get; set; }
+
+        public string UserId { get; set; }
+
+        public string LinkToScalemates { get; set; }
+
+        public string BoxPicture { get; set; }
+
+        public int Number { get; set; }
+
+        public int  Scale { get; set; }
     }
 }

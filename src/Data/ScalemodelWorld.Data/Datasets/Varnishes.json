@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "Aqua Gloss",
+    "Manifacturer": "Alclad 2",
+    "Price": 14.31,
+    "DateOfPurchase": "10.08.2013"
+  },
+  {
+    "Name": "Klear Kote Matte",
+    "Manifacturer": "Alclad 2",
+    "Price": 12,
+    "DateOfPurchase": "05.10.2012"
+  },
+  {
+    "Name": "Klear Kote Flat",
+    "Manifacturer": "Alclad 2",
+    "Price": 12,
+    "DateOfPurchase": "06.03.2014"
+  },
+  {
+    "Name": "Klear Kote Semi-matte",
+    "Manifacturer": "Alclad 2",
+    "Price": 11.6,
+    "DateOfPurchase": "26.07.2014"
+  },
+  {
+    "Name": "Klear Kote Light Sheen",
+    "Manifacturer": "Alclad 2",
+    "Price": 11.6,
+    "DateOfPurchase": "26.07.2014"
+  },
+  {
+    "Name": "Ultra-matt",
+    "Manifacturer": "MIG",
+    "Price": 8.9,
+    "DateOfPurchase": "05.06.2018"
+  },
+  {
+    "Name": "Matt",
+    "Manifacturer": "MIG",
+    "Price": 8.9,
+    "DateOfPurchase": "05.06.2018"
+  },
+  {
+    "Name": "Satin",
+    "Manifacturer": "MIG",
+    "Price": 8.9,
+    "DateOfPurchase": "05.06.2018"
+  },
+  {
+    "Name": "Glossy",
+    "Manifacturer": "MIG",
+    "Price": 8.9,
+    "DateOfPurchase": "05.06.2018"
+  }
+]

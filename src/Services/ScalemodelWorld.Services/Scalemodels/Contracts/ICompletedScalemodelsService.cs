@@ -5,9 +5,9 @@ using ScalemodelWorld.Common.Scalemodels.ViewModels;
 
 namespace ScalemodelWorld.Services.Scalemodels.Contracts
 {
-    public interface IScalemodelsService
+    public interface ICompletedScalemodelsService
     {
-        Task<IEnumerable<AllCompletedModelsViewModel>> CompletedAll(string userId);
+        Task<IEnumerable<AllCompletedModelsViewModel>> AllCompleted(string userId);
         Task<CompletedScalemodelBindingModel> GetCompletedScalemodelDetailsAsync(int id, string username);
         Task CompletedDeleteAsync(int modelId, string userId);
         Task CompletedEditAsync(CompletedScalemodelBindingModel scalemodel, int modelId, string userId);

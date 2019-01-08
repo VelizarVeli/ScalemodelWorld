@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.SeedData.Contracts;
+using ScalemodelWorld.Web.ViewModels.Users;
 
 namespace ScalemodelWorld.Web.Controllers
 {
@@ -30,9 +31,41 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Seeding()
+        public async Task<IActionResult> SeedPurchased(SeedDataViewModel seedPath)
         {
-            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User));
+            var pathString = seedPath.PathToJSONFile;
+            var category = seedPath.Category;
+            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+
+            return RedirectToAction("AllPurchased", "PurchasedScalemodels");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> SeedStarted(SeedDataViewModel seedPath)
+        {
+            var pathString = seedPath.PathToJSONFile;
+            var category = seedPath.Category;
+            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+
+            return RedirectToAction("AllStarted", "StartedScalemodels");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> SeedCompleted(SeedDataViewModel seedPath)
+        {
+            var pathString = seedPath.PathToJSONFile;
+            var category = seedPath.Category;
+            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+
+            return RedirectToAction("AllCompleted", "CompletedScalemodels");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> SeedWishList(SeedDataViewModel seedPath)
+        {
+            var pathString = seedPath.PathToJSONFile;
+            var category = seedPath.Category;
+            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
 
             return RedirectToAction("AllWishlist", "Wishlist");
         }

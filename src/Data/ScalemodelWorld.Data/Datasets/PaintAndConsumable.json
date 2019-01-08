@@ -1,0 +1,2054 @@
+[
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 17,
+    "Name": "Africa Brown",
+    "Coverage": "matt",
+    "Price": 2.9,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 30,
+    "Name": "Orange",
+    "Coverage": "gloss",
+    "Price": 1.49,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 31,
+    "Name": "Fiery Red",
+    "Coverage": "gloss",
+    "Price": "",
+    "DateOfPurchase": "29.08.2013",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 36,
+    "Name": "Carmine Red",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 37,
+    "Name": "Reddish Brown",
+    "Coverage": "matt",
+    "Price": 2.42,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 40,
+    "Name": "Black Green",
+    "Coverage": "",
+    "Price": 2.34,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 43,
+    "Name": "Medium Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 45,
+    "Name": "Light Olive",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 46,
+    "Name": "NATO Olive",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 47,
+    "Name": "Mouse Grey",
+    "Coverage": "matt",
+    "Price": 2.8,
+    "DateOfPurchase": "25.05.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 48,
+    "Name": "Sea Green",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 49,
+    "Name": "Light Blue",
+    "Coverage": "",
+    "Price": 3,
+    "DateOfPurchase": "17.04.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "50",
+    "Name": "Light Blue",
+    "Coverage": "",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 50,
+    "Name": "Light Blue",
+    "Coverage": "",
+    "Price": 2.41,
+    "DateOfPurchase": "18.04.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "51",
+    "Name": "Ultramarine",
+    "Coverage": "",
+    "Price": 2.42,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 52,
+    "Name": "Blue",
+    "Coverage": "",
+    "Price": 2.42,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 52,
+    "Name": "Blue",
+    "Coverage": "",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 54,
+    "Name": "Night Blue",
+    "Coverage": "",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "55",
+    "Name": "Light Green",
+    "Coverage": "matt",
+    "Price": 2.42,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 59,
+    "Name": "Sky",
+    "Coverage": "matt",
+    "Price": 2.41,
+    "DateOfPurchase": "18.04.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 61,
+    "Name": "Emerald Green",
+    "Coverage": "",
+    "Price": 2.42,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 66,
+    "Name": "Olive Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 68,
+    "Name": "Dark Green",
+    "Coverage": "matt",
+    "Price": 2.9,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 69,
+    "Name": "Granite Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 75,
+    "Name": "Stone Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 77,
+    "Name": "Dust Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 80,
+    "Name": "Mud Brown",
+    "Coverage": "",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 82,
+    "Name": "Dark Earth",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 83,
+    "Name": "Rust",
+    "Coverage": "matt",
+    "Price": 2.42,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 83,
+    "Name": "Rust",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "85",
+    "Name": "Brown",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 86,
+    "Name": "Olive Brown",
+    "Coverage": "matt",
+    "Price": 2.42,
+    "DateOfPurchase": "14.04.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 88,
+    "Name": "Ochre Brown",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 88,
+    "Name": "Ochre Brown",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "91",
+    "Name": "Iron",
+    "Coverage": "metallic",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 92,
+    "Name": "Brass",
+    "Coverage": "metallic",
+    "Price": 2.9,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 93,
+    "Name": "Copper",
+    "Coverage": "",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 94,
+    "Name": "Gold",
+    "Coverage": "",
+    "Price": 2.9,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 95,
+    "Name": "Bronze",
+    "Coverage": "",
+    "Price": 2.9,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "99",
+    "Name": "Alluminium",
+    "Coverage": "metallic",
+    "Price": 0,
+    "DateOfPurchase": "08.05.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "350",
+    "Name": "Lufthansa blue",
+    "Coverage": "semi-matt",
+    "Price": 0,
+    "DateOfPurchase": "08.05.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 360,
+    "Name": "Fern Green",
+    "Coverage": "semi-matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 363,
+    "Name": "Dark Green",
+    "Coverage": "semi-matt",
+    "Price": 2.34,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "364",
+    "Name": "Leaf Green",
+    "Coverage": "semi-matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "365",
+    "Name": "Patina Green",
+    "Coverage": "semi-matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "381",
+    "Name": "Brown",
+    "Coverage": "semi-matt",
+    "Price": 0,
+    "DateOfPurchase": "08.05.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 382,
+    "Name": "Wood Brown",
+    "Coverage": "semi-matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 730,
+    "Name": "",
+    "Coverage": "klar",
+    "Price": 2.9,
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "J12 M",
+    "Name": "Orange E-18",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N34 M",
+    "Name": "Uniformova Zelenoseda",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N35 M",
+    "Name": "Uniformova Olivova DAC",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N36 M",
+    "Name": "Uniformova Svetla Okrova",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N44 M",
+    "Name": "Zelena RAL 6031",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Humbrol",
+    "ManifacturerNumber": "102",
+    "Name": "",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "2077",
+    "Name": "Lightgrau RLM 63",
+    "Coverage": "matt",
+    "Price": 2,
+    "DateOfPurchase": "12.02.2017",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "2075",
+    "Name": "Dunkel Braun RLM 61",
+    "Coverage": "matt",
+    "Price": 2,
+    "DateOfPurchase": "12.02.2017",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "2103",
+    "Name": "Africa Dunkelgrau",
+    "Coverage": "matt",
+    "Price": 2,
+    "DateOfPurchase": "12.02.2017",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "2078",
+    "Name": "Hellblau RLM 65",
+    "Coverage": "matt",
+    "Price": 2,
+    "DateOfPurchase": "12.02.2017",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "2087",
+    "Name": "Hellblau RLM 78",
+    "Coverage": "matt",
+    "Price": 2,
+    "DateOfPurchase": "12.02.2017",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "1785",
+    "Name": "Rust",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "24 M",
+    "Name": "Natural wood",
+    "Coverage": "matt",
+    "Price": 3.5,
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "25 M",
+    "Name": "Flesh",
+    "Coverage": "matt",
+    "Price": 3.5,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "30 M",
+    "Name": "Leather",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "B10 M",
+    "Name": "Aircraft Grey Green",
+    "Coverage": "matt",
+    "Price": 3.5,
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N12 M",
+    "Name": "Sand Brown RLM 79",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N16 M",
+    "Name": "Brown Violet RLM 81",
+    "Coverage": "matt",
+    "Price": 3.5,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N17 M",
+    "Name": "Dark Green RLM 82",
+    "Coverage": "matt",
+    "Price": 3.5,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N18 M",
+    "Name": "Light Green RLM 83",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N2 M",
+    "Name": "Dark Green RLM 71",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "N4 M",
+    "Name": "Dark Grey RLM 74",
+    "Coverage": "matt",
+    "Price": 3.5,
+    "DateOfPurchase": "15.06.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "R1 M",
+    "Name": "Green AMT-4",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "R31 P",
+    "Name": "Light Blue",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "R6 M",
+    "Name": "Dark Grey AMT-12",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 31,
+    "Name": "Fairy Red",
+    "Coverage": "gloss",
+    "Price": 3.41,
+    "DateOfPurchase": "06.10.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "39",
+    "Name": "Dark Green ",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "39",
+    "Name": "Dark Green ",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "49",
+    "Name": "Light Blue",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 51,
+    "Name": "Ultramarine Blue",
+    "Coverage": "gloss",
+    "Price": 3.41,
+    "DateOfPurchase": "06.10.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 52,
+    "Name": "Blue",
+    "Coverage": "gloss",
+    "Price": 3.41,
+    "DateOfPurchase": "06.10.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 54,
+    "Name": "Night Blue",
+    "Coverage": "gloss",
+    "Price": 3.41,
+    "DateOfPurchase": "06.10.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 59,
+    "Name": "Sky",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "67",
+    "Name": "Greenish Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "68",
+    "Name": "Dark Green ",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "76",
+    "Name": "Light Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 78,
+    "Name": "Tank Grey",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 79,
+    "Name": "Greyish Blue",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "82",
+    "Name": "Dark Earth",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "82",
+    "Name": "Dark Earth",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "82",
+    "Name": "Dark Earth",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 84,
+    "Name": "Leather Brown",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 87,
+    "Name": "Earth Brown",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "08",
+    "Name": "Black",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 40,
+    "Name": "Black Green",
+    "Coverage": "matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "364",
+    "Name": "Leaf Green",
+    "Coverage": "silk matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "371",
+    "Name": "Light Grey",
+    "Coverage": "silk matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 374,
+    "Name": "Grey",
+    "Coverage": "silk matt",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "",
+    "Name": "Nightcolour",
+    "Coverage": "phosphoric",
+    "Price": 3.99,
+    "DateOfPurchase": "06.10.2009",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 78,
+    "Name": "Tank Grey",
+    "Coverage": "matt",
+    "Price": 5,
+    "DateOfPurchase": "05.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 80,
+    "Name": "Mud brown",
+    "Coverage": "gloss",
+    "Price": 5,
+    "DateOfPurchase": "13.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 88,
+    "Name": "Ochre brown",
+    "Coverage": "matt",
+    "Price": 5,
+    "DateOfPurchase": "13.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": 85,
+    "Name": "Brown",
+    "Coverage": "matt",
+    "Price": 5,
+    "DateOfPurchase": "22.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 21",
+    "Name": "Matt Flesh",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 26",
+    "Name": "Matt Gun Metal",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 36",
+    "Name": "Matt Leather",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 51",
+    "Name": "Gloss White",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 52",
+    "Name": "Gloss Black",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 72",
+    "Name": "Satin Black",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LC 74",
+    "Name": "Gloss Silver Metallic",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "TSC 204",
+    "Name": "Grass(tensohrome)",
+    "Coverage": "x",
+    "Price": 5.6,
+    "DateOfPurchase": "30.12.2010",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "TSC 207",
+    "Name": "Oil(tensohrome)",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "TSC 209",
+    "Name": "Kerosene(tensohrome)",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "TSC 210",
+    "Name": "Fuel(tensohrome)",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 006",
+    "Name": "Green",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 023",
+    "Name": "Grey",
+    "Coverage": "x",
+    "Price": 4.8,
+    "DateOfPurchase": "03.01.2011",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 071",
+    "Name": "Grey RLM 02",
+    "Coverage": "x",
+    "Price": 4.8,
+    "DateOfPurchase": "12.10.2012",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 051",
+    "Name": "Black Green RLM 70",
+    "Coverage": "x",
+    "Price": 5,
+    "DateOfPurchase": "29.07.2016",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 074",
+    "Name": "Light Blue RLM 76",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 084",
+    "Name": "German Desert Yellow",
+    "Coverage": "x",
+    "Price": 4.8,
+    "DateOfPurchase": "25.01.2011",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 092",
+    "Name": "Dark Earth",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 140",
+    "Name": "Yellow RLM 04",
+    "Coverage": "matt",
+    "Price": 5,
+    "DateOfPurchase": "08.11.2017",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "",
+    "Name": "Acrylic Thinner",
+    "Coverage": "x",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 419",
+    "Name": "Olive Drab light mustard",
+    "Coverage": "matt",
+    "Price": 5.72,
+    "DateOfPurchase": "29.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 420",
+    "Name": "HBT dark shade",
+    "Coverage": "matt",
+    "Price": 5.72,
+    "DateOfPurchase": "29.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 421",
+    "Name": "Olive Drab M1943",
+    "Coverage": "matt",
+    "Price": 5.72,
+    "DateOfPurchase": "29.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 422",
+    "Name": "Wool Olive Drab M1943",
+    "Coverage": "matt",
+    "Price": 5.72,
+    "DateOfPurchase": "29.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 423",
+    "Name": "Pink",
+    "Coverage": "matt",
+    "Price": 5.72,
+    "DateOfPurchase": "29.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 424",
+    "Name": "Chokolate",
+    "Coverage": "matt",
+    "Price": 5.72,
+    "DateOfPurchase": "29.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 731",
+    "Name": "Dirty Black",
+    "Coverage": "Black Rubber Shades&Co",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 732",
+    "Name": "Vulcanized Rubber",
+    "Coverage": "Black Rubber Shades&Co",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 733",
+    "Name": "Tire Black",
+    "Coverage": "Black Rubber Shades&Co",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 734",
+    "Name": "Worn Black",
+    "Coverage": "Black Rubber Shades&Co",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 735",
+    "Name": "Deep Cockpit",
+    "Coverage": "Black Rubber Shades&Co",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "UA 736",
+    "Name": "Burned Black",
+    "Coverage": "Black Rubber Shades&Co",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LPW 11",
+    "Name": "Rain Marks",
+    "Coverage": "Rain and Dust Makeup",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LPW 12",
+    "Name": "Road Dust",
+    "Coverage": "Rain and Dust Makeup",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LPW 13",
+    "Name": "Light Earth",
+    "Coverage": "Rain and Dust Makeup",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LPW 14",
+    "Name": "Dark Dust",
+    "Coverage": "Rain and Dust Makeup",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "LPW 15",
+    "Name": "Soot",
+    "Coverage": "Rain and Dust Makeup",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "RE",
+    "Name": "Remover",
+    "Coverage": "Rain and Dust Makeup",
+    "Price": 6,
+    "DateOfPurchase": "23.11.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Model Master",
+    "ManifacturerNumber": "4769",
+    "Name": "White FS 37875",
+    "Coverage": "matt",
+    "Price": 4.4,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 333",
+    "Name": "Extra Dark Seagrey",
+    "Coverage": "Semi-gloss",
+    "Price": 2.9,
+    "DateOfPurchase": "13.12.2012",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 330",
+    "Name": "Dark Green",
+    "Coverage": "Semi-gloss",
+    "Price": 2.9,
+    "DateOfPurchase": "13.12.2012",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 42",
+    "Name": "Blue Grey",
+    "Coverage": "Gloss",
+    "Price": 3.24,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 42",
+    "Name": "Blue Grey",
+    "Coverage": "Gloss",
+    "Price": 3.28,
+    "DateOfPurchase": "23.08.2014",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 12",
+    "Name": "Flat Black",
+    "Coverage": "Matt",
+    "Price": 3.2,
+    "DateOfPurchase": "26.11.2014",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 51",
+    "Name": "Light Gull Grey",
+    "Coverage": "Gloss",
+    "Price": 3.24,
+    "DateOfPurchase": "21.12.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 42",
+    "Name": "Blue Grey",
+    "Coverage": "Gloss",
+    "Price": 3.28,
+    "DateOfPurchase": "23.08.2014",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 401",
+    "Name": "Dark Grey",
+    "Coverage": "Flat Matt",
+    "Price": 4.5,
+    "DateOfPurchase": "20.01.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 68",
+    "Name": "RLM 74 Dark Grey",
+    "Coverage": "Matt",
+    "Price": 4.22,
+    "DateOfPurchase": "25.07.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 69",
+    "Name": "RLM 75 Dark Grey",
+    "Coverage": "Matt",
+    "Price": 4.22,
+    "DateOfPurchase": "25.07.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "H 406",
+    "Name": "Chocolate Brown",
+    "Coverage": "Matt",
+    "Price": 3,
+    "DateOfPurchase": "12.02.2017",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "X 11",
+    "Name": "Chrome Silver",
+    "Coverage": "Metalic",
+    "Price": 4.18,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "XF 3",
+    "Name": "Flat Yellow",
+    "Coverage": "Matt",
+    "Price": 4.2,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "XF 1",
+    "Name": "Flat Black",
+    "Coverage": "Matt",
+    "Price": 4.2,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "XF 16",
+    "Name": "Flat Aluminium",
+    "Coverage": "Matt",
+    "Price": 4.18,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "XF 56",
+    "Name": "Metalic Grey",
+    "Coverage": "Metalic",
+    "Price": 4.18,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "X 10",
+    "Name": "Gunmetal",
+    "Coverage": "Metalic",
+    "Price": 4.18,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "X 26",
+    "Name": "Clear Orange",
+    "Coverage": "Clear",
+    "Price": 4.18,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "X 27",
+    "Name": "Clear Red",
+    "Coverage": "Clear",
+    "Price": 4.18,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "X 25",
+    "Name": "Clear Green",
+    "Coverage": "Clear",
+    "Price": 4.22,
+    "DateOfPurchase": "25.07.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Akan",
+    "ManifacturerNumber": "62004",
+    "Name": "FS: 34151 Satin Olive Green",
+    "Coverage": "Satin",
+    "Price": "5.5",
+    "DateOfPurchase": "14.07.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Akan",
+    "ManifacturerNumber": "84000",
+    "Name": "Разбавитель для акрилових емалей",
+    "Coverage": "",
+    "Price": "3",
+    "DateOfPurchase": "14.07.2015",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 101",
+    "Name": "Aluminium",
+    "Coverage": "Regular Finish",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 102",
+    "Name": "Duraluminium",
+    "Coverage": "Regular Finish",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 103",
+    "Name": "Dark Aluminium",
+    "Coverage": "Regular Finish",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 105",
+    "Name": "Polished Aluminium",
+    "Coverage": "High Shine Finish",
+    "Price": 9.81,
+    "DateOfPurchase": "03.05.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 106",
+    "Name": "White Aluminium",
+    "Coverage": "Regular Finish",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 107",
+    "Name": "Chrome",
+    "Coverage": "High Shine Finish",
+    "Price": 9.81,
+    "DateOfPurchase": "03.05.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 113",
+    "Name": "Jet Exhaust",
+    "Coverage": "Regular Finish",
+    "Price": 9.8,
+    "DateOfPurchase": "23.08.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 116",
+    "Name": "Semi Matt Aluminium",
+    "Coverage": "Regular Finish",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 117",
+    "Name": "Dull Aluminium",
+    "Coverage": "Regular Finish",
+    "Price": "",
+    "DateOfPurchase": "",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 123",
+    "Name": "Duraluminium",
+    "Coverage": "Regular Finish",
+    "Price": 9.8,
+    "DateOfPurchase": "23.08.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 704",
+    "Name": "Candy Orange Enamel",
+    "Coverage": "",
+    "Price": "",
+    "DateOfPurchase": "23.08.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 302",
+    "Name": "Grey Primer&Microfiller",
+    "Coverage": "",
+    "Price": 11.9,
+    "DateOfPurchase": "28.01.2015",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "ALC 304",
+    "Name": "Gloss Black Base",
+    "Coverage": "",
+    "Price": 10.7,
+    "DateOfPurchase": "23.08.2014",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Alclad 2",
+    "ManifacturerNumber": "Alc 303",
+    "Name": "Alclad 2",
+    "Coverage": "Honey primer",
+    "Price": 10,
+    "DateOfPurchase": "27.11.2010",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "SF 283",
+    "Name": "White",
+    "Coverage": "Mr. Base white 1000",
+    "Price": 8.4,
+    "DateOfPurchase": "26.05.2011",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "SF 284",
+    "Name": "Grey",
+    "Coverage": "Mr Surfacer 500",
+    "Price": 9.6,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "Enamel"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "",
+    "Name": "Sun Flesh Oil Colour",
+    "Coverage": "",
+    "Price": 7.4,
+    "DateOfPurchase": "15.06.2009",
+    "Type": "Oil"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "",
+    "Name": "",
+    "Coverage": "Thinner for Acryilic paints",
+    "Price": 5.8,
+    "DateOfPurchase": "07.09.2013",
+    "Type": "Acrylic"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "",
+    "Name": "Black",
+    "Coverage": "",
+    "Price": 5,
+    "DateOfPurchase": "07.05.2009",
+    "Type": "патинатор"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Track brown пигмент",
+    "Name": "",
+    "Coverage": "",
+    "Price": 8.5,
+    "DateOfPurchase": "04.02.2011",
+    "Type": "патинатор"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr. Base white 1000 - 40ml",
+    "Name": "",
+    "Coverage": "",
+    "Price": 8.4,
+    "DateOfPurchase": "26.05.2011",
+    "Type": "грунд"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Clear Parts Cement & Window Maker - 15ml",
+    "Name": "",
+    "Coverage": "",
+    "Price": 7.9,
+    "DateOfPurchase": "09.11.2012",
+    "Type": "лепило"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "грунд за метал",
+    "Name": "",
+    "Coverage": "",
+    "Price": 5.8,
+    "DateOfPurchase": "07.05.2009",
+    "Type": "грунд"
+  },
+  {
+    "Manifacturer": "Tamya",
+    "ManifacturerNumber": "препарат за лъскане",
+    "Name": "",
+    "Coverage": "",
+    "Price": 17.8,
+    "DateOfPurchase": "02.06.2009",
+    "Type": "препарат за лъскане"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "метална паста",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4.8,
+    "DateOfPurchase": "02.06.2009",
+    "Type": "паста"
+  },
+  {
+    "Manifacturer": "UHU",
+    "ManifacturerNumber": "UHU tak",
+    "Name": "",
+    "Coverage": "",
+    "Price": 10.78,
+    "DateOfPurchase": "09.06.2009",
+    "Type": "так"
+  },
+  {
+    "Manifacturer": "UHU",
+    "ManifacturerNumber": "UHU tak",
+    "Name": "",
+    "Coverage": "",
+    "Price": 6,
+    "DateOfPurchase": "09.06.2009",
+    "Type": "так"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "Gunmetal",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4.8,
+    "DateOfPurchase": "24.09.2009",
+    "Type": "паста"
+  },
+  {
+    "Manifacturer": "Promodeller",
+    "ManifacturerNumber": "Mud",
+    "Name": "",
+    "Coverage": "",
+    "Price": 12.9,
+    "DateOfPurchase": "24.09.2009",
+    "Type": "wash"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr Surfacer 500",
+    "Name": "",
+    "Coverage": "",
+    "Price": 9.6,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "грунд"
+  },
+  {
+    "Manifacturer": "Tamya",
+    "ManifacturerNumber": "Masking tape 6mm",
+    "Name": "",
+    "Coverage": "",
+    "Price": 3.8,
+    "DateOfPurchase": "13.11.2009",
+    "Type": "маскиращо тиксо"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "Steel",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4.8,
+    "DateOfPurchase": "04.12.2009",
+    "Type": "паста"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "Anealed Steel",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4.8,
+    "DateOfPurchase": "04.12.2009",
+    "Type": "паста"
+  },
+  {
+    "Manifacturer": "Miliput",
+    "ManifacturerNumber": "Miliput",
+    "Name": "",
+    "Coverage": "",
+    "Price": 5.5,
+    "DateOfPurchase": "06.11.2010",
+    "Type": "кит"
+  },
+  {
+    "Manifacturer": "Miliput",
+    "ManifacturerNumber": "Miliput",
+    "Name": "",
+    "Coverage": "",
+    "Price": 7.9,
+    "DateOfPurchase": "09.12.2010",
+    "Type": "кит"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Tan for tritonal camo",
+    "Name": "",
+    "Coverage": "",
+    "Price": 10.3,
+    "DateOfPurchase": "28.11.2012",
+    "Type": "филтър"
+  },
+  {
+    "Manifacturer": "Alclad",
+    "ManifacturerNumber": "Aluminium",
+    "Name": "",
+    "Coverage": "",
+    "Price": 9.8,
+    "DateOfPurchase": "23.11.2013",
+    "Type": "металайзер"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr Mark Setter",
+    "Name": "",
+    "Coverage": "",
+    "Price": 9.3,
+    "DateOfPurchase": "29.03.2014",
+    "Type": "химия за декали"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr Mark Softer",
+    "Name": "",
+    "Coverage": "",
+    "Price": 9.31,
+    "DateOfPurchase": "29.03.2014",
+    "Type": "химия за декали"
+  },
+  {
+    "Manifacturer": "Agama",
+    "ManifacturerNumber": "Lak Fix",
+    "Name": "",
+    "Coverage": "",
+    "Price": 3.5,
+    "DateOfPurchase": "29.03.2014",
+    "Type": "лепило"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr Finishing Surfacer 1500 Black",
+    "Name": "",
+    "Coverage": "",
+    "Price": 13.23,
+    "DateOfPurchase": "30.05.2014",
+    "Type": "грунд"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr Surfacer 1200",
+    "Name": "",
+    "Coverage": "",
+    "Price": 7.65,
+    "DateOfPurchase": "30.05.2014",
+    "Type": "грунд"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "Masking tape 18mm",
+    "Name": "",
+    "Coverage": "",
+    "Price": 8.55,
+    "DateOfPurchase": "26.07.2014",
+    "Type": "маскиращо тиксо"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "Masking tape 6mm",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4.41,
+    "DateOfPurchase": "26.07.2014",
+    "Type": "маскиращо тиксо"
+  },
+  {
+    "Manifacturer": "Tamiya",
+    "ManifacturerNumber": "Masking tape 10mm",
+    "Name": "",
+    "Coverage": "",
+    "Price": 5.85,
+    "DateOfPurchase": "26.07.2014",
+    "Type": "маскиращо тиксо"
+  },
+  {
+    "Manifacturer": "White spirit",
+    "ManifacturerNumber": "терпентин",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4,
+    "DateOfPurchase": "11.09.2014",
+    "Type": "за разреждане на маслени бои"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "Thinner",
+    "Name": "",
+    "Coverage": "",
+    "Price": 4.9,
+    "DateOfPurchase": "26.07.2014",
+    "Type": "разредител"
+  },
+  {
+    "Manifacturer": "Lifecolor",
+    "ManifacturerNumber": "Thinner",
+    "Name": "",
+    "Coverage": "",
+    "Price": 14,
+    "DateOfPurchase": "26.07.2014",
+    "Type": "разредител"
+  },
+  {
+    "Manifacturer": "Mig",
+    "ManifacturerNumber": "Brown Dirt for White Camo",
+    "Name": "",
+    "Coverage": "",
+    "Price": 10.3,
+    "DateOfPurchase": "28.01.2015",
+    "Type": "филтър"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Aqueous hobby Color Thinner",
+    "Name": "",
+    "Coverage": "",
+    "Price": 10,
+    "DateOfPurchase": "20.01.2015",
+    "Type": "разредител"
+  },
+  {
+    "Manifacturer": "Humbrol",
+    "ManifacturerNumber": "Liguid poly",
+    "Name": "",
+    "Coverage": "",
+    "Price": 6.5,
+    "DateOfPurchase": "09.02.2015",
+    "Type": "лепило"
+  },
+  {
+    "Manifacturer": "Humbrol",
+    "ManifacturerNumber": "Blue grey wash",
+    "Name": "",
+    "Coverage": "",
+    "Price": 11.5,
+    "DateOfPurchase": "09.02.2015",
+    "Type": "смивка"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "German tanks",
+    "Name": "",
+    "Coverage": "",
+    "Price": 25.9,
+    "DateOfPurchase": "19.03.2015",
+    "Type": "филтри"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Air weathering set-German fighters and bombers",
+    "Name": "",
+    "Coverage": "",
+    "Price": 25.9,
+    "DateOfPurchase": "22.08.2015",
+    "Type": "смивки"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Air weathering set-German late fighters MIG",
+    "Name": "",
+    "Coverage": "",
+    "Price": 25.9,
+    "DateOfPurchase": "22.08.2015",
+    "Type": "смивки"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Late Luftwaffe Cockpits",
+    "Name": "",
+    "Coverage": "",
+    "Price": 22.8,
+    "DateOfPurchase": "24.09.2015",
+    "Type": "боя, филтър, смивка"
+  },
+  {
+    "Manifacturer": "Revell",
+    "ManifacturerNumber": "Thinner",
+    "Name": "",
+    "Coverage": "",
+    "Price": 9.9,
+    "DateOfPurchase": "26.07.2014",
+    "Type": "разредител"
+  },
+  {
+    "Manifacturer": "Deluxe",
+    "ManifacturerNumber": "Perfect Plastic Putty",
+    "Name": "",
+    "Coverage": "",
+    "Price": 14,
+    "DateOfPurchase": "03.06.2016",
+    "Type": "кит"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Tracks",
+    "Name": "",
+    "Coverage": "",
+    "Price": 10,
+    "DateOfPurchase": "21.07.2016",
+    "Type": "смивка"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr. Masking Sol Neo",
+    "Name": "",
+    "Coverage": "",
+    "Price": 5.3,
+    "DateOfPurchase": "02.07.2017",
+    "Type": "течна маска"
+  },
+  {
+    "Manifacturer": "Gunze Sangyo",
+    "ManifacturerNumber": "Mr. Masking Sol Neo",
+    "Name": "",
+    "Coverage": "",
+    "Price": 5.3,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "течна маска"
+  },
+  {
+    "Manifacturer": "Tamya",
+    "ManifacturerNumber": "Masking tape for curves",
+    "Name": "",
+    "Coverage": "",
+    "Price": 12.5,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "маскиращо тиксо"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Riging",
+    "Name": "",
+    "Coverage": "",
+    "Price": 10.7,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "конец"
+  },
+  {
+    "Manifacturer": "DACO",
+    "ManifacturerNumber": "Decall setting Strong",
+    "Name": "",
+    "Coverage": "",
+    "Price": 15.8,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "химия за декали"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Pigment fixer",
+    "Name": "",
+    "Coverage": "",
+    "Price": 7.9,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "фиксър за пигменти"
+  },
+  {
+    "Manifacturer": "MIG",
+    "ManifacturerNumber": "Primer Acrylic",
+    "Name": "",
+    "Coverage": "",
+    "Price": 11.6,
+    "DateOfPurchase": "05.06.2018",
+    "Type": "грунд"
+  }
+]

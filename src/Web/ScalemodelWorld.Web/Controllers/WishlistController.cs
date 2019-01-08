@@ -28,6 +28,7 @@ namespace ScalemodelWorld.Web.Controllers
        public async Task<IActionResult> AllWishlist()
        {
            var wishlistModels = await this.wishlistService.WishlistAll(this.currentUser.GetUserId(User));
+
            return View("AllWishlist", wishlistModels);
        }
 
@@ -42,6 +43,7 @@ namespace ScalemodelWorld.Web.Controllers
         public async Task<IActionResult> AddWishModel(WishlistScalemodelBindingModel model)
         {
             await this.wishlistService.AddWishAsync(model, this.currentUser.GetUserId(User));
+
             return RedirectToAction("AllWishlist");
         }
     }
