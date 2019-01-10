@@ -25,7 +25,7 @@ namespace ScalemodelWorld.Web.Controllers
         {
             ViewData["Message"] = "Current available scalemodel exhibitions.";
 
-            return View("Modelshows");
+            return View("Future");
         }
     }
 }

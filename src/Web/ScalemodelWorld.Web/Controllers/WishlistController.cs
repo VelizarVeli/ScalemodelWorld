@@ -6,7 +6,6 @@ using Scalemodel.Data.Models;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
-using ScalemodelWorld.Services.SeedData.Dto;
 
 namespace ScalemodelWorld.Web.Controllers
 {
