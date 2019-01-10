@@ -47,12 +47,21 @@ namespace ScalemodelWorld.Services.Scalemodels
             user.PurchasedModels.Remove(availableModel);
             await this.DbContext.SaveChangesAsync();
         }
-        
-        public async Task<StartedScalemodelDto> GetStartedScalemodelDetailsAsync(int id, string userId)
+
+        public async Task<PurchasedScalemodelBindingModel> GetPurchasedScalemodelDetailsAsync(int id, string userId)
+        {
+            var user = await this.GetUserByIdAsync(userId);
+            var purchasedModel = await this.DbContext.AvailableScalemodels.FirstOrDefaultAsync(e => e.Id == id && e.OwnerId == user.Id);
+            var scalemodel = this.Mapper.Map<PurchasedScalemodelBindingModel>(purchasedModel);
+
+            return scalemodel;
+        }
+
+        public async Task<StartedScalemodelBindingModel> GetStartedScalemodelDetailsAsync(int id, string userId)
         {
             var user = await this.GetUserByIdAsync(userId);
             var startedModel = await this.DbContext.StartedScalemodels.FirstOrDefaultAsync(e => e.Id == id && e.OwnerId == user.Id);
-            var scalemodel = this.Mapper.Map<StartedScalemodelDto>(startedModel);
+            var scalemodel = this.Mapper.Map<StartedScalemodelBindingModel>(startedModel);
 
             return scalemodel;
         }
@@ -81,7 +90,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             await this.DbContext.SaveChangesAsync();
         }
 
-        public async Task StartedEditAsync(StartedScalemodelDto scalemodel, int modelId, string userId)
+        public async Task StartedEditAsync(StartedScalemodelBindingModel scalemodel, int modelId, string userId)
         {
             var model = DbContext.StartedScalemodels.Find(modelId);
             Mapper.Map(scalemodel, model);
