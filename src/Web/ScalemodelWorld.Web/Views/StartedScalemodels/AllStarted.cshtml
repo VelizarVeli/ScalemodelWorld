@@ -7,8 +7,14 @@
 <h1 class="text-center">Started scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
-    <!-- Sidebar Holder -->
-    <partial name="_SideBarPartial" />
+    <nav id="sidebar">
+        <partial name="_SideBarPartial" />
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a asp-controller="Users" asp-action="SeedStartedView" class="btn btn-primary btn-lg">SEED DATA</a>
+            </li>
+        </ul>
+    </nav>
     <table class="table table-hover">
         <thead>
             <tr class="row">

@@ -6,12 +6,14 @@
 <h1 class="text-center">Wishlist</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
-    <!-- Sidebar Holder -->
     <nav id="sidebar">
-    <partial name="_SideBarPartial" />
+        <partial name="_SideBarPartial" />
         <ul class="list-unstyled CTAs">
             <li>
-                <a asp-area="" asp-controller="Wishlist" asp-action="AddWishModel" class="btn btn-primary btn-lg">              ADD NEW WISH              </a>
+                <a asp-area="" asp-controller="Wishlist" asp-action="AddWishModel" class="btn btn-primary btn-lg">ADD NEW WISH</a>
+            </li>
+            <li>
+                <a asp-controller="Users" asp-action="SeedWishlistView" class="btn btn-primary btn-lg">SEED DATA</a>
             </li>
         </ul>
     </nav>

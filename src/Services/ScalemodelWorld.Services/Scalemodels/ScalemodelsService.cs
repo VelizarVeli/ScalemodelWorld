@@ -9,6 +9,7 @@ using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Common.Scalemodels.ViewModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
+using ScalemodelWorld.Services.SeedData.Dto;
 
 namespace ScalemodelWorld.Services.Scalemodels
 {
@@ -31,11 +32,11 @@ namespace ScalemodelWorld.Services.Scalemodels
             return allCompleted;
         }
 
-        public async Task<CompletedScalemodelBindingModel> GetCompletedScalemodelDetailsAsync(int modelId, string ownerId)
+        public async Task<CompletedScalemodelDto> GetCompletedScalemodelDetailsAsync(int modelId, string ownerId)
         {
             var user = await this.GetUserByIdAsync(ownerId);
             var completedModel = await this.DbContext.CompletedScalemodels.FirstOrDefaultAsync(e => e.Id == modelId && e.OwnerId == user.Id);
-            var scalemodel = this.Mapper.Map<CompletedScalemodelBindingModel>(completedModel);
+            var scalemodel = this.Mapper.Map<CompletedScalemodelDto>(completedModel);
 
             return scalemodel;
         }
@@ -48,7 +49,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             await this.DbContext.SaveChangesAsync();
         }
 
-        public async Task CompletedEditAsync(CompletedScalemodelBindingModel scalemodel, int modelId, string userId)
+        public async Task CompletedEditAsync(CompletedScalemodelDto scalemodel, int modelId, string userId)
         {
             var model = DbContext.CompletedScalemodels.Find(modelId);
             Mapper.Map(scalemodel, model);

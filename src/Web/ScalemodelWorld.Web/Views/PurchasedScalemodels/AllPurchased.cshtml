@@ -11,8 +11,13 @@
     <partial name="_SideBarPartial" />
     <ul class="list-unstyled CTAs">
         <li>
-            <a asp-area="" asp-controller="PurchasedScalemodels" asp-action="AddModel" class="btn btn-primary btn-lg">              ADD NEW MODEL              </a>
+            <a asp-area="" asp-controller="PurchasedScalemodels" asp-action="AddModel" class="btn btn-primary btn-lg">ADD NEW MODEL</a>
         </li>
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a asp-controller="Users" asp-action="SeedPurchasedView" class="btn btn-primary btn-lg">SEED DATA</a>
+            </li>
+        </ul>
     </ul>
     </nav>
     <table class="table table-hover">
@@ -20,7 +25,7 @@
             <tr class="row">
                 <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>№</h6></th>
                 <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Box cover</h6></th>
-                <th scope="col" class="col-sm-3 d-flex jjustify-content-left"><h6>Name</h6></th>
+                <th scope="col" class="col-sm-3 d-flex justify-content-left"><h6>Name</h6></th>
                 <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Price</h6></th>
                 <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Date Of Purchase</h6></th>
                 <th scope="col" class="col-sm-2 d-flex justify-content-center">Details</th>

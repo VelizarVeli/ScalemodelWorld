@@ -22,7 +22,6 @@ namespace ScalemodelWorld.Web.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -38,7 +37,6 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
 
-        [Authorize(Roles = "Admin")]
         public IActionResult Video()
         {
             ViewData["Message"] = "Anelia - Milo moe.";

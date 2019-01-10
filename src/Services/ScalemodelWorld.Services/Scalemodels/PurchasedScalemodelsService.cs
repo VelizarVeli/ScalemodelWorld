@@ -12,6 +12,7 @@ using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Common.Scalemodels.ViewModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
+using ScalemodelWorld.Services.SeedData.Dto;
 
 namespace ScalemodelWorld.Services.Scalemodels
 {

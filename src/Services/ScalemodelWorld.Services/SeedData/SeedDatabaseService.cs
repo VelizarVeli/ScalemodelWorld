@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,9 +11,6 @@ using Newtonsoft.Json.Converters;
 using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.JunctionClasses;
 using Scalemodel.Data.Models.Scalemodels;
-using ScalemodelWorld.Common;
-using ScalemodelWorld.Common.Constants;
-using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.SeedData.Contracts;
 using ScalemodelWorld.Services.SeedData.Dto;
@@ -24,9 +20,6 @@ namespace ScalemodelWorld.Services.SeedData
 {
     public class SeedDatabaseService : BaseService, ISeedDatabaseService
     {
-        private readonly ScalemodelWorldContext db;
-
-
         public SeedDatabaseService(ScalemodelWorldContext context,
             IMapper mapper,
             UserManager<ScalemodelWorldUser> userManager)
@@ -57,98 +50,35 @@ namespace ScalemodelWorld.Services.SeedData
             context.SaveChanges();
         }
 
-        public async Task AddWishAsync(WishlistScalemodelBindingModel scalemodel, string id)
+        public async Task StartSeedingPurchasedAsync(string userId, string path)
+
         {
-            var user = await this.UserManager.FindByIdAsync(id);
+             var jsonString = File.ReadAllText($@"{path}\Purchased.json");
+            var deserializedPurchased = JsonConvert.DeserializeObject<PurchasedScalemodelDto[]>(jsonString,
+                new IsoDateTimeConverter { DateTimeFormat = "dd/MM/yyyy" });
 
-            CoreValidator.ThrowIfNull(scalemodel);
+            var allPurchased = this.Mapper.Map<IEnumerable<AvailableScalemodel>>(deserializedPurchased);
 
-            scalemodel.UserId = user.Id;
-
-            var model = this.Mapper.Map<WishScalemodel>(scalemodel);
-            var biggestNumber = DbContext.WishScalemodels.Where(a => a.UserId == scalemodel.UserId).OrderByDescending(u => u.Number)
-                .FirstOrDefault();
-            model.Number = biggestNumber == null ? NumberConstants.StartNumberInScalemodels : biggestNumber.Number + 1;
-            user.WishList.Add(model);
+            allPurchased.Select(a => a.OwnerId = userId);
+            await DbContext.AvailableScalemodels.AddRangeAsync(allPurchased);
             await this.DbContext.SaveChangesAsync();
         }
 
-        //public async Task StartSeedingAsync(string id)
-        //{
-        //    var user = await this.UserManager.FindByIdAsync(id);
+        public async Task StartSeedingWishlistAsync(string userId, string path)
 
-        //    var deserializedWishList = JsonConvert.DeserializeObject<WishlistBindingModel[]>(
-        //        File.ReadAllText(@"C:\Users\Google\Documents\Proj\ScalemodelWorld\src\Data\ScalemodelWorld.Data\Datasets\Wishlist.json"));
-
-
-        //    var allWishlist = this.Mapper.Map<IEnumerable<WishlistBindingModel>>(deserializedWishList);
-
-        //var validWishListItems = new HashSet<WishScalemodel>();
-
-        //foreach (var wishListDto in deserializedWishList)
-        //{
-
-        //    var wishList = new WishScalemodel()
-        //    {
-        //        Name = wishListDto.Name,
-        //        Manifacturer = wishListDto.Manifacturer,
-        //        FactoryNumber = wishListDto.FactoryNumber,
-        //        BestCompanyOffer = "Besty",
-        //        BoxPicture = wishListDto.BoxPicture,
-        //        CombinesWith = "Combaina",
-        //        Comments = "Best comments",
-        //        Number = wishListDto.Number,
-        //        InfoHowTo = "link",
-        //        Price = 12.2M,
-        //        LinkToScalemates = wishListDto.LinkToScalemates,
-        //        UserId = user.Id,
-        //        User = user,
-        //        Scale = wishListDto.Scale
-
-        //    };
-
-        //    //var wishList = Mapper.Map<WishScalemodel>(wishListDto);
-        //    //wishList.UserId = userId;
-        //    //wishList.Price = 0;
-        //    validWishListItems.Add(wishList);
-        //    //wishList.User = user;
-        //    db.WishScalemodels.Add(wishList);
-        //    await this.db.SaveChangesAsync();
-        //}
-
-        //await db.WishScalemodels.AddRangeAsync(allWishlist);
-        //await this.db.SaveChangesAsync();
-        //}
-
-        public async Task<IEnumerable<WishlistScalemodelBindingModel>> WishlistAll(string userId)
         {
-            var user = await this.UserManager.FindByIdAsync(userId);
-
-            var allWishlist = this.Mapper.Map<IEnumerable<WishlistScalemodelBindingModel>>(
-                this.DbContext.WishScalemodels.Where(i => i.UserId == user.Id));
-
-            return allWishlist;
-        }
-
-        public async Task StartSeedingAsync(string id)
-        {
-
-
             var deserializedWishList = JsonConvert.DeserializeObject<WishlistBindingModel[]>(
-                File.ReadAllText(@"C:\Users\Google\Documents\Proj\ScalemodelWorld\src\Data\ScalemodelWorld.Data\Datasets\Wishlist.json"));
+                File.ReadAllText($@"{path}\Wishlist.json"));
 
-            var user = await this.UserManager.FindByIdAsync(id);
+            var allWishlist = this.Mapper.Map<IEnumerable<WishScalemodel>>(deserializedWishList);
 
-            var scalemodel = deserializedWishList[1];
-
-            scalemodel.UserId = user.Id;
-
-            foreach (var scaleModel in deserializedWishList)
+            foreach (var wishlist in allWishlist)
             {
-              var currentModel =  this.Mapper.Map<WishScalemodel>(scaleModel);
-                user.WishList.Add(currentModel);
-
+                wishlist.UserId = userId;
             }
+
+            await DbContext.WishScalemodels.AddRangeAsync(allWishlist);
+
             await this.DbContext.SaveChangesAsync();
         }
 
@@ -314,7 +244,7 @@ namespace ScalemodelWorld.Services.SeedData
 
         //    return "All Good!";
         //}
-        
+
         //public static string ImportTools(ScalemodelWorldContext context, string jsonString)
         //{
         //    var deserializedTools = JsonConvert.DeserializeObject<ToolDto[]>(jsonString,
@@ -443,7 +373,12 @@ namespace ScalemodelWorld.Services.SeedData
             return isValid;
         }
 
-        public Task StartSeedingAsync(string userId, string path, string category)
+        public Task StartSeedingStartedAsync(string userId, string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task StartSeedingCompletedAsync(string userId, string path)
         {
             throw new NotImplementedException();
         }

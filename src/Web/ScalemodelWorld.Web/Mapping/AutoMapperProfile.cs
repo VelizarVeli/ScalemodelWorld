@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
+using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Common.Scalemodels.ViewModels;
@@ -54,6 +56,9 @@ namespace ScalemodelWorld.Web.Mapping
         {
             this.CreateMap<WishScalemodel, WishlistBindingModel>();
             this.CreateMap<WishlistBindingModel, WishScalemodel>();
+            this.CreateMap<PurchasedScalemodelDto, AvailableScalemodel>();
+                //.ForMember(dest => dest.);
+
         }
     }
 }

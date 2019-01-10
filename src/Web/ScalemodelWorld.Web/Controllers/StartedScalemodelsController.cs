@@ -82,7 +82,7 @@ namespace ScalemodelWorld.Web.Controllers
 
        [Authorize]
        [HttpPost]
-       public async Task<IActionResult> StartedEdit(int id, StartedScalemodelBindingModel model)
+       public async Task<IActionResult> StartedEdit(int id, StartedScalemodelDto model)
        {
            await this.startedScalemodelsService.StartedEditAsync(model, id, this.currentUser.GetUserId(User));
            return RedirectToAction("AllStarted");

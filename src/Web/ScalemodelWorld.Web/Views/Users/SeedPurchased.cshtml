@@ -1,0 +1,20 @@
+﻿@model ScalemodelWorld.Web.ViewModels.Users.SeedDataViewModel
+@{
+    ViewData["Title"] = "Seed Data";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Seed Purchased Scalemodels</h1>
+<form asp-action="SeedPurchased">
+    <hr />
+    <div class="d-flex justify-content-around row">
+        <div class="col-sm-6 mt-5">
+            <div class="form-group">
+                <label asp-for="PathToJSONFile"></label>
+                <input asp-for="PathToJSONFile" class="form-control" />
+                <span asp-validation-for="PathToJSONFile" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <input type="submit" value="Seed" class="btn btn-primary" /> |
+    <a asp-controller="PurchasedScalemodels" asp-action="AllPurchased">Back to Purchased</a>
+</form>

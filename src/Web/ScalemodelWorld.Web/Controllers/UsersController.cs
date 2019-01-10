@@ -25,47 +25,65 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult UserControlPanel()
+        public IActionResult SeedPurchasedView()
         {
-            return View();
+            return View("SeedPurchased");
         }
 
         [Authorize]
+        [HttpPost]
         public async Task<IActionResult> SeedPurchased(SeedDataViewModel seedPath)
         {
             var pathString = seedPath.PathToJSONFile;
-            var category = seedPath.Category;
-            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+            await this.seedDatabaseService.StartSeedingPurchasedAsync(this.currentUser.GetUserId(User), pathString);
 
             return RedirectToAction("AllPurchased", "PurchasedScalemodels");
         }
 
         [Authorize]
+        public IActionResult SeedStartedView()
+        {
+            return View("SeedStarted");
+        }
+
+        [Authorize]
+        [HttpPost]
         public async Task<IActionResult> SeedStarted(SeedDataViewModel seedPath)
         {
             var pathString = seedPath.PathToJSONFile;
-            var category = seedPath.Category;
-            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+            await this.seedDatabaseService.StartSeedingStartedAsync(this.currentUser.GetUserId(User), pathString);
 
             return RedirectToAction("AllStarted", "StartedScalemodels");
         }
 
         [Authorize]
+        public IActionResult SeedCompletedView()
+        {
+            return View("SeedCompleted");
+        }
+
+        [Authorize]
+        [HttpPost]
         public async Task<IActionResult> SeedCompleted(SeedDataViewModel seedPath)
         {
             var pathString = seedPath.PathToJSONFile;
-            var category = seedPath.Category;
-            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+            await this.seedDatabaseService.StartSeedingCompletedAsync(this.currentUser.GetUserId(User), pathString);
 
             return RedirectToAction("AllCompleted", "CompletedScalemodels");
         }
 
         [Authorize]
+        public IActionResult SeedWishlistView()
+        {
+            return View("SeedWishlist");
+        }
+
+        [Authorize]
+        [HttpPost]
         public async Task<IActionResult> SeedWishList(SeedDataViewModel seedPath)
         {
             var pathString = seedPath.PathToJSONFile;
-            var category = seedPath.Category;
-            await this.seedDatabaseService.StartSeedingAsync(this.currentUser.GetUserId(User), pathString, category.ToString());
+            await this.seedDatabaseService.StartSeedingWishlistAsync(this.currentUser.GetUserId(User), pathString);
 
             return RedirectToAction("AllWishlist", "Wishlist");
         }
