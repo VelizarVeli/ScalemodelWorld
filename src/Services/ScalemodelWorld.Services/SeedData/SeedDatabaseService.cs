@@ -59,7 +59,11 @@ namespace ScalemodelWorld.Services.SeedData
 
             var allPurchased = this.Mapper.Map<IEnumerable<AvailableScalemodel>>(deserializedPurchased);
 
-            allPurchased.Select(a => a.OwnerId = userId);
+            foreach (var purchased in allPurchased)
+            {
+                purchased.OwnerId = userId;
+            }
+
             await DbContext.AvailableScalemodels.AddRangeAsync(allPurchased);
             await this.DbContext.SaveChangesAsync();
         }

@@ -521,7 +521,6 @@ namespace ScalemodelWorld.Data.Migrations
                     Comments = table.Column<string>(nullable: true),
                     BoxPicture = table.Column<string>(nullable: true),
                     LinkToScalemates = table.Column<string>(nullable: true),
-                    Userd = table.Column<string>(nullable: true),
                     UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

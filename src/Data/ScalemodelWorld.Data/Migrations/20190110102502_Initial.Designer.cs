@@ -10,8 +10,8 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20190107072110_UserIdFixInWishlistModel")]
-    partial class UserIdFixInWishlistModel
+    [Migration("20190110102502_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

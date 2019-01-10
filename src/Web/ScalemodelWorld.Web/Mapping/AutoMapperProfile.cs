@@ -56,8 +56,13 @@ namespace ScalemodelWorld.Web.Mapping
         {
             this.CreateMap<WishScalemodel, WishlistBindingModel>();
             this.CreateMap<WishlistBindingModel, WishScalemodel>();
-            this.CreateMap<PurchasedScalemodelDto, AvailableScalemodel>();
-                //.ForMember(dest => dest.);
+            this.CreateMap<PurchasedScalemodelDto, AvailableScalemodel>()
+                .ForMember(i => i.Id, opt => opt.Ignore());
+
+            this.CreateMap<AvailableScalemodel, PurchasedScalemodelDto>()
+                .ForMember(i => i.Id, opt => opt.Ignore());
+
+            //.ForMember(dest => dest.);
 
         }
     }
