@@ -52,8 +52,7 @@ namespace ScalemodelWorld.Web.Controllers
         {
             await this.startedScalemodelsService.FinishBuildAsync(id, this.currentUser.GetUserId(User));
 
-            return RedirectToAction("StartedDetails");
-            //return RedirectToAction("AllCompleted", CompletedScalemodels);
+            return RedirectToAction("AllCompleted", "CompletedScalemodels");
         }
 
         [Authorize]

@@ -62,6 +62,23 @@ namespace ScalemodelWorld.Services.SeedData
             await this.DbContext.SaveChangesAsync();
         }
 
+        public async Task StartSeedingCompletedAsync(string userId, string path)
+        {
+            var jsonString = File.ReadAllText($@"{path}\Completed.json");
+            var deserializedCompleted = JsonConvert.DeserializeObject<CompletedScalemodelDto[]>(jsonString,
+                new IsoDateTimeConverter { DateTimeFormat = "dd/MM/yyyy" });
+
+            var allCompleted = this.Mapper.Map<IEnumerable<CompletedScalemodel>>(deserializedCompleted);
+
+            foreach (var completed in allCompleted)
+            {
+                completed.OwnerId = userId;
+            }
+
+            await DbContext.CompletedScalemodels.AddRangeAsync(allCompleted);
+            await this.DbContext.SaveChangesAsync();
+        }
+
         public async Task StartSeedingWishlistAsync(string userId, string path)
 
         {
@@ -110,12 +127,6 @@ namespace ScalemodelWorld.Services.SeedData
             var isValid = Validator.TryValidateObject(obj, validationContext, validationResults, true);
 
             return isValid;
-        }
-
-       
-        public Task StartSeedingCompletedAsync(string userId, string path)
-        {
-            throw new NotImplementedException();
         }
     }
 }

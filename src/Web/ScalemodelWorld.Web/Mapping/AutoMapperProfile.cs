@@ -66,6 +66,11 @@ namespace ScalemodelWorld.Web.Mapping
                 .ForMember(i => i.Id, opt => opt.Ignore());
             this.CreateMap<StartedScalemodel, StartedScalemodelDto>()
                 .ForMember(i => i.Id, opt => opt.Ignore());
+
+            this.CreateMap<CompletedScalemodelDto, CompletedScalemodel>()
+                .ForMember(i => i.Id, opt => opt.Ignore());
+            this.CreateMap<CompletedScalemodel, CompletedScalemodelDto>()
+                .ForMember(i => i.Id, opt => opt.Ignore());
         }
     }
 }
