@@ -43,7 +43,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(userId);
 
             var allWishlist = this.Mapper.Map<IEnumerable<WishlistScalemodelBindingModel>>(
-                this.DbContext.WishScalemodels.Where(i => i.UserId == user.Id));
+                this.DbContext.WishScalemodels.Where(i => i.UserId == user.Id).OrderBy(n => n.Number));
 
 
 

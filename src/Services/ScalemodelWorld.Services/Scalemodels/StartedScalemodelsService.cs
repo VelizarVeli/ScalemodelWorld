@@ -28,7 +28,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(userId);
 
             var allstarted = this.Mapper.Map<IEnumerable<AllStartedModelsViewModel>>(
-                this.DbContext.StartedScalemodels.Where(i => i.OwnerId == user.Id));
+                this.DbContext.StartedScalemodels.Where(i => i.OwnerId == user.Id).OrderBy(n => n.Number));
 
             return allstarted;
         }

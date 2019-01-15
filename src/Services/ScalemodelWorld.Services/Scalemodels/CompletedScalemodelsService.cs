@@ -26,7 +26,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(userId);
 
             var allCompleted = this.Mapper.Map<IEnumerable<AllCompletedModelsViewModel>>(
-                this.DbContext.CompletedScalemodels.Where(i => i.OwnerId == user.Id));
+                this.DbContext.CompletedScalemodels.Where(i => i.OwnerId == user.Id).OrderBy(n => n.Number).ThenBy(fd => fd.FinishingDate));
 
             return allCompleted;
         }

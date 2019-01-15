@@ -10,7 +10,7 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20190110102502_Initial")]
+    [Migration("20190110111942_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

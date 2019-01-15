@@ -29,7 +29,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.UserManager.FindByIdAsync(id);
 
             var allPurchased = this.Mapper.Map<IEnumerable<AllPurchasedModelsViewModel>>(
-                this.DbContext.AvailableScalemodels.Where(i => i.OwnerId == user.Id));
+                this.DbContext.AvailableScalemodels.Where(i => i.OwnerId == user.Id).OrderBy(a => a.Number));
 
             return allPurchased;
         }

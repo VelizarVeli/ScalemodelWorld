@@ -1,24 +1,25 @@
 ﻿@using ScalemodelWorld.Common.Constants
 @model IList<ScalemodelWorld.Common.Scalemodels.ViewModels.AllPurchasedModelsViewModel>
 @{
-    ViewData["Title"] = "View";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Purchased models";
+    Layout = "~/Views/Shared/_Layout-Scalemodels.cshtml";
 }
+<!-- Wrapper -->
 <h1 class="text-center">Purchased scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
     <nav id="sidebar">
-    <partial name="_SideBarPartial" />
-    <ul class="list-unstyled CTAs">
-        <li>
-            <a asp-area="" asp-controller="PurchasedScalemodels" asp-action="AddModel" class="btn btn-primary btn-lg">ADD NEW MODEL</a>
-        </li>
+        <partial name="_SideBarPartial" />
         <ul class="list-unstyled CTAs">
             <li>
-                <a asp-controller="Users" asp-action="SeedPurchasedView" class="btn btn-primary btn-lg">SEED DATA</a>
+                <a asp-area="" asp-controller="PurchasedScalemodels" asp-action="AddModel" class="btn btn-primary btn-lg">ADD NEW MODEL</a>
             </li>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a asp-controller="Users" asp-action="SeedPurchasedView" class="btn btn-primary btn-lg">SEED DATA</a>
+                </li>
+            </ul>
         </ul>
-    </ul>
     </nav>
     <table class="table table-hover">
         <thead>
