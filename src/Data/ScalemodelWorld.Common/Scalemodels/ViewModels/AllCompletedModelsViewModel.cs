@@ -15,6 +15,8 @@ namespace ScalemodelWorld.Common.Scalemodels.ViewModels
 
         public string Name { get; set; }
 
+        public string Manifacturer { get; set; }
+
         [DisplayFormat(DataFormatString = AttributeDisplayNameConstants.StartingDate)]
         public DateTime StartingDate { get; set; }
 

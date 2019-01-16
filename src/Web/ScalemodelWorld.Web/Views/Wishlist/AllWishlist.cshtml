@@ -3,6 +3,7 @@
     ViewData["Title"] = "Purchased models";
     Layout = "~/Views/Shared/_Layout-Scalemodels.cshtml";
 }
+<br />
 <h1 class="text-center">Wishlist</h1>
 <hr class="bg-dark" style="height: 2px" />
 <div class="d-flex justify-content-between">
@@ -21,10 +22,10 @@
         <thead>
             <tr class="row">
                 <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>№</h6></th>
-                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Box cover</h6></th>
-                <th scope="col" class="col-sm-3 d-flex justify-content-center"><h6>Name</h6></th>
+                <th scope="col" class="col-sm-1 d-flex justify-content-center"><h6>Box cover</h6></th>
+                <th scope="col" class="col-sm-3 d-flex justify-content-left"><h6>Name</h6></th>
                 <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Manifacturer</h6></th>
-                <th scope="col" class="col-sm-2 d-flex justify-content-center"><h6>Factory number</h6></th>
+                <th scope="col" class="col-sm-2 d-flex justify-content-right"><h6>Factory number</h6></th>
             </tr>
         </thead>
         <tbody>
@@ -36,28 +37,28 @@
                 {
                     <tr class="row table-primary">
                         <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center">
+                        <td class="col-sm-1 d-flex justify-content-center">
                             <a href="@item.LinkToScalemates" target="_blank">
                                 <img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" />
                             </a>
                         </td>
                         <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
-                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.FactoryNumber</small></h6></td>
+                        <td class="col-sm-2 d-flex text-right"><h6><small>@item.FactoryNumber</small></h6></td>
                     </tr>
                 }
                 else
                 {
                     <tr class="row table-success">
                         <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center">
+                        <td class="col-sm-1 d-flex justify-content-center">
                             <a href="@item.LinkToScalemates" target="_blank">
                                 <img class="img-fluid" alt="Responsive image" src="@item.BoxPicture" />
                             </a>
                         </td>
                         <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
                         <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
-                        <td class="col-sm-2 d-flex text-left"><h6><small>@item.FactoryNumber</small></h6></td>
+                        <td class="col-sm-2 d-flex text-right"><h6><small>@item.FactoryNumber</small></h6></td>
                     </tr>
                 }
             }

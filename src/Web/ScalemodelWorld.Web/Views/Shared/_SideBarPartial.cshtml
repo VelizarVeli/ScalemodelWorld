@@ -11,11 +11,12 @@
         <ul class="list-unstyled components">
             <p>Dummy Heading</p>
             <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Scalemodels</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li><a href="#">Home 1</a></li>
-                    <li><a href="#">Home 2</a></li>
-                    <li><a href="#">Home 3</a></li>
+                    <li><a class="sidebar" asp-area="" asp-controller="PurchasedScalemodels" asp-action="AllPurchased">Purchased</a></li>
+                    <li><a class="sidebar" asp-area="" asp-controller="StartedScalemodels" asp-action="AllStarted">Started</a></li>
+                    <li><a class="sidebar" asp-area="" asp-controller="CompletedScalemodels" asp-action="AllCompleted">Completed</a></li>
+                    <li><a class="sidebar" asp-area="" asp-controller="Wishlist" asp-action="AllWishlist">Wish List</a></li>
                 </ul>
             </li>
             <li>
