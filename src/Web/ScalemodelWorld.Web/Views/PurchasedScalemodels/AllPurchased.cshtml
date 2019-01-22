@@ -1,9 +1,16 @@
 ﻿@using ScalemodelWorld.Common.Constants
-@model IList<ScalemodelWorld.Common.Scalemodels.ViewModels.AllPurchasedModelsViewModel>
 @{
     ViewData["Title"] = "Purchased models";
     Layout = "~/Views/Shared/_Layout-Scalemodels.cshtml";
-}   
+}
+@using X.PagedList.Mvc; //import this so we get our HTML Helper
+@using X.PagedList;
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+
+<!-- output a paging control that lets the user navigation to the previous page, next page, etc -->
+
+<br />
 <br />
 <h1 class="text-center">Purchased scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
@@ -17,6 +24,9 @@
             <ul class="list-unstyled CTAs">
                 <li>
                     <a asp-controller="Users" asp-action="SeedPurchasedView" class="btn btn-primary btn-lg">SEED DATA</a>
+                </li>
+                <li class="page-item">
+                    @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("AllPurchased", new { page = page }), PagedListRenderOptions.OnlyShowFivePagesAtATime)
                 </li>
             </ul>
         </ul>
@@ -35,58 +45,29 @@
             </tr>
         </thead>
         <tbody>
-            @for (int i = 0; i < @Model.Count; i++)
+            @foreach (var product in ViewBag.OnePageOfProducts)
             {
-                var item = this.Model[i];
-
-                if (i % 2 == 0)
-                {
-                    <tr class="row table-primary">
-                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-1 d-flex justify-content-center">
-                            <a href="@item.LinkToScalemates" target="_blank">
-                                <img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" />
-                            </a>
-                        </td>
-                        <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
-                        <td class="col-sm-1 d-flex text-left"><h6><small>@item.Manifacturer</small></h6></td>
-                        <td class="col-sm-1 d-flex text-left"><h6><small>@item.Manifacturer</small></h6></td>
-                        @if (item.Price == 0)
-                        {
-                            <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
-                        }
-                        else
-                        {
-                            <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
-                        }
-                        <td class="col-sm-1 d-flex text-left"><h6><small>@item.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-right"> <a asp-action="PurchasedDetails" asp-route-id="@item.Id">Details</a></td>
-                    </tr>
-                }
-                else
-                {
-                    <tr class="row table-success">
-                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-1 d-flex justify-content-center">
-                            <a href="@item.LinkToScalemates" target="_blank">
-                                <img class="img-fluid" alt="Responsive image" src="@item.BoxPicture" />
-                            </a>
-                        </td>
-                        <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
-                        <td class="col-sm-1 d-flex text-left"><h6><small>@item.Manifacturer</small></h6></td>
-                        <td class="col-sm-1 d-flex text-left"><h6><small>@item.Manifacturer</small></h6></td>
-                        @if (item.Price == 0)
-                        {
-                            <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
-                        }
-                        else
-                        {
-                            <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Price лв.</small></h6></td>
-                        }
-                        <td class="col-sm-1 d-flex text-left"><h6><small>@item.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-right"> <a asp-action="PurchasedDetails" asp-route-id="@item.Id">Details</a></td>
-                    </tr>
-                }
+                <tr class="row table-primary">
+                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@product.Number</small></h6></td>
+                    <td class="col-sm-1 d-flex justify-content-center">
+                        <a href="@product.LinkToScalemates" target="_blank">
+                            <img src="@product.BoxPicture" class="img-fluid" alt="Responsive image" />
+                        </a>
+                    </td>
+                    <td class="col-sm-3 d-flex text-left"><h6><small>@product.Name</small></h6></td>
+                    <td class="col-sm-1 d-flex text-left"><h6><small>@product.Manifacturer</small></h6></td>
+                    <td class="col-sm-1 d-flex text-left"><h6><small>@product.Manifacturer</small></h6></td>
+                    @if (product.Price == 0)
+                    {
+                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>0.00 лв.</small></h6></td>
+                    }
+                    else
+                    {
+                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@product.Price лв.</small></h6></td>
+                    }
+                    <td class="col-sm-1 d-flex text-left"><h6><small>@product.DateOfPurchase.ToString(AttributeDisplayNameConstants.DayFormat)</small></h6></td>
+                    <td class="col-sm-2 d-flex justify-content-right"> <a asp-action="PurchasedDetails" asp-route-id="@product.Id">Details</a></td>
+                </tr>
             }
         </tbody>
     </table>
