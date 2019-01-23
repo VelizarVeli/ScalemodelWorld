@@ -6,6 +6,7 @@ using Scalemodel.Data.Models;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
+using X.PagedList;
 
 namespace ScalemodelWorld.Web.Controllers
 {
@@ -24,12 +25,17 @@ namespace ScalemodelWorld.Web.Controllers
             this.currentUser = current;
         }
 
+
+
         [Authorize]
-       public async Task<IActionResult> AllWishlist()
+       public async Task<IActionResult> AllWishlist(int? page)
        {
            var wishlistModels = await this.wishlistService.WishlistAll(this.currentUser.GetUserId(User));
+           var pageNumber = page ?? 1;
+           var onePageOfProducts = wishlistModels.ToPagedList(pageNumber, 10);
+           ViewBag.OnePageOfProducts = onePageOfProducts;
 
-           return View("AllWishlist", wishlistModels);
+            return View("AllWishlist");
        }
 
         [Authorize]

@@ -7,6 +7,7 @@ using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
+using X.PagedList;
 
 namespace ScalemodelWorld.Web.Controllers
 {
@@ -26,11 +27,13 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> AllCompleted()
+        public async Task<IActionResult> AllCompleted(int? page)
         {
             var completedModels = await this.completedScalemodelsService.AllCompleted(this.currentUser.GetUserId(User));
-
-            return View("AllCompleted", completedModels);
+            var pageNumber = page ?? 1;
+            var onePageOfProducts = completedModels.ToPagedList(pageNumber, 10);
+            ViewBag.OnePageOfProducts = onePageOfProducts;
+            return View("AllCompleted");
         }
         
         [Authorize]

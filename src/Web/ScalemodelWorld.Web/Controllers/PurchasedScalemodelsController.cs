@@ -29,13 +29,9 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> AllPurchased(int? page)
         {
-
-            //return View();
-
-
             var purchasedModels = await this.purchasedScalemodelsService.AllPurchased(this.currentUser.GetUserId(User));
-            var pageNumber = page ?? 1; // if no page was specified in the querystring, default to the first page (1)
-            var onePageOfProducts = purchasedModels.ToPagedList(pageNumber, 25); // will only contain 25 products max because of the pageSize
+            var pageNumber = page ?? 1;
+            var onePageOfProducts = purchasedModels.ToPagedList(pageNumber, 10);
             ViewBag.OnePageOfProducts = onePageOfProducts;
             return View("AllPurchased");
         }

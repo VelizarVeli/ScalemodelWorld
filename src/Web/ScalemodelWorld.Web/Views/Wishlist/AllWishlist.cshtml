@@ -1,11 +1,23 @@
-﻿@model IList<ScalemodelWorld.Common.Scalemodels.BindingModels.WishlistScalemodelBindingModel>
-@{
+﻿@{
     ViewData["Title"] = "Purchased models";
     Layout = "~/Views/Shared/_Layout-Scalemodels.cshtml";
 }
+@using X.PagedList;
+@using X.PagedList.Mvc.Common
+@using X.PagedList.Mvc.Core
+<br />
 <br />
 <h1 class="text-center">Wishlist</h1>
 <hr class="bg-dark" style="height: 2px" />
+<ul class="pagination">
+    <li class="page-item">
+        @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("AllWishlist", new { page = page }),
+            new PagedListRenderOptions {
+                LiElementClasses = new string[] { "page-item" },
+                PageClasses = new string[] { "page-link" }
+            })
+    </li>
+</ul>
 <div class="d-flex justify-content-between">
     <nav id="sidebar">
         <partial name="_SideBarPartial" />
@@ -29,39 +41,29 @@
             </tr>
         </thead>
         <tbody>
-            @for (int i = 0; i < @Model.Count; i++)
+            @foreach (var product in ViewBag.OnePageOfProducts)
             {
-                var item = this.Model[i];
-
-                if (i % 2 == 0)
-                {
-                    <tr class="row table-primary">
-                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-1 d-flex justify-content-center">
-                            <a href="@item.LinkToScalemates" target="_blank">
-                                <img src="@item.BoxPicture" class="img-fluid" alt="Responsive image" />
-                            </a>
-                        </td>
-                        <td class="col-sm-3 d-flex text-left"><h6><small>@item.Name</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
-                        <td class="col-sm-2 d-flex text-right"><h6><small>@item.FactoryNumber</small></h6></td>
-                    </tr>
-                }
-                else
-                {
-                    <tr class="row table-success">
-                        <td class="col-sm-1 d-flex justify-content-center"><h6><small>@item.Number</small></h6></td>
-                        <td class="col-sm-1 d-flex justify-content-center">
-                            <a href="@item.LinkToScalemates" target="_blank">
-                                <img class="img-fluid" alt="Responsive image" src="@item.BoxPicture" />
-                            </a>
-                        </td>
-                        <td class="col-sm-3 text-left"><h6><small>@item.Name</small></h6></td>
-                        <td class="col-sm-2 d-flex justify-content-center"><h6><small>@item.Manifacturer</small></h6></td>
-                        <td class="col-sm-2 d-flex text-right"><h6><small>@item.FactoryNumber</small></h6></td>
-                    </tr>
-                }
+                <tr class="row table-primary">
+                    <td class="col-sm-1 d-flex justify-content-center"><h6><small>@product.Number</small></h6></td>
+                    <td class="col-sm-1 d-flex justify-content-center">
+                        <a href="@product.LinkToScalemates" target="_blank">
+                            <img src="@product.BoxPicture" class="img-fluid" alt="Responsive image" />
+                        </a>
+                    </td>
+                    <td class="col-sm-3 d-flex text-left"><h6><small>@product.Name</small></h6></td>
+                    <td class="col-sm-2 d-flex justify-content-center"><h6><small>@product.Manifacturer</small></h6></td>
+                    <td class="col-sm-2 d-flex text-right"><h6><small>@product.FactoryNumber</small></h6></td>
+                </tr>
             }
         </tbody>
     </table>
 </div>
+<ul class="pagination">
+    <li class="page-item">
+        @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("AllWishlist", new { page = page }),
+            new PagedListRenderOptions {
+                LiElementClasses = new string[] { "page-item" },
+                PageClasses = new string[] { "page-link" }
+            })
+    </li>
+</ul>
