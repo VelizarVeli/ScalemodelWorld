@@ -78,7 +78,7 @@ namespace ScalemodelWorld.Services.Scalemodels
 
             DbContext.CompletedScalemodels.Add(finished);
             DbContext.StartedScalemodels.Remove(startModel);
-
+            await UpdateNumber(id);
             await this.DbContext.SaveChangesAsync();
         }
 
@@ -87,31 +87,62 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.GetUserByIdAsync(userId);
             var startedModel = await this.DbContext.StartedScalemodels.FirstOrDefaultAsync(e => e.Id == modelId && e.OwnerId == user.Id);
             this.DbContext.StartedScalemodels.Remove(startedModel);
+            await UpdateNumber(modelId);
             await this.DbContext.SaveChangesAsync();
         }
 
         public async Task StartedEditAsync(StartedScalemodelBindingModel scalemodel, int modelId, string userId)
         {
             var model = DbContext.StartedScalemodels.Find(modelId);
+
+            if(model.Number != scalemodel.Number)
+            {
+                await UpdateNumbersFromEdit(model.Number, scalemodel.Number);
+                model.Number = scalemodel.Number;
+            }
+
             Mapper.Map(scalemodel, model);
             model.OwnerId = userId;
             DbContext.StartedScalemodels.Update(model);
             await this.DbContext.SaveChangesAsync();
         }
-        
-        //private async Task updateNumbers(int oldNumberValue, int editedNumber)
-        //{
-        //    var availableModels = DbContext.AvailableScalemodels.AddRangeAsync()
 
-        //    if (oldNumberValue > editedNumber)
-        //    {
-        //        for (int i = editedNumber; i < oldNumberValue; i++)
-        //        {
-        //            DbContext
-        //        }
-        //    }
+        public async Task UpdateNumber(int deletedNumberValue)
+        {
+            var deletedModel = DbContext.StartedScalemodels.FirstOrDefault(i => i.Id == deletedNumberValue);
 
-        //    DbContext.SaveChangesAsync();
-        //}
+            var startedModels = DbContext.StartedScalemodels.Where(a => a.Number > deletedModel.Number).ToList();
+            foreach (var model in startedModels)
+            {
+                model.Number -= 1;
+            }
+            DbContext.StartedScalemodels.UpdateRange(startedModels);
+            await this.DbContext.SaveChangesAsync();
+        }
+
+        public async Task UpdateNumbersFromEdit(int oldNumberValue, int editedNumber)
+        {
+            if (oldNumberValue > editedNumber)
+            {
+                var startedModels = DbContext.StartedScalemodels.Where(a => a.Number >= editedNumber && a.Number < oldNumberValue).ToList();
+
+                foreach (var model in startedModels)
+                {
+                    model.Number += 1;
+                }
+                DbContext.StartedScalemodels.UpdateRange(startedModels);
+                await this.DbContext.SaveChangesAsync();
+            }
+            else
+            {
+                var startedModels = DbContext.StartedScalemodels.Where(a => a.Number > oldNumberValue && a.Number <= editedNumber).ToList();
+                foreach (var model in startedModels)
+                {
+                    model.Number -= 1;
+                }
+                DbContext.StartedScalemodels.UpdateRange(startedModels);
+                await this.DbContext.SaveChangesAsync();
+            }
+        }
     }
 }

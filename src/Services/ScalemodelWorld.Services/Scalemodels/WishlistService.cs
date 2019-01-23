@@ -45,24 +45,7 @@ namespace ScalemodelWorld.Services.Scalemodels
             var allWishlist = this.Mapper.Map<IEnumerable<WishlistScalemodelBindingModel>>(
                 this.DbContext.WishScalemodels.Where(i => i.UserId == user.Id).OrderBy(n => n.Number));
 
-
-
             return allWishlist;
         }
-
-        //private async Task updateNumbers(int oldNumberValue, int editedNumber)
-        //{
-        //    var availableModels = DbContext.AvailableScalemodels.AddRangeAsync()
-
-        //    if (oldNumberValue > editedNumber)
-        //    {
-        //        for (int i = editedNumber; i < oldNumberValue; i++)
-        //        {
-        //            DbContext
-        //        }
-        //    }
-
-        //    DbContext.SaveChangesAsync();
-        //}
     }
 }

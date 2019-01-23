@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -71,6 +72,7 @@ namespace ScalemodelWorld.Services.Scalemodels
 
             DbContext.StartedScalemodels.Add(started);
             DbContext.AvailableScalemodels.Remove(purchasedModel);
+            await UpdateNumber(id);
             await this.DbContext.SaveChangesAsync();
         }
 
@@ -79,31 +81,60 @@ namespace ScalemodelWorld.Services.Scalemodels
             var user = await this.GetUserByIdAsync(userId);
             var purchasedModel = await this.DbContext.AvailableScalemodels.FirstOrDefaultAsync(e => e.Id == modelId && e.OwnerId == user.Id);
             this.DbContext.AvailableScalemodels.Remove(purchasedModel);
+            await UpdateNumber(modelId);
             await this.DbContext.SaveChangesAsync();
         }
 
         public async Task PurchasedEditAsync(PurchasedScalemodelBindingModel scalemodel, int modelId, string userId)
         {
             var model = DbContext.AvailableScalemodels.Find(modelId);
+            if (model.Number != scalemodel.Number)
+            {
+                await UpdateNumbersFromEdit(model.Number, scalemodel.Number);
+                model.Number = scalemodel.Number;
+            }
             Mapper.Map(scalemodel, model);
             model.OwnerId = userId;
             DbContext.AvailableScalemodels.Update(model);
             await this.DbContext.SaveChangesAsync();
         }
 
-        //private async Task updateNumbers(int oldNumberValue, int editedNumber)
-        //{
-        //    var availableModels = DbContext.AvailableScalemodels.AddRangeAsync()
+        public async Task UpdateNumber(int deletedNumberValue)
+        {
+            var deletedModel = DbContext.AvailableScalemodels.FirstOrDefault(i => i.Id == deletedNumberValue);
 
-        //    if (oldNumberValue > editedNumber)
-        //    {
-        //        for (int i = editedNumber; i < oldNumberValue; i++)
-        //        {
-        //            DbContext
-        //        }
-        //    }
+            var availableModels = DbContext.AvailableScalemodels.Where(a => a.Number > deletedModel.Number).ToList();
+            foreach (var model in availableModels)
+            {
+                model.Number -= 1;
+            }
+            DbContext.AvailableScalemodels.UpdateRange(availableModels);
+            await this.DbContext.SaveChangesAsync();
+        }
 
-        //    DbContext.SaveChangesAsync();
-        //}
+        public async Task UpdateNumbersFromEdit(int oldNumberValue, int editedNumber)
+        {
+            if (oldNumberValue > editedNumber)
+            {
+                var availableModels = DbContext.AvailableScalemodels.Where(a => a.Number >= editedNumber && a.Number < oldNumberValue).ToList();
+
+                foreach (var model in availableModels)
+                {
+                    model.Number += 1;
+                }
+                DbContext.AvailableScalemodels.UpdateRange(availableModels);
+                await this.DbContext.SaveChangesAsync();
+            }
+            else
+            {
+                var availableModels = DbContext.AvailableScalemodels.Where(a => a.Number > oldNumberValue && a.Number <= editedNumber).ToList();
+                foreach (var model in availableModels)
+                {
+                    model.Number -= 1;
+                }
+                DbContext.AvailableScalemodels.UpdateRange(availableModels);
+                await this.DbContext.SaveChangesAsync();
+            }
+        }
     }
 }
