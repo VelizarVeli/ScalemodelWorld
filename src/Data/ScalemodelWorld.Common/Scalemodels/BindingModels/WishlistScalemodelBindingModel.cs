@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.BindingModels
@@ -32,5 +33,7 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         public int Number { get; set; }
 
         public string UserId { get; set; }
+
+        public Category Category { get; set; }
     }
 }

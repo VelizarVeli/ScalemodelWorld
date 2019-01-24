@@ -14,8 +14,14 @@
     "CombinesWith": "",
     "Price": 10.9,
     "DateOfPurchase": "18/11/2008",
-    "StartedOnDate": "18/11/2008",
-    "FinishedOnDate": "25/11/2008"
+    "StartingDate": "18/11/2008",
+    "FinishingDate": "25/11/2008",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 2,
@@ -32,8 +38,14 @@
     "CombinesWith": "Preiser",
     "Price": 14.72,
     "DateOfPurchase": "28/12/2008",
-    "StartedOnDate": "28/12/2008",
-    "FinishedOnDate": "2009-04-30T21:00:00.000Z"
+    "StartingDate": "28/12/2008",
+    "FinishingDate": "2009-04-30T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 3,
@@ -50,8 +62,14 @@
     "CombinesWith": "",
     "Price": 36.7,
     "DateOfPurchase": "29/04/2008",
-    "StartedOnDate": "2008-01-06T22:00:00.000Z",
-    "FinishedOnDate": "20/08/2008"
+    "StartingDate": "2008-01-06T22:00:00.000Z",
+    "FinishingDate": "20/08/2008",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 4,
@@ -68,8 +86,14 @@
     "CombinesWith": "",
     "Price": 15.9,
     "DateOfPurchase": "27/05/2009",
-    "StartedOnDate": "2014-05-05T21:00:00.000Z",
-    "FinishedOnDate": "25/06/2014"
+    "StartingDate": "2014-05-05T21:00:00.000Z",
+    "FinishingDate": "25/06/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 5,
@@ -86,8 +110,14 @@
     "CombinesWith": "",
     "Price": 15.9,
     "DateOfPurchase": "31/05/2009",
-    "StartedOnDate": "2009-01-04T22:00:00.000Z",
-    "FinishedOnDate": "15/05/2014"
+    "StartingDate": "2009-01-04T22:00:00.000Z",
+    "FinishingDate": "15/05/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 6,
@@ -104,8 +134,14 @@
     "CombinesWith": "",
     "Price": 15.6,
     "DateOfPurchase": "2008-10-04T21:00:00.000Z",
-    "StartedOnDate": "2009-01-07T22:00:00.000Z",
-    "FinishedOnDate": "2009-06-07T21:00:00.000Z"
+    "StartingDate": "2009-01-07T22:00:00.000Z",
+    "FinishingDate": "2009-06-07T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 7,
@@ -122,8 +158,14 @@
     "CombinesWith": "",
     "Price": 22.8,
     "DateOfPurchase": "2008-03-09T22:00:00.000Z",
-    "StartedOnDate": "2009-01-02T22:00:00.000Z",
-    "FinishedOnDate": "25/03/2009"
+    "StartingDate": "2009-01-02T22:00:00.000Z",
+    "FinishingDate": "25/03/2009",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 8,
@@ -140,8 +182,14 @@
     "CombinesWith": "",
     "Price": 24.8,
     "DateOfPurchase": "24/03/2009",
-    "StartedOnDate": "2009-01-03T22:00:00.000Z",
-    "FinishedOnDate": "25/04/2009"
+    "StartingDate": "2009-01-03T22:00:00.000Z",
+    "FinishingDate": "25/04/2009",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 9,
@@ -158,8 +206,14 @@
     "CombinesWith": "",
     "Price": 24.8,
     "DateOfPurchase": "24/03/2009",
-    "StartedOnDate": "23/05/2009",
-    "FinishedOnDate": "31/05/2009"
+    "StartingDate": "23/05/2009",
+    "FinishingDate": "31/05/2009",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 10,
@@ -176,8 +230,14 @@
     "CombinesWith": "",
     "Price": 24.8,
     "DateOfPurchase": "24/03/2009",
-    "StartedOnDate": "15/08/2009",
-    "FinishedOnDate": "2009-10-06T21:00:00.000Z"
+    "StartingDate": "15/08/2009",
+    "FinishingDate": "2009-10-06T21:00:00.000Z",
+    "aftermarketUsed ": "Extratech",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 11,
@@ -194,8 +254,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "2009-05-05T21:00:00.000Z",
-    "StartedOnDate": "2009-10-05T21:00:00.000Z",
-    "FinishedOnDate": "20/08/2009"
+    "StartingDate": "2009-10-05T21:00:00.000Z",
+    "FinishingDate": "20/08/2009",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 12,
@@ -212,8 +278,14 @@
     "CombinesWith": "",
     "Price": 6.3,
     "DateOfPurchase": "29/04/2008",
-    "StartedOnDate": "2009-12-01T22:00:00.000Z",
-    "FinishedOnDate": "25/09/2009"
+    "StartingDate": "2009-12-01T22:00:00.000Z",
+    "FinishingDate": "25/09/2009",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 13,
@@ -230,8 +302,14 @@
     "CombinesWith": "",
     "Price": 14.9,
     "DateOfPurchase": "28/12/2008",
-    "StartedOnDate": "2009-05-04T21:00:00.000Z",
-    "FinishedOnDate": "2009-05-09T21:00:00.000Z"
+    "StartingDate": "2009-05-04T21:00:00.000Z",
+    "FinishingDate": "2009-05-09T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 14,
@@ -248,8 +326,14 @@
     "CombinesWith": "Preiser commander",
     "Price": 14.9,
     "DateOfPurchase": "28/12/2008",
-    "StartedOnDate": "2009-11-10T22:00:00.000Z",
-    "FinishedOnDate": "15/01/2010"
+    "StartingDate": "2009-11-10T22:00:00.000Z",
+    "FinishingDate": "15/01/2010",
+    "aftermarketUsed ": "Preiser-72526, Part",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 15,
@@ -266,8 +350,14 @@
     "CombinesWith": "",
     "Price": 8,
     "DateOfPurchase": "2009-02-04T22:00:00.000Z",
-    "StartedOnDate": "27/07/2010",
-    "FinishedOnDate": "30/07/2010"
+    "StartingDate": "27/07/2010",
+    "FinishingDate": "30/07/2010",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 16,
@@ -284,8 +374,14 @@
     "CombinesWith": "MIG 72093",
     "Price": 15,
     "DateOfPurchase": "18/08/2009",
-    "StartedOnDate": "30/08/2010",
-    "FinishedOnDate": "2012-12-04T22:00:00.000Z"
+    "StartingDate": "30/08/2010",
+    "FinishingDate": "2012-12-04T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 17,
@@ -302,8 +398,14 @@
     "CombinesWith": "",
     "Price": 3,
     "DateOfPurchase": "2009-03-03T22:00:00.000Z",
-    "StartedOnDate": "15/11/2010",
-    "FinishedOnDate": "25/11/2010"
+    "StartingDate": "15/11/2010",
+    "FinishingDate": "25/11/2010",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "JetAircrafts"
   },
   {
     "Number": 18,
@@ -320,8 +422,14 @@
     "CombinesWith": "",
     "Price": 23.6,
     "DateOfPurchase": "21/08/2010",
-    "StartedOnDate": "21/12/2010",
-    "FinishedOnDate": "2011-11-30T22:00:00.000Z"
+    "StartingDate": "21/12/2010",
+    "FinishingDate": "2011-11-30T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Architecture"
   },
   {
     "Number": 19,
@@ -338,8 +446,14 @@
     "CombinesWith": "",
     "Price": 15.6,
     "DateOfPurchase": "15/07/2009",
-    "StartedOnDate": "2010-01-04T22:00:00.000Z",
-    "FinishedOnDate": "23/05/2010"
+    "StartingDate": "2010-01-04T22:00:00.000Z",
+    "FinishingDate": "23/05/2010",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 20,
@@ -356,8 +470,14 @@
     "CombinesWith": "",
     "Price": 13,
     "DateOfPurchase": "15/07/2009",
-    "StartedOnDate": "15/05/2010",
-    "FinishedOnDate": "17/05/2010"
+    "StartingDate": "15/05/2010",
+    "FinishingDate": "17/05/2010",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 21,
@@ -374,8 +494,14 @@
     "CombinesWith": "",
     "Price": 13,
     "DateOfPurchase": "15/07/2009",
-    "StartedOnDate": "15/05/2010",
-    "FinishedOnDate": "17/05/2010"
+    "StartingDate": "15/05/2010",
+    "FinishingDate": "17/05/2010",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 22,
@@ -392,8 +518,14 @@
     "CombinesWith": "",
     "Price": 14.9,
     "DateOfPurchase": "26/01/2009",
-    "StartedOnDate": "2009-04-04T21:00:00.000Z",
-    "FinishedOnDate": "2009-08-04T21:00:00.000Z"
+    "StartingDate": "2009-04-04T21:00:00.000Z",
+    "FinishingDate": "2009-08-04T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 23,
@@ -410,8 +542,14 @@
     "CombinesWith": "",
     "Price": 32.5,
     "DateOfPurchase": "31/03/2009",
-    "StartedOnDate": "2009-01-03T22:00:00.000Z",
-    "FinishedOnDate": "2009-04-04T21:00:00.000Z"
+    "StartingDate": "2009-01-03T22:00:00.000Z",
+    "FinishingDate": "2009-04-04T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Helicopters"
   },
   {
     "Number": 24,
@@ -428,8 +566,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "2009-03-03T22:00:00.000Z",
-    "StartedOnDate": "2010-05-05T21:00:00.000Z",
-    "FinishedOnDate": "28/06/2010"
+    "StartingDate": "2010-05-05T21:00:00.000Z",
+    "FinishingDate": "28/06/2010",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 25,
@@ -446,8 +590,14 @@
     "CombinesWith": "",
     "Price": 12.7,
     "DateOfPurchase": "21/08/2010",
-    "StartedOnDate": "28/06/2010",
-    "FinishedOnDate": "2010-01-06T22:00:00.000Z"
+    "StartingDate": "28/06/2010",
+    "FinishingDate": "2010-01-06T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Architecture"
   },
   {
     "Number": 26,
@@ -464,8 +614,14 @@
     "CombinesWith": "",
     "Price": 9,
     "DateOfPurchase": "18/12/2010",
-    "StartedOnDate": "28/12/2010",
-    "FinishedOnDate": "2009-12-31T22:00:00.000Z"
+    "StartingDate": "28/12/2010",
+    "FinishingDate": "2009-12-31T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 27,
@@ -482,8 +638,14 @@
     "CombinesWith": "",
     "Price": 9,
     "DateOfPurchase": "27/11/2010",
-    "StartedOnDate": "28/11/2010",
-    "FinishedOnDate": "2010-01-11T22:00:00.000Z"
+    "StartingDate": "28/11/2010",
+    "FinishingDate": "2010-01-11T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 28,
@@ -500,8 +662,14 @@
     "CombinesWith": "",
     "Price": 17,
     "DateOfPurchase": "2010-10-11T21:00:00.000Z",
-    "StartedOnDate": "2011-04-30T21:00:00.000Z",
-    "FinishedOnDate": "15/01/2011"
+    "StartingDate": "2011-04-30T21:00:00.000Z",
+    "FinishingDate": "15/01/2011",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 29,
@@ -518,8 +686,14 @@
     "CombinesWith": "",
     "Price": 8,
     "DateOfPurchase": "18/12/2008",
-    "StartedOnDate": "15/01/2011",
-    "FinishedOnDate": "21/01/2011"
+    "StartingDate": "15/01/2011",
+    "FinishingDate": "21/01/2011",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 30,
@@ -536,8 +710,14 @@
     "CombinesWith": "",
     "Price": 3.6,
     "DateOfPurchase": "2010-12-11T22:00:00.000Z",
-    "StartedOnDate": "22/01/2011",
-    "FinishedOnDate": "23/01/2011"
+    "StartingDate": "22/01/2011",
+    "FinishingDate": "23/01/2011",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Figures"
   },
   {
     "Number": 31,
@@ -554,8 +734,14 @@
     "CombinesWith": "",
     "Price": 17.6,
     "DateOfPurchase": "2009-05-10T21:00:00.000Z",
-    "StartedOnDate": "15/07/2011",
-    "FinishedOnDate": "15/08/2011"
+    "StartingDate": "15/07/2011",
+    "FinishingDate": "15/08/2011",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 32,
@@ -572,8 +758,14 @@
     "CombinesWith": "",
     "Price": 10,
     "DateOfPurchase": "2010-12-04T22:00:00.000Z",
-    "StartedOnDate": "16/08/2011",
-    "FinishedOnDate": "20/08/2011"
+    "StartingDate": "16/08/2011",
+    "FinishingDate": "20/08/2011",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 33,
@@ -590,8 +782,14 @@
     "CombinesWith": "",
     "Price": 9,
     "DateOfPurchase": "2009-08-10T21:00:00.000Z",
-    "StartedOnDate": "15/08/2011",
-    "FinishedOnDate": "2011-01-08T22:00:00.000Z"
+    "StartingDate": "15/08/2011",
+    "FinishingDate": "2011-01-08T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 34,
@@ -608,8 +806,14 @@
     "CombinesWith": "",
     "Price": 14.4,
     "DateOfPurchase": "2009-08-31T21:00:00.000Z",
-    "StartedOnDate": "2011-01-07T22:00:00.000Z",
-    "FinishedOnDate": "2011-05-08T21:00:00.000Z"
+    "StartingDate": "2011-01-07T22:00:00.000Z",
+    "FinishingDate": "2011-05-08T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 35,
@@ -626,8 +830,14 @@
     "CombinesWith": "Dragon crew ",
     "Price": 19.9,
     "DateOfPurchase": "2009-02-05T22:00:00.000Z",
-    "StartedOnDate": "22/08/2011",
-    "FinishedOnDate": "16/09/2012"
+    "StartingDate": "22/08/2011",
+    "FinishingDate": "16/09/2012",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Diorama"
   },
   {
     "Number": 36,
@@ -644,8 +854,14 @@
     "CombinesWith": "Preiser commander",
     "Price": 14.2,
     "DateOfPurchase": "2009-01-09T22:00:00.000Z",
-    "StartedOnDate": "15/11/2011",
-    "FinishedOnDate": "27/12/2011"
+    "StartingDate": "15/11/2011",
+    "FinishingDate": "27/12/2011",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 37,
@@ -662,8 +878,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "28/08/2009",
-    "StartedOnDate": "24/09/2012",
-    "FinishedOnDate": "25/09/2012"
+    "StartingDate": "24/09/2012",
+    "FinishingDate": "25/09/2012",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 38,
@@ -680,8 +902,14 @@
     "CombinesWith": "",
     "Price": 10,
     "DateOfPurchase": "2012-12-06T22:00:00.000Z",
-    "StartedOnDate": "20/09/2012",
-    "FinishedOnDate": "26/09/2012"
+    "StartingDate": "20/09/2012",
+    "FinishingDate": "26/09/2012",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 39,
@@ -698,8 +926,14 @@
     "CombinesWith": "",
     "Price": 5.1,
     "DateOfPurchase": "24/04/2009",
-    "StartedOnDate": "2012-02-09T22:00:00.000Z",
-    "FinishedOnDate": "2012-09-09T21:00:00.000Z"
+    "StartingDate": "2012-02-09T22:00:00.000Z",
+    "FinishingDate": "2012-09-09T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 40,
@@ -716,8 +950,14 @@
     "CombinesWith": "Revell 0240, Airfix/Heller  Luftwaffe personnel",
     "Price": 15.6,
     "DateOfPurchase": "15/07/2009",
-    "StartedOnDate": "24/07/2010",
-    "FinishedOnDate": "19/10/2012"
+    "StartingDate": "24/07/2010",
+    "FinishingDate": "19/10/2012",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 41,
@@ -734,8 +974,14 @@
     "CombinesWith": "",
     "Price": 9.9,
     "DateOfPurchase": "2009-03-07T22:00:00.000Z",
-    "StartedOnDate": "2012-05-10T21:00:00.000Z",
-    "FinishedOnDate": "22/11/2012"
+    "StartingDate": "2012-05-10T21:00:00.000Z",
+    "FinishingDate": "22/11/2012",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 42,
@@ -752,8 +998,14 @@
     "CombinesWith": "",
     "Price": 13.98,
     "DateOfPurchase": "2012-03-10T22:00:00.000Z",
-    "StartedOnDate": "2012-01-10T22:00:00.000Z",
-    "FinishedOnDate": "27/12/2012"
+    "StartingDate": "2012-01-10T22:00:00.000Z",
+    "FinishingDate": "27/12/2012",
+    "aftermarketUsed ": "CX105-Eduard;7123-CMK;Q72099-CMK;7125-CMK;SS230+73230-Eduard;S72238-Part;7124-CMK;P73230-Eduard",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "JetAircrafts"
   },
   {
     "Number": 43,
@@ -770,8 +1022,14 @@
     "CombinesWith": "",
     "Price": 11.52,
     "DateOfPurchase": "19/01/2013",
-    "StartedOnDate": "20/01/2013",
-    "FinishedOnDate": "2013-10-01T21:00:00.000Z"
+    "StartingDate": "20/01/2013",
+    "FinishingDate": "2013-10-01T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 44,
@@ -788,8 +1046,14 @@
     "CombinesWith": "72503-Preiser",
     "Price": 16,
     "DateOfPurchase": "20/08/2010",
-    "StartedOnDate": "16/06/2011",
-    "FinishedOnDate": "28/02/2013"
+    "StartingDate": "16/06/2011",
+    "FinishingDate": "28/02/2013",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
     "Number": 45,
@@ -806,26 +1070,14 @@
     "CombinesWith": "",
     "Price": 15,
     "DateOfPurchase": "2009-07-03T21:00:00.000Z",
-    "StartedOnDate": "29/11/2011",
-    "FinishedOnDate": "2013-01-04T22:00:00.000Z"
-  },
-  {
-    "Number": 0,
-    "Name": "Messerschmitt Bf-109 F2",
-    "Scale": 144,
-    "Manifacturer": "Zvezda",
-    "FactoryNumber": "6116",
-    "Placement": "Стела Петрова",
-    "BestCompanyOffer": "",
-    "Modelshows": "",
-    "GivenSold": "",
-    "PicturesLink": "https://drive.google.com/drive/folders/0B3AyeLJle-4QN3RnUzNYLUs1TjQ",
-    "ForumsLink": "",
-    "CombinesWith": "",
-    "Price": 4.41,
-    "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "20/08/2013",
-    "FinishedOnDate": "20/08/2013"
+    "StartingDate": "29/11/2011",
+    "FinishingDate": "2013-01-04T22:00:00.000Z",
+    "aftermarketUsed ": "P72098,P72097-Part",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 46,
@@ -842,26 +1094,14 @@
     "CombinesWith": "",
     "Price": 53.3,
     "DateOfPurchase": "18/05/2013",
-    "StartedOnDate": "2013-05-05T21:00:00.000Z",
-    "FinishedOnDate": "2013-01-08T22:00:00.000Z"
-  },
-  {
-    "Number": 0,
-    "Name": "Porshe 911 turbo",
-    "Scale": 24,
-    "Manifacturer": "Italeri",
-    "FactoryNumber": 12006,
-    "Placement": "Стела Петрова",
-    "BestCompanyOffer": "",
-    "Modelshows": "Варна2013-3 място, Стара Загора2013",
-    "GivenSold": "направен от Стела",
-    "PicturesLink": "https://drive.google.com/drive/folders/0B3AyeLJle-4QZDJMdHc5bWRWbGs",
-    "ForumsLink": "",
-    "CombinesWith": "",
-    "Price": 40.85,
-    "DateOfPurchase": "29/03/2013",
-    "StartedOnDate": "2013-01-03T22:00:00.000Z",
-    "FinishedOnDate": "29/04/2013"
+    "StartingDate": "2013-05-05T21:00:00.000Z",
+    "FinishingDate": "2013-01-08T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Architecture"
   },
   {
     "Number": 47,
@@ -878,8 +1118,14 @@
     "CombinesWith": "",
     "Price": 3.9,
     "DateOfPurchase": "14/04/2011",
-    "StartedOnDate": "2013-05-09T21:00:00.000Z",
-    "FinishedOnDate": "2013-10-09T21:00:00.000Z"
+    "StartingDate": "2013-05-09T21:00:00.000Z",
+    "FinishingDate": "2013-10-09T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 48,
@@ -896,8 +1142,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "28/08/2009",
-    "StartedOnDate": "28/11/2013",
-    "FinishedOnDate": "2013-01-11T22:00:00.000Z"
+    "StartingDate": "28/11/2013",
+    "FinishingDate": "2013-01-11T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 49,
@@ -914,8 +1166,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "2013-01-08T22:00:00.000Z",
-    "StartedOnDate": "2013-01-09T22:00:00.000Z",
-    "FinishedOnDate": "15/12/2013"
+    "StartingDate": "2013-01-09T22:00:00.000Z",
+    "FinishingDate": "15/12/2013",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "JetAircrafts"
   },
   {
     "Number": 50,
@@ -932,8 +1190,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "24/04/2012",
-    "StartedOnDate": "2013-01-11T22:00:00.000Z",
-    "FinishedOnDate": "2014-05-01T21:00:00.000Z"
+    "StartingDate": "2013-01-11T22:00:00.000Z",
+    "FinishingDate": "2014-05-01T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 51,
@@ -950,8 +1214,14 @@
     "CombinesWith": "",
     "Price": 14.22,
     "DateOfPurchase": "23/08/2008",
-    "StartedOnDate": "2008-10-09T21:00:00.000Z",
-    "FinishedOnDate": "17/02/2014"
+    "StartingDate": "2008-10-09T21:00:00.000Z",
+    "FinishingDate": "17/02/2014",
+    "aftermarketUsed ": "72A01-RB Model",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 52,
@@ -968,8 +1238,14 @@
     "CombinesWith": "",
     "Price": 10,
     "DateOfPurchase": "2008-02-10T22:00:00.000Z",
-    "StartedOnDate": "17/02/2014",
-    "FinishedOnDate": "2014-04-02T21:00:00.000Z"
+    "StartingDate": "17/02/2014",
+    "FinishingDate": "2014-04-02T21:00:00.000Z",
+    "aftermarketUsed ": "QB72 325-Quickboost",
+    "Paints": "",
+    "Laquers": "7233-Aires",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 53,
@@ -986,8 +1262,14 @@
     "CombinesWith": "",
     "Price": 19.2,
     "DateOfPurchase": "2014-03-02T22:00:00.000Z",
-    "StartedOnDate": "2014-07-02T21:00:00.000Z",
-    "FinishedOnDate": "2014-12-02T22:00:00.000Z"
+    "StartingDate": "2014-07-02T21:00:00.000Z",
+    "FinishingDate": "2014-12-02T22:00:00.000Z",
+    "aftermarketUsed ": "AM72011",
+    "Paints": "QB72 325-Quickboost",
+    "Laquers": "7143-Aires;SS210+73210,SS109-Eduard",
+    "Comments": "72020-Part",
+    "BoxPicture": "AM72-011-Master;7021,7024-Aires",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 54,
@@ -1004,8 +1286,14 @@
     "CombinesWith": "",
     "Price": 11.8,
     "DateOfPurchase": "2009-08-31T21:00:00.000Z",
-    "StartedOnDate": "14/03/2014",
-    "FinishedOnDate": "2014-12-03T22:00:00.000Z"
+    "StartingDate": "14/03/2014",
+    "FinishingDate": "2014-12-03T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 55,
@@ -1022,8 +1310,14 @@
     "CombinesWith": "",
     "Price": 19.2,
     "DateOfPurchase": "2014-03-02T22:00:00.000Z",
-    "StartedOnDate": "2014-12-03T22:00:00.000Z",
-    "FinishedOnDate": "2014-04-06T21:00:00.000Z"
+    "StartingDate": "2014-12-03T22:00:00.000Z",
+    "FinishingDate": "2014-04-06T21:00:00.000Z",
+    "aftermarketUsed ": "QB72206-Quickboost",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 56,
@@ -1040,8 +1334,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "2014-07-04T21:00:00.000Z",
-    "StartedOnDate": "2014-07-04T21:00:00.000Z",
-    "FinishedOnDate": "27/07/2014"
+    "StartingDate": "2014-07-04T21:00:00.000Z",
+    "FinishingDate": "27/07/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 57,
@@ -1058,8 +1358,14 @@
     "CombinesWith": "",
     "Price": 98.28,
     "DateOfPurchase": "2013-10-10T21:00:00.000Z",
-    "StartedOnDate": "07/08/2014",
-    "FinishedOnDate": "2014-03-08T22:00:00.000Z"
+    "StartingDate": "07/08/2014",
+    "FinishingDate": "2014-03-08T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "SciFiSpace"
   },
   {
     "Number": 58,
@@ -1076,8 +1382,14 @@
     "CombinesWith": "",
     "Price": 9,
     "DateOfPurchase": "23/08/2008",
-    "StartedOnDate": "01/07/2014",
-    "FinishedOnDate": "30/07/2014"
+    "StartingDate": "01/07/2014",
+    "FinishingDate": "30/07/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Figures"
   },
   {
     "Number": 59,
@@ -1094,8 +1406,14 @@
     "CombinesWith": "",
     "Price": 7.5,
     "DateOfPurchase": "27/09/2008",
-    "StartedOnDate": "01/08/2014",
-    "FinishedOnDate": "30/08/2014"
+    "StartingDate": "01/08/2014",
+    "FinishingDate": "30/08/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Figures"
   },
   {
     "Number": 60,
@@ -1112,8 +1430,14 @@
     "CombinesWith": "",
     "Price": 15,
     "DateOfPurchase": "2009-09-06T21:00:00.000Z",
-    "StartedOnDate": "01/08/2014",
-    "FinishedOnDate": "30/08/2014"
+    "StartingDate": "01/08/2014",
+    "FinishingDate": "30/08/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Figures"
   },
   {
     "Number": 61,
@@ -1130,8 +1454,14 @@
     "CombinesWith": "Revell-Panzergrenadiers, Zvezda-Art of Tactics",
     "Price": 0,
     "DateOfPurchase": "2014-05-04T21:00:00.000Z",
-    "StartedOnDate": "2014-05-04T21:00:00.000Z",
-    "FinishedOnDate": "2014-09-09T21:00:00.000Z"
+    "StartingDate": "2014-05-04T21:00:00.000Z",
+    "FinishingDate": "2014-09-09T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Diorama"
   },
   {
     "Number": 62,
@@ -1148,8 +1478,14 @@
     "CombinesWith": "",
     "Price": 22,
     "DateOfPurchase": "2009-09-30T21:00:00.000Z",
-    "StartedOnDate": "15/10/2014",
-    "FinishedOnDate": "20/10/2014"
+    "StartingDate": "15/10/2014",
+    "FinishingDate": "20/10/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 63,
@@ -1166,8 +1502,14 @@
     "CombinesWith": "",
     "Price": 12.9,
     "DateOfPurchase": "18/06/2009",
-    "StartedOnDate": "21/10/2014",
-    "FinishedOnDate": "26/10/2014"
+    "StartingDate": "21/10/2014",
+    "FinishingDate": "26/10/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
     "Number": 64,
@@ -1184,8 +1526,14 @@
     "CombinesWith": "",
     "Price": 13.4,
     "DateOfPurchase": "20/05/2009",
-    "StartedOnDate": "15/10/2014",
-    "FinishedOnDate": "27/10/2014"
+    "StartingDate": "15/10/2014",
+    "FinishingDate": "27/10/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 65,
@@ -1202,8 +1550,14 @@
     "CombinesWith": "",
     "Price": 12,
     "DateOfPurchase": "13/04/2010",
-    "StartedOnDate": "2012-12-07T22:00:00.000Z",
-    "FinishedOnDate": "2014-01-10T22:00:00.000Z"
+    "StartingDate": "2012-12-07T22:00:00.000Z",
+    "FinishingDate": "2014-01-10T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 66,
@@ -1220,8 +1574,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "19/01/2013",
-    "StartedOnDate": "2014-11-10T22:00:00.000Z",
-    "FinishedOnDate": "30/12/2014"
+    "StartingDate": "2014-11-10T22:00:00.000Z",
+    "FinishingDate": "30/12/2014",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 67,
@@ -1238,8 +1598,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "2014-03-03T22:00:00.000Z",
-    "StartedOnDate": "26/12/2014",
-    "FinishedOnDate": "14/02/2015"
+    "StartingDate": "26/12/2014",
+    "FinishingDate": "14/02/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 68,
@@ -1256,8 +1622,14 @@
     "CombinesWith": "Attack Hobby Kits",
     "Price": 16,
     "DateOfPurchase": "16/12/2014",
-    "StartedOnDate": "16/12/2014",
-    "FinishedOnDate": "14/03/2015"
+    "StartingDate": "16/12/2014",
+    "FinishingDate": "14/03/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 69,
@@ -1274,8 +1646,14 @@
     "CombinesWith": "Attack Hobby Kits",
     "Price": 16,
     "DateOfPurchase": "2015-04-30T21:00:00.000Z",
-    "StartedOnDate": "2015-04-30T21:00:00.000Z",
-    "FinishedOnDate": "20/03/2015"
+    "StartingDate": "2015-04-30T21:00:00.000Z",
+    "FinishingDate": "20/03/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 70,
@@ -1292,8 +1670,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "2009-03-10T22:00:00.000Z",
-    "StartedOnDate": "2015-04-01T21:00:00.000Z",
-    "FinishedOnDate": "22/03/2015"
+    "StartingDate": "2015-04-01T21:00:00.000Z",
+    "FinishingDate": "22/03/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 71,
@@ -1310,8 +1694,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "31/08/2012",
-    "StartedOnDate": "02/09/2012",
-    "FinishedOnDate": "25/03/2015"
+    "StartingDate": "02/09/2012",
+    "FinishingDate": "25/03/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 72,
@@ -1328,8 +1718,14 @@
     "CombinesWith": "",
     "Price": 5,
     "DateOfPurchase": "2009-03-03T22:00:00.000Z",
-    "StartedOnDate": "13/12/2010",
-    "FinishedOnDate": "2015-10-03T21:00:00.000Z"
+    "StartingDate": "13/12/2010",
+    "FinishingDate": "2015-10-03T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 73,
@@ -1346,8 +1742,14 @@
     "CombinesWith": "",
     "Price": 19,
     "DateOfPurchase": "18/08/2009",
-    "StartedOnDate": "20/03/2015",
-    "FinishedOnDate": "14/05/2015"
+    "StartingDate": "20/03/2015",
+    "FinishingDate": "14/05/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 74,
@@ -1364,8 +1766,14 @@
     "CombinesWith": "",
     "Price": 21,
     "DateOfPurchase": "18/05/2013",
-    "StartedOnDate": "25/10/2014",
-    "FinishedOnDate": "27/05/2015"
+    "StartingDate": "25/10/2014",
+    "FinishingDate": "27/05/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "SailingShips"
   },
   {
     "Number": 75,
@@ -1382,8 +1790,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "19/01/2013",
-    "StartedOnDate": "16/07/2015",
-    "FinishedOnDate": "2015-03-07T22:00:00.000Z"
+    "StartingDate": "16/07/2015",
+    "FinishingDate": "2015-03-07T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 76,
@@ -1400,8 +1814,14 @@
     "CombinesWith": "",
     "Price": 37.5,
     "DateOfPurchase": "2012-09-10T21:00:00.000Z",
-    "StartedOnDate": "19/05/2015",
-    "FinishedOnDate": "20/09/2015"
+    "StartingDate": "19/05/2015",
+    "FinishingDate": "20/09/2015",
+    "aftermarketUsed ": "Montex,7143-Aires;SS210+73210,SS109-Eduard,72020-Part,AM72-011-Master;7021,7024-Aires,QB72206, QB72039-Quickboost,7224-Aires,QB72019-Quickboost,72173-Part(flaps),Pavla,72033-Print scale, 72001-Begemot",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 77,
@@ -1418,8 +1838,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "21/09/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "21/09/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 78,
@@ -1436,8 +1862,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "23/09/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "23/09/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 79,
@@ -1454,8 +1886,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "23/09/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "23/09/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 80,
@@ -1472,8 +1910,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "23/09/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "23/09/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 81,
@@ -1490,8 +1934,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "23/09/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "23/09/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 82,
@@ -1508,8 +1958,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "23/09/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "23/09/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 83,
@@ -1526,8 +1982,14 @@
     "CombinesWith": "",
     "Price": 4.41,
     "DateOfPurchase": "27/04/2013",
-    "StartedOnDate": "2014-12-04T22:00:00.000Z",
-    "FinishedOnDate": "16/11/2015"
+    "StartingDate": "2014-12-04T22:00:00.000Z",
+    "FinishingDate": "16/11/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
     "Number": 84,
@@ -1544,8 +2006,14 @@
     "CombinesWith": "",
     "Price": 20,
     "DateOfPurchase": "21/08/2010",
-    "StartedOnDate": "21/12/2010",
-    "FinishedOnDate": "14/12/2015"
+    "StartingDate": "21/12/2010",
+    "FinishingDate": "14/12/2015",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Architecture"
   },
   {
     "Number": 85,
@@ -1562,8 +2030,14 @@
     "CombinesWith": "",
     "Price": 41.5,
     "DateOfPurchase": "2008-03-09T22:00:00.000Z",
-    "StartedOnDate": "11/11/2009",
-    "FinishedOnDate": "2016-06-30T21:00:00.000Z"
+    "StartingDate": "11/11/2009",
+    "FinishingDate": "2016-06-30T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 86,
@@ -1580,8 +2054,14 @@
     "CombinesWith": "",
     "Price": 10,
     "DateOfPurchase": "2009-01-01T22:00:00.000Z",
-    "StartedOnDate": "05/08/2010",
-    "FinishedOnDate": "2016-04-01T21:00:00.000Z"
+    "StartingDate": "05/08/2010",
+    "FinishingDate": "2016-04-01T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Diorama"
   },
   {
     "Number": 87,
@@ -1598,8 +2078,14 @@
     "CombinesWith": "",
     "Price": 27.02,
     "DateOfPurchase": "31/12/2008",
-    "StartedOnDate": "12/07/2012",
-    "FinishedOnDate": "14/02/2016"
+    "StartingDate": "12/07/2012",
+    "FinishingDate": "14/02/2016",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Diorama"
   },
   {
     "Number": 88,
@@ -1616,8 +2102,14 @@
     "CombinesWith": "",
     "Price": 13.9,
     "DateOfPurchase": "20/11/2010",
-    "StartedOnDate": "21/11/2011",
-    "FinishedOnDate": "13/03/2016"
+    "StartingDate": "21/11/2011",
+    "FinishingDate": "13/03/2016",
+    "aftermarketUsed ": "Tracks for Hetzer OKB Grigorov",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 89,
@@ -1634,8 +2126,14 @@
     "CombinesWith": "",
     "Price": 9.9,
     "DateOfPurchase": "20/11/2010",
-    "StartedOnDate": "2015-09-11T21:00:00.000Z",
-    "FinishedOnDate": "30/03/2016"
+    "StartingDate": "2015-09-11T21:00:00.000Z",
+    "FinishingDate": "30/03/2016",
+    "aftermarketUsed ": "B4804-CMK",
+    "Paints": "Tracks for Hetzer OKB Grigorov",
+    "Laquers": "72011-NH Detail",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 90,
@@ -1652,8 +2150,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "25/11/2008",
-    "StartedOnDate": "2015-05-09T21:00:00.000Z",
-    "FinishedOnDate": "19/06/2016"
+    "StartingDate": "2015-05-09T21:00:00.000Z",
+    "FinishingDate": "19/06/2016",
+    "aftermarketUsed ": "P72153,P73154,P72038-Part",
+    "Paints": "72773-ARMO",
+    "Laquers": "72017-NH detail",
+    "Comments": "Tracks for Hetzer OKB Grigorov",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 91,
@@ -1670,8 +2174,14 @@
     "CombinesWith": "",
     "Price": 15.05,
     "DateOfPurchase": "2016-09-05T21:00:00.000Z",
-    "StartedOnDate": "22/06/2016",
-    "FinishedOnDate": "2016-02-06T22:00:00.000Z"
+    "StartingDate": "22/06/2016",
+    "FinishingDate": "2016-02-06T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 92,
@@ -1688,8 +2198,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "20/06/2016",
-    "StartedOnDate": "2016-03-06T22:00:00.000Z",
-    "FinishedOnDate": "2016-10-06T21:00:00.000Z"
+    "StartingDate": "2016-03-06T22:00:00.000Z",
+    "FinishingDate": "2016-10-06T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 93,
@@ -1706,8 +2222,14 @@
     "CombinesWith": "",
     "Price": 14,
     "DateOfPurchase": "20/06/2016",
-    "StartedOnDate": "2016-10-06T21:00:00.000Z",
-    "FinishedOnDate": "13/07/2016"
+    "StartingDate": "2016-10-06T21:00:00.000Z",
+    "FinishingDate": "13/07/2016",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Diorama"
   },
   {
     "Number": 94,
@@ -1724,8 +2246,14 @@
     "CombinesWith": "",
     "Price": 15.6,
     "DateOfPurchase": "15/07/2009",
-    "StartedOnDate": "20/12/2015",
-    "FinishedOnDate": "27/08/2016"
+    "StartingDate": "20/12/2015",
+    "FinishingDate": "27/08/2016",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 95,
@@ -1742,8 +2270,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "2016-01-08T22:00:00.000Z",
-    "StartedOnDate": "2016-03-08T22:00:00.000Z",
-    "FinishedOnDate": "15/09/2016"
+    "StartingDate": "2016-03-08T22:00:00.000Z",
+    "FinishingDate": "15/09/2016",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Artillery"
   },
   {
     "Number": 96,
@@ -1760,8 +2294,14 @@
     "CombinesWith": "",
     "Price": 29.95,
     "DateOfPurchase": "30/09/2009",
-    "StartedOnDate": "10/01/2012",
-    "FinishedOnDate": "2016-08-09T21:00:00.000Z"
+    "StartingDate": "10/01/2012",
+    "FinishingDate": "2016-08-09T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 97,
@@ -1778,8 +2318,14 @@
     "CombinesWith": "",
     "Price": 19.9,
     "DateOfPurchase": "13/07/2014",
-    "StartedOnDate": "13/09/2016",
-    "FinishedOnDate": "2016-08-09T21:00:00.000Z"
+    "StartingDate": "13/09/2016",
+    "FinishingDate": "2016-08-09T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Architecture"
   },
   {
     "Number": 98,
@@ -1796,8 +2342,14 @@
     "CombinesWith": "",
     "Price": 20,
     "DateOfPurchase": "29/12/2016",
-    "StartedOnDate": "29/12/2016",
-    "FinishedOnDate": "2017-01-31T22:00:00.000Z"
+    "StartingDate": "29/12/2016",
+    "FinishingDate": "2017-01-31T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 99,
@@ -1814,8 +2366,14 @@
     "CombinesWith": "",
     "Price": 16,
     "DateOfPurchase": "2009-01-02T22:00:00.000Z",
-    "StartedOnDate": "2015-07-11T21:00:00.000Z",
-    "FinishedOnDate": "23/04/2017"
+    "StartingDate": "2015-07-11T21:00:00.000Z",
+    "FinishingDate": "23/04/2017",
+    "aftermarketUsed ": "2054-CMK",
+    "Paints": "P72062, P72063, P72064 -Part",
+    "Laquers": "72B23-RB Model",
+    "Comments": "22034-Eduard",
+    "BoxPicture": "B72043-CMK",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 100,
@@ -1832,8 +2390,14 @@
     "CombinesWith": "",
     "Price": 29.9,
     "DateOfPurchase": "23/12/2010",
-    "StartedOnDate": "14/03/2012",
-    "FinishedOnDate": "2017-06-07T21:00:00.000Z"
+    "StartingDate": "14/03/2012",
+    "FinishingDate": "2017-06-07T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 101,
@@ -1850,8 +2414,14 @@
     "CombinesWith": "",
     "Price": 19.9,
     "DateOfPurchase": "15/04/2011",
-    "StartedOnDate": "04/04/2012",
-    "FinishedOnDate": "31/08/2017"
+    "StartingDate": "04/04/2012",
+    "FinishingDate": "31/08/2017",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Helicopters"
   },
   {
     "Number": 102,
@@ -1868,8 +2438,14 @@
     "CombinesWith": "",
     "Price": 19.2,
     "DateOfPurchase": "2014-03-02T22:00:00.000Z",
-    "StartedOnDate": "07/11/2014",
-    "FinishedOnDate": "2017-06-09T21:00:00.000Z"
+    "StartingDate": "07/11/2014",
+    "FinishingDate": "2017-06-09T21:00:00.000Z",
+    "aftermarketUsed ": "CMK-Q72205; Extratech-Ex72030; Azmodel-A7023",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 103,
@@ -1886,8 +2462,14 @@
     "CombinesWith": "",
     "Price": 40.85,
     "DateOfPurchase": "21/12/2013",
-    "StartedOnDate": "17/12/2017",
-    "FinishedOnDate": "16/02/2018"
+    "StartingDate": "17/12/2017",
+    "FinishingDate": "16/02/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "CarsTrucksMotocycles"
   },
   {
     "Number": 104,
@@ -1904,8 +2486,14 @@
     "CombinesWith": "",
     "Price": 9.25,
     "DateOfPurchase": "2008-12-31T22:00:00.000Z",
-    "StartedOnDate": "26/01/2015",
-    "FinishedOnDate": "2018-05-02T21:00:00.000Z"
+    "StartingDate": "26/01/2015",
+    "FinishingDate": "2018-05-02T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Diorama"
   },
   {
     "Number": 105,
@@ -1922,8 +2510,14 @@
     "CombinesWith": "",
     "Price": 16.1,
     "DateOfPurchase": "2009-01-09T22:00:00.000Z",
-    "StartedOnDate": "28/03/2018",
-    "FinishedOnDate": "28/04/2018"
+    "StartingDate": "28/03/2018",
+    "FinishingDate": "28/04/2018",
+    "aftermarketUsed ": "72L34-Aber",
+    "Paints": "P72028-Part",
+    "Laquers": "7214-Eureka",
+    "Comments": "S72037-OKB Grigorov",
+    "BoxPicture": "S72051-OKB Grigorov",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 106,
@@ -1940,8 +2534,14 @@
     "CombinesWith": "",
     "Price": 8,
     "DateOfPurchase": "2009-06-10T21:00:00.000Z",
-    "StartedOnDate": "18/05/2015",
-    "FinishedOnDate": "2018-08-04T21:00:00.000Z"
+    "StartingDate": "18/05/2015",
+    "FinishingDate": "2018-08-04T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 107,
@@ -1958,8 +2558,14 @@
     "CombinesWith": "",
     "Price": 18,
     "DateOfPurchase": "19/01/2013",
-    "StartedOnDate": "2016-01-05T22:00:00.000Z",
-    "FinishedOnDate": "15/05/2018"
+    "StartingDate": "2016-01-05T22:00:00.000Z",
+    "FinishingDate": "15/05/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 108,
@@ -1976,8 +2582,14 @@
     "CombinesWith": "",
     "Price": 14.9,
     "DateOfPurchase": "18/12/2010",
-    "StartedOnDate": "2018-08-04T21:00:00.000Z",
-    "FinishedOnDate": "25/05/2018"
+    "StartingDate": "2018-08-04T21:00:00.000Z",
+    "FinishingDate": "25/05/2018",
+    "aftermarketUsed ": "CX010-Eduard",
+    "Paints": "7081-Aires",
+    "Laquers": "SS164,SS453-Eduard",
+    "Comments": "QB72389-Quickboost",
+    "BoxPicture": "QB 72399",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 109,
@@ -1994,8 +2606,14 @@
     "CombinesWith": "",
     "Price": 14,
     "DateOfPurchase": "15/12/2013",
-    "StartedOnDate": "26/05/2018",
-    "FinishedOnDate": "29/05/2018"
+    "StartingDate": "26/05/2018",
+    "FinishingDate": "29/05/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 110,
@@ -2012,8 +2630,14 @@
     "CombinesWith": "",
     "Price": 34.88,
     "DateOfPurchase": "13/08/2012",
-    "StartedOnDate": "31/05/2018",
-    "FinishedOnDate": "13/06/2018"
+    "StartingDate": "31/05/2018",
+    "FinishingDate": "13/06/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 110,
@@ -2030,8 +2654,14 @@
     "CombinesWith": "",
     "Price": 0,
     "DateOfPurchase": "13/08/2012",
-    "StartedOnDate": "31/05/2018",
-    "FinishedOnDate": "17/06/2018"
+    "StartingDate": "31/05/2018",
+    "FinishingDate": "17/06/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 111,
@@ -2043,13 +2673,19 @@
     "BestCompanyOffer": "",
     "Modelshows": "София2018-2място",
     "GivenSold": "",
-    "PicturesLink": "",
+    "PicturesLink": "https://drive.google.com/drive/folders/1UpguiEVmRECM3ln4Avlj9cwhAv1oP9hp",
     "ForumsLink": "",
     "CombinesWith": "",
     "Price": 45,
     "DateOfPurchase": "2013-10-04T21:00:00.000Z",
-    "StartedOnDate": "20/06/2018",
-    "FinishedOnDate": "2018-04-06T21:00:00.000Z"
+    "StartingDate": "20/06/2018",
+    "FinishingDate": "2018-04-06T21:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "Submarines"
   },
   {
     "Number": 112,
@@ -2066,8 +2702,14 @@
     "CombinesWith": "",
     "Price": 12,
     "DateOfPurchase": "21/08/2010",
-    "StartedOnDate": "2016-01-02T22:00:00.000Z",
-    "FinishedOnDate": "2018-01-09T22:00:00.000Z"
+    "StartingDate": "2016-01-02T22:00:00.000Z",
+    "FinishingDate": "2018-01-09T22:00:00.000Z",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 113,
@@ -2084,8 +2726,14 @@
     "CombinesWith": "",
     "Price": 23,
     "DateOfPurchase": "28/10/2018",
-    "StartedOnDate": "29/10/2018",
-    "FinishedOnDate": "22/11/2018"
+    "StartingDate": "29/10/2018",
+    "FinishingDate": "22/11/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 114,
@@ -2102,7 +2750,61 @@
     "CombinesWith": "",
     "Price": 14.2,
     "DateOfPurchase": "2009-01-09T22:00:00.000Z",
-    "StartedOnDate": "27/11/2018",
-    "FinishedOnDate": "15/12/2018"
+    "StartingDate": "27/11/2018",
+    "FinishingDate": "15/12/2018",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "TrackedMilitaryVehicles"
+  },
+  {
+    "Number": 115,
+    "Name": "Focke-Wulf Fw-190 A-4",
+    "Scale": 72,
+    "Manifacturer": "Zvezda",
+    "FactoryNumber": "7304",
+    "Placement": "Русе",
+    "BestCompanyOffer": "AZ Model",
+    "Modelshows": "",
+    "GivenSold": "",
+    "PicturesLink": "https://drive.google.com/drive/folders/1LBwjrGdBU1XcycqXgNh75wat6xIOyh-h",
+    "ForumsLink": "",
+    "CombinesWith": "",
+    "Price": 12.26,
+    "DateOfPurchase": "29/03/2013",
+    "StartingDate": "22/12/2018",
+    "FinishingDate": "18/01/2018",
+    "aftermarketUsed ": "AM72012-Master",
+    "Paints": "RLM74-Gunze Sangyo, RLM75-Gunze Sangyo, 76-Revell, 05-Revell, RLM04-Lifecolor, RLM83-Agama",
+    "Laquers": "Aqua Gloss-Alclad, Clear Cote SemiMat-Alclad",
+    "Comments": "Използвах силно разредена маслена черна боя за подчертаване на разшивката, като техниката беше да се омаже целият самолет и после да се изтрие с тоалетна хартия.",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
+  },
+  {
+    "Number": "",
+    "Name": "",
+    "Scale": "",
+    "Manifacturer": "",
+    "FactoryNumber": "",
+    "Placement": "",
+    "BestCompanyOffer": "",
+    "Modelshows": "",
+    "GivenSold": "",
+    "PicturesLink": "",
+    "ForumsLink": "",
+    "CombinesWith": "",
+    "Price": "",
+    "DateOfPurchase": "",
+    "StartingDate": "",
+    "FinishingDate": "",
+    "aftermarketUsed ": "",
+    "Paints": "",
+    "Laquers": "",
+    "Comments": "",
+    "BoxPicture": "",
+    "Category": "PropellerDrivenAircrafts"
   }
 ]

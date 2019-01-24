@@ -10,7 +10,7 @@ using ScalemodelWorld.Data;
 namespace ScalemodelWorld.Data.Migrations
 {
     [DbContext(typeof(ScalemodelWorldContext))]
-    [Migration("20190110111942_Initial")]
+    [Migration("20190124133357_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -355,6 +355,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BoxPicture");
 
+                    b.Property<int>("Category");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -477,6 +479,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BoxPicture");
 
+                    b.Property<int>("Category");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -522,6 +526,8 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<string>("BestCompanyOffer");
 
                     b.Property<string>("BoxPicture");
+
+                    b.Property<int>("Category");
 
                     b.Property<string>("CombinesWith");
 
@@ -581,6 +587,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BoxPicture");
 
+                    b.Property<int>("Category");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -628,6 +636,8 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<string>("BestCompanyOffer");
 
                     b.Property<string>("BoxPicture");
+
+                    b.Property<int>("Category");
 
                     b.Property<string>("CombinesWith");
 

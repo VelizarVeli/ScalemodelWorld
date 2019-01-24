@@ -353,6 +353,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BoxPicture");
 
+                    b.Property<int>("Category");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -475,6 +477,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BoxPicture");
 
+                    b.Property<int>("Category");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -520,6 +524,8 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<string>("BestCompanyOffer");
 
                     b.Property<string>("BoxPicture");
+
+                    b.Property<int>("Category");
 
                     b.Property<string>("CombinesWith");
 
@@ -579,6 +585,8 @@ namespace ScalemodelWorld.Data.Migrations
 
                     b.Property<string>("BoxPicture");
 
+                    b.Property<int>("Category");
+
                     b.Property<string>("CombinesWith");
 
                     b.Property<string>("Comments");
@@ -626,6 +634,8 @@ namespace ScalemodelWorld.Data.Migrations
                     b.Property<string>("BestCompanyOffer");
 
                     b.Property<string>("BoxPicture");
+
+                    b.Property<int>("Category");
 
                     b.Property<string>("CombinesWith");
 

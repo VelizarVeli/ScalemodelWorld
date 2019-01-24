@@ -6,18 +6,16 @@
 @using X.PagedList;
 @using X.PagedList.Mvc.Common
 @using X.PagedList.Mvc.Core
-
 <!-- output a paging control that lets the user navigation to the previous page, next page, etc -->
-
 <br />
 <br />
 <h1 class="text-center">Purchased scalemodels</h1>
 <hr class="bg-dark" style="height: 2px" />
-<ul class="pagination">
-    <li class="page-item">
+<ul data-pagination>
+    <li class="current">
         @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("AllPurchased", new { page = page }),
             new PagedListRenderOptions {
-                LiElementClasses = new string[] { "page-item" },
+                LiElementClasses = new string[] { "ion-chevron-right" },
                 PageClasses = new string[] { "page-link" }
             })
     </li>
@@ -34,7 +32,6 @@
                     <a asp-controller="Users" asp-action="SeedPurchasedView" class="btn btn-primary btn-lg">SEED DATA</a>
                 </li>
             </ul>
-
         </ul>
     </nav>
     <table class="table table-hover">
@@ -53,7 +50,40 @@
         <tbody>
             @foreach (var product in ViewBag.OnePageOfProducts)
             {
-                <tr class="row table-primary">
+                <tr class="row (@switch (product.Category.ToString())
+                            {
+                                case "Helicopters":
+                                case "JetAircrafts":
+                                    @:table-primary
+                                    break;
+                                case "SailingShips":
+                                case "Submarines":
+                                    @:table-secondary
+                                    break;
+                                case "TrackedMilitaryVehicles":
+                                case "ScratchBuild":
+                                    @:table-success
+                                    break;
+                                case "WheeledMilitaryVehicles":
+                                case "SciFiSpace":
+                                    @:table-danger
+                                    break;
+                                case "PropellerDrivenAircrafts":
+                                    @:table-warning
+                                    break;
+                                case "Artillery":
+                                case "Figures":
+                                    @:table-info
+                                    break;
+                                case "CivilAirplanes":
+                                case "CarsTrucksMotocycles":
+                                    @:table-light
+                                    break;
+                                case "Diorama":
+                                case "Architecture":
+                                    @:table-white
+                                    break;
+                            })">
                     <td class="col-sm-1 d-flex justify-content-center"><h6><small>@product.Number</small></h6></td>
                     <td class="col-sm-1 d-flex justify-content-center">
                         <a href="@product.LinkToScalemates" target="_blank">
@@ -78,11 +108,11 @@
         </tbody>
     </table>
 </div>
-<ul class="pagination">
-    <li class="page-item">
+<ul data-pagination>
+    <li class="current">
         @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("AllPurchased", new { page = page }),
             new PagedListRenderOptions {
-                LiElementClasses = new string[] { "page-item" },
+                LiElementClasses = new string[] { "ion-chevron-right" },
                 PageClasses = new string[] { "page-link" }
             })
     </li>

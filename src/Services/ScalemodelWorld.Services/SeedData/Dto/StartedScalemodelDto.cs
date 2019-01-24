@@ -59,5 +59,7 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         [Required]
         [Display(Name = AttributeDisplayNameConstants.StartingDate)]
         public DateTime StartingDate { get; set; }
+
+        public string Category { get; set; }
     }
 }

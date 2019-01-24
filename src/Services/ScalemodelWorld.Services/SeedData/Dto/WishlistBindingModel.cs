@@ -22,5 +22,7 @@ namespace ScalemodelWorld.Services.SeedData.Dto
         public int Number { get; set; }
 
         public int  Scale { get; set; }
+
+        public string Category { get; set; }
     }
 }

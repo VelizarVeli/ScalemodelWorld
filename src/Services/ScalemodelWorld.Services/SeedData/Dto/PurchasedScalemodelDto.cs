@@ -35,5 +35,7 @@ namespace ScalemodelWorld.Services.SeedData.Dto
         public string Comments { get; set; }
 
         public string OwnerId { get; set; }
+
+        public string Category { get; set; }
     }
 }

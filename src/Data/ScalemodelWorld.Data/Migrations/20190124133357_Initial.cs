@@ -68,6 +68,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Comments = table.Column<string>(nullable: true),
                     BoxPicture = table.Column<string>(nullable: true),
                     LinkToScalemates = table.Column<string>(nullable: true),
+                    Category = table.Column<int>(nullable: false),
                     ModelShowName = table.Column<string>(nullable: true),
                     Year = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true)
@@ -307,6 +308,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Comments = table.Column<string>(nullable: true),
                     BoxPicture = table.Column<string>(nullable: true),
                     LinkToScalemates = table.Column<string>(nullable: true),
+                    Category = table.Column<int>(nullable: false),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
                     OwnerId = table.Column<string>(nullable: true)
@@ -364,6 +366,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Comments = table.Column<string>(nullable: true),
                     BoxPicture = table.Column<string>(nullable: true),
                     LinkToScalemates = table.Column<string>(nullable: true),
+                    Category = table.Column<int>(nullable: false),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
                     OwnerId = table.Column<string>(nullable: true),
@@ -436,6 +439,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Comments = table.Column<string>(nullable: true),
                     BoxPicture = table.Column<string>(nullable: true),
                     LinkToScalemates = table.Column<string>(nullable: true),
+                    Category = table.Column<int>(nullable: false),
                     DateOfPurchase = table.Column<DateTime>(nullable: false),
                     Place = table.Column<string>(nullable: true),
                     OwnerId = table.Column<string>(nullable: true),
@@ -521,6 +525,7 @@ namespace ScalemodelWorld.Data.Migrations
                     Comments = table.Column<string>(nullable: true),
                     BoxPicture = table.Column<string>(nullable: true),
                     LinkToScalemates = table.Column<string>(nullable: true),
+                    Category = table.Column<int>(nullable: false),
                     UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

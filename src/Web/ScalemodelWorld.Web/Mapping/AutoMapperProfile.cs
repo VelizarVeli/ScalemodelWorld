@@ -1,6 +1,7 @@
 ﻿using System;
 using AutoMapper;
 using Scalemodel.Data.Models;
+using Scalemodel.Data.Models.Enums;
 using Scalemodel.Data.Models.Scalemodels;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Common.Scalemodels.ViewModels;
@@ -31,7 +32,8 @@ namespace ScalemodelWorld.Web.Mapping
             this.CreateMap<AvailableScalemodel, AllStartedModelsViewModel>();
 
             this.CreateMap<StartedScalemodelBindingModel, StartedScalemodel>()
-                .ForMember(n => n.Number, opt => opt.Ignore());
+                .ForMember(n => n.Number, opt => opt.Ignore())
+                .ForMember(n => n.Category, opt => opt.Ignore());
 
             this.CreateMap<StartedScalemodel, CompletedScalemodel>()
                 .ForMember(n => n.Number, opt => opt.Ignore())

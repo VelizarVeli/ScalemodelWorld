@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Scalemodel.Data.Models.Enums;
 
 namespace Scalemodel.Data.Models.Abstractions
 {
@@ -34,5 +35,7 @@ namespace Scalemodel.Data.Models.Abstractions
         public string BoxPicture { get; set; }
 
         public string LinkToScalemates { get; set; }
+
+        public Category Category { get; set; }
     }
 }
