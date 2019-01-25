@@ -14,7 +14,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/5/9/1077759-22112-12-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1077759-dragon-7549-pz-kpfw-iv-ausf-f2-g"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1077759-dragon-7549-pz-kpfw-iv-ausf-f2-g",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 2,
@@ -31,7 +32,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/4/5/633645-13777-59-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/633645-az-model-az7489-messerschmitt-bf-109g-2"
+    "LinkToScalemates": "https://www.scalemates.com/kits/633645-az-model-az7489-messerschmitt-bf-109g-2",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 3,
@@ -48,7 +50,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/4/9/104249-10849-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/104249-icm-72133-bf-109e-7-trop"
+    "LinkToScalemates": "https://www.scalemates.com/kits/104249-icm-72133-bf-109e-7-trop",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 4,
@@ -65,7 +68,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/7/146857-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/146857-tamiya-55-messerschmitt-bf109e-4-7-trop"
+    "LinkToScalemates": "https://www.scalemates.com/kits/146857-tamiya-55-messerschmitt-bf109e-4-7-trop",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 5,
@@ -82,7 +86,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/5/8/108558-16649-73-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/108558-dragon-7348-sd-kfz-251-2-ausf-d"
+    "LinkToScalemates": "https://www.scalemates.com/kits/108558-dragon-7348-sd-kfz-251-2-ausf-d",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 6,
@@ -99,7 +104,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/7/8/106578-27767-90-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/106578-dragon-7364-lah-panzergrenadiers-sd-kfz-251-7-ausf-d"
+    "LinkToScalemates": "https://www.scalemates.com/kits/106578-dragon-7364-lah-panzergrenadiers-sd-kfz-251-7-ausf-d",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 7,
@@ -116,7 +122,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/2/6/107126-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/107126-revell-04155-republic-p-47d-30-thunderbolt"
+    "LinkToScalemates": "https://www.scalemates.com/kits/107126-revell-04155-republic-p-47d-30-thunderbolt",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 8,
@@ -133,7 +140,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/5/4/104254-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/104254-revell-04377-heinkel-he-111-h-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/104254-revell-04377-heinkel-he-111-h-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 9,
@@ -150,7 +158,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/1/5/130215-14861-14-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/130215-zvezda-6142-motorcycle-r12"
+    "LinkToScalemates": "https://www.scalemates.com/kits/130215-zvezda-6142-motorcycle-r12",
+    "Category": "Figures"
   },
   {
     "Number": 10,
@@ -167,7 +176,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/0/0/191600-10571-26-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191600-zvezda-6108-engineers"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191600-zvezda-6108-engineers",
+    "Category": "Figures"
   },
   {
     "Number": 11,
@@ -184,7 +194,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/0/2/191602-10571-58-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191602-zvezda-6137-reconnaissance-team"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191602-zvezda-6137-reconnaissance-team",
+    "Category": "Figures"
   },
   {
     "Number": 12,
@@ -201,7 +212,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/8/9/152889-11067-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/152889-zvezda-6109-82-mm-mortar-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/152889-zvezda-6109-82-mm-mortar-with-crew",
+    "Category": "Figures"
   },
   {
     "Number": 13,
@@ -218,7 +230,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/2/6/151926-11067-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/151926-zvezda-6161-cavalry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/151926-zvezda-6161-cavalry",
+    "Category": "Figures"
   },
   {
     "Number": 14,
@@ -235,7 +248,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/3/3/1021233-13151-84-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1021233-zvezda-7270-mil-mi-26-halo"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1021233-zvezda-7270-mil-mi-26-halo",
+    "Category": "Helicopters"
   },
   {
     "Number": 15,
@@ -252,7 +266,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/6/5/154365-27767-84-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/154365-dragon-7422-heavy-uniform-personnel-vehicle-type-40"
+    "LinkToScalemates": "https://www.scalemates.com/kits/154365-dragon-7422-heavy-uniform-personnel-vehicle-type-40",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
     "Number": 16,
@@ -269,7 +284,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/0/1/1004701-30368-16-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1004701-revell-03251-pz-kpfw-iii-ausf-l"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1004701-revell-03251-pz-kpfw-iii-ausf-l",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 17,
@@ -286,7 +302,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/9/5/154795-11363-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/154795-dragon-7363-panther-g"
+    "LinkToScalemates": "https://www.scalemates.com/kits/154795-dragon-7363-panther-g",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 18,
@@ -303,7 +320,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/7/6/191976-10571-14-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191976-dragon-7434-tiger-i"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191976-dragon-7434-tiger-i",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 19,
@@ -320,7 +338,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/8/5/139385-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139385-pst-72005-isu-122"
+    "LinkToScalemates": "https://www.scalemates.com/kits/139385-pst-72005-isu-122",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 20,
@@ -337,7 +356,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/7/7/139377-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139377-pst-72001-is-1"
+    "LinkToScalemates": "https://www.scalemates.com/kits/139377-pst-72001-is-1",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 21,
@@ -354,7 +374,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/1/3/106813-11185-25-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/106813-amodel-72159-antonov-an-24"
+    "LinkToScalemates": "https://www.scalemates.com/kits/106813-amodel-72159-antonov-an-24",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 22,
@@ -371,7 +392,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/0/8/115308-11104-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/115308-eduard-7410-il-2m3-sturmovik"
+    "LinkToScalemates": "https://www.scalemates.com/kits/115308-eduard-7410-il-2m3-sturmovik",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 23,
@@ -388,7 +410,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/5/5/133055-15582-90-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/133055-zvezda-7301-yak-3"
+    "LinkToScalemates": "https://www.scalemates.com/kits/133055-zvezda-7301-yak-3",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 24,
@@ -404,8 +427,9 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/2/2/3/264223-13777-60-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/264223-az-model-az7458-messerschmitt-bf-109g-6"
+    "BoxPicture": "https://www.scalemates.com/products/img/7/6/9/230769-13777-89-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/az-model-az7434-messerschmitt-bf-109g-6--230769",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 25,
@@ -422,7 +446,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/7/5/230775-13777-61-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/230775-az-model-az7445-messerschmitt-bf-109g-5"
+    "LinkToScalemates": "https://www.scalemates.com/kits/230775-az-model-az7445-messerschmitt-bf-109g-5",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 26,
@@ -439,7 +464,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/9/4/263894-10263-22-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/263894-az-model-az7455-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/263894-az-model-az7455-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 27,
@@ -456,7 +482,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/9/7/261497-12623-51-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/261497-az-model-az7457-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/261497-az-model-az7457-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 28,
@@ -473,7 +500,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/5/5/103555-16559-58-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103555-revell-04215-airbus-a319"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103555-revell-04215-airbus-a319",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 29,
@@ -490,7 +518,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/2/2/187522-12660-39-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/187522-aer-moldova-ae-72009-tank-t-34-85"
+    "LinkToScalemates": "https://www.scalemates.com/kits/187522-aer-moldova-ae-72009-tank-t-34-85",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 30,
@@ -507,7 +536,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/1/4/111414-10911-33-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/111414-revell-04202-boeing-737-800-air-berlin-and-winglets"
+    "LinkToScalemates": "https://www.scalemates.com/kits/111414-revell-04202-boeing-737-800-air-berlin-and-winglets",
+    "Category": "CivilAirplanes"
   },
   {
     "Number": 31,
@@ -524,7 +554,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/2/7/104427-26441-97-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/104427-academy-13401-german-fuel-truck-and-schwimmwagen"
+    "LinkToScalemates": "https://www.scalemates.com/kits/104427-academy-13401-german-fuel-truck-and-schwimmwagen",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
     "Number": 32,
@@ -541,7 +572,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/5/7/111357-10849-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/111357-revell-03129-tiger-ii-ausf-b-production-turret"
+    "LinkToScalemates": "https://www.scalemates.com/kits/111357-revell-03129-tiger-ii-ausf-b-production-turret",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 33,
@@ -558,7 +590,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/6/5/106265-10000-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/106265-dragon-7361-3rd-fallschirmjaeger-division-king-tiger-henschel-production"
+    "LinkToScalemates": "https://www.scalemates.com/kits/106265-dragon-7361-3rd-fallschirmjaeger-division-king-tiger-henschel-production",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 34,
@@ -575,7 +608,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/4/3/135443-11228-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/135443-zvezda-6121-105-mm-howitzer-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/135443-zvezda-6121-105-mm-howitzer-with-crew",
+    "Category": "Figures"
   },
   {
     "Number": 35,
@@ -592,7 +626,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/6/2/373862-15866-58-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/373862-preiser-72515-panzerbesatzungen-deutsches-reich-1939-45"
+    "LinkToScalemates": "https://www.scalemates.com/kits/373862-preiser-72515-panzerbesatzungen-deutsches-reich-1939-45",
+    "Category": "Figures"
   },
   {
     "Number": 36,
@@ -609,7 +644,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/9/7/136197-10934-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/136197-zvezda-7273-mi-24a-hind"
+    "LinkToScalemates": "https://www.scalemates.com/kits/136197-zvezda-7273-mi-24a-hind",
+    "Category": "Helicopters"
   },
   {
     "Number": 37,
@@ -626,7 +662,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/6/6/191566-24719-96-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191566-icm-72162-sb-2m-100a"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191566-icm-72162-sb-2m-100a",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 38,
@@ -642,8 +679,9 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/4/9/1/960491-18821-56-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/960491-revell-02531-german-7-5-cm-pak-40-and-soldiers"
+    "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/REV02508Box.jpg",
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=555",
+    "Category": "Figures"
   },
   {
     "Number": 39,
@@ -660,7 +698,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/4/7/111447-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/111447-revell-04616-heinkel-he-177a-5-and-fritz-x"
+    "LinkToScalemates": "https://www.scalemates.com/kits/111447-revell-04616-heinkel-he-177a-5-and-fritz-x",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 40,
@@ -677,7 +716,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/4/6/122446-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/122446-dragon-7424-churchill-mk-iv"
+    "LinkToScalemates": "https://www.scalemates.com/kits/122446-dragon-7424-churchill-mk-iv",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 41,
@@ -694,7 +734,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/9/9/191599-10571-12-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191599-zvezda-6104-machinegun-maxim-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191599-zvezda-6104-machinegun-maxim-with-crew",
+    "Category": "Figures"
   },
   {
     "Number": 42,
@@ -711,7 +752,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/0/9/103009-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103009-zvezda-5010-pz-kpfw-v-panther-ausf-d"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103009-zvezda-5010-pz-kpfw-v-panther-ausf-d",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 43,
@@ -728,27 +770,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/3/3/1021233-13151-84-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1021233-zvezda-7270-mil-mi-26-halo"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1021233-zvezda-7270-mil-mi-26-halo",
+    "Category": "Helicopters"
   },
   {
     "Number": 44,
-    "Name": "Focke-Wulf Fw-190 A-4",
-    "Scale": 72,
-    "Manifacturer": "Zvezda",
-    "FactoryNumber": "7304",
-    "CombinesWith": "",
-    "InfoHowTo": "https://www.youtube.com/watch?v=I1L9Bd7Y_xg",
-    "Price": 12.26,
-    "DateOfPurchase": "29/03/2013",
-    "Place": "Ruse",
-    "BestCompanyOffer": "",
-    "OwnerId": "",
-    "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/9/7/2/178972-16559-13-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/178972-zvezda-7304-focke-wulf-fw-190-a-4"
-  },
-  {
-    "Number": 45,
     "Name": "German Infantry Platoon (1942-1945)",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -762,10 +788,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/3/3/103033-10571-26-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103033-zvezda-8078-german-infantry-platoon-1942-1944"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103033-zvezda-8078-german-infantry-platoon-1942-1944",
+    "Category": "Figures"
   },
   {
-    "Number": 46,
+    "Number": 45,
     "Name": "British 40mm Anti-Tank Gun Ordnance QF 2-pounder w/Crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -779,10 +806,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/1/5/191615-10571-84-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191615-zvezda-6169-anti-tank-gun-ordnance-qf-2-pdr"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191615-zvezda-6169-anti-tank-gun-ordnance-qf-2-pdr",
+    "Category": "Figures"
   },
   {
-    "Number": 47,
+    "Number": 46,
     "Name": "British 3-inch Mortar w/Crew 1939-1945",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -796,10 +824,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/3/169853-11067-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/169853-zvezda-6168-3-mortar-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/169853-zvezda-6168-3-mortar-with-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 48,
+    "Number": 47,
     "Name": "British Machine-Gun w/Crew 1939-1943",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -813,10 +842,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/2/3/156123-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/products/img/1/2/3/156123-10244-pristine.jpg"
+    "LinkToScalemates": "https://www.scalemates.com/products/img/1/2/3/156123-10244-pristine.jpg",
+    "Category": "Figures"
   },
   {
-    "Number": 49,
+    "Number": 48,
     "Name": "British Infantry 1939-1945",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -830,10 +860,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/2/4/156124-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/156124-zvezda-6166-infantry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/156124-zvezda-6166-infantry",
+    "Category": "Figures"
   },
   {
-    "Number": 50,
+    "Number": 49,
     "Name": "German Gebirgsjäger 1939-1943",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -847,10 +878,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/0/1/149301-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/149301-zvezda-6154-gebirgsjaeger"
+    "LinkToScalemates": "https://www.scalemates.com/kits/149301-zvezda-6154-gebirgsjaeger",
+    "Category": "Figures"
   },
   {
-    "Number": 51,
+    "Number": 50,
     "Name": "Soviet 76mm Infantry Gun w/Crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -864,10 +896,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/4/5/149845-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/149845-zvezda-6145-76-mm-infantry-gun"
+    "LinkToScalemates": "https://www.scalemates.com/kits/149845-zvezda-6145-76-mm-infantry-gun",
+    "Category": "Figures"
   },
   {
-    "Number": 52,
+    "Number": 51,
     "Name": "World War II Battle for the Danube (Expansion Set)",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -881,10 +914,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/9/5/188095-10263-73-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/188095-zvezda-6177-world-war-2-barbarossa-1941"
+    "LinkToScalemates": "https://www.scalemates.com/kits/188095-zvezda-6177-world-war-2-barbarossa-1941",
+    "Category": "Figures"
   },
   {
-    "Number": 53,
+    "Number": 52,
     "Name": "King Tiger (Henshel Turret)",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -898,10 +932,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/5/7/111357-10849-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/111357-revell-03129-tiger-ii-ausf-b-production-turret"
+    "LinkToScalemates": "https://www.scalemates.com/kits/111357-revell-03129-tiger-ii-ausf-b-production-turret",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 54,
+    "Number": 53,
     "Name": "Pz IV J",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -915,10 +950,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/5/0/134250-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/134250-revell-03122-pz-kpfw-iv-ausf-j"
+    "LinkToScalemates": "https://www.scalemates.com/kits/134250-revell-03122-pz-kpfw-iv-ausf-j",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 55,
+    "Number": 54,
     "Name": "Soviet Heavy Tank IS-2 'Stalin' ",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -932,10 +968,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/1/0/103010-15582-43-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103010-zvezda-5011-is-2-stalin"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103010-zvezda-5011-is-2-stalin",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 56,
+    "Number": 55,
     "Name": "Soviet Regular Infantry 1941-1942",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -949,10 +986,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/5/1/171751-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/171751-zvezda-6179-regular-infantry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/171751-zvezda-6179-regular-infantry",
+    "Category": "Figures"
   },
   {
-    "Number": 57,
+    "Number": 56,
     "Name": "German Regular Infantry 1941-1943",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -966,10 +1004,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/2/4/171224-11067-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/171224-zvezda-6178-regular-infantry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/171224-zvezda-6178-regular-infantry",
+    "Category": "Figures"
   },
   {
-    "Number": 58,
+    "Number": 57,
     "Name": "Hawker Hunter",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -983,10 +1022,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/0/103670-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103670-revell-04350-hawker-hunter-f-mk-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103670-revell-04350-hawker-hunter-f-mk-6",
+    "Category": "JetAircrafts"
   },
   {
-    "Number": 59,
+    "Number": 58,
     "Name": "WWII German Panzer Crews",
     "Scale": 72,
     "Manifacturer": "Caesar",
@@ -1000,10 +1040,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/9/6/232996-42417-28-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/232996-caesar-miniatures-hb03-wwii-german-panzer-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/232996-caesar-miniatures-hb03-wwii-german-panzer-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 60,
+    "Number": 59,
     "Name": "Fi 156 Storch",
     "Scale": 72,
     "Manifacturer": "Academy",
@@ -1017,10 +1058,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/8/5/231685-26441-22-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/231685-academy-12459-fi-156-storch"
+    "LinkToScalemates": "https://www.scalemates.com/kits/231685-academy-12459-fi-156-storch",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 61,
+    "Number": 60,
     "Name": "Refueller BZ-38",
     "Scale": 72,
     "Manifacturer": "UM",
@@ -1034,10 +1076,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/0/4/139104-20195-29-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139104-um-models-unimodel-323-bz-38"
+    "LinkToScalemates": "https://www.scalemates.com/kits/139104-um-models-unimodel-323-bz-38",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 62,
+    "Number": 61,
     "Name": "Zis-5&61-K",
     "Scale": 72,
     "Manifacturer": "PST",
@@ -1050,11 +1093,12 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/7/5/8/218758-11890-60-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/218758-trumpeter-05564-t-72b-mod1990-mbt"
+    "BoxPicture": "https://www.scalemates.com/products/img/4/3/1/122431-11185-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/pst-72028-truck-zis-5-and-37-mm-aa-gun--122431",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 63,
+    "Number": 62,
     "Name": "German Pilots and Ground Crew",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -1068,10 +1112,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/5/4/102154-10941-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/102154-revell-02400-pilots-and-ground-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/102154-revell-02400-pilots-and-ground-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 64,
+    "Number": 63,
     "Name": "WWII RAF Bomber Re-Supply Set",
     "Scale": 72,
     "Manifacturer": "Airfix",
@@ -1085,10 +1130,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/2/3/173923-11185-49-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/173923-airfix-a05330-wwii-raf-bomber-re-supply-set"
+    "LinkToScalemates": "https://www.scalemates.com/kits/173923-airfix-a05330-wwii-raf-bomber-re-supply-set",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 65,
+    "Number": 64,
     "Name": "Germans at rest",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -1101,11 +1147,12 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/7/3/1/228731-12290-77-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/228731-stalingrad-s-3030-german-infantry-at-rest-big-set-10-figures"
+    "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/PRE72505Box.jpg",
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=834",
+    "Category": "Figures"
   },
   {
-    "Number": 66,
+    "Number": 65,
     "Name": "Russians riding tank",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -1119,10 +1166,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/2/0/1005020-10622-31-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1005020-preiser-72525-infanteristen-aufgesessen-udssr-1942"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1005020-preiser-72525-infanteristen-aufgesessen-udssr-1942",
+    "Category": "Figures"
   },
   {
-    "Number": 67,
+    "Number": 66,
     "Name": "Walking Germans",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -1136,10 +1184,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/6/154676-11363-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/154676-preiser-72504-vorgehende-infanterie-deutsches-reich-1939-45"
+    "LinkToScalemates": "https://www.scalemates.com/kits/154676-preiser-72504-vorgehende-infanterie-deutsches-reich-1939-45",
+    "Category": "Figures"
   },
   {
-    "Number": 68,
+    "Number": 67,
     "Name": "Artilerists",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -1153,10 +1202,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/PRE72518Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=1698"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=1698",
+    "Category": "Figures"
   },
   {
-    "Number": 69,
+    "Number": 68,
     "Name": "Germans riding a tank",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -1170,10 +1220,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/PRE72503Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=857"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=857",
+    "Category": "Figures"
   },
   {
-    "Number": 70,
+    "Number": 69,
     "Name": "Germans getting out of a tank",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -1187,10 +1238,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/0/0/147000-10212-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/147000-preiser-72501-absitzende-panzergrenadiere-deutsches-reich-1939-45"
+    "LinkToScalemates": "https://www.scalemates.com/kits/147000-preiser-72501-absitzende-panzergrenadiere-deutsches-reich-1939-45",
+    "Category": "Figures"
   },
   {
-    "Number": 71,
+    "Number": 70,
     "Name": "German Medical Personal",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1204,10 +1256,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/ZVE6143Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2190"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2190",
+    "Category": "Figures"
   },
   {
-    "Number": 72,
+    "Number": 71,
     "Name": "Soviet Medical Personnel",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1221,10 +1274,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/0/8/191608-10571-62-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191608-zvezda-6152-medical-personnel"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191608-zvezda-6152-medical-personnel",
+    "Category": "Figures"
   },
   {
-    "Number": 73,
+    "Number": 72,
     "Name": "Panther G w/steel road wheel",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -1238,10 +1292,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/1/3/132313-13652-72-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/132313-dragon-7339-panther-g"
+    "LinkToScalemates": "https://www.scalemates.com/kits/132313-dragon-7339-panther-g",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 74,
+    "Number": 73,
     "Name": "T-34/76",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -1255,10 +1310,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/9/1/108591-13652-26-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/108591-dragon-7268-t-34-76-mod-1942"
+    "LinkToScalemates": "https://www.scalemates.com/kits/108591-dragon-7268-t-34-76-mod-1942",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 75,
+    "Number": 74,
     "Name": "Sd.Kfz. 164 Hornisse",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -1272,10 +1328,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/3/6/104936-27767-55-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/104936-dragon-7234-hornisse"
+    "LinkToScalemates": "https://www.scalemates.com/kits/104936-dragon-7234-hornisse",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 76,
+    "Number": 75,
     "Name": "Focke Wulf FW 189 A-1",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -1289,10 +1346,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/5/4/102254-10263-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/102254-revell-04294-focke-wulf-fw-189-a-1"
+    "LinkToScalemates": "https://www.scalemates.com/kits/102254-revell-04294-focke-wulf-fw-189-a-1",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 77,
+    "Number": 76,
     "Name": "Focke Wulf Fw 200 C-4 Condor",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -1306,10 +1364,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/1/0/132610-16559-91-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/132610-revell-04678-focke-wulf-fw-200-c-4-condor-bomber"
+    "LinkToScalemates": "https://www.scalemates.com/kits/132610-revell-04678-focke-wulf-fw-200-c-4-condor-bomber",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 78,
+    "Number": 77,
     "Name": "Pz.Kpfw.IV Ausf.H w/Schurzen",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -1322,11 +1381,12 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/kits/210378-dragon-7497-pz-kpfw-iv-ausf-h",
-    "LinkToScalemates": "https://www.scalemates.com/products/img/3/7/8/210378-12660-75-pristine.jpg"
+    "BoxPicture": "https://www.scalemates.com/products/img/3/7/8/210378-12660-75-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/dragon-7497-pzkpfw-iv-ausf-h--210378",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 79,
+    "Number": 78,
     "Name": "Sunderland Mk. I",
     "Scale": 72,
     "Manifacturer": "Italeri",
@@ -1340,10 +1400,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/9/9/101699-11185-80-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/101699-italeri-1302-sunderland-mk-i"
+    "LinkToScalemates": "https://www.scalemates.com/kits/101699-italeri-1302-sunderland-mk-i",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 80,
+    "Number": 79,
     "Name": "Lavochkin La-7 Dual Combo",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -1357,10 +1418,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/9/9/115299-10105-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/115299-eduard-7061-lavochkin-la-7"
+    "LinkToScalemates": "https://www.scalemates.com/kits/115299-eduard-7061-lavochkin-la-7",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 81,
+    "Number": 80,
     "Name": "Nashorn",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -1374,10 +1436,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/6/9/103769-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103769-revell-03148-sd-kfz-164-nashorn-panzerjager-tankhunter"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103769-revell-03148-sd-kfz-164-nashorn-panzerjager-tankhunter",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 82,
+    "Number": 81,
     "Name": "sWS scwerer Wehrmachtschlepper",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -1391,10 +1454,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/0/7/160707-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/160707-maco-7201-sws-schwerer-wehrmachtsschlepper"
+    "LinkToScalemates": "https://www.scalemates.com/kits/160707-maco-7201-sws-schwerer-wehrmachtsschlepper",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 83,
+    "Number": 82,
     "Name": "Messerschmitt Bf 109G-6/R6",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1408,10 +1472,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/1/2/245712-12743-67-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/245712-az-model-az7460-messerschmitt-bf-109-g6-r6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/245712-az-model-az7460-messerschmitt-bf-109-g6-r6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 84,
+    "Number": 83,
     "Name": "Field Repair Truck PARM -1",
     "Scale": 72,
     "Manifacturer": "PST",
@@ -1425,10 +1490,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.tracks-n-troops.eu/PST/72023.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/pst-72023-parm-1-field-repair-truck--1165892"
+    "LinkToScalemates": "https://www.scalemates.com/kits/pst-72023-parm-1-field-repair-truck--1165892",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 85,
+    "Number": 84,
     "Name": "Lavochkin La-7",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -1442,10 +1508,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/9/9/115299-10105-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/115299-eduard-7061-lavochkin-la-7"
+    "LinkToScalemates": "https://www.scalemates.com/kits/115299-eduard-7061-lavochkin-la-7",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 86,
+    "Number": 85,
     "Name": "German 81mm mortar with crew (winter)",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1459,10 +1526,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/3/8/248338-11104-25-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/248338-zvezda-6209-german-81-mm-mortar-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/248338-zvezda-6209-german-81-mm-mortar-with-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 87,
+    "Number": 86,
     "Name": "German MG-34 machine gun with crew (winter)",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1476,10 +1544,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/1/0/191610-10571-41-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191610-zvezda-6106-german-machinegun-mg-34-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191610-zvezda-6106-german-machinegun-mg-34-with-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 88,
+    "Number": 87,
     "Name": "Soviet 82mm mortar with crew (winter)",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1493,10 +1562,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/ZVE6208Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/review.aspx?id=2355"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/review.aspx?id=2355",
+    "Category": "Figures"
   },
   {
-    "Number": 89,
+    "Number": 88,
     "Name": "Messerschmitt Bf-109G-6 in Italian service",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1510,10 +1580,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/6/274856-12192-72-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/274856-az-model-az7459-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/274856-az-model-az7459-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 90,
+    "Number": 89,
     "Name": "Messerschmitt Bf-109G-6 Jagdgeschwader JG 54",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1527,10 +1598,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/4/4/276244-12743-54-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/276244-az-model-az7454-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/276244-az-model-az7454-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 91,
+    "Number": 90,
     "Name": "Messerschmitt Bf-109G-6 Jagdgeschwader JG 53",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1544,10 +1616,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/4/3/276243-12743-55-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/276243-az-model-az7453-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/276243-az-model-az7453-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 92,
+    "Number": 91,
     "Name": "Messerschmitt Bf-109G-6 Jagdgeschwader JG 52 \"Experten\"",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1561,10 +1634,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/7/5/318775-15526-87-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/318775-az-model-az7452-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/318775-az-model-az7452-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 93,
+    "Number": 92,
     "Name": "Messerschmitt Bf 109G-6 Jagdgeschwader JG.5",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1578,10 +1652,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/9/4/263894-10263-22-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/263894-az-model-az7455-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/263894-az-model-az7455-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 94,
+    "Number": 93,
     "Name": "Lavochkin La-7 Dual Combo",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -1595,10 +1670,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/9/9/115299-10105-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/115299-eduard-7061-lavochkin-la-7"
+    "LinkToScalemates": "https://www.scalemates.com/kits/115299-eduard-7061-lavochkin-la-7",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 95,
+    "Number": 94,
     "Name": "Su-27 SM Flanker B mod.1",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1612,10 +1688,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/3/5/174035-14481-58-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/174035-zvezda-7295-su-27sm"
+    "LinkToScalemates": "https://www.scalemates.com/kits/174035-zvezda-7295-su-27sm",
+    "Category": "JetAircrafts"
   },
   {
-    "Number": 96,
+    "Number": 95,
     "Name": "Lavochkin La-7 Dual Combo",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -1629,10 +1706,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/9/9/115299-10105-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/eduard-7061-lavochkin-la-7--115299"
+    "LinkToScalemates": "https://www.scalemates.com/kits/eduard-7061-lavochkin-la-7--115299",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 97,
+    "Number": 96,
     "Name": "Messerschmitt Bf-109 G-4/R6 Erich Hartmann",
     "Scale": 72,
     "Manifacturer": "Fine Molds",
@@ -1646,10 +1724,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/2/6/144826-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/144826-finemolds-fl13-messerschmitt-bf-109-g-4-r-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/144826-finemolds-fl13-messerschmitt-bf-109-g-4-r-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 98,
+    "Number": 97,
     "Name": "German Army Infantry 1939",
     "Scale": 72,
     "Manifacturer": "Pegasus",
@@ -1663,10 +1742,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/6/5/175665-11143-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/175665-pegasus-hobbies-7499-german-army-infantry-1939"
+    "LinkToScalemates": "https://www.scalemates.com/kits/175665-pegasus-hobbies-7499-german-army-infantry-1939",
+    "Category": "Figures"
   },
   {
-    "Number": 99,
+    "Number": 98,
     "Name": "Soviet Militia",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1680,10 +1760,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/8/2/322282-15526-57-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/322282-zvezda-6181-militia"
+    "LinkToScalemates": "https://www.scalemates.com/kits/322282-zvezda-6181-militia",
+    "Category": "Figures"
   },
   {
-    "Number": 100,
+    "Number": 99,
     "Name": "German Elite Troops",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1697,10 +1778,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/8/4/313884-12290-62-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/313884-zvezda-6180-german-elite-troops-1941-1943"
+    "LinkToScalemates": "https://www.scalemates.com/kits/313884-zvezda-6180-german-elite-troops-1941-1943",
+    "Category": "Figures"
   },
   {
-    "Number": 101,
+    "Number": 100,
     "Name": "Messerschmitt Bf 109G-6 Jagdgeschwader JG.3",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1714,10 +1796,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/2/1/264221-13777-75-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/264221-az-model-az7456-messerschmitt-bf-109g-6"
+    "LinkToScalemates": "https://www.scalemates.com/kits/264221-az-model-az7456-messerschmitt-bf-109g-6",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 102,
+    "Number": 101,
     "Name": "German Army",
     "Scale": 72,
     "Manifacturer": "Caesar",
@@ -1731,10 +1814,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/3/0/998430-16792-55-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/998430-caesar-miniatures-h037-ww2-german-army"
+    "LinkToScalemates": "https://www.scalemates.com/kits/998430-caesar-miniatures-h037-ww2-german-army",
+    "Category": "Figures"
   },
   {
-    "Number": 103,
+    "Number": 102,
     "Name": "Lockheed Constellation",
     "Scale": 144,
     "Manifacturer": "Revell",
@@ -1748,10 +1832,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/7/9/104579-10571-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/revell-04252-l1049g-super-constellation--104579"
+    "LinkToScalemates": "https://www.scalemates.com/kits/revell-04252-l1049g-super-constellation--104579",
+    "Category": "CivilAirplanes"
   },
   {
-    "Number": 104,
+    "Number": 103,
     "Name": "British Legends Gift Set",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -1765,10 +1850,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/0/131850-10941-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/131850-revell-05729-british-legends"
+    "LinkToScalemates": "https://www.scalemates.com/kits/131850-revell-05729-british-legends",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 105,
+    "Number": 104,
     "Name": "8,8cm Flak 36",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -1782,10 +1868,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/9/6/102196-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/102196-revell-03174-8-8-cm-flak-36-kommandogeraet-40-st-ah-202-sd-ah-52"
+    "LinkToScalemates": "https://www.scalemates.com/kits/102196-revell-03174-8-8-cm-flak-36-kommandogeraet-40-st-ah-202-sd-ah-52",
+    "Category": "Artillery"
   },
   {
-    "Number": 106,
+    "Number": 105,
     "Name": "Soviet Ski Troops",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1799,10 +1886,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/4/3/384543-12784-95-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/384543-zvezda-6199-ski-troops"
+    "LinkToScalemates": "https://www.scalemates.com/kits/384543-zvezda-6199-ski-troops",
+    "Category": "Figures"
   },
   {
-    "Number": 107,
+    "Number": 106,
     "Name": "Messerschmit Bf 109 G-8",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -1816,10 +1904,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/8/995858-21739-40-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/995858-az-model-az7521-messerschmitt-bf-109-g-14as"
+    "LinkToScalemates": "https://www.scalemates.com/kits/995858-az-model-az7521-messerschmitt-bf-109-g-14as",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 108,
+    "Number": 107,
     "Name": "Sd.Kfz. 7/2",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -1833,10 +1922,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/2/7/234127-11185-12-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/234127-maco-7213-sd-kfz-7-2"
+    "LinkToScalemates": "https://www.scalemates.com/kits/234127-maco-7213-sd-kfz-7-2",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 109,
+    "Number": 108,
     "Name": "Munitions-Anh. Fur 3,7cm Flak",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -1850,10 +1940,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/0/3/194703-17918-14-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/194703-maco-7203-munitions-anh-f-r-3-7-cm-flak"
+    "LinkToScalemates": "https://www.scalemates.com/kits/194703-maco-7203-munitions-anh-f-r-3-7-cm-flak",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 110,
+    "Number": 109,
     "Name": "15cm Panzerwerfer 42 auf sWS",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -1867,10 +1958,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/8/7/133687-17918-75-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/133687-maco-7204-15-cm-panzerwerfer-42-auf-sws"
+    "LinkToScalemates": "https://www.scalemates.com/kits/133687-maco-7204-15-cm-panzerwerfer-42-auf-sws",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 111,
+    "Number": 110,
     "Name": "8.8 cm FLAK 37 AA gun with crew",
     "Scale": 72,
     "Manifacturer": "Italeri",
@@ -1884,10 +1976,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/0/6/101906-15582-80-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/101906-italeri-7512-8-8-cm-flak-37-aa-gun-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/101906-italeri-7512-8-8-cm-flak-37-aa-gun-with-crew",
+    "Category": "Artillery"
   },
   {
-    "Number": 112,
+    "Number": 111,
     "Name": "HMS Bounty",
     "Scale": 110,
     "Manifacturer": "Revell",
@@ -1901,10 +1994,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/8/0/111480-16559-69-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/111480-revell-05404-h-m-s-bounty"
+    "LinkToScalemates": "https://www.scalemates.com/kits/111480-revell-05404-h-m-s-bounty",
+    "Category": "SailingShips"
   },
   {
-    "Number": 113,
+    "Number": 112,
     "Name": "German infantry in winter uniform",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1918,10 +2012,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/3/6/248336-11104-61-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/248336-zvezda-6198-german-infantry-in-winter-uniform-1941-1945"
+    "LinkToScalemates": "https://www.scalemates.com/kits/248336-zvezda-6198-german-infantry-in-winter-uniform-1941-1945",
+    "Category": "Figures"
   },
   {
-    "Number": 114,
+    "Number": 113,
     "Name": "Soviet sniper team",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1935,10 +2030,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/0/6/529806-12290-53-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/529806-zvezda-6193-sniper-team"
+    "LinkToScalemates": "https://www.scalemates.com/kits/529806-zvezda-6193-sniper-team",
+    "Category": "Figures"
   },
   {
-    "Number": 115,
+    "Number": 114,
     "Name": "Flakpanzer III \"Ostwind\"",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -1952,10 +2048,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/9/2/194692-17918-78-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/194692-maco-7210-flakpanzer-iii-ostwind-3-7-cm-flak-43"
+    "LinkToScalemates": "https://www.scalemates.com/kits/194692-maco-7210-flakpanzer-iii-ostwind-3-7-cm-flak-43",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 116,
+    "Number": 115,
     "Name": "British Bofors 40-mm MK-1/2 AA-Gun",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1969,10 +2066,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/9/1/233091-15582-76-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/233091-zvezda-6170-bofors-40mm-mk-1-2-aa-gun"
+    "LinkToScalemates": "https://www.scalemates.com/kits/233091-zvezda-6170-bofors-40mm-mk-1-2-aa-gun",
+    "Category": "Figures"
   },
   {
-    "Number": 117,
+    "Number": 116,
     "Name": "German Infantry",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -1986,10 +2084,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/6/6/152866-11067-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/152866-zvezda-6105-german-infantry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/152866-zvezda-6105-german-infantry",
+    "Category": "Figures"
   },
   {
-    "Number": 118,
+    "Number": 117,
     "Name": "Messerschmitt Bf 109G-14 Early",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2003,10 +2102,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/4/5/633645-13777-59-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/633645-az-model-az7489-messerschmitt-bf-109g-2"
+    "LinkToScalemates": "https://www.scalemates.com/kits/633645-az-model-az7489-messerschmitt-bf-109g-2",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 119,
+    "Number": 118,
     "Name": "Soviet 37-mm Anti-aircraft gun 61-K",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2020,10 +2120,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/0/3/191603-10571-34-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191603-zvezda-6115-37-mm-anti-aircraft-gun-61-k"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191603-zvezda-6115-37-mm-anti-aircraft-gun-61-k",
+    "Category": "Figures"
   },
   {
-    "Number": 120,
+    "Number": 119,
     "Name": "Soviet 45mm Anti-Tank Gun w/Crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2037,10 +2138,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/8/7/152887-11067-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/152887-zvezda-6112-45mm-anti-tank-gun"
+    "LinkToScalemates": "https://www.scalemates.com/kits/152887-zvezda-6112-45mm-anti-tank-gun",
+    "Category": "Figures"
   },
   {
-    "Number": 121,
+    "Number": 120,
     "Name": "Soviet 122-mm Howitzer M-30 with Crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2053,11 +2155,12 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/5/2/5/139525-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139525-pst-72040-122-mm-howitzer-m-30"
+    "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/ZVE6122Box.jpg",
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2372",
+    "Category": "Figures"
   },
   {
-    "Number": 122,
+    "Number": 121,
     "Name": "Boeing 737-800",
     "Scale": 144,
     "Manifacturer": "Revell",
@@ -2071,10 +2174,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/7/8/106778-10000-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/106778-revell-04268-boeing-737-800-tuifly-goldbair"
+    "LinkToScalemates": "https://www.scalemates.com/kits/106778-revell-04268-boeing-737-800-tuifly-goldbair",
+    "Category": "CivilAirplanes"
   },
   {
-    "Number": 123,
+    "Number": 122,
     "Name": "Airbus A319",
     "Scale": 144,
     "Manifacturer": "Revell",
@@ -2088,10 +2192,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/5/5/103555-16559-58-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103555-revell-04215-airbus-a319"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103555-revell-04215-airbus-a319",
+    "Category": "CivilAirplanes"
   },
   {
-    "Number": 124,
+    "Number": 123,
     "Name": "45mm Anti-tank gun 19-K (1932) and 76mm Regimental gun OB-25 (1943)",
     "Scale": 72,
     "Manifacturer": "Um",
@@ -2105,10 +2210,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/0/7/226507-11104-42-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/um-military-technics-605-45mm-antitank-gun-19-k-and-76mm-regimental-gun-ob-25--226507"
+    "LinkToScalemates": "https://www.scalemates.com/kits/um-military-technics-605-45mm-antitank-gun-19-k-and-76mm-regimental-gun-ob-25--226507",
+    "Category": "Artillery"
   },
   {
-    "Number": 125,
+    "Number": 124,
     "Name": "Messerschmitt Bf 109 G-1",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2121,11 +2227,12 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/8/5/8/995858-21739-40-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/995858-az-model-az7521-messerschmitt-bf-109-g-14as"
+    "BoxPicture": "https://www.scalemates.com/products/img/7/1/3/245713-12743-85-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/995858-az-model-az7521-messerschmitt-bf-109-g-14as",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 126,
+    "Number": 125,
     "Name": "Artillery set T-26/45mm anti-tank gun 53-K (1937)",
     "Scale": 72,
     "Manifacturer": "Um",
@@ -2139,10 +2246,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/8/8/139588-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139588-um-military-technics-410-t-26-45mm-anti-tank-gun-53-k"
+    "LinkToScalemates": "https://www.scalemates.com/kits/139588-um-military-technics-410-t-26-45mm-anti-tank-gun-53-k",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 127,
+    "Number": 126,
     "Name": "Sd. Kfz. 9 \"FAMO\" Schwerer Zugkraftwagen 18t",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -2156,10 +2264,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/7/0/103470-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/103470-revell-03141-sd-kfz-9-famo-schwerer-zugkraftwagen-18t"
+    "LinkToScalemates": "https://www.scalemates.com/kits/103470-revell-03141-sd-kfz-9-famo-schwerer-zugkraftwagen-18t",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 128,
+    "Number": 127,
     "Name": "Messerschmitt Bf-109 F-4",
     "Scale": 72,
     "Manifacturer": "Fine Molds",
@@ -2173,10 +2282,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/2/5/157525-11546-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/157525-finemolds-fl2-messerschmitt-bf-109f-4"
+    "LinkToScalemates": "https://www.scalemates.com/kits/157525-finemolds-fl2-messerschmitt-bf-109f-4",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 129,
+    "Number": 128,
     "Name": "Bf 109 G-2 a In Romanian Service",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2189,11 +2299,12 @@
     "BestCompanyOffer": "",
     "OwnerId": "",
     "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/8/5/8/995858-21739-40-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/995858-az-model-az7521-messerschmitt-bf-109-g-14as"
+    "BoxPicture": "https://www.scalemates.com/products/img/6/3/9/633639-13777-83-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/az-model-az7488-messerschmitt-bf-109ga-2--633639",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 130,
+    "Number": 129,
     "Name": "Flakpanzer III \"Wirbelwind\"",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -2207,10 +2318,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/6/5/930565-17918-90-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/930565-maco-7214-flakpanzer-iii-wirbelwind"
+    "LinkToScalemates": "https://www.scalemates.com/kits/930565-maco-7214-flakpanzer-iii-wirbelwind",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 131,
+    "Number": 130,
     "Name": "Bf 109 G-2 \"Captured\"",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2224,10 +2336,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/7/8/654378-13777-57-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/654378-az-model-az7496-messerschmitt-bf-109g2"
+    "LinkToScalemates": "https://www.scalemates.com/kits/654378-az-model-az7496-messerschmitt-bf-109g2",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 132,
+    "Number": 131,
     "Name": "Soviet Machine Gun with crew Winter",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2241,10 +2354,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/7/572677-12290-51-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/572677-zvezda-6220-machine-gun-crew-wwii"
+    "LinkToScalemates": "https://www.scalemates.com/kits/572677-zvezda-6220-machine-gun-crew-wwii",
+    "Category": "Figures"
   },
   {
-    "Number": 133,
+    "Number": 132,
     "Name": "Soviet Anti-tank Gun Zis-3 with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2258,10 +2372,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/4/7/947447-16133-20-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/947447-zvezda-6253-zis-3-gun"
+    "LinkToScalemates": "https://www.scalemates.com/kits/947447-zvezda-6253-zis-3-gun",
+    "Category": "Figures"
   },
   {
-    "Number": 134,
+    "Number": 133,
     "Name": "German Anti-tank Gun Pak-40 with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2275,10 +2390,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/4/8/947448-16133-61-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/947448-zvezda-6257-german-anti-tank-gun-pak-40-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/947448-zvezda-6257-german-anti-tank-gun-pak-40-with-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 135,
+    "Number": 134,
     "Name": "Soviet airforce ground crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2292,10 +2408,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/3/948853-19929-13-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/948853-zvezda-6187-soviet-air-force-ground-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/948853-zvezda-6187-soviet-air-force-ground-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 136,
+    "Number": 135,
     "Name": "German airforce ground crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2309,10 +2426,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/5/4/948854-19929-22-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/948854-zvezda-6188-german-air-force-ground-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/948854-zvezda-6188-german-air-force-ground-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 137,
+    "Number": 136,
     "Name": "Soviet Infantry in Winter Uniform",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2326,10 +2444,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/3/4/248334-11104-84-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/248334-zvezda-6197-infantry-in-winter-uniform"
+    "LinkToScalemates": "https://www.scalemates.com/kits/248334-zvezda-6197-infantry-in-winter-uniform",
+    "Category": "Figures"
   },
   {
-    "Number": 138,
+    "Number": 137,
     "Name": "German Motorcycles",
     "Scale": 72,
     "Manifacturer": "Italeri",
@@ -2343,10 +2462,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/0/2/101802-11228-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/101802-italeri-6121-german-motorcycles"
+    "LinkToScalemates": "https://www.scalemates.com/kits/101802-italeri-6121-german-motorcycles",
+    "Category": "Figures"
   },
   {
-    "Number": 139,
+    "Number": 138,
     "Name": "British Engineers",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2360,10 +2480,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/8/572678-12290-99-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/572678-zvezda-6219-engineer"
+    "LinkToScalemates": "https://www.scalemates.com/kits/572678-zvezda-6219-engineer",
+    "Category": "Figures"
   },
   {
-    "Number": 140,
+    "Number": 139,
     "Name": "Soviet Machine Gun with crew Winter",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2377,10 +2498,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/7/572677-12290-51-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/572677-zvezda-6220-machine-gun-crew-wwii"
+    "LinkToScalemates": "https://www.scalemates.com/kits/572677-zvezda-6220-machine-gun-crew-wwii",
+    "Category": "Figures"
   },
   {
-    "Number": 141,
+    "Number": 140,
     "Name": "Avia S-199",
     "Scale": 72,
     "Manifacturer": "Kovozavoy Prostejov",
@@ -2394,10 +2516,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/1/2/135212-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/135212-kp-kovozavody-prost-jov-10-avia-s-199"
+    "LinkToScalemates": "https://www.scalemates.com/kits/135212-kp-kovozavody-prost-jov-10-avia-s-199",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 142,
+    "Number": 141,
     "Name": "Messerschmitt Bf 109G-6 \"In Swiss service\"",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2411,10 +2534,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/2/0/946820-12660-11-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/az-model-az7490-bf-109g-6--946820"
+    "LinkToScalemates": "https://www.scalemates.com/kits/az-model-az7490-bf-109g-6--946820",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 143,
+    "Number": 142,
     "Name": "Diamond T 969 Wrecker",
     "Scale": 72,
     "Manifacturer": "IBG",
@@ -2428,10 +2552,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/4/930674-20195-72-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/930674-ibg-models-72020-diamond-t-969"
+    "LinkToScalemates": "https://www.scalemates.com/kits/930674-ibg-models-72020-diamond-t-969",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 144,
+    "Number": 143,
     "Name": "Diamond T 972 Dump Truck",
     "Scale": 72,
     "Manifacturer": "IBG",
@@ -2445,10 +2570,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/4/7/581947-20195-23-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/581947-ibg-models-72021-diamond-t-972"
+    "LinkToScalemates": "https://www.scalemates.com/kits/581947-ibg-models-72021-diamond-t-972",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 145,
+    "Number": 144,
     "Name": "Diamond T 968A with Asphalt Tank",
     "Scale": 72,
     "Manifacturer": "IBG",
@@ -2462,10 +2588,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/4/9/581949-20195-90-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/581949-ibg-models-72022-diamond-t-968a"
+    "LinkToScalemates": "https://www.scalemates.com/kits/581949-ibg-models-72022-diamond-t-968a",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 146,
+    "Number": 145,
     "Name": "Infantry riflemen lined up. The German Reich 1939-45",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -2479,10 +2606,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/9/9/320899-13741-82-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/320899-preiser-72533-infantry-riflemen-lined-up"
+    "LinkToScalemates": "https://www.scalemates.com/kits/320899-preiser-72533-infantry-riflemen-lined-up",
+    "Category": "Figures"
   },
   {
-    "Number": 147,
+    "Number": 146,
     "Name": "U.S.A.A.F. Pilots and Ground Crew, 1942-1945",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -2496,10 +2624,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/7/0/199670-13434-22-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/199670-preiser-72502-pilots-ground-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/199670-preiser-72502-pilots-ground-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 148,
+    "Number": 147,
     "Name": "Soviet Infantry Riflemen & Partisans 1942-1943",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -2513,10 +2642,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/2/4/1005024-10622-66-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1005024-preiser-72522-infanteristen-und-partisanen-udssr-1942-43"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1005024-preiser-72522-infanteristen-und-partisanen-udssr-1942-43",
+    "Category": "Figures"
   },
   {
-    "Number": 149,
+    "Number": 148,
     "Name": "Infantry riflemen with mortar, lined up. The German Reich 1939-45",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -2530,10 +2660,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/PRE72536Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=1706"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=1706",
+    "Category": "Figures"
   },
   {
-    "Number": 150,
+    "Number": 149,
     "Name": "Military Police. Vienna 1945",
     "Scale": 72,
     "Manifacturer": "Preiser",
@@ -2547,10 +2678,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/3/7/958137-20387-55-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/958137-preiser-72529-military-police-vienna-1945"
+    "LinkToScalemates": "https://www.scalemates.com/kits/958137-preiser-72529-military-police-vienna-1945",
+    "Category": "Figures"
   },
   {
-    "Number": 151,
+    "Number": 150,
     "Name": "Airline and Airport Personnel",
     "Scale": 144,
     "Manifacturer": "Preiser",
@@ -2564,10 +2696,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/0/6/102106-10263-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/102106-preiser-77103-airline-and-airport-staff"
+    "LinkToScalemates": "https://www.scalemates.com/kits/102106-preiser-77103-airline-and-airport-staff",
+    "Category": "Figures"
   },
   {
-    "Number": 152,
+    "Number": 151,
     "Name": "Lavochkin La-5FN Aces",
     "Scale": 72,
     "Manifacturer": "Kovozavoy Prostejov",
@@ -2581,10 +2714,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/5/9/953259-13777-55-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/953259-kp-kovozavody-prost-jov-kpm0035-lavo-kin-la-5fn"
+    "LinkToScalemates": "https://www.scalemates.com/kits/953259-kp-kovozavody-prost-jov-kpm0035-lavo-kin-la-5fn",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 153,
+    "Number": 152,
     "Name": "Toldi I - Hungarian Light Tank",
     "Scale": 72,
     "Manifacturer": "IBG",
@@ -2598,10 +2732,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/2/6/958126-17918-75-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/958126-ibg-models-72027-toldi-i"
+    "LinkToScalemates": "https://www.scalemates.com/kits/958126-ibg-models-72027-toldi-i",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 154,
+    "Number": 153,
     "Name": "British medical personnel",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2615,10 +2750,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/1/5/967215-11598-44-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/967215-zvezda-6228-medic-team"
+    "LinkToScalemates": "https://www.scalemates.com/kits/967215-zvezda-6228-medic-team",
+    "Category": "Figures"
   },
   {
-    "Number": 155,
+    "Number": 154,
     "Name": "German Tank Grenadiers",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -2632,10 +2768,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/2/5/111325-10849-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/111325-revell-02511-deutsche-panzergrenadiere-wwii"
+    "LinkToScalemates": "https://www.scalemates.com/kits/111325-revell-02511-deutsche-panzergrenadiere-wwii",
+    "Category": "Figures"
   },
   {
-    "Number": 156,
+    "Number": 155,
     "Name": "Soviet Infantry Platoon Kursk 1943",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2649,10 +2786,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/5/1/191751-10571-39-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191751-zvezda-8077-infantry-platoon"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191751-zvezda-8077-infantry-platoon",
+    "Category": "Figures"
   },
   {
-    "Number": 157,
+    "Number": 156,
     "Name": "Soviet Infantry",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2666,10 +2804,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/9/8/191598-10571-38-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191598-zvezda-6103-infantry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191598-zvezda-6103-infantry",
+    "Category": "Figures"
   },
   {
-    "Number": 158,
+    "Number": 157,
     "Name": "ISU-152 Soviet tank destroyer",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2683,10 +2822,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/5/9/630459-15582-31-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/630459-zvezda-5026-isu-152"
+    "LinkToScalemates": "https://www.scalemates.com/kits/630459-zvezda-5026-isu-152",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 159,
+    "Number": 158,
     "Name": "T-34/85 Soviet medium tank",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2700,10 +2840,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/5/3/972153-22759-13-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/972153-zvezda-5039-t-34-85"
+    "LinkToScalemates": "https://www.scalemates.com/kits/972153-zvezda-5039-t-34-85",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 160,
+    "Number": 159,
     "Name": "Tiger I Late Production with zimmerit + Tiger Aces",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -2717,10 +2858,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/5/7/225457-13652-25-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/225457-dragon-7440-tiger-i"
+    "LinkToScalemates": "https://www.scalemates.com/kits/225457-dragon-7440-tiger-i",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 161,
+    "Number": 160,
     "Name": "WWII German panzer soldiers",
     "Scale": 72,
     "Manifacturer": "Orion",
@@ -2734,10 +2876,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/ORI72045Box.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/957056-orion-haron-ori-72047-wwii-german-panzer-soldiers"
+    "LinkToScalemates": "https://www.scalemates.com/kits/957056-orion-haron-ori-72047-wwii-german-panzer-soldiers",
+    "Category": "Figures"
   },
   {
-    "Number": 162,
+    "Number": 161,
     "Name": "WWII German panzer soldiers",
     "Scale": 72,
     "Manifacturer": "Orion",
@@ -2751,10 +2894,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/ORI72045Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2263"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2263",
+    "Category": "Figures"
   },
   {
-    "Number": 163,
+    "Number": 162,
     "Name": "Messerschmitt Bf 109 E-3",
     "Scale": 72,
     "Manifacturer": "Tamya",
@@ -2768,10 +2912,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/4/8/134548-10911-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/134548-tamiya-60750-messerschmitt-bf-109-e-3"
+    "LinkToScalemates": "https://www.scalemates.com/kits/134548-tamiya-60750-messerschmitt-bf-109-e-3",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 164,
+    "Number": 163,
     "Name": "North American P-51D Mustang",
     "Scale": 72,
     "Manifacturer": "Tamya",
@@ -2785,10 +2930,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/4/6/130046-16797-21-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/130046-tamiya-60749-p-51d-mustang"
+    "LinkToScalemates": "https://www.scalemates.com/kits/130046-tamiya-60749-p-51d-mustang",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 165,
+    "Number": 164,
     "Name": "Mig-29 (9-13)",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -2802,10 +2948,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/3/6/174036-16559-37-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/174036-zvezda-7278-mig-29-9-13"
+    "LinkToScalemates": "https://www.scalemates.com/kits/174036-zvezda-7278-mig-29-9-13",
+    "Category": "JetAircrafts"
   },
   {
-    "Number": 166,
+    "Number": 165,
     "Name": "Bf 110G-4",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -2819,10 +2966,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/6/7/185567-16559-56-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/185567-eduard-7086-bf-110g-4"
+    "LinkToScalemates": "https://www.scalemates.com/kits/185567-eduard-7086-bf-110g-4",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 167,
+    "Number": 166,
     "Name": "Fw 190А-8",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -2836,10 +2984,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/0/9/958509-16797-38-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/958509-eduard-70111-fw-190a-8"
+    "LinkToScalemates": "https://www.scalemates.com/kits/958509-eduard-70111-fw-190a-8",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 168,
+    "Number": 167,
     "Name": "Short Stirling MK IV",
     "Scale": 72,
     "Manifacturer": "Italeri",
@@ -2853,10 +3002,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/8/8/182888-10263-13-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/182888-italeri-1350-stirling-mk-iv"
+    "LinkToScalemates": "https://www.scalemates.com/kits/182888-italeri-1350-stirling-mk-iv",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 169,
+    "Number": 168,
     "Name": "Bf 109 F-2 Aces",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2870,10 +3020,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/7/0/996570-14238-36-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/996570-az-model-az7530-bf-109f-2"
+    "LinkToScalemates": "https://www.scalemates.com/kits/996570-az-model-az7530-bf-109f-2",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 170,
+    "Number": 169,
     "Name": "Bf 109 F-4 Aces",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -2887,7 +3038,26 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/7/1/996571-14238-47-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/996571-az-model-az7531-bf-109f-4"
+    "LinkToScalemates": "https://www.scalemates.com/kits/996571-az-model-az7531-bf-109f-4",
+    "Category": "PropellerDrivenAircrafts"
+  },
+  {
+    "Number": 170,
+    "Name": "Messerschmitt Bf-109 G-10 Regensburg Production",
+    "Scale": 72,
+    "Manifacturer": "Fine Molds",
+    "FactoryNumber": "FL 11",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 33,
+    "DateOfPurchase": "15/07/2013",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/4/9/5/132495-11185-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 171,
@@ -2904,7 +3074,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/9/5/132495-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10"
+    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 172,
@@ -2921,7 +3092,8 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/9/5/132495-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10"
+    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 173,
@@ -2938,27 +3110,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/9/5/132495-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10"
+    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
     "Number": 174,
-    "Name": "Messerschmitt Bf-109 G-10 Regensburg Production",
-    "Scale": 72,
-    "Manifacturer": "Fine Molds",
-    "FactoryNumber": "FL 11",
-    "CombinesWith": "",
-    "InfoHowTo": "",
-    "Price": 33,
-    "DateOfPurchase": "15/07/2013",
-    "Place": "Ruse",
-    "BestCompanyOffer": "",
-    "OwnerId": "",
-    "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/4/9/5/132495-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/132495-finemolds-fl11-messerschmitt-bf-109-g-10"
-  },
-  {
-    "Number": 175,
     "Name": "Country house",
     "Scale": 72,
     "Manifacturer": "Miniart",
@@ -2972,10 +3128,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/2/9/186929-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/186929-miniart-72027-country-house"
+    "LinkToScalemates": "https://www.scalemates.com/kits/186929-miniart-72027-country-house",
+    "Category": "Architecture"
   },
   {
-    "Number": 176,
+    "Number": 175,
     "Name": "Flakpanzer IV Wirbelwind",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -2989,10 +3146,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/5/3/932553-17918-79-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/932553-maco-7215-flakpanzer-iv-wirbelwind"
+    "LinkToScalemates": "https://www.scalemates.com/kits/932553-maco-7215-flakpanzer-iv-wirbelwind",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 177,
+    "Number": 176,
     "Name": "Zis-10 Tractor with semi-trailer",
     "Scale": 72,
     "Manifacturer": "PST",
@@ -3006,10 +3164,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/4/6/139546-10244-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139546-pst-72063-zis-10"
+    "LinkToScalemates": "https://www.scalemates.com/kits/139546-pst-72063-zis-10",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 178,
+    "Number": 177,
     "Name": "Messerschmitt Bf 109 G-5,6,14 (3 in 1)",
     "Scale": 72,
     "Manifacturer": "AZ Model",
@@ -3023,10 +3182,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/5/3/332453-13777-30-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/332453-az-model-az7703-messerschmitt-bf-109-g-5-6-14"
+    "LinkToScalemates": "https://www.scalemates.com/kits/332453-az-model-az7703-messerschmitt-bf-109-g-5-6-14",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 179,
+    "Number": 178,
     "Name": "North American P-51D Mustang",
     "Scale": 72,
     "Manifacturer": "Tamya",
@@ -3040,10 +3200,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/4/6/130046-16797-21-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/130046-tamiya-60749-p-51d-mustang"
+    "LinkToScalemates": "https://www.scalemates.com/kits/130046-tamiya-60749-p-51d-mustang",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 180,
+    "Number": 179,
     "Name": "PBY-5A Catalina \"Black cat\"",
     "Scale": 72,
     "Manifacturer": "Academy",
@@ -3057,10 +3218,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/2/1/157321-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/157321-academy-2137-consolidated-pby-5a-black-cat-catalina"
+    "LinkToScalemates": "https://www.scalemates.com/kits/157321-academy-2137-consolidated-pby-5a-black-cat-catalina",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 181,
+    "Number": 180,
     "Name": "Me 262",
     "Scale": 72,
     "Manifacturer": "Academy",
@@ -3074,10 +3236,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/6/4/100164-26441-88-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/100164-academy-12410-me262a-1a"
+    "LinkToScalemates": "https://www.scalemates.com/kits/100164-academy-12410-me262a-1a",
+    "Category": "JetAircrafts"
   },
   {
-    "Number": 182,
+    "Number": 181,
     "Name": "Sd.Kfz.7 (Spate produktion)",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -3091,10 +3254,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/5/1/932551-17918-88-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/932551-maco-7218-sd-kfz-7-spaete-produktion"
+    "LinkToScalemates": "https://www.scalemates.com/kits/932551-maco-7218-sd-kfz-7-spaete-produktion",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 183,
+    "Number": 182,
     "Name": "Sd.Kfz.7 (Spate produktion) with 3,7cm Flak 43",
     "Scale": 72,
     "Manifacturer": "Maco",
@@ -3108,10 +3272,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/5/2/932552-17918-14-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/932552-maco-7217-sd-kfz-7-spaete-produktion"
+    "LinkToScalemates": "https://www.scalemates.com/kits/932552-maco-7217-sd-kfz-7-spaete-produktion",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 184,
+    "Number": 183,
     "Name": "WWII RAF personnel",
     "Scale": 72,
     "Manifacturer": "Airfix",
@@ -3125,10 +3290,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/3/0/109330-10000-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/109330-airfix-a01747-raf-personnel"
+    "LinkToScalemates": "https://www.scalemates.com/kits/109330-airfix-a01747-raf-personnel",
+    "Category": "Figures"
   },
   {
-    "Number": 185,
+    "Number": 184,
     "Name": "WWII Luftwaffe personnel",
     "Scale": 72,
     "Manifacturer": "Airfix",
@@ -3142,10 +3308,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/3/4/109334-10000-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/109334-airfix-a01755-luftwaffe-personnel"
+    "LinkToScalemates": "https://www.scalemates.com/kits/109334-airfix-a01755-luftwaffe-personnel",
+    "Category": "Figures"
   },
   {
-    "Number": 186,
+    "Number": 185,
     "Name": "Mig-15",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3159,10 +3326,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/8/7/258087-12732-28-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/258087-eduard-7057-mig-15"
+    "LinkToScalemates": "https://www.scalemates.com/kits/258087-eduard-7057-mig-15",
+    "Category": "JetAircrafts"
   },
   {
-    "Number": 187,
+    "Number": 186,
     "Name": "Ju-88 A-4",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -3176,10 +3344,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/9/8/102298-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/102298-revell-04672-junkers-ju-88a-4-bomber"
+    "LinkToScalemates": "https://www.scalemates.com/kits/102298-revell-04672-junkers-ju-88a-4-bomber",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 188,
+    "Number": 187,
     "Name": "Su-2",
     "Scale": 72,
     "Manifacturer": "ICM",
@@ -3193,10 +3362,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/3/4/178634-12660-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/icm-72081-su-2--178634"
+    "LinkToScalemates": "https://www.scalemates.com/kits/icm-72081-su-2--178634",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 189,
+    "Number": 188,
     "Name": "3-rd Fallschirmjager Division+Kingtiger Henschel production Part2",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -3210,10 +3380,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/7/5/108375-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/108375-dragon-7362-3rd-fallschirmjaeger-division-king-tiger-henschel-production"
+    "LinkToScalemates": "https://www.scalemates.com/kits/108375-dragon-7362-3rd-fallschirmjaeger-division-king-tiger-henschel-production",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 190,
+    "Number": 189,
     "Name": "3-rd Fallschirmjager Division+Kingtiger Henschel production Part2",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -3227,10 +3398,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/7/5/108375-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/108375-dragon-7362-3rd-fallschirmjaeger-division-king-tiger-henschel-production"
+    "LinkToScalemates": "https://www.scalemates.com/kits/108375-dragon-7362-3rd-fallschirmjaeger-division-king-tiger-henschel-production",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 191,
+    "Number": 190,
     "Name": "IJN pilots and ground crew",
     "Scale": 72,
     "Manifacturer": "Red box",
@@ -3244,10 +3416,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/6/3/0/952630-23938-57-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/952630-red-box-rb72053-ijn-pilots-and-ground-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/952630-red-box-rb72053-ijn-pilots-and-ground-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 192,
+    "Number": 191,
     "Name": "Sd.Kfz.173 Jagdpanther",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -3261,10 +3434,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/5/4/108454-13652-47-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/108454-dragon-7212-sd-kfz-173-jagdpanther"
+    "LinkToScalemates": "https://www.scalemates.com/kits/108454-dragon-7212-sd-kfz-173-jagdpanther",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 193,
+    "Number": 192,
     "Name": "Sd.Kfz. 251/1 Ausf. C & 3.7cm PaK 35/36",
     "Scale": 72,
     "Manifacturer": "Dragon",
@@ -3278,10 +3452,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/0/0/191900-10571-93-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/191900-dragon-7352-sd-kfz-251-ausf-c-and-3-7cm-pak-35-36"
+    "LinkToScalemates": "https://www.scalemates.com/kits/191900-dragon-7352-sd-kfz-251-ausf-c-and-3-7cm-pak-35-36",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 194,
+    "Number": 193,
     "Name": "BM-13(GMC) Rocket Launcher \"Katjusha\"",
     "Scale": 72,
     "Manifacturer": "PST",
@@ -3295,10 +3470,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/2/8/139528-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/139528-pst-72042-bm-13-gmc-rocket-launcher-katjusha"
+    "LinkToScalemates": "https://www.scalemates.com/kits/139528-pst-72042-bm-13-gmc-rocket-launcher-katjusha",
+    "Category": "WheeledMilitaryVehicles"
   },
   {
-    "Number": 195,
+    "Number": 194,
     "Name": "Sd.Kfz. 165 Hummel",
     "Scale": 72,
     "Manifacturer": "Revell",
@@ -3312,10 +3488,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/9/0/102190-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/102190-revell-03167-sd-kfz-165-hummel-spaete-version-late-version"
+    "LinkToScalemates": "https://www.scalemates.com/kits/102190-revell-03167-sd-kfz-165-hummel-spaete-version-late-version",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 196,
+    "Number": 195,
     "Name": "12.8 Sf. L/61 (Pz.Sf.V) Sturer Emil",
     "Scale": 72,
     "Manifacturer": "Trumpeter",
@@ -3329,10 +3506,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/3/3/104933-11185-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/104933-trumpeter-07210-12-8cm-sf-l-61-pz-sf-v-sturer-emil"
+    "LinkToScalemates": "https://www.scalemates.com/kits/104933-trumpeter-07210-12-8cm-sf-l-61-pz-sf-v-sturer-emil",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 197,
+    "Number": 196,
     "Name": "US M-47 \"Dragon\" Anti-tank Missile System with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -3346,10 +3524,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/8/7/259087-11483-78-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/259087-zvezda-7415-m-47-dragon-anti-tank-missile-system-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/259087-zvezda-7415-m-47-dragon-anti-tank-missile-system-with-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 198,
+    "Number": 197,
     "Name": "US \"Browining\" Machine Gun with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -3363,10 +3542,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/3/3/267433-12668-14-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/267433-zvezda-7414-us-machine-gun-m2-browning-with-crew"
+    "LinkToScalemates": "https://www.scalemates.com/kits/267433-zvezda-7414-us-machine-gun-m2-browning-with-crew",
+    "Category": "Figures"
   },
   {
-    "Number": 199,
+    "Number": 198,
     "Name": "U.S. Mechanized Infantry",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -3380,10 +3560,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/5/6/207956-10244-62-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/207956-zvezda-7407-motorized-infantry"
+    "LinkToScalemates": "https://www.scalemates.com/kits/207956-zvezda-7407-motorized-infantry",
+    "Category": "Figures"
   },
   {
-    "Number": 200,
+    "Number": 199,
     "Name": "Soviet Anti-tank Missile System At-7 \"Saxhorn\" with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -3397,10 +3578,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/ZVE7413Box.jpg",
-    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2351"
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/Review.aspx?id=2351",
+    "Category": "Figures"
   },
   {
-    "Number": 201,
+    "Number": 200,
     "Name": "Soviet Sam Sa-18 \"Grouse\" with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -3414,10 +3596,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/1/1/258711-11991-57-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/258711-zvezda-7412-sam-9k38-igla-sa-18-grouse"
+    "LinkToScalemates": "https://www.scalemates.com/kits/258711-zvezda-7412-sam-9k38-igla-sa-18-grouse",
+    "Category": "Figures"
   },
   {
-    "Number": 202,
+    "Number": 201,
     "Name": "Soviet Machine Gun NSV 12.7 \"Utes\" with crew",
     "Scale": 72,
     "Manifacturer": "Zvezda",
@@ -3431,10 +3614,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/5/6/8/258568-11991-64-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/258568-zvezda-7411-soviet-machine-gun-nsv-12-7-utes"
+    "LinkToScalemates": "https://www.scalemates.com/kits/258568-zvezda-7411-soviet-machine-gun-nsv-12-7-utes",
+    "Category": "Figures"
   },
   {
-    "Number": 203,
+    "Number": 202,
     "Name": "T-80UA Mail Battle Tank",
     "Scale": 72,
     "Manifacturer": "Modelcollect",
@@ -3448,7 +3632,26 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/2/1/958121-17918-88-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/958121-modelcollect-ua72041-t-80b-main-battle-tank"
+    "LinkToScalemates": "https://www.scalemates.com/kits/958121-modelcollect-ua72041-t-80b-main-battle-tank",
+    "Category": "TrackedMilitaryVehicles"
+  },
+  {
+    "Number": 203,
+    "Name": "Soviet army T-64AV/BV 2 in 1 main battle tank",
+    "Scale": 72,
+    "Manifacturer": "Modelcollect",
+    "FactoryNumber": "UA72128",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 26.5,
+    "DateOfPurchase": "21/11/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/0/1/4/1135014-17918-73-720.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/1135014-modelcollect-ua72128-t-64av-bv-2-in-1-main-battle-tank",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 204,
@@ -3465,27 +3668,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/1/4/1135014-17918-73-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1135014-modelcollect-ua72128-t-64av-bv-2-in-1-main-battle-tank"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1135014-modelcollect-ua72128-t-64av-bv-2-in-1-main-battle-tank",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
     "Number": 205,
-    "Name": "Soviet army T-64AV/BV 2 in 1 main battle tank",
-    "Scale": 72,
-    "Manifacturer": "Modelcollect",
-    "FactoryNumber": "UA72128",
-    "CombinesWith": "",
-    "InfoHowTo": "",
-    "Price": 26.5,
-    "DateOfPurchase": "21/11/2018",
-    "Place": "Ruse",
-    "BestCompanyOffer": "",
-    "OwnerId": "",
-    "Comments": "",
-    "BoxPicture": "https://www.scalemates.com/products/img/0/1/4/1135014-17918-73-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1135014-modelcollect-ua72128-t-64av-bv-2-in-1-main-battle-tank"
-  },
-  {
-    "Number": 206,
     "Name": "T-72B/B1 Main battle tank",
     "Scale": 72,
     "Manifacturer": "Modelcollect",
@@ -3499,10 +3686,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/9/7/8/199978-11575-68-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/199978-modelcollect-ua72006-t-72b-b1-main-battle-tank"
+    "LinkToScalemates": "https://www.scalemates.com/kits/199978-modelcollect-ua72006-t-72b-b1-main-battle-tank",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 207,
+    "Number": 206,
     "Name": "Russian T-80UE-1 main battle tank",
     "Scale": 72,
     "Manifacturer": "Modelcollect",
@@ -3516,10 +3704,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/5/4/969154-17918-70-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/969154-modelcollect-ua72061-t-80ue-1-main-battle-tank"
+    "LinkToScalemates": "https://www.scalemates.com/kits/969154-modelcollect-ua72061-t-80ue-1-main-battle-tank",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 208,
+    "Number": 207,
     "Name": "Russian T-80UK main battle tank",
     "Scale": 72,
     "Manifacturer": "Modelcollect",
@@ -3533,10 +3722,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/1/5/5/969155-17918-12-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/969155-modelcollect-ua72060-t-80uk-main-battle-tank"
+    "LinkToScalemates": "https://www.scalemates.com/kits/969155-modelcollect-ua72060-t-80uk-main-battle-tank",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 209,
+    "Number": 208,
     "Name": "BMP3 Infantry fighting vehicle middle ver",
     "Scale": 72,
     "Manifacturer": "Modelcollect",
@@ -3550,10 +3740,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/5/3/945353-17918-42-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/945353-modelcollect-ua72035-bmp-3-infantry-fighting-vehicle"
+    "LinkToScalemates": "https://www.scalemates.com/kits/945353-modelcollect-ua72035-bmp-3-infantry-fighting-vehicle",
+    "Category": "TrackedMilitaryVehicles"
   },
   {
-    "Number": 210,
+    "Number": 209,
     "Name": "Aussie Eight Dual Combo",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3567,10 +3758,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/4/0/1022840-16303-17-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1022840-eduard-2119-aussie-eight"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1022840-eduard-2119-aussie-eight",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 211,
+    "Number": 210,
     "Name": "Bf 110 E",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3584,10 +3776,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/6/7/148467-16559-99-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/148467-eduard-7083-bf-110e"
+    "LinkToScalemates": "https://www.scalemates.com/kits/148467-eduard-7083-bf-110e",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 212,
+    "Number": 211,
     "Name": "L-39ZO",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3601,10 +3794,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/0/5/3/145053-16559-68-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/145053-eduard-7416-l-39zo"
+    "LinkToScalemates": "https://www.scalemates.com/kits/145053-eduard-7416-l-39zo",
+    "Category": "JetAircrafts"
   },
   {
-    "Number": 213,
+    "Number": 212,
     "Name": "Bf 110D",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3618,10 +3812,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/8/0/2/197802-19848-34-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/197802-eduard-7420-bf-110d"
+    "LinkToScalemates": "https://www.scalemates.com/kits/197802-eduard-7420-bf-110d",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 214,
+    "Number": 213,
     "Name": "Fw 190А-8/R2",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3635,10 +3830,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/3/3/7/945337-14477-15-1080.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/945337-eduard-7430-fw-190a-8-r2"
+    "LinkToScalemates": "https://www.scalemates.com/kits/945337-eduard-7430-fw-190a-8-r2",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 215,
+    "Number": 214,
     "Name": "Fw 190А-8",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3652,10 +3848,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/2/0/3/976203-19848-28-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/976203-eduard-7435-fw-190a-8-standard-wings"
+    "LinkToScalemates": "https://www.scalemates.com/kits/976203-eduard-7435-fw-190a-8-standard-wings",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 216,
+    "Number": 215,
     "Name": "Fw 190A-5",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3669,10 +3866,11 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/7/8/1/1000781-12741-46-720.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/1000781-eduard-7436-fw-190a-5-heavy-fighter"
+    "LinkToScalemates": "https://www.scalemates.com/kits/1000781-eduard-7436-fw-190a-5-heavy-fighter",
+    "Category": "PropellerDrivenAircrafts"
   },
   {
-    "Number": 217,
+    "Number": 216,
     "Name": "Czech Airforce",
     "Scale": 72,
     "Manifacturer": "Eduard",
@@ -3686,6 +3884,133 @@
     "OwnerId": "",
     "Comments": "",
     "BoxPicture": "https://www.scalemates.com/products/img/4/0/7/115407-10000-pristine.jpg",
-    "LinkToScalemates": "https://www.scalemates.com/kits/115407-eduard-7501-czech-af"
+    "LinkToScalemates": "https://www.scalemates.com/kits/115407-eduard-7501-czech-af",
+    "Category": "Figures"
+  },
+  {
+    "Number": 217,
+    "Name": "Russian Main Battle Tank T-90",
+    "Scale": 72,
+    "Manifacturer": "Zvezda",
+    "FactoryNumber": "5020",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 15.12,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/8/8/7/191887-15582-41-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/zvezda-5020-t-90--191887",
+    "Category": "TrackedMilitaryVehicles"
+  },
+  {
+    "Number": 218,
+    "Name": "T-34/76 Mod.1943",
+    "Scale": 72,
+    "Manifacturer": "Dragon",
+    "FactoryNumber": "7277",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 28.7,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/5/9/0/108590-13652-10-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/dragon-7277-t-34-76-mod1943--108590",
+    "Category": "TrackedMilitaryVehicles"
+  },
+  {
+    "Number": 219,
+    "Name": "T-34/76 Mod.1941 w/Cast Turret",
+    "Scale": 72,
+    "Manifacturer": "Dragon",
+    "FactoryNumber": "7262",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 28.7,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/9/2/3/106923-27767-69-1080.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/dragon-7262-t-34-76-mod-1941--106923",
+    "Category": "TrackedMilitaryVehicles"
+  },
+  {
+    "Number": 220,
+    "Name": "Soviet APC BTR-70 (Late Production Series)",
+    "Scale": 72,
+    "Manifacturer": "Ace",
+    "FactoryNumber": "72166",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 29.6,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/6/4/8/986648-17918-67-pristine.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/ace-72166-btr-70-apc--986648",
+    "Category": "WheeledMilitaryVehicles"
+  },
+  {
+    "Number": 221,
+    "Name": "WWII German Command Staff w/Kübelwagen",
+    "Scale": 72,
+    "Manifacturer": "Caesar",
+    "FactoryNumber": "H095",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 23.9,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/CAEH095Box.jpg",
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/review.aspx?id=2032",
+    "Category": "Figures"
+  },
+  {
+    "Number": 222,
+    "Name": "WWII German Infantry Tank Riders (Winter Set 2)",
+    "Scale": 72,
+    "Manifacturer": "Caesar",
+    "FactoryNumber": "H079",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 23.9,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "http://www.plasticsoldierreview.com/Boxes/CAEH079Box.jpg",
+    "LinkToScalemates": "http://www.plasticsoldierreview.com/review.aspx?id=2462",
+    "Category": "Figures"
+  },
+  {
+    "Number": 223,
+    "Name": "Fw 190 A-8 Royal Class",
+    "Scale": 72,
+    "Manifacturer": "Eduard",
+    "FactoryNumber": "R0012",
+    "CombinesWith": "",
+    "InfoHowTo": "",
+    "Price": 62,
+    "DateOfPurchase": "14/01/2018",
+    "Place": "Ruse",
+    "BestCompanyOffer": "",
+    "OwnerId": "",
+    "Comments": "",
+    "BoxPicture": "https://www.scalemates.com/products/img/3/3/6/945336-16559-19-1080.jpg",
+    "LinkToScalemates": "https://www.scalemates.com/kits/eduard-r0012-fw-190a-8--945336",
+    "Category": "PropellerDrivenAircrafts"
   }
 ]

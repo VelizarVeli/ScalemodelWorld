@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.ViewModels
@@ -24,5 +25,7 @@ namespace ScalemodelWorld.Common.Scalemodels.ViewModels
 
         [Display(Name = AttributeDisplayNameConstants.DayFormat)]
         public string LinkToScalemates { get; set; }
+
+        public Category Category { get; set; }
     }
 }
