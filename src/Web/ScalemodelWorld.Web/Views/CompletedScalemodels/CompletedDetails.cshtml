@@ -1,6 +1,5 @@
 ﻿@using ScalemodelWorld.Common.Constants
 @model ScalemodelWorld.Common.Scalemodels.BindingModels.CompletedScalemodelBindingModel
-
 @{
     ViewData["Title"] = "Completed Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -98,7 +97,7 @@
             <div class="col">
                 @if (Model.InfoHowTo != null)
                 {
-                <p class="card-text"><a href="@Model.InfoHowTo">LINK</a></p>
+                    <p class="card-text"><a href="@Model.InfoHowTo">LINK</a></p>
                 }
             </div>
         </div>
@@ -122,11 +121,11 @@
             <div class="col">
                 @if (Model.PicturesLink != null)
                 {
-                <p class="card-text"><a href="@Model.PicturesLink">LINK</a></p>
+                    <p class="card-text"><a href="@Model.PicturesLink">LINK</a></p>
                 }
                 else
                 {
-                <p class="card-text"><a href="@Model.PicturesLink">LINK</a></p>
+                    <p class="card-text"><a href="@Model.PicturesLink">LINK</a></p>
                 }
             </div>
         </div>
@@ -137,12 +136,20 @@
             <div class="col">
                 @if (Model.ForumsLink != null)
                 {
-                <p class="card-text"><a href="@Model.ForumsLink">LINK</a></p>
+                    <p class="card-text"><a href="@Model.ForumsLink">LINK</a></p>
                 }
                 else
                 {
-                <p class="card-text"><a href="@Model.ForumsLink">LINK</a></p>
+                    <p class="card-text"><a href="@Model.ForumsLink">LINK</a></p>
                 }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="card-title">@Html.DisplayNameFor(model => model.Category)</h4>
+            </div>
+            <div class="col">
+                <p class="card-text">@Html.DisplayFor(model => model.Category)</p>
             </div>
         </div>
     </div>

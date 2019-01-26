@@ -112,6 +112,14 @@
             <img src="@Model.BoxPicture" style="width: 100% \9;" class="img-fluid" alt="Responsive image">
         </a>
     </div>
+    <div class="row">
+        <div class="col">
+            <h4 class="card-title">@Html.DisplayNameFor(model => model.Category)</h4>
+        </div>
+        <div class="col">
+            <p class="card-text">@Html.DisplayFor(model => model.Category)</p>
+        </div>
+    </div>
 </div>
 
 <form asp-action="StartedDelete">

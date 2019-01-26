@@ -71,5 +71,7 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         [Required]
         [Display(Name = AttributeDisplayNameConstants.FinishingDate)]
         public DateTime FinishingDate { get; set; }
+
+        public string Category { get; set; }
     }
 }

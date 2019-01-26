@@ -1,15 +1,12 @@
 ﻿@model ScalemodelWorld.Common.Scalemodels.BindingModels.StartedScalemodelBindingModel
-
 @{
     ViewData["Title"] = "Edit Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <form asp-action="StartedEdit">
     <h1>Edit Details</h1>
-
     <h4>Started Scalemodel</h4>
     <hr />
-
     <div class="d-flex justify-content-around row">
         <div class="col-sm-6">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -133,9 +130,13 @@
                 <input asp-for="LinkToScalemates" class="form-control" />
                 <span asp-validation-for="LinkToScalemates" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="Category"></label>
+                <select asp-for="Category" asp-items="ViewBag.Category"></select>
+            </div>
         </div>
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Save" class="btn btn-primary" /> |
+        <a asp-action="AllStarted">Back to Started</a>
     </div>
-    <input type="hidden" asp-for="Id" />
-    <input type="submit" value="Save" class="btn btn-primary" /> |
-    <a asp-action="AllStarted">Back to Started</a>
 </form>

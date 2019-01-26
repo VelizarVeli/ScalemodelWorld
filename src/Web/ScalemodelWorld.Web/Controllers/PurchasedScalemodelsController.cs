@@ -1,8 +1,12 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Scalemodel.Data.Models;
+using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
 using ScalemodelWorld.Data;
@@ -37,8 +41,23 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult AddModel()
+        public IActionResult AddModel(string returnUrl = null)
         {
+            var deptList = new List<SelectListItem>();
+            deptList.Add(new SelectListItem
+            {
+                Text = "Select",
+                Value = ""
+            });
+            foreach (Category eVal in Enum.GetValues(typeof(Category)))
+            {
+                deptList.Add(new SelectListItem { Text = Enum.GetName(typeof(Category), eVal), Value = eVal.ToString() });
+            }
+
+            ViewBag.Category = deptList;
+
+            ViewData["ReturnUrl"] = returnUrl;
+
             return View("AddModel");
         }
 
@@ -88,9 +107,24 @@ namespace ScalemodelWorld.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> EditDetails(int id)
+        public async Task<IActionResult> EditDetails(int id, string returnUrl = null)
         {
             var editDetails = await this.purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+
+            var deptList = new List<SelectListItem>();
+            deptList.Add(new SelectListItem
+            {
+                Text = "Select",
+                Value = ""
+            });
+            foreach (Category eVal in Enum.GetValues(typeof(Category)))
+            {
+                deptList.Add(new SelectListItem { Text = Enum.GetName(typeof(Category), eVal), Value = eVal.ToString() });
+            }
+
+            ViewBag.Category = deptList;
+
+            ViewData["ReturnUrl"] = returnUrl;
 
             return View("EditDetails", editDetails);
         }

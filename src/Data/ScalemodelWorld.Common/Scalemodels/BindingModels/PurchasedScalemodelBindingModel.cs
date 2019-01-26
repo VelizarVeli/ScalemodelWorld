@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 
 namespace ScalemodelWorld.Common.Scalemodels.BindingModels
@@ -55,5 +57,9 @@ namespace ScalemodelWorld.Common.Scalemodels.BindingModels
         public string Comments { get; set; }
 
         public string OwnerId { get; set; }
+
+        public string Category { get; set; }
+
+        public IEnumerable<Category> Categories { get; set; }
     }
 }
