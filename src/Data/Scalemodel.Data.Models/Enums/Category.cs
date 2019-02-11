@@ -1,9 +1,16 @@
-﻿namespace Scalemodel.Data.Models.Enums
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace Scalemodel.Data.Models.Enums
 {
     public enum Category
     {
+        [Display(Name= "Propeller Driven Aircrafts")]
         PropellerDrivenAircrafts = 1,
+        [Display(Name = "Jet Aircrafts")]
         JetAircrafts = 2,
+        [Display(Name = "Jet Aircrafts")]
+
         CivilAirplanes = 3,
         Helicopters = 4,
         WheeledMilitaryVehicles = 5,
