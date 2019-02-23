@@ -80,12 +80,12 @@ namespace ScalemodelWorld.Web
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
             services.AddScoped<ISeedDatabaseService, SeedDatabaseService>();
-            services.AddAuthentication()
-                .AddFacebook(facebbokOptions =>
-                {
-                    facebbokOptions.AppId = Configuration["Authentication:Facebook:AppId"];
-                    facebbokOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-                });
+            //services.AddAuthentication()
+            //    .AddFacebook(facebbokOptions =>
+            //    {
+            //        facebbokOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+            //        facebbokOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            //    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
