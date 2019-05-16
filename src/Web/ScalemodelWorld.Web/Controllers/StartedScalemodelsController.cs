@@ -9,7 +9,6 @@ using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
-using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
 using X.PagedList;
 
@@ -17,23 +16,20 @@ namespace ScalemodelWorld.Web.Controllers
 {
     public class StartedScalemodelsController : Controller
     {
-        private readonly ScalemodelWorldContext db;
-        private readonly IStartedScalemodelsService startedScalemodelsService;
-        private readonly UserManager<ScalemodelWorldUser> currentUser;
+        private readonly IStartedScalemodelsService _startedScalemodelsService;
+        private readonly UserManager<ScalemodelWorldUser> _currentUser;
 
-        public StartedScalemodelsController(ScalemodelWorldContext db,
-            IStartedScalemodelsService startedScalemodelsService,
+        public StartedScalemodelsController(IStartedScalemodelsService startedScalemodelsService,
             UserManager<ScalemodelWorldUser> current)
         {
-            this.db = db;
-            this.startedScalemodelsService = startedScalemodelsService;
-            this.currentUser = current;
+            _startedScalemodelsService = startedScalemodelsService;
+            _currentUser = current;
         }
 
         [Authorize]
         public async Task<IActionResult> AllStarted(int? page)
         {
-            var startededModels = await this.startedScalemodelsService.AllStarted(this.currentUser.GetUserId(User));
+            var startededModels = await _startedScalemodelsService.AllStarted(_currentUser.GetUserId(User));
             var pageNumber = page ?? 1;
             var onePageOfProducts = startededModels.ToPagedList(pageNumber, 10);
             ViewBag.OnePageOfProducts = onePageOfProducts;
@@ -46,10 +42,10 @@ namespace ScalemodelWorld.Web.Controllers
         public async Task<IActionResult> StartedDetails(int id)
         {
             var startedDetails =
-                await this.startedScalemodelsService.GetStartedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+                await _startedScalemodelsService.GetStartedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
             if (startedDetails == null)
             {
-                return this.RedirectToAction(ActionConstants.Started);
+                return RedirectToAction(ActionConstants.Started);
             }
 
             return View("StartedDetails", startedDetails);
@@ -58,7 +54,7 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> FinishBuild(int id)
         {
-            await this.startedScalemodelsService.FinishBuildAsync(id, this.currentUser.GetUserId(User));
+            await _startedScalemodelsService.FinishBuildAsync(id, _currentUser.GetUserId(User));
 
             return RedirectToAction("AllCompleted", "CompletedScalemodels");
         }
@@ -66,7 +62,7 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteStartedDetails(int id)
         {
-            var deleteStartedDetails = await this.startedScalemodelsService.GetStartedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            var deleteStartedDetails = await _startedScalemodelsService.GetStartedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             return View("DeleteDetails", deleteStartedDetails);
         }
@@ -74,14 +70,14 @@ namespace ScalemodelWorld.Web.Controllers
        [Authorize]
        public async Task<IActionResult> StartedDelete(int id)
        {
-           await this.startedScalemodelsService.StartedDeleteAsync(id, this.currentUser.GetUserId(User));
+           await _startedScalemodelsService.StartedDeleteAsync(id, _currentUser.GetUserId(User));
            return RedirectToAction("AllStarted");
        }
 
         [Authorize]
         public async Task<IActionResult> EditStartedDetails(int id, string returnUrl = null)
         {
-            var editDetails = await this.startedScalemodelsService.GetStartedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            var editDetails = await _startedScalemodelsService.GetStartedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             var deptList = new List<SelectListItem>();
             deptList.Add(new SelectListItem
@@ -105,7 +101,7 @@ namespace ScalemodelWorld.Web.Controllers
        [HttpPost]
        public async Task<IActionResult> StartedEdit(int id, StartedScalemodelBindingModel model)
        {
-           await this.startedScalemodelsService.StartedEditAsync(model, id, this.currentUser.GetUserId(User));
+           await _startedScalemodelsService.StartedEditAsync(model, id, _currentUser.GetUserId(User));
            return RedirectToAction("AllStarted");
        }
     }

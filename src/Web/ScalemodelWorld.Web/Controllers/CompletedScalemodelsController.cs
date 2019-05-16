@@ -9,7 +9,6 @@ using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
-using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
 using X.PagedList;
 
@@ -17,23 +16,20 @@ namespace ScalemodelWorld.Web.Controllers
 {
     public class CompletedScalemodelsController : Controller
     {
-        private readonly ScalemodelWorldContext db;
-        private readonly ICompletedScalemodelsService completedScalemodelsService;
-        private readonly UserManager<ScalemodelWorldUser> currentUser;
+        private readonly ICompletedScalemodelsService _completedScalemodelsService;
+        private readonly UserManager<ScalemodelWorldUser> _currentUser;
 
-        public CompletedScalemodelsController(ScalemodelWorldContext db,
-            ICompletedScalemodelsService completedScalemodelsService,
+        public CompletedScalemodelsController(ICompletedScalemodelsService completedScalemodelsService,
             UserManager<ScalemodelWorldUser> current)
         {
-            this.db = db;
-            this.completedScalemodelsService = completedScalemodelsService;
-            this.currentUser = current;
+            _completedScalemodelsService = completedScalemodelsService;
+            _currentUser = current;
         }
 
         [Authorize]
         public async Task<IActionResult> AllCompleted(int? page)
         {
-            var completedModels = await this.completedScalemodelsService.AllCompleted(this.currentUser.GetUserId(User));
+            var completedModels = await _completedScalemodelsService.AllCompleted(_currentUser.GetUserId(User));
             var pageNumber = page ?? 1;
             var onePageOfProducts = completedModels.ToPagedList(pageNumber, 10);
             ViewBag.OnePageOfProducts = onePageOfProducts;
@@ -44,11 +40,11 @@ namespace ScalemodelWorld.Web.Controllers
         public async Task<IActionResult> CompletedDetails(int id)
         {
             var completedDetails =
-                await this.completedScalemodelsService.GetCompletedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+                await _completedScalemodelsService.GetCompletedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             if (completedDetails == null)
             {
-                return this.RedirectToAction(ActionConstants.Completed);
+                return RedirectToAction(ActionConstants.Completed);
             }
 
             return View("CompletedDetails", completedDetails);
@@ -57,7 +53,7 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteCompletedDetails(int id)
         {
-            var deleteCompletedDetails = await this.completedScalemodelsService.GetCompletedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            var deleteCompletedDetails = await _completedScalemodelsService.GetCompletedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             return View("DeleteDetails", deleteCompletedDetails);
         }
@@ -65,14 +61,14 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> CompletedDelete(int id)
         {
-            await this.completedScalemodelsService.CompletedDeleteAsync(id, this.currentUser.GetUserId(User));
+            await _completedScalemodelsService.CompletedDeleteAsync(id, _currentUser.GetUserId(User));
             return RedirectToAction("AllCompleted");
         }
 
         [Authorize]
         public async Task<IActionResult> EditCompletedDetails(int id, string returnUrl = null)
         {
-            var editDetails = await this.completedScalemodelsService.GetCompletedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            var editDetails = await _completedScalemodelsService.GetCompletedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             var deptList = new List<SelectListItem>();
             deptList.Add(new SelectListItem
@@ -96,7 +92,7 @@ namespace ScalemodelWorld.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CompletedModelEdit(int id, CompletedScalemodelBindingModel model)
         {
-            await this.completedScalemodelsService.CompletedEditAsync(model, id, this.currentUser.GetUserId(User));
+            await _completedScalemodelsService.CompletedEditAsync(model, id, _currentUser.GetUserId(User));
             return RedirectToAction("AllCompleted");
         }
     }

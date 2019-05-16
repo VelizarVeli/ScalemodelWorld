@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Scalemodel.Data.Models;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
-using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
 using X.PagedList;
 
@@ -12,17 +11,14 @@ namespace ScalemodelWorld.Web.Controllers
 {
     public class WishlistController : Controller
     {
-        private readonly ScalemodelWorldContext db;
-        private readonly IWishlistService wishlistService;
-        private readonly UserManager<ScalemodelWorldUser> currentUser;
+        private readonly IWishlistService _wishlistService;
+        private readonly UserManager<ScalemodelWorldUser> _currentUser;
 
-        public WishlistController(ScalemodelWorldContext db,
-            IWishlistService wishlistService,
+        public WishlistController(IWishlistService wishlistService,
             UserManager<ScalemodelWorldUser> current)
         {
-            this.db = db;
-            this.wishlistService = wishlistService;
-            this.currentUser = current;
+            _wishlistService = wishlistService;
+            _currentUser = current;
         }
 
 
@@ -30,7 +26,7 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
        public async Task<IActionResult> AllWishlist(int? page)
        {
-           var wishlistModels = await this.wishlistService.WishlistAll(this.currentUser.GetUserId(User));
+           var wishlistModels = await _wishlistService.WishlistAll(_currentUser.GetUserId(User));
            var pageNumber = page ?? 1;
            var onePageOfProducts = wishlistModels.ToPagedList(pageNumber, 10);
            ViewBag.OnePageOfProducts = onePageOfProducts;
@@ -48,7 +44,7 @@ namespace ScalemodelWorld.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> AddWishModel(WishlistScalemodelBindingModel model)
         {
-            await this.wishlistService.AddWishAsync(model, this.currentUser.GetUserId(User));
+            await _wishlistService.AddWishAsync(model, _currentUser.GetUserId(User));
 
             return RedirectToAction("AllWishlist");
         }

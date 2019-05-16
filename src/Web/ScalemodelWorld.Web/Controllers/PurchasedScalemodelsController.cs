@@ -9,7 +9,6 @@ using Scalemodel.Data.Models;
 using Scalemodel.Data.Models.Enums;
 using ScalemodelWorld.Common.Constants;
 using ScalemodelWorld.Common.Scalemodels.BindingModels;
-using ScalemodelWorld.Data;
 using ScalemodelWorld.Services.Scalemodels.Contracts;
 using X.PagedList;
 
@@ -17,23 +16,20 @@ namespace ScalemodelWorld.Web.Controllers
 {
     public class PurchasedScalemodelsController : Controller
     {
-        private readonly ScalemodelWorldContext db;
-        private readonly IPurchasedScalemodelsService purchasedScalemodelsService;
-        private readonly UserManager<ScalemodelWorldUser> currentUser;
+        private readonly IPurchasedScalemodelsService _purchasedScalemodelsService;
+        private readonly UserManager<ScalemodelWorldUser> _currentUser;
 
-        public PurchasedScalemodelsController(ScalemodelWorldContext db,
-            IPurchasedScalemodelsService purchasedScalemodelsService,
+        public PurchasedScalemodelsController(IPurchasedScalemodelsService purchasedScalemodelsService,
             UserManager<ScalemodelWorldUser> current)
         {
-            this.db = db;
-            this.purchasedScalemodelsService = purchasedScalemodelsService;
-            this.currentUser = current;
+            _purchasedScalemodelsService = purchasedScalemodelsService;
+            _currentUser = current;
         }
 
         [Authorize]
         public async Task<IActionResult> AllPurchased(int? page)
         {
-            var purchasedModels = await this.purchasedScalemodelsService.AllPurchased(this.currentUser.GetUserId(User));
+            var purchasedModels = await _purchasedScalemodelsService.AllPurchased(_currentUser.GetUserId(User));
             var pageNumber = page ?? 1;
             var onePageOfProducts = purchasedModels.ToPagedList(pageNumber, 10);
             ViewBag.OnePageOfProducts = onePageOfProducts;
@@ -65,7 +61,7 @@ namespace ScalemodelWorld.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> AddScalemodel(PurchasedScalemodelBindingModel model)
         {
-            await this.purchasedScalemodelsService.AddPurchasedAsync(model, this.currentUser.GetUserId(User));
+            await _purchasedScalemodelsService.AddPurchasedAsync(model, _currentUser.GetUserId(User));
 
             return RedirectToAction("AllPurchased");
         }
@@ -74,10 +70,10 @@ namespace ScalemodelWorld.Web.Controllers
        public async Task<IActionResult> PurchasedDetails(int id)
        {
            var purchasedDetails =
-               await this.purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+               await _purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
            if (purchasedDetails == null)
            {
-               return this.RedirectToAction(ActionConstants.Purchased);
+               return RedirectToAction(ActionConstants.Purchased);
            }
 
            return View("PurchasedModelDetails", purchasedDetails);
@@ -86,7 +82,7 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> StartNewBuild(int id)
         {
-            await this.purchasedScalemodelsService.StartNewBuildAsync(id, this.currentUser.GetUserId(User));
+            await _purchasedScalemodelsService.StartNewBuildAsync(id, _currentUser.GetUserId(User));
 
             return RedirectToAction("AllStarted","StartedScalemodels");
         }
@@ -94,7 +90,7 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteDetails(int id)
         {
-            var deleteDetails = await this.purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            var deleteDetails = await _purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             return View("DeleteDetails", deleteDetails);
         }
@@ -102,14 +98,14 @@ namespace ScalemodelWorld.Web.Controllers
         [Authorize]
         public async Task<IActionResult> PurchasedDelete(int id)
         {
-            await this.purchasedScalemodelsService.PurchasedDeleteAsync(id, this.currentUser.GetUserId(User));
+            await _purchasedScalemodelsService.PurchasedDeleteAsync(id, _currentUser.GetUserId(User));
             return RedirectToAction("AllPurchased");
         }
 
         [Authorize]
         public async Task<IActionResult> EditDetails(int id, string returnUrl = null)
         {
-            var editDetails = await this.purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, this.currentUser.GetUserId(User));
+            var editDetails = await _purchasedScalemodelsService.GetPurchasedScalemodelDetailsAsync(id, _currentUser.GetUserId(User));
 
             var deptList = new List<SelectListItem>();
             deptList.Add(new SelectListItem
@@ -133,7 +129,7 @@ namespace ScalemodelWorld.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> PurchasedEdit(int id, PurchasedScalemodelBindingModel model)
         {
-            await this.purchasedScalemodelsService.PurchasedEditAsync(model, id, this.currentUser.GetUserId(User));
+            await _purchasedScalemodelsService.PurchasedEditAsync(model, id, _currentUser.GetUserId(User));
             return RedirectToAction("AllPurchased");
         }
     }
