@@ -4,6 +4,10 @@
     ViewData["Title"] = "Register";
 }
 
+@if (User.Identity.IsAuthenticated)
+{
+    <h1 class="alert-danger">You already have registered an account!</h1>
+}
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">

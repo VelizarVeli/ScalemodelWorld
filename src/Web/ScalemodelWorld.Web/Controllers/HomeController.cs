@@ -20,7 +20,7 @@ namespace ScalemodelWorld.Web.Controllers
 
             return View();
         }
-
+        //something
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
