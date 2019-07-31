@@ -1,11 +1,87 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Raleway:100,200,300,500,600,700,800,900");
 
-/*
-	Phase Shift by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
+
+
+
+@import url('https://rsms.me/inter/inter-ui.css');
+body {
+    align-items: center;
+    color: #555;
+    display: flex;
+    font-family: 'Inter UI', sans-serif;
+    font-size: 1.25em;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: inline-block;
+    position: relative;
+}
+.index {
+    cursor: pointer;
+    display: inline;
+    margin-right: 30px;
+    padding: 5px;
+    user-select: none;
+    -moz-user-select: none;
+}
+.index:last-child {
+    margin: 0;
+}
+svg {
+    left: -13px;
+    position: absolute;
+    top: -11px;
+    transition: transform 500ms;
+    width: 46px;
+}
+path {
+    fill:none;
+    stroke:#2FB468;
+    stroke-dasharray: 150 150;
+    stroke-width:15;
+}
+.container.open:not(.flip) path {
+    animation: OpenRight 500ms;
+}
+.container.open.flip path {
+    animation: OpenLeft 500ms;
+}
+.container.i1 svg {
+    transform: translateX(0);
+}
+.container.i2 svg {
+    transform: translateX(50px);
+}
+.container.i3 svg {
+    transform: translateX(102px);
+}
+.container.i4 svg {
+    transform: translateX(154px);
+}
+.container.i5 svg {
+    transform: translateX(206px);
+}
+@keyframes OpenRight {
+    25% { stroke-dasharray: 100 150; }
+    60% { stroke-dasharray: 100 150; }
+    100% { stroke-dasharray: 150 150; }
+}
+@keyframes OpenLeft {
+    25% { stroke-dashoffset: -50px; }
+    60% { stroke-dashoffset: -50px; }
+    100% { stroke-dashoffset: 0; }
+}
+
+
+
+
+
+
+
 
 /* Basic */
 
