@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Scalemodel.Data.Models.Abstractions;
 
 namespace Scalemodel.Data.Models
@@ -11,6 +12,7 @@ namespace Scalemodel.Data.Models
 
         public decimal Price { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime DateOfPurchase { get; set; }
 
         public string Description { get; set; }

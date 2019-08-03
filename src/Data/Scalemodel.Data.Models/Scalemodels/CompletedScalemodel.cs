@@ -21,9 +21,11 @@ namespace Scalemodel.Data.Models.Scalemodels
         public string ForumsLink { get; set; }
 
         [Required]
+        [DataType(DataType.Time)]
         public DateTime? StartingDate { get; set; }
 
         [Required]
+        [DataType(DataType.Time)]
         public DateTime? FinishingDate { get; set; } = DateTime.UtcNow;
 
         public ICollection<CompletedAftermarket> Aftermarkets { get; set; }

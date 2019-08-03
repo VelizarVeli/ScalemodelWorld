@@ -7,6 +7,7 @@ namespace Scalemodel.Data.Models.Abstractions
     public abstract class MyModel : BaseModel, IMyModel
     {
         [Required]
+        [DataType(DataType.Date)]
         public DateTime DateOfPurchase { get; set; }
 
         public string Place { get; set; }

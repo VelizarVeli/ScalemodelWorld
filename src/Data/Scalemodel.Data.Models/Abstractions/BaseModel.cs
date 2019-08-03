@@ -28,6 +28,7 @@ namespace Scalemodel.Data.Models.Abstractions
 
         [Required]
         [Range(typeof(decimal), "0.00", "79228162514264337593543950335")]
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
         public string Comments { get; set; }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Scalemodel.Data.Models
 {
@@ -12,6 +13,7 @@ namespace Scalemodel.Data.Models
 
         public string LogLevel { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime CreatedTime { get; set; }
     }
 }

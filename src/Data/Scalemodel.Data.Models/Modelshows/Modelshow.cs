@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Scalemodel.Data.Models.Abstractions;
 using Scalemodel.Data.Models.JunctionClasses;
 
@@ -17,6 +18,7 @@ namespace Scalemodel.Data.Models.Modelshows
 
         public string ModelShowName { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime Year { get; set; }
 
         public string Place { get; set; }
