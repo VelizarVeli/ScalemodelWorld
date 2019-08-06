@@ -45,8 +45,6 @@ namespace ScalemodelWorld.Web
                 options.UseSqlServer(
                     this.Configuration.GetConnectionString("DefaultConnection")));
 
-            //services.AddTransient<SeedDbContext>();
-
             services.AddIdentity<ScalemodelWorldUser, IdentityRole>(options =>
                    {
                        options.Password.RequiredLength = 6;
