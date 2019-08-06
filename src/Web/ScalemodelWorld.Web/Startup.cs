@@ -45,7 +45,7 @@ namespace ScalemodelWorld.Web
                 options.UseSqlServer(
                     this.Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<SeedDbContext>();
+            //services.AddTransient<SeedDbContext>();
 
             services.AddIdentity<ScalemodelWorldUser, IdentityRole>(options =>
                    {
